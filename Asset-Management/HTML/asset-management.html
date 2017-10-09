@@ -1,0 +1,792 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+    @media (min-width: 768px) {
+.modal-content {
+    box-shadow: none;
+}
+    }
+</style>
+</head>
+<body style="background-color:#eae4dc">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <header>
+        <div class="gr-clr"></div>
+        <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="asset-class.html">Class</a></li>
+                                    <li><a href="asset-category.html">Category</a></li>
+                                    <li><a href="asset-sub-category.html">Sub category</a></li>
+                                    <li><a href="asset-variant.html">Variant</a></li>
+                                    <li><a href="mobile-eligibility.html">Mobile Eligibility</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Assets<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="asset-management.html">View Assets</a></li>
+                                    <li><a href="requisition.html">Requisition</a></li>
+                                </ul>
+                            </li> 
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mobile<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="mobile-management.html">Mobile Management</a></li>
+                                    <li><a href="mobilebill-processing.html">Mobile Bill Processing</a></li>
+                                </ul>
+                            </li>      
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+             <!-- <li><a href="#">Home</a></li>-->
+              <li class="active">View Assets</li>
+            </ol>        
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color:#646572">
+                                <h4 class="modal-title" style="color:#fff">View Assets</h4>      
+                                <a href="#" data-toggle="modal" data-target="#myModal2"> 
+                                    <span class="fa fa-shopping-bag" style="color:#fff; font-size:17pt; margin-top:-20px; float:right" title="Return" aria-hidden="true">
+                                        <span class="cart">5</span>
+
+                                    </span>
+
+                                </a>                          
+                            <div class="clearfix"></div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="border-bottom:dotted 1px #ccc; margin-bottom:10px;">
+                                 <div class="col-md-3">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div>Asset Class</div>                          
+                                            <div class="panel-body" style="padding: 5px 0;">
+                                                <div class="btn-group" style="width:100%">
+                                                 <button type="button" class="btn btn-warning dropdown-toggle form-control" data-toggle="dropdown">
+                                                   <span data-bind="label">IT Assets</span>&nbsp;<span class="caret"></span>
+                                                 </button>
+                                                 <ul class="dropdown-menu" role="menu">
+                                                   <li><a href="#">IT Assets</a></li>
+                                                   <li><a href="#">HR Assets</a></li>
+                                                   <li><a href="#">Site Assets</a></li>
+                                                 </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                  
+                                </div>
+                                    <div class="col-md-2">
+                                        <div>Asset Category</div>
+                                       <div class="panel-body" style="padding: 5px 0;">                       
+                                                <div class="btn-group" style="width:100%">
+                                                 <button type="button" class="btn btn-warning dropdown-toggle form-control" data-toggle="dropdown">
+                                                   <span data-bind="label">All</span>&nbsp;<span class="caret"></span>
+                                                 </button>
+                                                 <ul class="dropdown-menu" role="menu">
+                                                   <li><a href="#">All</a></li>
+                                                   <li><a href="#">Hardware</a></li>
+                                                   <li><a href="#">Software</a></li>
+                                                     <li><a href="#">Communication Equipment</a></li>
+                                                   <li><a href="#">Network</a></li>
+                                                 </ul>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                        <div>Asset Sub Category</div>
+                                        <div class="pull-left">
+                                       <div class="panel-body" style="padding: 5px 0;">                       
+                                                <div class="btn-group" style="width:100%">
+                                                 <button type="button" class="btn btn-warning dropdown-toggle form-control" data-toggle="dropdown">
+                                                   <span data-bind="label">All</span>&nbsp;<span class="caret"></span>
+                                                 </button>
+                                                 <ul class="dropdown-menu" role="menu">
+                                                     <li><a href="#">All</a></li>
+                                                   <li><a href="#">Desktop</a></li>
+                                                   <li><a href="#">Laptop</a></li>
+                                                   <li><a href="#">Mobile</a></li>
+                                                     <li><a href="#">Keyboard</a></li>
+                                                   <li><a href="#">Mouse</a></li>
+                                                 </ul>
+                                                </div>
+                                            </div>
+                                    </div> 
+                                    <div class="pull-left" style="padding: 5px 0;">
+                                         <div class="form-group">
+                                            <div class="tag-bt-btn">Desktop<span class="glyphicon glyphicon-remove" style="font-size:8pt; color:#808080" aria-hidden="true"></span></div>
+                                             <div class="tag-bt-btn">Laptop<span class="glyphicon glyphicon-remove" style="font-size:8pt; color:#808080" aria-hidden="true"></span></div>
+                                             <div class="tag-bt-btn">Mobile<span class="glyphicon glyphicon-remove" style="font-size:8pt; color:#808080" aria-hidden="true"></span></div>
+                                             <div class="clearfix"></div>
+                                          </div>
+                                    </div> 
+                                    </div>                                  
+                                </div>
+                                </div>
+                                </div>
+                                <div class="row"style="border-bottom:dotted 1px #ccc; margin-bottom:10px;">
+                                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                 <div class="pull-left">                                       
+                                                    <div class="btn-group">
+                                                      <button type="button" class="btn btn-primary">Asset Variant</button>
+                                                      <button type="button" class="btn btn-primary dropdown-toggle" style="padding: 14px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="caret"></span>
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                      </button>
+                                                      <ul class="dropdown-menu">
+                                                        <li><a href="#">RAM</a></li>
+                                                        <li><a href="#">HDD</a></li>
+                                                        <li><a href="#">Processor Speed</a></li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="pull-left" style="margin-left:1%">                                       
+                                                    <div class="btn-group">
+                                                      <button type="button" class="btn btn-primary">Value</button>
+                                                      <button type="button" class="btn btn-primary dropdown-toggle" style="padding: 14px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="caret"></span>
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                      </button>
+                                                      <ul class="dropdown-menu">
+                                                        <li><a href="#">2 GB</a></li>
+                                                        <li><a href="#">4 GB</a></li>
+                                                        <li><a href="#">8 GB</a></li>
+                                                        <li><a href="#">16 GB</a></li>
+                                                          <li><a href="#">32 GB</a></li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                              <div class="pull-left" style="margin-left:1%">     
+                                                     <div class="form-group">
+                                                        <div class="tag-bt-btn">RAM 2GB <span class="glyphicon glyphicon-remove" style="font-size:8pt; color:#808080" aria-hidden="true"></span></div>
+                                                         <div class="tag-bt-btn">HDD 1TB <span class="glyphicon glyphicon-remove" style="font-size:8pt; color:#808080" aria-hidden="true"></span></div>
+                                                         <div class="tag-bt-btn">Processor Speed 2 GHz <span class="glyphicon glyphicon-remove" style="font-size:8pt; color:#808080" aria-hidden="true"></span></div>
+                                                         <div class="clearfix"></div>
+                                                      </div>
+                                                </div>
+                                            </div> 
+                                      </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
+                                        <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#home">Active</a></li>
+                                    <li><a data-toggle="tab" href="#menu1">Scrapped</a></li>
+                                    <li><a data-toggle="tab" href="#menu2">Lost</a></li>
+                                  </ul>
+                                <div class="tab-content">
+                                    <div id="home" class="tab-pane fade in active"><br />
+                                      
+                                        <div style="border-bottom:solid 1px #ccc; padding:3px; margin-bottom:5px;"> 
+                                            <div class="pull-left" style="width:25%">
+                                                <button type="submit" class="btn btn-primary btn-sm" style="border-color:#ccc; font-weight:bold"> &nbsp;UN ALLOCATED</button>
+                                                <button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"> &nbsp;ALLOCATED</button>
+                                            </div>
+                                            <div class="pull-left" style="width:50%;">
+                                                 <div class="form-group" style="margin-bottom:0">
+                                                    <div id="custom-search-input">
+                                                        <div class="input-group col-md-12">
+                                                            <input type="text" class="  search-query form-control" placeholder="Search" style="height:32px;" />
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-success" type="button" style="padding: 8px;">
+                                                                    <span class=" glyphicon glyphicon-search"></span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="pull-right" style="width:15%"><a href="create-asset.html"><button type="submit" class="btn btn-default btn-sm pull-right" style="border-color:#ccc; font-weight:bold"><span style="color:#8ba927" class="glyphicon glyphicon-plus"></span> &nbsp;Create New Asset</button></a></div>
+                                        <div class="clearfix"></div>
+                                        </div>
+                                      <div class="row">
+                		                    <div class="col-xs-12">
+                                                <div class="table-responsive" style="width:100%;">
+                                                    <table  class="table table table-striped" >
+                                                        <thead style="font-size:9pt;">
+                                                            <tr style="background-color:#192930; color:#fff">                                                        
+                                                                <th>History</th>
+                                                                <th>AssetID</th>
+                                                                <th>Asset Category</th>
+                                                                <th>Sub Category</th>
+                                                                <th>Make</th>
+                                                                <th>Model No</th>
+                                                                <th>TE Serial No</th>
+                                                                <th>Purchase Price</th>
+                                                                <th>Allocated to</th>
+                                                                <th>Asset Quantity</th>
+                                                                <th>Allocated Quantity</th>
+                                                                <th>Allocate</th>
+                                                                <th>Scrap</th>
+                                                                <th>Lost</th>
+                                                                <th>Return</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                         <tr>
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal1"> <span class="fa fa-history" style="color:#1a8df1; padding-top:8px; font-size:14pt; margin-top:-5px" title="Return" aria-hidden="true"></span></a></td>
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal3">TE001</a></td>
+                                                                <td>Laptop</td>
+                                                                <td>Laptop</td>
+                                                                <td>Dell</td>
+                                                                <td>M001</td>
+                                                                <td>TEA00189</td>
+                                                                <td style="text-align:center">45.000</td>  
+                                                                <td>-</td>    
+                                                                <td style="text-align:center">1</td> 
+                                                                <td style="text-align:center">1</td> 
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal"><span class="fa fa-arrow-right" style="color:#8ba927; padding-top:8px; cursor:pointer" title="Allocate" aria-hidden="true"></span></a></td>
+                                                                <td><a href="scrap-asset.html"> <span class="fa fa-recycle" style="color:#ff0000; padding-top:8px;" title="Scrap" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Lost-asset.html"> <span class="fa fa-unlock" style="color:#808080; padding-top:8px;" title="Lost" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Return-asset.html"> <span class="fa fa-arrow-left" style="color:#ff0000; padding-top:8px;" title="Return" aria-hidden="true"></span></a></td>
+                                                            </tr>
+                                                    
+                                                          <tr>
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal1"> <span class="fa fa-history" style="color:#1a8df1; padding-top:8px; font-size:14pt; margin-top:-5px" title="Return" aria-hidden="true"></span></a></td>
+                                                                <td>TE001</td>
+                                                                <td>Laptop</td>
+                                                                <td>Laptop</td>
+                                                                <td>Dell</td>
+                                                                <td>M001</td>
+                                                                <td>TEA00189</td>
+                                                                <td style="text-align:center">45.000</td>  
+                                                                <td>-</td>    
+                                                                <td style="text-align:center">1</td> 
+                                                                <td style="text-align:center">1</td> 
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal"><span class="fa fa-arrow-right" style="color:#8ba927; padding-top:8px; cursor:pointer" title="Allocate" aria-hidden="true"></span></a></td>
+                                                                <td><a href="scrap-asset.html"> <span class="fa fa-recycle" style="color:#ff0000; padding-top:8px;" title="Scrap" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Lost-asset.html"> <span class="fa fa-unlock" style="color:#808080; padding-top:8px;" title="Lost" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Return-asset.html"> <span class="fa fa-arrow-left" style="color:#ff0000; padding-top:8px;" title="Return" aria-hidden="true"></span></a></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal1"> <span class="fa fa-history" style="color:#1a8df1; padding-top:8px; font-size:14pt; margin-top:-5px" title="Return" aria-hidden="true"></span></a></td>
+                                                                <td>TE001</td>
+                                                                <td>Laptop</td>
+                                                                <td>Laptop</td>
+                                                                <td>Dell</td>
+                                                                <td>M001</td>
+                                                                <td>TEA00189</td>
+                                                                <td style="text-align:center">45.000</td>  
+                                                                <td>-</td>    
+                                                                <td style="text-align:center">1</td> 
+                                                                <td style="text-align:center">1</td> 
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal"><span class="fa fa-arrow-right" style="color:#8ba927; padding-top:8px; cursor:pointer" title="Allocate" aria-hidden="true"></span></a></td>
+                                                                <td><a href="scrap-asset.html"> <span class="fa fa-recycle" style="color:#ff0000; padding-top:8px;" title="Scrap" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Lost-asset.html"> <span class="fa fa-unlock" style="color:#808080; padding-top:8px;" title="Lost" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Return-asset.html"> <span class="fa fa-arrow-left" style="color:#ff0000; padding-top:8px;" title="Return" aria-hidden="true"></span></a></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal1"> <span class="fa fa-history" style="color:#1a8df1; padding-top:8px; font-size:14pt; margin-top:-5px" title="Return" aria-hidden="true"></span></a></td>
+                                                                <td>TE001</td>
+                                                                <td>Laptop</td>
+                                                                <td>Laptop</td>
+                                                                <td>Dell</td>
+                                                                <td>M001</td>
+                                                                <td>TEA00189</td>
+                                                                <td style="text-align:center">45.000</td>  
+                                                                <td>-</td>    
+                                                                <td style="text-align:center">1</td> 
+                                                                <td style="text-align:center">1</td> 
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal"><span class="fa fa-arrow-right" style="color:#8ba927; padding-top:8px; cursor:pointer" title="Allocate" aria-hidden="true"></span></a></td>
+                                                                <td><a href="scrap-asset.html"> <span class="fa fa-recycle" style="color:#ff0000; padding-top:8px;" title="Scrap" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Lost-asset.html"> <span class="fa fa-unlock" style="color:#808080; padding-top:8px;" title="Lost" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Return-asset.html"> <span class="fa fa-arrow-left" style="color:#ff0000; padding-top:8px;" title="Return" aria-hidden="true"></span></a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal1"> <span class="fa fa-history" style="color:#1a8df1; padding-top:8px; font-size:14pt; margin-top:-5px" title="Return" aria-hidden="true"></span></a></td>
+                                                                <td>TE001</td>
+                                                                <td>Laptop</td>
+                                                                <td>Laptop</td>
+                                                                <td>Dell</td>
+                                                                <td>M001</td>
+                                                                <td>TEA00189</td>
+                                                                <td style="text-align:center">45.000</td>  
+                                                                <td>-</td>    
+                                                                <td style="text-align:center">1</td> 
+                                                                <td style="text-align:center">1</td> 
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal"><span class="fa fa-arrow-right" style="color:#8ba927; padding-top:8px; cursor:pointer" title="Allocate" aria-hidden="true"></span></a></td>
+                                                                <td><a href="scrap-asset.html"> <span class="fa fa-recycle" style="color:#ff0000; padding-top:8px;" title="Scrap" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Lost-asset.html"> <span class="fa fa-unlock" style="color:#808080; padding-top:8px;" title="Lost" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Return-asset.html"> <span class="fa fa-arrow-left" style="color:#ff0000; padding-top:8px;" title="Return" aria-hidden="true"></span></a></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal1"> <span class="fa fa-history" style="color:#1a8df1; padding-top:8px; font-size:14pt; margin-top:-5px" title="Return" aria-hidden="true"></span></a></td>
+                                                                <td>TE001</td>
+                                                                <td>Laptop</td>
+                                                                <td>Laptop</td>
+                                                                <td>Dell</td>
+                                                                <td>M001</td>
+                                                                <td>TEA00189</td>
+                                                                <td style="text-align:center">45.000</td>  
+                                                                <td>-</td>    
+                                                                <td style="text-align:center">1</td> 
+                                                                <td style="text-align:center">1</td> 
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal"><span class="fa fa-arrow-right" style="color:#8ba927; padding-top:8px; cursor:pointer" title="Allocate" aria-hidden="true"></span></a></td>
+                                                                <td><a href="scrap-asset.html"> <span class="fa fa-recycle" style="color:#ff0000; padding-top:8px;" title="Scrap" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Lost-asset.html"> <span class="fa fa-unlock" style="color:#808080; padding-top:8px;" title="Lost" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Return-asset.html"> <span class="fa fa-arrow-left" style="color:#ff0000; padding-top:8px;" title="Return" aria-hidden="true"></span></a></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal1"> <span class="fa fa-history" style="color:#1a8df1; padding-top:8px; font-size:14pt; margin-top:-5px" title="Return" aria-hidden="true"></span></a></td>
+                                                                <td>TE001</td>
+                                                                <td>Laptop</td>
+                                                                <td>Laptop</td>
+                                                                <td>Dell</td>
+                                                                <td>M001</td>
+                                                                <td>TEA00189</td>
+                                                                <td style="text-align:center">45.000</td>  
+                                                                <td>-</td>    
+                                                                <td style="text-align:center">1</td> 
+                                                                <td style="text-align:center">1</td> 
+                                                                <td><a href="#" data-toggle="modal" data-target="#myModal"><span class="fa fa-arrow-right" style="color:#8ba927; padding-top:8px; cursor:pointer" title="Allocate" aria-hidden="true"></span></a></td>
+                                                                <td><a href="scrap-asset.html"> <span class="fa fa-recycle" style="color:#ff0000; padding-top:8px;" title="Scrap" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Lost-asset.html"> <span class="fa fa-unlock" style="color:#808080; padding-top:8px;" title="Lost" aria-hidden="true"></span></a></td>
+                                                                <td><a href="Return-asset.html"> <span class="fa fa-arrow-left" style="color:#ff0000; padding-top:8px;" title="Return" aria-hidden="true"></span></a></td>
+                                                            </tr>
+
+                                                        
+
+                                                           
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                  	                    </div>
+                                    </div>
+                                    <div id="menu1" class="tab-pane fade">
+                                      <h3>Scrapped</h3>
+                                    </div>
+                                    <div id="menu2" class="tab-pane fade">
+                                      <h3>Lost</h3>
+                                    </div>
+                                  </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                                
+                            
+                        </div>
+                </div>
+            </div>        
+</div>  
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="margin-top:70px">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#8ba927; color:#fff;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Allocate</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Employee</label>
+                       <select class="form-control">
+                            <option>Employee 1</option>
+                            <option>Employee 2</option>
+                                <option>Employee 3</option>
+                            <option>Employee 4</option>
+                        </select>
+                    </div>
+            </div>                                 
+                                
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Date</label>
+                       <input type='text' class="input" data-beatpicker="true" />
+                    </div>
+            </div> 
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Location</label>
+                        <select class="form-control">
+                            <option>OB2</option>
+                            <option>Imagine</option>
+                                <option>Windmills</option>
+                        </select>
+                    </div>
+            </div>
+                                                    
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Responsible Person</label>
+                        <select class="form-control">
+                            <option>Manjunath</option>
+                            <option>Sreejith</option>
+                                <option>Sai Kumar</option>
+                            <option>Deepak</option>
+                        </select>
+                    </div>
+            </div> 
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+<!-- Modal1 -->
+  <div class="modal fade" id="myModal1" role="dialog" style="margin-top:70px">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#8ba927; color:#fff;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">History  <span style="float: right;padding-right: 20px;">Asset ID: TE001</span></h4>
+           
+        </div>
+        <div class="modal-body">
+          <div class="row">
+                <div class="col-xs-12">
+                    <div class="table-responsive" style="width:100%;">
+                        <table  class="table table table-striped">
+                            <thead style="font-size:9pt;">
+                                <tr style="background-color:#192930; color:#fff">                                                        
+                                    <th>Transaction Type</th>
+                                    <th>Date</th>
+                                    <th>Employee</th>
+                                    <th>User</th>
+                                    <th>Remarks</th>
+                                    <th>Recovery</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Return</td>
+                                    <td>23-July-16</td>
+                                    <td>1439 Sreejith</td>    
+                                    <td>1354 Deepak</td>   
+                                    <td>Not Working</td>             
+                                    <td>0</td>
+                                </tr>
+                                                    
+                                <tr>
+                                    <td>Issue</td>
+                                    <td>29-Jun-16</td>
+                                    <td>1439 Sreejith</td>    
+                                    <td>1354 Deepak</td>     
+                                    <td>&nbsp;</td>             
+                                    <td>&nbsp;</td>             
+                                </tr>
+                                <tr>
+                                    <td>Return</td>
+                                    <td>20-Jun-16</td>
+                                    <td>1703 manjunath</td>    
+                                    <td>1354 Deepak</td>    
+                                    <td>issuing on other Machine</td>             
+                                    <td>0</td>            
+                                </tr>
+
+                                <tr>
+                                    <td>Issue</td>
+                                    <td>23-Mar-16</td>
+                                    <td>1703 Manjunath</td>    
+                                    <td>1354 Deepak</td>  
+                                    <td>&nbsp;</td>             
+                                    <td>&nbsp;</td>                      
+                                </tr>
+                                                   
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+            <!-- Modal2 -->
+  <div class="modal fade" id="myModal2" role="dialog" style="margin-top:70px">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#8ba927; color:#fff;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Allocation Kit</h4>
+           
+        </div>
+        <div class="modal-body">
+          <div class="row">
+                <div class="col-md-12">
+                    <div style="padding:7px;">
+                        <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Employee: <b>Manjunath</b></label>
+                                </div>
+                        </div>                                 
+                                
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                <label for="exampleInputEmail1">Date: <b>18-Sep-16</b></label>
+                                </div>
+                        </div> 
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                <label for="exampleInputEmail1">Location: <b>Bangalore</b></label>
+                                </div>
+                        </div>
+                                                    
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                <label for="exampleInputEmail1">Responsible Person: <b>Manjunath</b></label>
+                                </div>
+                        </div> 
+                        </div>
+                            <div class="tab-head">
+                                <div class="row" style="font-size:9pt;">
+                                    <div class="col-md-2">AssetID</div>
+                                    <div class="col-md-2">Asset Type to</div>
+                                    <div class="col-md-2">TE Serial No</div>
+                                    
+                                    <div class="col-md-2">MFG Serial No</div>
+                                    <div class="col-md-2">Brand</div>
+                                    <div class="col-md-2">Remarks</div>
+                                </div>
+                            </div>
+                        <div class="tab-body">
+                                <div class="row" style="font-size:9pt;">
+                                    <div class="col-md-2">TE001</div>
+                                    <div class="col-md-2">Laptop</div>
+                                    <div class="col-md-2">TEA00189</div>
+                                    
+                                    <div class="col-md-2">C17M783HF5E7</div>
+                                    <div class="col-md-2">Dell</div>
+                                    <div class="col-md-2"><textarea class="form-control" rows="1"></textarea></div>
+                                </div>
+                            </div>
+                        <div class="tab-body">
+                                <div class="row" style="font-size:9pt;">
+                                    <div class="col-md-2">TE001</div>
+                                    <div class="col-md-2">Laptop</div>
+                                    <div class="col-md-2">TEA00189</div>
+                                    
+                                    <div class="col-md-2">C17M783HF5E7</div>
+                                    <div class="col-md-2">Dell</div>
+                                    <div class="col-md-2"><textarea class="form-control" rows="1"></textarea></div>
+                                </div>
+                            </div>
+                        <br />
+                        <div class="row">
+                            <a href="allocate-asset.html"><div class="col-md-6"><button type="button" class="btn btn-success" style="width:100%" data-dismiss="modal">Allocate</button></div></a>
+                            <a href="#"><div class="col-md-6"><button type="button" class="btn btn-warning" style="width:100%" data-dismiss="modal">Print Asset Card <span class="glyphicon glyphicon-print" style="padding-left:15px;" aria-hidden="true"></span></button></div></a>
+                        </div>
+                    </div>
+                                        
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+ </div>
+<!-- Modal3 -->
+  <div class="modal fade" id="myModal3" role="dialog" style="margin-top:70px">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#8ba927; color:#fff;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Asset Details </h4>
+           
+        </div>
+        <div class="modal-body">
+          <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Asset ID: <b>TE001</b></label>
+                                                     </div>
+                                                </div>                                 
+                                
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                     <div class="form-group">
+                                                        <label for="exampleInputEmail1">Manufacturer Serial No: <b>	TEA00189</b></label>
+                                                      </div>
+                                                </div> 
+
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                     <div class="form-group">
+                                                        <label for="exampleInputEmail1">TE Serial No: <b>	TEA00189</b></label>
+                                                      </div>
+                                                </div>
+                                                    
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Purchase Price: <b>1,00,000</b></label>
+                                                     </div>
+                                                </div>  
+                                                    
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Brand: <b>Dell</b></label>
+                                                     </div>
+                                                </div>  
+                                                    
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">PO Date: <b>11-Apr-16</b></label>
+                                                     </div>
+                                                </div>  
+                                                    
+                                                    
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Warranty Expiry Date: <b>11-Apr-19</b></label>
+                                                     </div>
+                                                </div>  
+                                                    
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Lease Asset: <b>No</b></label>
+                                                     </div>
+                                                </div>   
+                                                    
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Asset Quantity: <b>1</b></label>
+                                                     </div>
+                                                </div>   
+                                                    
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Allocated Quantity: <b>0</b></label>
+                                                     </div>
+                                                </div>                               
+
+
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                     <div class="form-group">
+                                                        <label for="exampleInputEmail1">Useful Life: <b>4 Years</b></label>
+                                                      </div>
+                                                </div> 
+
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                     <div class="form-group">
+                                                        <label for="exampleInputEmail1">Salvage Value: <b>	20,000</b></label>
+                                                      </div>
+                                                </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                     <div class="form-group">
+                                                        <label for="exampleInputEmail1">Asset Description:</label>
+                                                         <div> <b>High end laptop for designers</b></div>
+
+                                                      </div>
+                                                </div>
+                                                </div>
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+         
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+	
+    
+</script>
+        <!--<script>$(document.body).on('click', '.dropdown-menu li', function (event) {
+
+    var $target = $(event.currentTarget);
+
+    $target.closest('.btn-group')
+       .find('[data-bind="label"]').text($target.text())
+          .end()
+       .children('.dropdown-toggle').dropdown('toggle');
+
+    return false;
+
+});</script>-->
+
+</body>
+</html>

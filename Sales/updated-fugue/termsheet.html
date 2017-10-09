@@ -1,0 +1,3057 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--  -->
+<link rel="shortcut icon" href="images/telogomin.jpg" />
+<title>Details</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://summernote.org/bower_components/summernote/dist/summernote.css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href='css/scheduler.min.css' rel='stylesheet' />
+<link href='css/fullcalendar.css' rel='stylesheet' />
+<link href="css/lead/monthly.css" rel="stylesheet" />
+<link href="css/lead/print.css" rel="stylesheet" media="print" />
+<link href="css/datepicker.css" rel="stylesheet" />
+<link href="css/lead/termsheet-style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src='js/moment.min.js'></script>
+<script type="text/javascript" src="http://summernote.org/bower_components/summernote/dist/summernote.js"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src='js/fullcalendar.min.js'></script>
+<script type="text/javascript" src='js/scheduler.min.js'></script>
+<script type="text/javascript" src="js/lead/monthly.js"></script>
+<script src="js/lead/tableHeadFixer.js"></script>
+<script type="text/javascript" src="js/jquery.ddslick.min.js"></script>
+
+<script type="text/javascript" src="js/lead/termsheet-script.js"></script>
+</head>
+<body style="background-color:#eae4dc !important; color:#000 !important;">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+     <header>
+		<div class="gr-clr"></div>
+            <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+						   <li><a href="dashboard.html">Dashboard </a></li>
+  						    <li><a href="inventory.html">Portfolio <span class="sr-only">(current)</span> </a></li>
+							<li ><a href="lead-data-view.html">Lead </a></li>
+                             <li class="active"><a href="termsheet.html">Sales Tracker<span class="sr-only">(current)</span></a></li>
+							
+							<li><a href="collections.html">Collections </a></li>
+							<li><a href="invoices.html">Invoices </a></li>
+							<li><a href="#">Tracking </a></li>
+							<li><a href="#">Business Partner </a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Change Order</a></li>
+                                    <li><a href="#">Cancellation</a></li>
+                                    <li><a href="#">Transfer</a></li>
+									<li><a href="#">Customisation</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Products</a></li>
+                                     <li><a href="#">Business Segment</a></li>
+                                      <li><a href="#">Specification</a></li>
+									  <li><a href="#">T&amp;C</a></li>
+									  <li><a href="#">Schedule</a></li>
+									  <li><a href="#">Rules</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">User Management</a></li>
+                                    <li><a href="#">Roles Management</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                       <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+	</header>
+<!--header-->
+<!--Wrapper-->
+	<div class="container wrapper" style="background: #fff;">
+		<div class="row">
+			<section>
+				<div style="margin: 70px auto 0 auto;">
+					<div class="title-panel">Sales Tracker </div>
+						<!-- Tabs start -->
+						 <div style="width:98%; margin:0 auto;">
+						  <div class="projlisttabs">
+    <ul class="nav nav-tabs" id="tabs">
+		<li class="active"><a href="#tsdraft" data-toggle="tab">Draft</a></li>
+        <li ><a href="#tspendingapproval" data-toggle="tab">Pending Approval</a></li>
+		<li><a href="#tsapproved" data-toggle="tab">Approved</a></li>
+			<li><a href="#tsapproved" data-toggle="tab">EMD + Signed</a></li>
+				<li><a href="#tsapproved" data-toggle="tab">Closure</a></li>
+        	<li><a href="#tsapproved" data-toggle="tab">Closed</a></li>
+    </ul>
+    <!-- Tabs end -->
+	
+	<div class="tab-content">
+       <!-- Inventory -->
+        <div class="tab-pane active in fade" id="tsdraft">
+			<div class="col-md-12" style="padding:0; margin-top:10px;"> 
+				<div class="leaddashboardmain">
+					<div class="col-md-12 padnone">
+					<div class="col-md-3 padnone">
+					<div style="float:left; margin:10px 5px; width:auto">
+					<button class="btn btn-sm btn-primary" style="margin-right:10px">Projects</button><button class="btn btn-sm btn-primary"  style="margin-right:10px"> 
+					sales Consultant</button><button class="btn btn-sm btn-primary">Staus</button></div>
+					</div>
+					<div class="col-md-2 padnone">
+					 <div class="form-group" style="margin:10px; ">
+                                  
+                                    <select class="form-control" style="width:100%;">
+                                        <option value="0" selected>1</option>
+                                        <option value="1">Featured</option>
+                                        <option value="2">Most popular</option>
+                                        <option value="3">Top rated</option>
+                                        <option value="4">Most commented</option>
+                                    </select>
+                                  </div>
+								  </div>
+								  <div class="col-md-7 padnone">
+					<div class="monboxcontainer pull-right">
+					<div class="mon-box-all">
+								All
+								</div>
+					<div class="mon-box">
+								Jan<br>2016
+								</div>
+								<div class=" mon-box">
+								Feb<br>2016
+								</div>
+								<div class="mon-box">
+								Mar<br>2016
+								</div>
+								<div class="mon-box">
+								Apr<br>2016
+								</div>
+								<div class=" mon-box">
+								May<br>2016
+								</div>
+								<div class="mon-box">
+								Jun<br>2016
+								</div>
+								<div class="mon-box">
+								Jul<br>2016
+								</div>
+								<div class=" mon-box">
+								Aug<br>2016
+								</div>
+								<div class="mon-box">
+								Sep<br>2016
+								</div>
+								<div class="mon-box">
+								Oct<br>2016
+								</div>
+								<div class=" mon-box">
+								Nov<br>2016
+								</div>
+								<div class="mon-box">
+								Dec<br>2016
+								</div>
+								</div>
+					</div>
+				   </div>
+				   </div>
+				   <div class="leaddashboardmain" style="margin-bottom:30px;">
+				 
+						
+						<div class="col-md-12" style="padding:0; margin-top:6px;">
+						
+						<div id="parenttable">
+						<table id="fixTable" class="table-bordered tstable">
+						<thead>
+						<tr>
+						<th width="3%"></th>
+						<th width="25%"></th>
+						<th width="1%"></th>
+						<th width="4%" class="txtalignright">Area</th>
+						<th width="4%" class="txtalignright">Value</th>
+						<th width="4%" class="txtalignright">Received</th>
+						<th width="5%" class="txtalignright">Balance</th>
+							<th width="1%"></th>
+						<th width="8%" class="txtalignright"> Due Now</th>
+						<th width="8%" class="txtalignright">Cmltive Due</th>
+						<th width="4%" class="txtalignright">EMD</th>
+						<th width="4%" class="txtalignright">Advance</th>
+						<th width="4%" class="txtalignright">Foundations</th>
+						<th width="4%" class="txtalignright">1st Slab</th>
+						<th width="4%" class="txtalignright">5th Slab</th>
+						<th width="6%" class="txtalignright">10th Slab</th>
+						<th width="4%" class="txtalignright">15th Slab</th>
+						<th width="6%" class="txtalignright">20th Slab</th>
+						<th width="4%" class="txtalignright">-</th>
+						<th width="4%" class="txtalignright">-</th>
+						<th width="4%" class="txtalignright">Customisation</th>
+						<th width="10%" class="txtalignright">Internal Plaster</th>
+						<th width="4%" class="txtalignright">Flooring</th>
+						<th width="4%" class="txtalignright">Handover</th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr class="rowgap">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<!-- Learning to Fly parent start-->
+						<tr class="parent-row has-children">
+
+						<td class="txtaligncenter bordercell">42</td>
+						<td class="projecttitle bgcolor_63b3de">Learning to Fly</td>
+						<td></td>
+						<td class="bordercell txtalignright">95,571</td>
+						<td class="bordercell edittabcont txtalignright">119.52</td>
+						<td class="bordercell txtalignright">28.77</td>
+						<td class="bordercell txtalignright">90.65</td>
+						<td></td>
+						<td class="bordercell edittabcont txtalignright">9.79</td>
+						<td class="bordercell txtalignright">38.56</td>
+						<td class="txtalignright">17.37</td>
+						<td class="txtalignright">18.88</td>
+						<td class="txtalignright">9.27</td>
+						<td class="txtalignright"> 8.31</td>
+						<td class="txtalignright"> 9.66</td>
+						<td class="txtalignright"> 10.48</td>
+						<td class="txtalignright"> 12.40</td>
+						<td class="txtalignright"> 10.51</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 12.41 
+</td>
+						<td class="txtalignright"> 1.11 
+</td>
+						<td class="txtalignright"> 7.02 
+</td>
+						
+						</tr>
+							<!-- Learning to Fly parent end -->
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<!-- Learning to Fly child 1 start-->
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr data-url="salestracker-soa.html" class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						</tr>
+							<!-- Learning to Fly child 1 end -->
+					
+							<tr class="child-child-row" style="display:none">
+					<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+							<!-- Learning to Fly child 2 Start -->
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+							<!-- Learning to Fly child 2 End -->
+							<tr class="child-child-row" style="display:none">
+					<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+							<!-- Learning to Fly child 2 sub 1 Start -->
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						<!-- Learning to Fly child 2 sub 1 End						-->
+						
+					<tr class="child-child-row" style="display:none">
+					<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<!-- Learning to Fly child 2 sub 2 Start -->
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						<!-- Learning to Fly child 2 sub 2 End						-->
+						
+					<tr class="rowgap">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="parent-row has-children">
+
+						<td class="txtaligncenter bordercell">42</td>
+						<td class="projecttitle bgcolor_c84c28">A Few Honest Words</td>
+						<td></td>
+						<td class="bordercell txtalignright">95,571</td>
+						<td class="bordercell edittabcont txtalignright">119.52</td>
+						<td class="bordercell txtalignright">28.77</td>
+						<td class="bordercell txtalignright">90.65</td>
+						<td></td>
+						<td class="bordercell edittabcont txtalignright">9.79</td>
+						<td class="bordercell txtalignright">38.56</td>
+						<td class="txtalignright">17.37</td>
+						<td class="txtalignright">18.88</td>
+						<td class="txtalignright">9.27</td>
+						<td class="txtalignright"> 8.31</td>
+						<td class="txtalignright"> 9.66</td>
+						<td class="txtalignright"> 10.48</td>
+						<td class="txtalignright"> 12.40</td>
+						<td class="txtalignright"> 10.51</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 12.41</td>
+						<td class="txtalignright"> 1.11 </td>
+						<td class="txtalignright"> 7.02 </td>
+						</tr>
+							<tr class="rowgap">
+					<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+							<tr class="child-child-row" style="display:none">
+					<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+							<tr class="parent-row has-children">
+
+						<td class="txtaligncenter bordercell">42</td>
+						<td class="projecttitle bgcolor_a7a9ac">After the Rain</td>
+						<td></td>
+						<td class="bordercell txtalignright">95,571</td>
+						<td class="bordercell edittabcont txtalignright">119.52</td>
+						<td class="bordercell txtalignright">28.77</td>
+						<td class="bordercell txtalignright">90.65</td>
+						<td></td>
+						<td class="bordercell edittabcont txtalignright">9.79</td>
+						<td class="bordercell txtalignright">38.56</td>
+						<td class="txtalignright">17.37</td>
+						<td class="txtalignright">18.88</td>
+						<td class="txtalignright">9.27</td>
+						<td class="txtalignright"> 8.31</td>
+						<td class="txtalignright"> 9.66</td>
+						<td class="txtalignright"> 10.48</td>
+						<td class="txtalignright"> 12.40</td>
+						<td class="txtalignright"> 10.51</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 12.41</td>
+						<td class="txtalignright"> 1.11 </td>
+						<td class="txtalignright"> 7.02 </td>
+						</tr>
+							<tr class="rowgap">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+						
+							<tr class="child-child-row" style="display:none">
+					<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+					
+						<tr class="parent-row has-children">
+
+						<td class="txtaligncenter bordercell">42</td>
+						<td class="projecttitle bgcolor_00b1ca">Windmills of Your Mind</td>
+						<td></td>
+						<td class="bordercell txtalignright">95,571</td>
+						<td class="bordercell edittabcont txtalignright">119.52</td>
+						<td class="bordercell txtalignright">28.77</td>
+						<td class="bordercell txtalignright">90.65</td>
+						<td></td>
+						<td class="bordercell edittabcont txtalignright">9.79</td>
+						<td class="bordercell txtalignright">38.56</td>
+						<td class="txtalignright">17.37</td>
+						<td class="txtalignright">18.88</td>
+						<td class="txtalignright">9.27</td>
+						<td class="txtalignright"> 8.31</td>
+						<td class="txtalignright"> 9.66</td>
+						<td class="txtalignright"> 10.48</td>
+						<td class="txtalignright"> 12.40</td>
+						<td class="txtalignright"> 10.51</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 12.41</td>
+						<td class="txtalignright"> 1.11 </td>
+						<td class="txtalignright"> 7.02 </td>
+						</tr>
+							<tr class="rowgap">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						
+						
+							<tr class="parent-row has-children">
+
+						<td class="txtaligncenter bordercell">42</td>
+						<td class="projecttitle bgcolor_4e291b">Songs from the wood</td>
+						<td></td>
+						<td class="bordercell txtalignright">95,571</td>
+						<td class="bordercell edittabcont txtalignright">119.52</td>
+						<td class="bordercell txtalignright">28.77</td>
+						<td class="bordercell txtalignright">90.65</td>
+						<td></td>
+						<td class="bordercell edittabcont txtalignright">9.79</td>
+						<td class="bordercell txtalignright">38.56</td>
+						<td class="txtalignright">17.37</td>
+						<td class="txtalignright">18.88</td>
+						<td class="txtalignright">9.27</td>
+						<td class="txtalignright"> 8.31</td>
+						<td class="txtalignright"> 9.66</td>
+						<td class="txtalignright"> 10.48</td>
+						<td class="txtalignright"> 12.40</td>
+						<td class="txtalignright"> 10.51</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 12.41</td>
+						<td class="txtalignright"> 1.11 </td>
+						<td class="txtalignright"> 7.02 </td>
+						</tr>
+							<tr class="rowgap">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+						
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+				
+						<tr class="parent-row has-children">
+
+						<td class="txtaligncenter bordercell">42</td>
+						<td class="projecttitle bgcolor_9b2827">pursuit of a radical rhapsody</td>
+						<td></td>
+						<td class="bordercell txtalignright">95,571</td>
+						<td class="bordercell edittabcont txtalignright">119.52</td>
+						<td class="bordercell txtalignright">28.77</td>
+						<td class="bordercell txtalignright">90.65</td>
+						<td></td>
+						<td class="bordercell edittabcont txtalignright">9.79</td>
+						<td class="bordercell txtalignright">38.56</td>
+						<td class="txtalignright">17.37</td>
+						<td class="txtalignright">18.88</td>
+						<td class="txtalignright">9.27</td>
+						<td class="txtalignright"> 8.31</td>
+						<td class="txtalignright"> 9.66</td>
+						<td class="txtalignright"> 10.48</td>
+						<td class="txtalignright"> 12.40</td>
+						<td class="txtalignright"> 10.51</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 12.41</td>
+						<td class="txtalignright"> 1.11 </td>
+						<td class="txtalignright"> 7.02 </td>
+						</tr>
+							<tr class="rowgap">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+						
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+							<tr class="parent-row has-children">
+
+						<td class="txtaligncenter bordercell">42</td>
+						<td class="projecttitle bgcolor_99ca3c">The Magical Fareway tree</td>
+						<td></td>
+						<td class="bordercell txtalignright">95,571</td>
+						<td class="bordercell edittabcont txtalignright">119.52</td>
+						<td class="bordercell txtalignright">28.77</td>
+						<td class="bordercell txtalignright">90.65</td>
+						<td></td>
+						<td class="bordercell edittabcont txtalignright">9.79</td>
+						<td class="bordercell txtalignright">38.56</td>
+						<td class="txtalignright">17.37</td>
+						<td class="txtalignright">18.88</td>
+						<td class="txtalignright">9.27</td>
+						<td class="txtalignright"> 8.31</td>
+						<td class="txtalignright"> 9.66</td>
+						<td class="txtalignright"> 10.48</td>
+						<td class="txtalignright"> 12.40</td>
+						<td class="txtalignright"> 10.51</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 12.41</td>
+						<td class="txtalignright"> 1.11 </td>
+						<td class="txtalignright"> 7.02 </td>
+						</tr>
+							<tr class="rowgap">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+						
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+					
+						<tr class="parent-row has-children">
+
+						<td class="txtaligncenter bordercell">42</td>
+						<td class="projecttitle bgcolor_92946b">The meadow dance</td>
+						<td></td>
+						<td class="bordercell txtalignright">95,571</td>
+						<td class="bordercell edittabcont txtalignright">119.52</td>
+						<td class="bordercell txtalignright">28.77</td>
+						<td class="bordercell txtalignright">90.65</td>
+						<td></td>
+						<td class="bordercell edittabcont txtalignright">9.79</td>
+						<td class="bordercell txtalignright">38.56</td>
+						<td class="txtalignright">17.37</td>
+						<td class="txtalignright">18.88</td>
+						<td class="txtalignright">9.27</td>
+						<td class="txtalignright"> 8.31</td>
+						<td class="txtalignright"> 9.66</td>
+						<td class="txtalignright"> 10.48</td>
+						<td class="txtalignright"> 12.40</td>
+						<td class="txtalignright"> 10.51</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 12.41</td>
+						<td class="txtalignright"> 1.11 </td>
+						<td class="txtalignright"> 7.02 </td>
+						</tr>
+							<tr class="rowgap">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+							<tr class="parent-row has-children">
+
+						<td class="txtaligncenter bordercell">42</td>
+						<td class="projecttitle bgcolor_435401">van-gogh's garden</td>
+						<td></td>
+						<td class="bordercell txtalignright">95,571</td>
+						<td class="bordercell edittabcont txtalignright">119.52</td>
+						<td class="bordercell txtalignright">28.77</td>
+						<td class="bordercell txtalignright">90.65</td>
+						<td></td>
+						<td class="bordercell edittabcont txtalignright">9.79</td>
+						<td class="bordercell txtalignright">38.56</td>
+						<td class="txtalignright">17.37</td>
+						<td class="txtalignright">18.88</td>
+						<td class="txtalignright">9.27</td>
+						<td class="txtalignright"> 8.31</td>
+						<td class="txtalignright"> 9.66</td>
+						<td class="txtalignright"> 10.48</td>
+						<td class="txtalignright"> 12.40</td>
+						<td class="txtalignright"> 10.51</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 12.41</td>
+						<td class="txtalignright"> 1.11 </td>
+						<td class="txtalignright"> 7.02 </td>
+						</tr>
+							<tr class="rowgap">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="blackbg child-row has-children">
+						<td class="txtaligncenter">15</td>
+						<td class="projectsubtitle">Tower 1 | C20</td>
+						<td></td>
+						<td class="txtalignright">30,302</td>
+						<td class="edittabcont txtalignright">37.16</td>
+						<td class="txtalignright">13.53</td>
+						<td class="txtalignright">23.63</td>
+						<td></td>
+						<td class="edittabcont txtalignright">1.97</td>
+						<td class="txtalignright">15.50</td>
+						<td class="txtalignright">8.37</td>
+						<td class="txtalignright">4.82</td>
+						<td class="txtalignright">2.94</td>
+						<td class="txtalignright"> 2.17</td>
+						<td class="txtalignright"> 2.21</td>
+						<td class="txtalignright"> 2.79</td>
+						<td class="txtalignright">2.25</td>
+						<td class="txtalignright">2.69</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright">-</td>
+						<td class="txtalignright"> 4.47</td>
+						<td class="txtalignright"> 0.11</td>
+						<td class="txtalignright"> 1.91</td>
+						</tr>
+							<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+						<tr class="child-child-row" style="display:none">
+						<td class="txtaligncenter">1011</td>
+						<td class="txtalignleft">Srivasta Kumar</td>
+						<td></td>
+						<td class="txtalignright">2,162</td>
+						<td class="txtalignright">270,81,300</td>
+						<td class="txtalignright">75,15,583</td>
+						<td class="txtalignright">195,65,717</td>
+						<td></td>
+						<td class="edittabcont txtalignright">(15,583)</td>
+						<td class="txtalignright">75,00,000</td>
+						
+						<td class="txtalignright">25,00,000</td>
+						<td class="txtalignright">5000000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">2600000</td>
+						<td class="txtalignright"> </td>
+						<td class="txtalignright">1382368</td>
+						</tr>
+						
+						<tr class="child-child-row" style="display:none">
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						<td class="height5px"></td>
+						</tr>
+					
+						
+						</tbody>
+						</table>
+						</div>
+						</div>
+					
+				   
+				   
+				
+				</div>
+	
+			</div>
+		</div>
+	<!-- Inventory -->
+	  <!-- Inventory -->
+        <div class="tab-pane" id="tspendingapproval">
+          <div class="col-md-12" style="padding:0; margin-top:10px;"> 
+			
+		  </div>
+	</div>
+	<!-- Inventory -->
+	</div>
+</div></div>
+				</div>				
+			</section>
+		</div>
+
+	</div>
+</div>
+
+<!-- Lead List view popup container starts -->
+<div id="pop1_content" class="popSourceBlock">
+  
+    <div class="popContent">
+      	 <div class="popupdet">
+								   <div class="panel panel-default">
+     <div class="panel-heading">Planned</div>
+	 <div class="panel-body">
+	 <ul class="plannedlist">
+	 <li>	 <div class="planned-details">	 
+	 <span class="planned-details-icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+	 <span class="planned-details-info">
+	  <span class="checkbox checkbox-info checkbox-circle">
+                        <input id="checkbox8" class="styled" type="checkbox">
+                        <label for="checkbox8">
+                           <h2> Call</h2>
+						   <span class="extra">due in 15 days - Manjunath</span>
+                        </label>
+      </span>
+	  </span>
+	</div></li>
+	<li>	 <div class="planned-details">	 
+	 <span class="planned-details-icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+	 <span class="planned-details-info">
+	  <span class="checkbox checkbox-info checkbox-circle">
+                        <input id="checkbox8" class="styled" type="checkbox">
+                        <label for="checkbox8">
+                           <h2> Call</h2>
+						   <span class="extra">due in 15 days - Manjunath</span>
+                        </label>
+      </span>
+	  </span>
+	</div></li>
+	 </ul>
+
+	 </div>
+	 </div>
+	 <div class="panel-footer" style="text-align:center"><a id="#leadfollow" data-toggle="modal" data-target="#LeadFollowupsModalBox">+ Schedule an activity</a></div>
+    </div>
+    </div>
+</div>
+<!-- Lead List view popup container End -->
+
+<!-- Lead List view popup container starts -->
+<div id="pop2_content" class="popSourceBlock">
+    
+    <div class="popContent">
+     							 <div class="popupdet">
+								   <div class="panel panel-default">
+     <div class="panel-heading">Planned</div>
+	 <div class="panel-body">
+	 <div class="planned-details">	 
+	 <span class="planned-details-icon"><img src="images/meeting.png" /></span>
+	 <span class="planned-details-info">
+	  <span class="checkbox checkbox-info checkbox-circle">
+                        <input id="checkbox8" class="styled" type="checkbox">
+                        <label for="checkbox8">
+                           <h2> Meeting</h2>
+						   <span class="extra">due in 15 days - Manjunath</span>
+                        </label>
+      </span>
+	  </span>
+	</div>
+	 </div>
+	 </div>
+	 <div class="panel-footer" style="text-align:center"><a data-toggle="modal" data-target="#LeadFollowupsModalBox">+ Schedule an activity</a></div>
+    </div>
+	
+    </div>
+</div>
+<!-- Lead List view popup container End -->
+				
+	
+ <!-- Lead Notes Modal Starts -->
+<div class="modal fade leadnotemodal" id="LeadNotesModalBox" style="margin-top:60px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="color:#fff">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Notes</h4>
+      </div>
+      <div class="modal-body">
+          <div style="margin-top:10px">
+	<div class="addnote"><p>Add Notes sections</p></div>
+	<div class="clearfix"></div>
+	<div class="noteslist">
+  <div class="noteslistentry">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu nisi consectetur, aliquam ipsum a, faucibus leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque et justo id orci aliquet aliquam. Praesent eu maximus magna, a pulvinar neque. Sed vitae quam libero. Donec ante nisl, posuere non rhoncus a, porta id tellus. Quisque posuere magna semper dictum dapibus. Mauris ornare nulla quis sollicitudin hendrerit.</p>
+	<div class="notecreaterdate"><p>Manju 09-May-16</p></div>
+  </div>
+   <div class="noteslistentry">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu nisi consectetur, aliquam ipsum a, faucibus leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque et justo id orci aliquet aliquam. Praesent eu maximus magna, a pulvinar neque. Sed vitae quam libero. Donec ante nisl, posuere non rhoncus a, porta id tellus. Quisque posuere magna semper dictum dapibus. Mauris ornare nulla quis sollicitudin hendrerit.</p>
+	<div class="notecreaterdate"><p>Manju 09-May-16</p></div>
+  </div>
+   <div class="noteslistentry">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu nisi consectetur, aliquam ipsum a, faucibus leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque et justo id orci aliquet aliquam. Praesent eu maximus magna, a pulvinar neque. Sed vitae quam libero. Donec ante nisl, posuere non rhoncus a, porta id tellus. Quisque posuere magna semper dictum dapibus. Mauris ornare nulla quis sollicitudin hendrerit.</p>
+	<div class="notecreaterdate"><p>Manju 09-May-16</p></div>
+  </div>
+  </div>
+  
+    </div>
+<div class="clearfix"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Lead Notes Modal End -->	
+	<!-- Lead Followups Modal Starts -->
+<div class="modal fade leadfollowupsmodal" id="LeadFollowupsModalBox" style="margin-top:60px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document" style="width:900px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="color:#fff">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Followups</h4>
+      </div>
+      <div class="modal-body">
+       <div class="col-md-12" style="padding:0; margin-top:10px;">
+          			<div class="col-md-6" style="padding:0 3px; border:1px solid #ccc;">
+          			<div id='followupcalendar'></div>
+          			</div>
+          			<div class="col-md-6" style="padding:0 3px;">
+          			<div class="col-md-12"  style="padding:0px 3px;">
+          			<div class="col-md-10" style="padding:0 3px;">
+          			 <div class="form-group followupstext" style="margin:0;">
+  
+   <input class="form-control followups-selct" id="Call" placeholder="Call" name="followups" type="text"/>
+
+  
+ </div>
+ </div>
+ <div class="col-md-2" style="padding:0 3px;">
+  <select id="demo-htmlselect">
+        <option value="Call" data-imagesrc="images/call.png" style="width:30px;">Call</option>
+        <option value="Meeting" data-imagesrc="images/meeting.png" style="width:30px;">Meeting</option>
+        <option value="Task" data-imagesrc="images/task.png" style="width:30px;">Task</option>
+        <option value="Deadline" data-imagesrc="images/flag.png" style="width:30px;">Deadline</option>
+        <option value="Email" data-imagesrc="images/send.png" style="width:30px;">Email</option>
+        <option value="Site Visit" data-imagesrc="images/sitevisit.png" style="width:30px;">Site Visit</option>
+       
+    </select>
+</div>
+
+
+</div>
+<div class="col-md-12" style="padding:0px 0px 0 6px;">
+          			<div class="col-md-4"  style="padding:5px 3px;">
+ <div class="form-group datecontl">
+	<label class="control-label " for="date">
+  Date
+  </label>
+        <div class="usericondate">
+           <input id="followupdatepicker"  class="form-control date-pick" placeholder="Date" type="text" >
+           <span class="clear"></span>
+        </div>
+	
+</div>
+
+
+  
+ </div>	
+<div class="col-md-4"  style="padding:5px  3px; ">
+<div class="form-group datecontl">
+	<label class="control-label " for="date">
+ Time
+  </label>
+         <div class="usericontime">
+          <select id="time-select">
+          <option value="" disabled selected>Time</option> <option>12:00 AM</option>
+<option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option>
+<option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option>
+       
+    </select>
+        <span class="clear"></span>
+        </div>
+	
+</div> 
+
+
+  
+ </div>	
+<div class="col-md-4"  style="padding:5px 3px;">
+<div class="form-group datecontl">
+	<label class="control-label " for="date">
+ Duration
+  </label>
+       <div class="usericondur">
+          <select id="dur-select">
+           <option value="" disabled selected>duration</option>
+       <option>12:00 AM</option>
+<option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option>
+<option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option>
+       
+    </select>
+      <span class="clear"></span>
+        </div>
+	
+</div>
+
+
+  
+ </div>	
+
+ </div>
+<div class="clearfix"></div>
+<div class="col-md-12 folupnote" style="padding:5px 0 5px 10px;">
+<div class="followupnote">
+   <p>Add Notes sections</p>
+
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="col-md-12" style="padding:5px 0 5px 10px;">
+   </div>
+
+</div>
+
+ <div class="panel pull-right" style="margin-top:10px;"><button class="btn btn-sm btn-default">Close</button>  <button class="btn btn-sm btn-success">Add</button></div>
+</div>
+	
+
+
+      </div>
+		<div class="clearfix"></div>
+	 <div class="modal-footer">
+    
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>	
+<!-- Lead Followups Modal End -->
+
+
+
+</body>
+
+</html>
+
+
+
+
+

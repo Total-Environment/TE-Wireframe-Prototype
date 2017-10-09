@@ -1,0 +1,1343 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<title>Fugue</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/tefont.css" rel="stylesheet" />
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/BeatPicker.min.css" rel="stylesheet" />
+    <script src="js/BeatPicker.min.js"></script>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+    <style>
+        .btn-default {
+    border-color: #fff;
+}.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+        .navbar-form {
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body style="background-color:#eae4dc">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+<header id="headerdiv">
+</header>
+<!--header-->
+<!--Wrapper-->
+<div class="container-fluid">
+    <div class="main-body-space">
+        <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Resume</li>
+            </ol>
+        <div class="head-panel-grey"><h4>Resume</h4></div>
+        
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Title</label>
+                    <input type="email" class="form-control" id="Email2" placeholder="Title">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">First Name</label>
+                    <input type="email" class="form-control" id="Email3" >
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Middle Name</label>
+                    <input type="email" class="form-control" id="Email4" >
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Last Name</label>
+                    <input type="email" class="form-control" id="Email5" >
+                </div>
+            </div>
+        </div>
+
+        <div class="row margin10">            
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Date of Birth</label>
+                        <input type='text' class="input" data-beatpicker="true" />
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Age</label>
+                    <input type="email" class="form-control" id="Email1" >
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Gender</label>
+                    <select class="form-control">
+                                      <option>Male</option>
+                                      <option>Female</option>
+                                    </select>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Marital Status</label>
+                    <select class="form-control">
+                                      <option>Single</option>
+                                      <option>Married</option>
+                                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row margin10"> 
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Number of Children</label>
+                    <select class="form-control">
+                                      <option>01</option>
+                                      <option>02</option>
+                                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Mobile Phone</label>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><input type="email" class="form-control" id="Email18" placeholder="+91" style="padding:10px 0 !important"></div>
+                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"><input type="email" class="form-control" id="Email6" placeholder="Mobile Phone"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Tel No</label>
+                    <input type="email" class="form-control" id="Email7" >
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">E-mail</label>
+                    <input type="email" class="form-control" id="Email13" >
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Alternate E-mail</label>
+                    <input type="email" class="form-control" id="Email15" >
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Current/Last Employer</label>
+                    <input type="email" class="form-control" id="Email19" >
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Current/Last designation</label>
+                    <input type="email" class="form-control" id="Email24" >
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Team Size Reporting To You</label>
+                    <input type="email" class="form-control" id="Email25" >
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Current/Last Annual CTC</label>
+                    <input type="email" class="form-control" id="Email34" >
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Fixed Component</label>
+                    <input type="email" class="form-control" id="Email35" >
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Variable Component</label>
+                    <input type="email" class="form-control" id="Email36" >
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Present Location</label>
+                    <input type="email" class="form-control" id="Email40" >
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="background-color:#fff;">
+                <div class="form-group">
+                    <div for="exampleInputEmail1" >Willing to relocate</div>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="Radio3" value="option1"> Yes
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="Radio4" value="option2"> No
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Primary Qualification</label>
+                    <input type="email" class="form-control" id="Email41" >
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Specialization</label>
+                    <input type="email" class="form-control" id="Email43" >
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nationality</label>
+                    <input type="email" class="form-control" id="Email44" >
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Resident Status</label>
+                    <select class="form-control">
+                        <option>Resident</option>
+                        <option>Non Resident</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color:#fff; padding:5px 10px; font-weight:bold; color:#ff6a00; border-radius:3px; margin:0 0 10px 0">Total Work ex</div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Years</label>
+                    <select class="form-control">
+                        <option>Select</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>more then 10</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Months</label>
+                    <select class="form-control">
+                        <option>Select</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color:#fff; padding:5px 10px; font-weight:bold; color:#ff6a00; border-radius:3px; margin:0 0 10px 0">Relevant Experience Range</div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Years</label>
+                    <select class="form-control">
+                        <option>Select</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>more then 10</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Months</label>
+                    <select class="form-control">
+                        <option>Select</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <div class="row margin10">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Location Preference if any</label>
+                    <input type="email" class="form-control" id="Email12" placeholder="">
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                <label for="exampleInputFile">Upload Photo</label>
+                <input type="file" id="exampleInputFile">
+              </div>
+            </div>
+
+            
+        </div>
+        <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+        <hr />
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">        
+                   Identification Information
+                    <i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+                </h4>
+              </a>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" style="padding:15px;">              
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Driving License No</label>
+                            <input type="email" class="form-control" id="Email8" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Aadhar No</label>
+                            <input type="email" class="form-control" id="Email9" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">PAN No</label>
+                            <input type="email" class="form-control" id="Email10" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Voter ID No</label>
+                            <input type="email" class="form-control" id="Email11" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <div for="exampleInputEmail1" >Do you hold a valid Passport?</div>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="Radio1" value="option1"> Yes
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="Radio2" value="option2"> No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">PassportNo</label>
+                            <input type="email" class="form-control" id="Email14" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Passport Validity Till</label>
+                            <input type="email" class="form-control" id="Email16" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Place Of Issue</label>
+                            <input type="email" class="form-control" id="Email17" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                    <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">
+                        Educational Qualifications
+                    <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" style="padding:15px;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Type</label>
+                            <input type="email" class="form-control" id="Email20" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Course</label>
+                            <input type="email" class="form-control" id="Email21" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Major Discipline</label>
+                            <input type="email" class="form-control" id="Email22" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Instituition</label>
+                            <input type="email" class="form-control" id="Email23" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Location</label>
+                            <input type="email" class="form-control" id="Email47" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Education Mode</label>
+                            <select class="form-control">
+                                      <option>Full Time</option>
+                                      <option>Part Time</option>
+                                      <option>Distance</option>
+                                    </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Start Year and Month</label>
+                            <input type="email" class="form-control" id="Email45" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">End Year and Month</label>
+                            <input type="email" class="form-control" id="Email46" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Percentage</label>
+                            <input type="email" class="form-control" id="Email42" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                       <div class="form-group">
+                            <label for="exampleInputEmail1">Grade</label>
+                            <input type="email" class="form-control" id="Email50" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">CGPA</label>
+                            <input type="email" class="form-control" id="Email48" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <div for="exampleInputEmail1" >Honours</div>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="Radio5" value="option1"> Yes
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="Radio6" value="option2"> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="link1" style="text-align:right;"><a href="#"><i class="fa fa-plus-circle" style="color:#80b709; font-size:20pt;" title="Add"></i> </a></div>
+                <hr />
+                <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+            </div>
+          </div>
+          
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                    <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">
+                 
+                    Work Experience
+                    <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" style="padding:15px;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Company</label>
+                            <input type="email" class="form-control" id="Email26" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Present Company</label>
+                            <input type="email" class="form-control" id="Email27" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Date of Joining</label>
+                            <input type="email" class="form-control" id="Email28" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Last Working Day</label>
+                            <input type="email" class="form-control" id="Email29" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Designation at Joining</label>
+                            <input type="email" class="form-control" id="Email30" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Designation at Relieving</label>
+                            <input type="email" class="form-control" id="Email52" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Last Drawn CTC</label>
+                            <input type="email" class="form-control" id="Email31" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Reason for Leaving</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="link1" style="text-align:right;"><a href="#"><i class="fa fa-plus-circle" style="color:#80b709; font-size:20pt;" title="Add"></i> </a></div>
+                <hr />
+                <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+            </div>
+
+
+          </div>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                    <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">                 
+                    Skills and Competencies
+                    <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse" style="padding:15px;">
+              
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Company</label>
+                            <select class="form-control">
+                                <option>Lorem ispum</option>
+                                <option>Lorem ispum</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Competency Level</label>
+                            <select class="form-control">
+                                <option>Lorem ispum</option>
+                                <option>Lorem ispum</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Competency</label>
+                            <select class="form-control">
+                                <option>Lorem ispum</option>
+                                <option>Lorem ispum</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Competency Level</label>
+                            <select class="form-control">
+                                <option>Lorem ispum</option>
+                                <option>Lorem ispum</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="link1" style="text-align:right;"><a href="#"><i class="fa fa-plus-circle" style="color:#80b709; font-size:20pt;" title="Add"></i> </a></div>
+                
+                <hr />
+                <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+            </div>                
+          </div>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                    <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">                 
+                    Family Details
+                    <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse" style="padding:15px;">
+              
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="email" class="form-control" id="Email39" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">DOB</label>
+                            <input type="email" class="form-control" id="Email49" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Relationship with You</label>
+                            <input type="email" class="form-control" id="Email51" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <div for="exampleInputEmail1" >Dependant</div>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="Radio7" value="option1"> Yes
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="Radio8" value="option2"> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="link1" style="text-align:right;"><a href="#"><i class="fa fa-plus-circle" style="color:#80b709; font-size:20pt;" title="Add"></i> </a></div>
+                <hr />
+                <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+            </div>                
+          </div>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                    <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">                 
+                   Achievements
+                    <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseSeven" class="panel-collapse collapse" style="padding:15px;">
+              
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Achievement Type</label>
+                            <input type="email" class="form-control" id="Email53" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Achivement</label>
+                            <input type="email" class="form-control" id="Email54" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Description</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Month and Year</label>
+                            <input type="email" class="form-control" id="Email32" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Awarded/Recognised by</label>
+                            <input type="email" class="form-control" id="Email33" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="link1" style="text-align:right;"><a href="#"><i class="fa fa-plus-circle" style="color:#80b709; font-size:20pt;" title="Add"></i> </a></div>
+                <hr />
+                <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+            </div>                
+          </div>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                    <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">                 
+                   Professional References
+                    <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseEight" class="panel-collapse collapse" style="padding:15px;">
+              
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="email" class="form-control" id="Email37" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Contact Number</label>
+                            <input type="email" class="form-control" id="Email38" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="Email57" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">How do you know him/her?</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">For How long have you known her?</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="link1" style="text-align:right;"><a href="#"><i class="fa fa-plus-circle" style="color:#80b709; font-size:20pt;" title="Add"></i> </a></div>
+                <hr />
+                <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+            </div>                
+          </div>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                    <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">                 
+                    CVTE
+                    <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseNine" class="panel-collapse collapse" style="padding:15px;">
+                <h4 style="color:#ef9519"><b>Employment Application Form</b></h4>
+                <p>
+                    Thank you for your interest in Total Environment. Please review all the questions on this application before beginning. The application you submit is the one we'll review. There's also the option to submit a short video after you finish the questions below.
+                </p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Full name:</label>
+                           <input type="email" class="form-control" id="Email69" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="Email70" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Mailing address</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>                    
+                </div>
+              
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Country:</label>
+                           <input type="email" class="form-control" id="Email74" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Mobile </label>
+                            <div class="row">
+                                <div class="col-md-2" ><input type="email" class="form-control" id="Email76" placeholder="+91" style="width:140% !important; padding:0 6px;"></div>
+                                <div class="col-md-10"><input type="email" class="form-control" id="Email72" placeholder="" style="width:100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <h4 style="color:#ef9519"><b>Your background</b></h4>
+                <p>
+                    This section gives you a chance to tell us about what you've done, who you've worked with, what you've learned...
+                </p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">LinkedIn profile :</label>
+                           <input type="email" class="form-control" id="Email73" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Current Organization Name</label>
+                            <input type="email" class="form-control" id="Email77" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Current Organization Website</label>
+                            <input type="email" class="form-control" id="Email78" placeholder="">
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">What do you do at work?</label>
+                           <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">What are the most pressing challenges facing your organization or yourself? </label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div> 
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" >Links to your work</label>
+                            <textarea class="form-control" placeholder="personal website, portfolio, etc."></textarea>
+                        </div>
+                    </div>              
+                </div>
+
+                 <hr />
+
+                <h4 style="color:#ef9519"><b>Your goals and work style</b></h4>
+                <p>
+                    This section is about where you are headed? What do you hope to learn? Who will you change?
+                </p>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">01) Which goals are you hoping working with Total Environment will help you achieve? </label>
+                           <textarea class="form-control" placeholder="300 words maximum"></textarea>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">02) A key part of Total Environment is group work. Tell us about situations where you've contributed more than people expected. </label>
+                           <textarea class="form-control"></textarea>
+                        </div>
+                    </div>                
+                </div>
+
+                <hr />
+
+                <h4 style="color:#ef9519"><b>You</b></h4>
+                <p>
+                    We don't know you. Your video will help, and hopefully these questions will too. We know it's not nearly as intimate and detailed as you need, but do your best. Thanks. 
+                </p>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">01) Education  </label>
+                           <textarea class="form-control" placeholder="Schooling, Graduation, Post Graduation and any other additional qualifications"></textarea>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">02) Tell us one assertion about the world that you believe is true, that other people might disagree with. </label>
+                           <textarea class="form-control"></textarea>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">03) If this belief shapes how you live, tell us how. </label>
+                           <textarea class="form-control"></textarea>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">04) Tell us about a project that you led. Explain what you specifically did, what the results were, and what you learned. </label>
+                           <textarea class="form-control"></textarea>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">05) Tell us about a risk you took. What happened and what did you learn? </label>
+                           <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">06) Media   </label>
+                           <textarea class="form-control" placeholder="Tell us a blog you love, a book that changed you, a record you could listen to regularly..."></textarea>
+                        </div>
+                    </div>               
+                </div>
+
+                <hr />
+
+                <h4 style="color:#ef9519"><b>You and Total Environment</b></h4>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">01) Have you ever been contacted by Total Environment for recruitment before? If yes, when?  </label>
+                           <textarea class="form-control"></textarea>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">02) Have you been interviewed by Total Environment previously? If yes, when? </label>
+                           <textarea class="form-control"></textarea>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">03) Have you ever received an offer of employment with Total Environment? If yes, please do share details.</label>
+                           <textarea class="form-control"></textarea>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">04) Have you worked with Total Environment before? If yes, please do share from and to dates.</label>
+                           <textarea class="form-control"></textarea>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">05) Are you related to any employee at Total Environment? If yes, please do share details.</label>
+                           <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                                  
+                </div>
+
+                <hr />
+                <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+
+            </div>                
+          </div>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                    <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">                 
+                        Address
+                    <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseTen" class="panel-collapse collapse" style="padding:15px;">
+              
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Type of Address</label>
+                           <input type="email" class="form-control" id="Email55" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">House No</label>
+                            <input type="email" class="form-control" id="Email56" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Locality</label>
+                            <input type="email" class="form-control" id="Email58" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Area</label>
+                            <input type="email" class="form-control" id="Email59" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Landmark</label>
+                           <input type="email" class="form-control" id="Email60" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">City</label>
+                            <input type="email" class="form-control" id="Email61" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">City</label>
+                            <input type="email" class="form-control" id="Email62" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">State</label>
+                            <input type="email" class="form-control" id="Email63" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Country</label>
+                           <input type="email" class="form-control" id="Email64" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Pin Code</label>
+                            <input type="email" class="form-control" id="Email65" placeholder="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="link1" style="text-align:right;"><a href="#"><i class="fa fa-plus-circle" style="color:#80b709; font-size:20pt;" title="Add"></i> </a></div>
+                <hr />
+                <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+            </div>                
+          </div>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
+                    <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">                 
+                        Supporting Documents
+                    <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseEleven" class="panel-collapse collapse" style="padding:15px;">
+              
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Document Type</label>
+                           <input type="email" class="form-control" id="Email66" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Document Sub-Type</label>
+                            <input type="email" class="form-control" id="Email67" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Document Name</label>
+                            <input type="email" class="form-control" id="Email68" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Description</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                    vvv<div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                            <label for="exampleInputFile">Upload</label>
+                            <input type="file" id="File1">
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class=" pull-right">
+                            <button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"><span style="color:#8ba927" class="fa fa-eye"></span> &nbsp;View</button>
+                            <button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"><span style="color:#f8991d" class="glyphicon glyphicon-download"></span> &nbsp;Download &nbsp; </button>
+                            </div>
+                        </div>
+                        </div>
+                <div class="link1" style="text-align:right;"><a href="#"><i class="fa fa-plus-circle" style="color:#80b709; font-size:20pt;" title="Add"></i> </a></div>
+                        <hr />
+                        <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+                    </div>           
+                            
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">
+                            <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">                 
+                                Resume Document
+                            <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="collapseTwelve" class="panel-collapse collapse" style="padding:15px;">
+              
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label for="exampleInputFile">Upload</label>
+                                    <input type="file" id="File2">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" pull-right">
+                                    <button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"><span style="color:#f00" class="fa fa-times-circle"></span> &nbsp;Delete &nbsp; </button>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <hr />
+                            <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">
+                                <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">                 
+                                    Background Check Information
+                                <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="collapseThirteen" class="panel-collapse collapse" style="padding:15px;">
+              
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Background check Status</label>
+                                       <select class="form-control">
+                                            <option>Done</option>
+                                            <option>Pending</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Result</label>
+                                        <select class="form-control">
+                                            <option>Cleared</option>
+                                            <option>Not Cleares</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Check done by</label>
+                                        <input type="email" class="form-control" id="Email71" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Date</label>
+                                        <input type='text' class="input" data-beatpicker="true" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Remarks</label>
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>                
+                            <hr />
+                            <div style="width:50%; margin:auto"><button class="btn btn-warning" style="width:100%">Save</button></div>
+                        </div>          
+                    </div>            
+                <hr />
+            <div style="width:75%; margin:auto;"><a href="resume-view.html"><button class="btn btn-warning btn-lg" style="width:100%">Submit</button></a></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+
+</body>
+</html>

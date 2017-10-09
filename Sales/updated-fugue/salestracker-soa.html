@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--  -->
+<link rel="shortcut icon" href="images/telogomin.jpg" />
+<title>Details</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://summernote.org/bower_components/summernote/dist/summernote.css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href='css/scheduler.min.css' rel='stylesheet' />
+<link href='css/fullcalendar.css' rel='stylesheet' />
+<link href="css/lead/monthly.css" rel="stylesheet" />
+<!-- print style -->
+<link href="css/lead/print.css" media="print" rel="stylesheet" />
+<link href="css/lead/print.css" media="screen" rel="stylesheet" />
+<!-- print style -->
+<link href="css/datepicker.css" rel="stylesheet" />
+<link href="css/lead/termsheet-style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src='js/moment.min.js'></script>
+<script type="text/javascript" src="http://summernote.org/bower_components/summernote/dist/summernote.js"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src='js/fullcalendar.min.js'></script>
+<script type="text/javascript" src='js/scheduler.min.js'></script>
+<script type="text/javascript" src="js/lead/monthly.js"></script>
+<script src="js/lead/tableHeadFixer.js"></script>
+<script type="text/javascript" src="js/jquery.ddslick.min.js"></script>
+
+<script type="text/javascript" src="js/lead/termsheet-script.js"></script>
+</head>
+<body style="background-color:#eae4dc !important; color:#000 !important;">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+     <header>
+		<div class="gr-clr"></div>
+            <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+						  <li><a href="dashboard.html">Dashboard </a></li>
+  						    <li ><a href="inventory.html">Portfolio <span class="sr-only">(current)</span> </a></li>
+							<li ><a href="lead-data-view.html">Lead </a></li>
+                            <li class="active"><a href="termsheet.html">Sales Tracker <span class="sr-only">(current)</span></a></li>
+														<li><a href="collections.html">Collections </a></li>
+							<li><a href="invoices.html">Invoices </a></li>
+
+							<li><a href="#">Tracking </a></li>
+							<li><a href="#">Business Partner </a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Change Order</a></li>
+                                    <li><a href="#">Cancellation</a></li>
+                                    <li><a href="#">Transfer</a></li>
+									<li><a href="#">Customisation</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Products</a></li>
+                                     <li><a href="#">Business Segment</a></li>
+                                      <li><a href="#">Specification</a></li>
+									  <li><a href="#">T&amp;C</a></li>
+									  <li><a href="#">Schedule</a></li>
+									  <li><a href="#">Rules</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">User Management</a></li>
+                                    <li><a href="#">Roles Management</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+	</header>
+<!--header-->
+<!--Wrapper-->
+	<div class="container wrapper" style="background: #fff;">
+		<div class="row">
+			<section>
+				<div style="margin: 65px auto 0 auto;">
+					<div class="title-panel">Sales Tracker </div>
+						<!-- Tabs start -->
+						 <div style="width:98%; margin:0 auto;">
+						 <div class="box-info-container" id="LeadDetails01">
+								<div class="box-left-border">
+								<div class="box-info">
+							
+								
+									<div class="col-md-12 paddingnone">
+									<div class="col-md-4">
+										<div class="box-personname">Srikanth Akula</div>
+</div>
+<div class="col-md-4 "><div class="box-personmailnew"><i class="fa fa-envelope" style="padding-right:4px;" aria-hidden="true"></i> manjunath@gmail.com</div>
+</div>
+<div class="col-md-4 pull-right" >
+<div class="box-personphonenew "><i class="fa fa-phone" style="padding-right:4px;" aria-hidden="true"></i>+91 97430 24532</div>
+											</div>
+			
+
+						</div>
+								<div class="clearfix"></div>
+							<div class="box-sourcenote">	
+									<div class="col-md-3 paddingnone">
+								<div class="box-otherdetailsnew"> Sales Consultant : <span>Manjunath Ramesh</span></div>
+								</div>
+								<div class="col-md-1 paddingnone">
+								<div class="box-otherdetailsnew">	Unit : 3084</div></div>
+								<div class="col-md-2 paddingnone">
+								<div class="box-otherdetailsnew text-right"> Specification : <span class="specdetals bgcolor_f79647">Orange</span></div>
+								</div>
+								<div class="col-md-2 paddingnone">
+								<div class="box-otherdetailsnew text-right"> Consideration : 1,99,07,500</div>
+								</div>
+								<div class="col-md-2 paddingnone">
+								<div class="box-otherdetailsnew text-right"> Total Receivable : 1,59,07,500</div>
+								</div>
+								<div class="col-md-2 paddingnone">
+								<div class="box-otherdetailsnew text-right"> Total Payable : 3,99,07,500</div>
+								</div>
+								</div>
+								
+								
+								
+								</div>
+								<div class="clearfix"></div>	
+							</div>
+							
+							</div>
+							
+							<div class="clearfix"></div>
+							
+							<div class="col-md-12 padnone">
+							<div class="title-panel">SOA</div>
+							<div class="col-md-3 padnone" >
+									<ul class="nav nav-pills nav-stacked strack">
+									<li class="active"><a href="salestracker-soa.html">SOA</a></li>
+									<li ><a href="salestracker-termsheet.html">Termsheet</a></li>
+									<li ><a href="salestracker-cds.html">Customer Data Sheet</a></li>
+									<li ><a href="salestracker-collections.html">Collections</a></li>
+									<li><a href="salestracker-invoices.html">Invoices</a></li>
+									<li ><a href="salestracker-agreement.html">Agreement</a></li>
+									<li class="subsec"><a>Transaction <span class="pull-right plus_minus">+</span></a>
+									<ul class="submenu">
+										<li><a>Change Order</a></li>
+										<li><a>Cancellation</a></li>
+										<li><a>Transfer</a></li>
+										<li><a>Refund</a></li>
+										<li><a>Delay Compensation</a></li>
+									</ul>
+									
+									</li>
+									<li><a>Document</a></li>
+									<li><a>Hand Over</a></li>
+									<li><a>Car Park Allocation</a></li>
+									<li><a href="salestracker-notes.html">Notes</a></li>
+									<li  ><a href="salestracker-followups.html">Followups</a></li>
+								</ul>
+							</div>
+							<div class="col-md-9 padnone">
+							<div class="salestracker_container">
+							<!-- SOA Start-->
+							<div class="salestracker_content" style="background-color:#cacaca; float:left; width:100%;">
+							<div class="salestracker_area">
+							<div class="pull-right" style="margin:5px 0 0 0;"><button class="btn btn-default btn-sm"  onclick="javascript:printDiv('soa_print_area')" style="font-weight:bold">Print <i class="fa fa-print" aria-hidden="true"></i></button></div>
+							<div id="soa_print_area" class="soa_print">
+									<div class="soa_container" style="background-color:#fff;">
+									<div class="main_soa padnone">
+										<div class="main_soa_add">
+										<img src="images/te-logo.jpg">
+										<p style="font-size:8pt; margin-top:0px; margin-bottom:5px;">
+"IMAGINE", 78, ITPL Main Road, EPIP Zone, Whitefiled, Bangalore 560 066<br>
+<span class="color_ff8a07">T</span>:  <span class="fontbold padright10">+91804245 30000</span><span class="color_ff8a07 ">F</span>: <span class="fontbold padright10">+91 80 2841 6624</span> &nbsp;&nbsp;&nbsp;&nbsp;www.total-environment.com</p></div>
+										<div class="main_soa_logo padnone"><img src="images/Learning-to-Fly.png" class="projectlogo"></div>
+										<div class="clearfix"></div>
+										
+										<div class="main_soa_title padnone paddingtop10">
+										
+										<div class="soa_title">Statement of account</div>
+										</div>
+									</div>
+										<div class="customer_info">Customer <span>Prathima Sharma and Kiran Sharma. Y.S.</span></div>
+										<div class="unit_info_date">Unit No: 1153 <span class="pull-right">07-Jun-2016</span></div>
+										<table width="100%" class="soa_table">
+										<tr>
+										<td class="bgcolor_d8d8d8 fontbold" width="2%">1</td>
+										<td width="55%" class="txtalignleft bgcolor_d8d8d8 fontbold">Total Consideration [2+3+4+5+6+7+8]</td>
+										<td width="15%" class="txtaligncenter bgcolor_d8d8d8 fontbold">Area/ Qtty</td>
+										<td width="15%" class="txtaligncenter bgcolor_d8d8d8">Rate</td>
+										<td width="30%" class="txtalignright">1,78,08,143</td>
+										</tr>
+										<tr>
+										<td class="fontbold">2</td>
+										<td>Cost of Home Unit</td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright">1,58,90,041</td>
+										</tr>
+										<tr>
+										<td class="fontbold">3</td>
+										<td>Car Park/s</td>
+										<td class="txtalignright">2</td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright"></td>
+										</tr>
+										<tr>
+										<td class="fontbold">4</td>
+										<td>Maintainance Fund</td>
+										<td class="txtalignright">2170</td>
+										<td class="txtalignright">200</td>
+										<td class="txtalignright">4,34,000</td>
+										</tr>
+										<tr>
+										<td class="fontbold">5</td>
+										<td>Service Tax</td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright">5,62,122</td>
+										</tr>
+										<tr>
+										<td class="fontbold">6</td>
+										<td>VAT</td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright">9,01,903</td>
+										</tr>
+										<tr>
+										<td class="fontbold">7</td>
+										<td>Swachh Bharat Tax</td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright">20,075</td>
+										</tr>
+										<tr>
+										<td class="fontbold">8</td>
+										<td>Reimbursements if any</td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright">0</td>
+										</tr>
+										<tr>
+										<td colspan="5" height="6" style="border:none"></td>
+										</tr>
+										<tr>
+										<td class="fontbold">9</td>
+										<td >Less Amount received till date(As per details below)</td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright"></td>
+										<td class="txtalignright">5,08,680</td>
+										</tr>
+										<tr>
+										<td colspan="5" height="6"  style="border:none"></td>
+										</tr>
+										<tr>
+										<td class="fontbold bgcolor_808080"></td>
+										<td class="bgcolor_808080 fontbold">Therefore Amount payable now[1-9]</td>
+										<td class="txtalignright bgcolor_808080"></td>
+										<td class="txtalignright bgcolor_808080"></td>
+										<td class="txtalignright bordercellsoa">1,72,99,463</td>
+										</tr>
+										<tr>
+										<td colspan="5" height="6"  style="border:none"></td>
+										</tr>
+										<tr>
+										<td colspan="5" height="2"  class="bgcolor_808080"></td>
+										</tr>
+										<tr>
+										<td colspan="5" height="6"  style="border:none"></td>
+										</tr>
+										<tr>
+										<td style="border:none"></td>
+										<td style="border:none"></td>
+										<td style="border:none" class="txtaligncenter">Instrument</td>
+										<td style="border:none" class="txtaligncenter"> Dated</td>
+										<td style="border:none" class="txtaligncenter">Amount</td>
+										</tr>
+										<tr>
+										<td class="fontbold bgcolor_d8d8d8"></td>
+										<td class="bgcolor_d8d8d8 fontbold">Amount Received</td>
+										<td class="txtalignright bgcolor_d8d8d8"></td>
+										<td class="txtalignright  bordercellsoatot"></td>
+										<td  class="txtalignright bordercellsoatot">5,08,680</td>
+										</tr>
+										<tr>
+										<td >10</td>
+										<td >Cheque </td>
+										<td  class="txtaligncenter">861710</td>
+										<td  class="txtaligncenter">27-May-2016</td>     
+										<td class="txtalignright">500,000</td>
+										</tr>
+											<tr>
+										<td >10</td>
+										<td >Wire Transfer </td>
+										<td class="txtaligncenter">615616326653</td>
+										<td  class="txtaligncenter">04-Jun-2016</td>     
+										<td  class="txtalignright">8,680</td>
+										</tr>
+										<tr>
+										<td colspan="5" height="6"  style="border:none"></td>
+										</tr>
+										<tr>
+										<td colspan="5" height="2"  class="bgcolor_808080"></td>
+										</tr>
+										<tr>
+										<td colspan="5" height="6"  style="border:none"></td>
+										</tr>
+										</table>
+									</div>
+							</div>
+							
+							
+							</div>
+							</div>
+								<!-- SOA End-->
+							</div>
+							</div>
+							</div>
+							</div>
+							</div>
+							
+								
+			</section>
+		</div>
+
+	</div>
+</div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,1266 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<title>Fugue</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/tefont.css" rel="stylesheet" />
+    <link href="css/ddmenu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        .input-width100 {
+            width: 100%;
+            font-size: 9pt !important;
+        }
+        .btn-default {
+    border-color: #fff;
+}.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+::-webkit-input-placeholder {
+   color: #585966;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #585966;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #585966;
+}
+:-ms-input-placeholder {  
+   color: #585966;
+}
+        .input-css {
+            height: 25px;
+            border: solid 1px #f1f1f1;
+            margin-left: 0px;
+            font-size: 10pt;
+            padding:0 0 0 3px;
+            color: #585966;
+        }
+        .txyarea-css {
+            border: solid 1px #f1f1f1;
+            margin-left: 0px;
+            font-size: 10pt;
+            padding:0 0 0 3px;
+            color: #585966;
+        }
+    </style>
+</head>
+<body>
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <div style="position:fixed; top:0; left:0; z-index:100000; width:100%; ">
+        <nav id="ddmenu">
+            <div class="menu-icon"></div>
+            <div style="left:0; position:fixed; z-index:1000000000"><img src="images/te-logo.png" /></div>
+            <ul>
+                    <li class="full-width" style="background-color:#464651">
+                        <span class="top-heading">Contact</span>
+                    </li>
+                    <li class="full-width">
+                        <span class="top-heading">Sales</span>                        
+                    </li>
+                    <li class="full-width">
+                        <span class="top-heading">CEM</span>                        
+                    </li>
+                    <li class="full-width">
+                        <span class="top-heading">Procurements</span>                        
+                    </li>
+                    <li class="full-width">
+                        <span class="top-heading">HRIS</span>                        
+                    </li>
+                    <li class="full-width">
+                        <span class="top-heading">ESS</span>                        
+                    </li>                    
+                    <li class="full-width">
+                        <span class="top-heading">Analytics</span>                        
+                    </li>
+                </ul>
+        </nav>
+    </div>
+    <header>
+	    <div class="headerContainerWrapper">
+	        <div class="headerContainerShadow">
+		        <div class="headerContainer">
+		            <div class="gr-clr"></div>            
+                    <nav class="navbar-demo navbar-default header-space">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contacts</a>                                        
+                                    </li>
+                                   <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Duplicates </a>
+                                        </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Digital Marketing <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-cogs" aria-hidden="true" style="color:#808080"></i> EDM</a></li>
+                                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true" style="color:#808080"></i> SMS</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                            <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                            <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+			    </div>
+			</div>
+        </div>
+    </header>
+<!--header-->
+    <div id="wrapper">
+    <div class="height100"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="head-panel-grey"><h4>Contacts</h4></div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 cnt-list-panel-bg">
+                <div class="cnt-list-add" >
+                    
+                        <div class="col-md-6">
+                          <div class="padding5">
+                            <a href="index-create.html" style="color:#fff;"><span class="glyphicon glyphicon-plus-sign pull-left add-contact-icon" aria-hidden="true"></span>
+                            <div class="add-contact"> Add contact</div></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <div class="padding3">                                 
+                                <label style="float:right"><input type="checkbox" style="zoom: 1.3;" /></label>
+                                <div class="select-all-txt"> Select All </div>
+                            </div>
+                        </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div style="width:99%;">
+                    <a href="index.html" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/srikanth.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0">
+                                
+                                <div class="headtxt">Srikanth Akula</div>
+                                <div class="contenttxt">srikanth.akula@total-environment.com</div>
+                                <div class="contenttxt">9980855000 
+                                    <div style="position:absolute; right:-30px; bottom:0;"><img src="images/vip.png" style="height:15px;"><img src="images/friend-of-te.png" style="height:15px;"></div></div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="index.html" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/manju.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0">
+                                
+                                <div class="headtxt">Manjunath T R</div>
+                                <div class="contenttxt">manjunath.ramesh@total-environment.com</div>
+                                <div class="contenttxt">9980652233 
+                                    <div style="position:absolute; right:-30px; bottom:0;"><img src="images/friend-of-te.png" style="height:15px;"></div></div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="index.html" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/sai.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8">
+                                <div class="headtxt">saikumar.s</div>
+                                <div class="contenttxt">saikumar.s@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="index.html" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/anil.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8">
+                                <div class="headtxt">Anil Baradia</div>
+                                <div class="contenttxt">anil.baradia@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="index.html" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/keerthi.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8">
+                                <div class="headtxt">Keerthi KS</div>
+                                <div class="contenttxt">keerthi.ks@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="index.html" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/jyothi.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8">
+                                <div class="headtxt">jyothi A</div>
+                                <div class="contenttxt">jyothi.akkayappa@total-envirnment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="index.html" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/shivam.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8">
+                                <div class="headtxt">Shivam Srivastava</div>
+                                <div class="contenttxt">Shivam.srivastava@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/profile.png" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8">
+                                <div class="headtxt">Profile Name</div>
+                                <div class="contenttxt">manjunath.ramesh@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/profile.png" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8">
+                                <div class="headtxt">Profile Name</div>
+                                <div class="contenttxt">manjunath.ramesh@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/profile.png" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8">
+                                <div class="headtxt">Profile Name</div>
+                                <div class="contenttxt">manjunath.ramesh@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/profile.png" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8">
+                                <div class="headtxt">Profile Name</div>
+                                <div class="contenttxt">manjunath.ramesh@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/profile.png" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8">
+                                <div class="headtxt">Manjunath T R</div>
+                                <div class="contenttxt">manjunath.ramesh@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 padding0">
+                <div class="filter-bg">
+                    <div class="row">
+                        <div class="col-md-4">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Search">
+                                  <div class="input-group-addon" style="background-color:#f0ad4e"><a href="#"><i class="fa fa-search" aria-hidden="true" style="color:#fff"></i></a></div>
+                                </div>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-control">
+                              <option>Filter</option>
+                              <option>Relationship</option>
+                              <option>Groups</option>
+                              <option>Communities</option>
+                              <option>Hobbies</option>                              <option>Food Preferences</option>                              <option>Holiday Preferences</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                 <p class="pull-right" style="padding-right:25px;">
+                                  <a href="index.html" type="button" class="btn btn-primary btn-sm">Save</a>
+                                  <a href="index.html" type="button" class="btn btn-warning btn-sm">Cancel</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="padding15">
+                   <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" >                                                           
+                                <a href="#" ><span class="glyphicon glyphicon-edit profile-edit-icon" style="position:absolute; top:10px; left:25px"></span></a>
+                                <div class="profile-bg-big"> <img src="images/srikanth.jpg" class="img-responsive" style="border: 3px solid white; outline: #ccc solid 1px;" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12" >
+                            <div class="headtxt-big">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <select class="form-control input-css" style="padding: 0;height: 25px;">
+                                          <option>Mr</option>
+                                          <option>Mrs</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-5"><input class="form-inputbox input-css" type="text" placeholder="Srikanth" /></div>
+                                    <div class="col-md-5"><input class="form-inputbox input-css" type="text" placeholder="Akula" /></div>
+                                </div>
+                            </div>
+                            <div class="margin-tb5 row">
+                                <div class="icon-org pull-left"><span class="fa fa-briefcase"></span></div>
+                                <div class="org-headtxt-big pull-left"><span style="font-family: 'MetaNormal-Roman'; font-weight:normal"> <input class="form-inputbox input-css" style="width:325px;" type="text" placeholder="Manager" /> </span></div>
+                            </div>
+
+                            <div class="margin-tb5 row">
+                                <div class="icon-org pull-left"><span class="fa fa-building"></span></div>
+                                <div class="org-headtxt-big pull-left"><span style="font-family: 'MetaNormal-Roman'; font-weight:normal"><input class="form-inputbox input-css" type="text"  style="width:325px;" placeholder="TOTAL ENVIRONMENT BUILDING SYSTEMS PVT. LTD" /></span></div>
+                            </div>
+
+                            <div class="margin-tb5 row">
+                                <div class="icon-org pull-left"><span class="fa fa-phone"></span></div>
+                                <div class="org-headtxt-big pull-left"><span style="font-family: 'MetaNormal-Roman'; font-weight:normal"><input class="form-inputbox input-css" style="width:325px;" type="text" placeholder="+91 9980855000" /></span></div>
+                            </div>
+
+                            <div class="margin-tb5 row">
+                                <div style="position:absolute; right:0"><i class="fa fa-plus" aria-hidden="true" style="color:#ff6a00;"></i></div>
+                               <div class="icon-org" style="margin-left: 0px; width: 10px;float: left;"><span class="fa fa-book "></span> </div>
+                                <div class="col-md-2" style="padding:0 3px;"><input class="input-css"  type="text" style="width:100%" placeholder="#53" /></div>
+                                <div class="col-md-3" style="padding:0 3px;"><input class="input-css"  type="text" placeholder="6th Main, 5th Cross," style="width:100%" /></div>
+                                <div class="col-md-3" style="padding:0 3px;"><input class="input-css"  type="text" placeholder="Opp Govt Hospital" style="width:100%" /></div>
+                                <div class="col-md-3" style="padding:0 3px;"><input class="input-css"  type="text" placeholder="Hoodi Circle" style="width:100%" /></div>
+                             </div>
+                            <div class="margin-tb5 row">   
+                                 <div class="icon-org" style="margin-left: 0px; width: 10px;float: left;"> </div>
+                                <div class="col-md-2" style="padding:0 3px;"><input class="input-css"  type="text" style="width:100%" placeholder="EPIP Zone" /></div>
+                                <div class="col-md-3" style="padding:0 3px;"><input class="input-css"  type="text" placeholder="Bangalore" style="width:100%" /></div>
+                                <div class="col-md-3" style="padding:0 3px;"><input class="input-css"  type="text" placeholder="Karnataka" style="width:100%" /></div>
+                                <div class="col-md-3" style="padding:0 3px;"><input class="input-css"  type="text" placeholder="India" style="width:100%" /></div>                                 
+                            </div>
+
+                            <div class="margin-tb5 row">
+                                <div class="icon-org pull-left"><span class="fa fa-envelope"></span></div>
+                                <div class="pull-left"><input class="form-inputbox input-css" style="width:325px;" type="text" placeholder="anil.baradia@total-environment.com" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background-color:#3c8ece; padding:5px; color:#fff">Profile</div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="collapse-panel">
+                                <div class="col-pan-head">Personal</div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-mars-stroke" aria-hidden="true"></i> Gender</div>
+                                    <div class="col-md-8 col-pan-textb">
+                                         <select class="form-control input-css input-width100">
+                                          <option>Male</option>
+                                          <option>Female</option>
+                                          <option>Transgender</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Birthday</div>
+                                    <div class="col-md-8 col-pan-textb"><input class="form-inputbox input-css input-width100" type="text" placeholder="08-Mar" /></div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-calendar" aria-hidden="true"></i> Anniversary</div>
+                                    <div class="col-md-8 col-pan-textb"><input class="form-inputbox input-css input-width100" type="text" placeholder="12-May" /></div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-flag" aria-hidden="true"></i> Nationality</div>
+                                    <div class="col-md-8 col-pan-textb"><input class="form-inputbox input-css input-width100" type="text" placeholder="Indian" /></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="collapse-panel">
+                                <div class="col-pan-head">Professional</div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-building" aria-hidden="true"></i> Organization</div>
+                                    <div class="col-md-8 col-pan-textb"><input class="form-inputbox input-css input-width100" type="text" placeholder="Total Environment" /></div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-briefcase" aria-hidden="true"></i> Department</div>
+                                    <div class="col-md-8 col-pan-textb"><input class="form-inputbox input-css input-width100" type="text" placeholder="IT Solutions" /></div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-briefcase" aria-hidden="true"></i> Industry</div>
+                                    <div class="col-md-8 col-pan-textb">
+                                        <select class="form-control input-css input-width100">
+                                          <option>Choose</option>
+                                          <option>Government</option>
+                                          <option>Real Estate</option>
+                                            <option>Developer</option>
+                                            <option>Architect</option>
+                                            <option>Media</option>
+                                            <option>Financial</option>
+                                            <option>Institutions</option>
+                                            <option>Landowner</option>
+                                            <option>Designer | Artist</option>
+                                            <option>Performing Artiste</option>
+                                            <option>Advertising</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-credit-card" aria-hidden="true"></i> Value</div>
+                                    <div class="col-md-8 col-pan-textb"><input class="form-inputbox input-css input-width100" type="text" placeholder="2.9 Crores" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="collapse-panel">
+                                <div class="col-pan-head">Interest</div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-users" aria-hidden="true"></i> Communities</div>
+                                    <div class="col-md-8 col-pan-textb"><input class="form-inputbox input-css input-width100" type="text" placeholder="Wind Mills of Your Mind" /></div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-paint-brush" aria-hidden="true"></i> Hobbies</div>
+                                 
+                                    <div class="col-md-8 col-pan-textb">
+                                        <select class="form-control input-css input-width100">
+                                          <option>Music</option>
+                                          <option>Book Reading</option>
+                                            <option>Sports</option>
+                                            <option>Cooking</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-12 col-pan-text">
+                                        <div class="tag-bg" style="padding: 0px 6px;">Swimming <span class="fa fa-times" style="color:#808080; padding-left:3px;"></span> </div>
+                                        <div class="tag-bg" style="padding: 0px 6px;"> Music  <span class="fa fa-times" style="color:#808080; padding-left:3px;"> </span></div>
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-cutlery" aria-hidden="true"></i> Food</div>
+                                    <div class="col-md-8 col-pan-textb">
+                                        <select class="form-control input-css input-width100">
+                                          <option>Vegetarian</option>
+                                          <option>Non Vegetarian</option>
+                                            <option>Teetotaler</option>
+                                            <option>Gluten free</option>
+                                            <option>Jain</option>
+                                            <option>No Seafood</option>
+                                            <option>No Pork</option>
+                                            <option>No Beef</option>
+                                            <option>Chicken Only</option>
+                                            <option>Beer Preference</option>
+                                            <option>Spirit Preference</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-12 col-pan-text">
+                                        <div class="tag-bg" style="padding: 0px 6px;">Vegetarian  <span class="fa fa-times" style="color:#808080; padding-left:3px;"></span> </div>
+                                        <div class="tag-bg" style="padding: 0px 6px;"> No Pork  <span class="fa fa-times" style="color:#808080; padding-left:3px;"> </span></div>
+                                        <div class="tag-bg" style="padding: 0px 6px;">No Beef<span class="fa fa-times" style="color:#808080; padding-left:3px;"> </span></div>
+                                        <div class="tag-bg" style="padding: 0px 6px;">Chicken Only<span class="fa fa-times" style="color:#808080; padding-left:3px;"> </span></div>
+                                        <div class="tag-bg" style="padding: 0px 6px;">Beer Preference <span class="fa fa-times" style="color:#808080; padding-left:3px;"> </span></div>
+                                        <div class="tag-bg" style="padding: 0px 6px;">Spirit Preference <span class="fa fa-times" style="color:#808080; padding-left:3px;"> </span></div>
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-plane" aria-hidden="true"></i> Holiday</div>
+                                    <div class="col-md-8 col-pan-textb">
+                                        <select class="form-control input-css input-width100">
+                                          <option>Domestic</option>
+                                          <option>International</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="collapse-panel">
+                                <div class="col-pan-head" style="text-align:left">Family <a href="#"> <span class="pull-right" style="font-size:9pt;"><i class="fa fa-plus" aria-hidden="true"></i> Add</span></a></div>
+                                <div class="row" >
+                                    <div class="col-md-12">
+                                        <div class="tag-bg-active"><span class="fa fa-male"> </span> Ramesh (Father)  </div>
+                                        <div class="tag-bg"><span class="fa fa-female"> </span>  Radha (Mother) </div>
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text">
+                                        <select class="form-control input-css input-width100">
+                                          <option>Father</option>
+                                          <option>Mother</option>
+                                          <option>Spouse</option>
+                                          <option>Brother</option>
+                                            <option>Sister</option>
+                                            <option>Child</option>
+                                            <option>Friend</option>
+                                            <option>Fiance</option>
+                                            <option>Partner</option>
+                                            <option>Assistant</option>
+                                            <option>Manager</option>
+                                            <option>Other</option>
+                                            <option>Custom</option>
+                                            <option>Representative</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2 col-pan-textb">
+                                         <select class="form-control input-css input-width100">
+                                          <option>Mr</option>
+                                          <option>Mrs</option>
+                                          <option>Transgender</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 col-pan-textb"><input class="form-inputbox input-css input-width100" type="text" placeholder="Ramesh" /></div>
+                                    <div class="col-md-3 col-pan-textb"><input class="form-inputbox input-css input-width100" type="text" placeholder="NR" /></div>                                
+                            </div>
+                                 <div style="border-bottom:dotted 1px #ccc;"></div>
+                                
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-mobile" aria-hidden="true"></i> Mobile</div>
+                                    <div class="col-md-8 col-pan-textb">
+                                        <input class="form-inputbox input-css input-width100" type="text" placeholder="9743024532" />
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-envelope" aria-hidden="true"></i> E Mail</div>
+                                    <div class="col-md-8 col-pan-textb">
+                                        <input class="form-inputbox input-css input-width100" type="text" placeholder="ramesh@netmahiti.com" />
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Birthday</div>
+                                    <div class="col-md-8 col-pan-textb"><input class="form-inputbox input-css input-width100" type="text" placeholder="08-Mar" /></div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-calendar" aria-hidden="true"></i> Anniversary</div>
+                                    <div class="col-md-8 col-pan-textb"><input class="form-inputbox input-css input-width100" type="text" placeholder="12-May" /></div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <a href="#" type="button" class="btn btn-primary btn-xs pull-right" style="font-size:9pt;">Save</a>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background-color:#3c8ece; padding:5px; color:#fff">Relationship With TE Group</div>
+                       <div class="row">
+                           <div class="col-md-6">
+                            <div class="collapse-panel">
+                                <div class="col-pan-head">Level</div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-tags" aria-hidden="true"></i> Level</div>
+                                    <div class="col-md-8 col-pan-textb">
+                                        <select class="form-control input-css input-width100">
+                                          <option>Friend of TE </option>
+                                          <option>VIP</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-12 col-pan-text">
+                                       <div class="tag-bg"  style="padding: 0px 6px;"><span class="fa fa-users" style="padding:0 3px; color:#ff6a00"></span> Friend of TE  <i class="fa fa-times" style="padding:0 3px; color:#808080"></i></div>
+                                        <div class="tag-bg"  style="padding: 0px 6px;"><span class="fa fa-users" style="padding:0 3px; color:#ff6a00"></span>VIP  <i class="fa fa-times" style="padding:0 3px; color:#808080"></i></div>
+                                       </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="collapse-panel">
+                                <div class="col-pan-head">Category</div>
+                                <div class="row" >
+                                    <div class="col-md-4 col-pan-text"><i class="fa fa-tags" aria-hidden="true"></i> Category</div>
+                                    <div class="col-md-8 col-pan-textb">
+                                        <select class="form-control input-css input-width100">
+                                          <option>Customer</option>
+                                          <option>Employee</option>
+                                          <option>Vendor</option>
+                                          <option>Shareholder</option>
+                                            <option>Tenant</option>
+                                            <option>Competition</option>
+                                            <option>Association</option>
+                                            <option>Statutory</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-12 col-pan-text">
+                                       <div class="tag-bg-live"  style="padding: 0px 6px;"><span class="fa fa-building"></span> Employee <i class="fa fa-key" style="padding:0 3px;"></i><i class="fa fa-times" style="padding:0 3px; color:#ccc"></i></div>
+                                        <div class="tag-bg-past"  style="padding: 0px 6px;"><span class="fa fa-home"></span> Vendor <i class="fa fa-star" style="padding:0 3px;"></i><i class="fa fa-times" style="padding:0 3px; color:#ccc"></i></div>
+                                        <div class="tag-bg-past"  style="padding: 0px 6px; background-color: #F88379;"><span class="fa fa-building"> </span> Customer <i class="fa fa-times" style="padding:0 3px; color:#ccc"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                           
+                       </div>
+
+                    <div style="background-color:#3c8ece; padding:5px; color:#fff">Customer Group</div>
+                       <div class="row">
+                           <div class="col-md-12">
+                            <div class="collapse-panel">
+                                <div class="row" >
+                                    <div class="col-md-2 col-pan-text"><i class="fa fa-users" aria-hidden="true"></i> Group</div>
+                                    <div class="col-md-4 col-pan-textb">
+                                        <select class="form-control input-css input-width100">
+                                          <option>Babshaw Group</option>
+                                          <option>Agarwal</option>
+                                            <option>Ambani</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-12">
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Babshaw Group </div>
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Agarwal </div>
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Ambani </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>                       
+                           
+                       </div>
+
+                    <div style="background-color:#3c8ece; padding:5px; color:#fff">Marketing and Communication Group</div>
+                       <div class="row">
+                           <div class="col-md-12">
+                            <div class="collapse-panel">
+                                <div class="row" >
+                                    <div class="col-md-12">
+                                        <div class="row" >
+                                    <div class="col-md-2 col-pan-text"><i class="fa fa-users" aria-hidden="true"></i> Group</div>
+                                    <div class="col-md-4 col-pan-textb">
+                                        <select class="form-control input-css input-width100">
+                                          <option>Project Launch</option>
+                                          <option>Corporate</option>
+                                            <option>Diwali Gift Group</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Project Launch </div>
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Corporate </div>
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Diwali Gift Group </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>                       
+                           
+                       </div>
+
+                    <!--<br />
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-building pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt">ORGANIZATION</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 0 0; color:#000; font-weight:bold">Total Environment</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="glyphicon glyphicon-briefcase pull-left form-icon margin10" aria-hidden="true"></div><div class="form-labletxt"> DEPARTMENT</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 0 0; color:#000; font-weight:bold">IT</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="form-labletxt">TITLE</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 0 0; color:#000; font-weight:bold">CEO</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >                            
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-envelope pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">E-mail</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div style="padding:3px 10px; border-radius:3px; background-color:#eaeaea; margin:0 5px; float:left"><span class="fa fa-briefcase" style="color:#ff6a00"></span> anil.baradia@total Environment.com</div>
+                                                <div style="padding:3px 10px; border-radius:3px; background-color:#eaeaea; float:left"><span class="fa fa-home" style="color:#ff6a00"></span> anil.baradia@gmail.com</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >                            
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-phone pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">Phone</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div style="padding:3px 10px; border-radius:3px; background-color:#eaeaea; margin:0 5px; float:left"><span class="fa fa-briefcase" style="color:#ff6a00"></span> +91 9901177911</div>
+                                                <div style="padding:3px 10px; border-radius:3px; background-color:#eaeaea; float:left"><span class="fa fa-home" style="color:#ff6a00"></span> +91 9980652233</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >                            
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-globe pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">URL</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div style="padding:3px 10px; border-radius:3px; background-color:#eaeaea; margin:0 5px; float:left"><span class="fa fa-briefcase" style="color:#ff6a00"></span> http://www.totalenvironment.in/ </div>
+                                                <div style="padding:3px 10px; border-radius:3px; background-color:#eaeaea; float:left"><span class="fa fa-home" style="color:#ff6a00"></span> http://www.totalenvironment.in/ </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="row">                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >          
+                            <div style="background-color:#72afdf; padding:5px; color:#fff">Address</div><br />                  
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+                                        <div class="form-labletxt" style="text-align:left; ">                                                                                                                               
+                                           <div style="font-weight:bold; padding:5px; font-size:12pt; margin-bottom:5px; border-bottom:dotted 1px #ff6a00"><span class="fa fa-home" style="color:#ff6a00"></span> Home</div>
+                                             #53, 6th Main, 5th Cross,<br />                                        Hoodi Circle,<br />                                        Bangalotre 560036
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+                                        <div class="form-labletxt" style="text-align:left;  border:none">                                                                                                                               
+                                           <div style="font-weight:bold; padding:5px; font-size:12pt; margin-bottom:5px; border-bottom:dotted 1px #ff6a00"><span class="fa fa-briefcase" style="color:#ff6a00"></span> Work</div>
+                                            Imagine, No 78,<br />
+                                            ITPL Main Road, EPIP Zone, Whitefield, Bangalore <br />Bangalore 560066
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                                                      
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >                            
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-user pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">Relationship</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                 <a href="#" data-toggle="tooltip" title="Residential Real Estate"><div class="tag-bg"><span class="fa fa-building"> </span> Customer </div></a>
+                                                <a href="#" data-toggle="tooltip" title="Commercial Real Estate"><div class="tag-bg-live"><span class="fa fa-building"></span> Employee <i class="fa fa-key" style="padding:0 3px;"></i></div></a>
+                                                <a href="#" data-toggle="tooltip" title="Resorts"><div class="tag-bg-past"><span class="fa fa-home"></span> Vendor <i class="fa fa-star" style="padding:0 3px;"></i></div></a>
+                                                <a href="#" data-toggle="tooltip" title="F&B"><div class="tag-bg"><span class="fa fa-cutlery"> </span> Customer <i class="fa fa-exclamation" style="padding:0 3px;"></i></div></a>
+
+                                                <a href="#" data-toggle="tooltip" title="Music"><div class="tag-bg"><span class="fa fa-music"> </span> Customer </div></a>
+                                                <a href="#" data-toggle="tooltip" title="Property Management"><div class="tag-bg"><span class="fa fa-cogs"> </span> Customer </div></a>
+                                                <a href="#" data-toggle="tooltip" title="Furniture"><div class="tag-bg"><span class="fa fa-home"> </span> Customer </div></a>
+                                                <a href="#" data-toggle="tooltip" title="Education"><div class="tag-bg"><span class="fa fa-university"> </span> Customer </div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                 
+                                                      
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-users pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">Groups</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Bob Shah Group </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Rahul Agarwal Group </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Windmills of Your Mind Group </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                                                  
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-cutlery pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">Food Preferences</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Vegetarian  </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span>  Teetotaler </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Gluten Free  </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span>  Jain </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Beer preference  </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span>  Non Smoking </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                  
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-music pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">Interest</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Swimming  </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span>  Music </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                       
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-envelope pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">Mailing Lists</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Corporate Communicatoin </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> New Project Launch </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span>  Corporate Gift </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                      
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-envelope pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">SMS Lists</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Swimming  </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span>  Music </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <br />
+                    <div style="background-color:#72afdf; padding:5px; color:#fff">Notes</div>
+                    <div style="margin:15px 0; padding-bottom:5px; border-bottom: dotted 1px #808080">
+                        <div>Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet </div>
+                        <div class="text-right" style="color:#2e97e9">By Name (who wrote)</div>
+                    </div>
+
+                    <div style="margin:15px 0; padding-bottom:5px; border-bottom: dotted 1px #808080">
+                        <div>Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet </div>
+                        <div class="text-right" style="color:#2e97e9">By Name (who wrote)</div>
+                    </div>
+
+                    <br />
+                    <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-mars-stroke pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt">GENDER</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                         <div style="padding: 8px 0 0 0; color:#000; font-weight:bold">Male</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-birthday-cake pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt">BIRTHDAY</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 0 0; color:#000; font-weight:bold">08-08-1980</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-calendar pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt">ANNIVERSARY</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 0 0; color:#000; font-weight:bold">12-05-2010</div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-user pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt">Family</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div class="tag-bg"><span class="fa fa-male"> </span> Ramesh (Father)  </div>
+                                        <div class="tag-bg"><span class="fa fa-female"> </span>  Radha (Mother) </div>
+                                        <div class="tag-bg"><span class="fa fa-user"> </span> Vishwa (Friends)  </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+</div>
+<!-- Upload Image -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top:100px;">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button class="btn btn-primary" type="submit">Upload</button> <span class="contenttxt1"> You can upload a JPG, GIF or PNG file (File Size Limit is 2MB).</span>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                    <div class="profile-icon-bg"><img src="images/profile.png" style="width:40px;" class="" alt="" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-warning">Save</button>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- New tag -->
+<div class="modal fade" id="tag" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top:100px;">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="org-headtxt-big">Add New Tag</div>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <input class="form-control" placeholder="Tag Name">
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-warning">Add</button>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Create Business Card -->
+<div class="modal fade" id="businesscard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top:100px;">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="org-headtxt-big">Capture</div>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div style="border:solid 1px #ccc;"><img src="images/img-preview.jpg" class="img-responsive" alt="" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer" style="text-align:center" >
+        <button type="button" class="btn btn-warning">Take Photo</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- Report Issue -->
+<div class="modal fade" id="reportissue" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top:100px;">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="headtxt-big">What's wrong with this contact?</div>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <select class="form-control">
+                      <option>Please select a reason</option>
+                      <option>Twodifferent peoplewere merged</option>
+                      <option>Merge choose the wrong data for certain fields</option>
+                      <option>Data is missing</option>
+                      <option>Transcription errors</option>
+                      <option>Update brought incorrect data</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-tb10">
+               
+                      <textarea class="form-control" rows="4"></textarea>
+                   </div>
+            </div>
+        </div>
+        <div class="modal-footer" style="text-align:center" >
+        <button type="button" class="btn btn-warning">Submit</button>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Create Business Card -->
+<div class="modal fade modal-admin" id="export" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top:100px;>
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="org-headtxt-big">Export Contacts</div>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="heading">Select the contacts you would like to export:</div>
+                    <div class="marginspace10">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> <span class="headtxt">All Contacts</span>
+                        </label>
+                    </div>
+                    <div class="marginspace10">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="Radio1" value="option1"> <span class="headtxt">Selected Contacts (1)</span>
+                        </label>
+                    </div>
+                    <div class="marginspace10">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="Radio2" value="option1"> <span class="headtxt"> Tag</span>
+                        </label>
+                    </div>
+                    <div class="marginspace10">
+                        <select class="form-control">
+                          <option>Tag Name 1</option>
+                          <option>Tag Name 2</option>
+                          <option>Tag Name 3</option>
+                        </select>
+                   </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="heading">Select the type of export you would like</div>
+                    <div class="marginspace10">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="Radio3" value="option1"> <span class="headtxt"><b>Google CSV Format</b></span>
+                            <div class="padding5">(for importing into a Google account)</div>
+                        </label>                        
+                    </div>
+                    <div class="marginspace10">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="Radio4" value="option1"> <span class="headtxt"><b>Outlook CSV Format</b></span>
+                            <div class="padding5">(for importing into Outlook or another application)</div>
+                        </label>
+                    </div>
+                    <div class="marginspace10">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="Radio5" value="option1"> <span class="headtxt"><b> vCard format</b></span>
+                            <div class="padding5">(for importing into Apple Address Book or another application)</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer" style="text-align:center" >
+        <button type="button" class="btn btn-warning">Export</button>
+        </div>
+    </div>
+    </div>
+</div>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+        })
+    </script>
+
+   
+
+<script src="js/jquery.js"></script>
+    <script src="js/ddmenu.js"></script>
+<script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $('.panel-heading div.clickable').on("click", function (e) {
+                    if ($(this).hasClass('panel-collapsed')) {
+                        // expand the panel
+                        $(this).parents('.panel').find('.panel-body').slideDown();
+                        $(this).removeClass('panel-collapsed');
+                        $(this).parents('.panel').find('i:first').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                    }
+                    else {
+                        // collapse the panel
+                        $(this).parents('.panel').find('.panel-body').slideUp();
+                        $(this).addClass('panel-collapsed');
+                        $(this).parents('.panel').find('i:first').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                    }
+                });
+            });
+</script>
+     <script>
+         $('.modal-admin').css('width', '60%');
+         $('.modal-admin').css('margin', '100px auto 100px auto');
+         $('.modal-admin').modal('hide')
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip({
+                placement: 'top'
+            });
+        });
+</script>
+ 
+</body>
+</html>

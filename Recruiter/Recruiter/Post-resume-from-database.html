@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+    @media (min-width: 768px) {
+.modal-content {
+    box-shadow: none;
+}
+    }
+</style>
+   <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script>
+      $(function () {
+          $("#slider-range-max").slider({
+              range: "max",
+              min: 1,
+              max: 10,
+              value: 2,
+              slide: function (event, ui) {
+                  $("#amount").val(ui.value);
+              }
+          });
+          $("#amount1").val($("#slider-range-max").slider("value"));
+          $("#slider-range-max1").slider({
+              range: "max",
+              min: 1,
+              max: 10,
+              value: 2,
+              slide: function (event, ui) {
+                  $("#amount1").val(ui.value);
+              }
+          });
+          $("#amount").val($("#slider-range-max").slider("value"));
+      });
+
+
+  </script>
+</head>
+<body style="background-color:#eae4dc">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <header id="headerdiv">
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Post Resume From Database</li>
+            </ol>
+            <div class="row">
+                <div class="pull-right" style="margin:0 20px 10px 0;">
+                <a href="Post-resume-login.html"><button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"> &nbsp;Back </button></a>
+            </div>
+            </div>
+            <div class="head-panel-grey"><h4>Post Resume From Database</h4></div>
+            <div style="background-color:#fff; border-radius:5px; padding:15px;">
+                <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Sort by</label>
+                        <select class="form-control">
+                            <option>Exploring</option>
+                            <option>On Notice period</option>
+                            <option>Currently Available</option>
+                            <option>Currently Available</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="panel-head">Filters</div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                        <label for="exampleInputEmail1">Skills</label>
+                        <textarea class="form-control">
+                        </textarea>
+                    </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Expected CTC Min</label>
+                            <input type="email" class="form-control" id="Email1" placeholder="Job Description Title">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Expected CTC Max</label>
+                            <input type="email" class="form-control" id="Email2" placeholder="Job Description Title">
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                    
+                <div class="col-md-6">
+                    <p>
+                      <label for="amount">Experience (in Years):</label>
+                      <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                    <div id="slider-range-max"></div>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                      <label for="amount">Salary (in lackhs):</label>
+                      <input type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                    <div id="slider-range-max1"></div>
+                </div>
+            </div>
+
+            <div class="row" style="margin:20px 0;">
+                <div class="col-md-6 col-md-offset-3"><button type="button" class="btn btn-primary" style="width:100%" data-dismiss="modal">Apply RFH criteria</button></div>
+
+            </div>
+            </div>
+
+            <div class="panel-head">Advanced</div>
+            
+            <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Qualification</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Qualification">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Specialization</label>
+                    <input type="email" class="form-control" id="Email3" placeholder="Specialization">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Current CTC</label>
+                    <input type="email" class="form-control" id="Email4" placeholder="Current CTC">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Current Designation</label>
+                    <input type="email" class="form-control" id="Email5" placeholder="Current Designation">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Current Company</label>
+                    <input type="email" class="form-control" id="Email6" placeholder="Current Company">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Status</label>
+                    <input type="email" class="form-control" id="Email7" placeholder="Status">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Date of Birth</label>
+                    <input type="email" class="form-control" id="Email8" placeholder="Date of Birth">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Age above</label>
+                    <input type="email" class="form-control" id="Email9" placeholder="Age above">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Age below</label>
+                    <input type="email" class="form-control" id="Email10" placeholder="Age below">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Gender</label>
+                    <select class="form-control">
+                                      <option>Male</option>
+                                      <option>Female</option>
+                                    </select>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Marital Status</label>
+                    <select class="form-control">
+                                      <option>Single</option>
+                                      <option>Married</option>
+                                    </select>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Present Location</label>
+                    <input type="email" class="form-control" id="Email13" placeholder="Search Designation">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <div for="exampleInputEmail1" >Willing to relocate</div>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="Radio1" value="option1"> Yes
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="Radio2" value="option2"> No
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nationality</label>
+                    <select class="form-control">
+                                      <option>Nationality</option>
+                                      <option>Indian</option>
+                                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div style="background-color:#fff; padding:5px 10px; font-weight:bold; color:#ff6a00; border-radius:3px; margin:0 0 10px 0">Total Experience range</div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Years</label>
+                                <input type="email" class="form-control" id="Email11" placeholder="Years">
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" style="margin-top:30px; text-align:center">to</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Years</label>
+                                <input type="email" class="form-control" id="Email12" placeholder="Years">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div style="background-color:#fff; padding:5px 10px; font-weight:bold; color:#ff6a00; border-radius:3px; margin:0 0 10px 0">Relevant Experience Range</div>
+                <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Years</label>
+                    <input type="email" class="form-control" id="Email14" placeholder="Years">
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                <div class="form-group">
+                    <label for="exampleInputEmail1" style="margin-top:30px; text-align:center">to</label>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Years</label>
+                    <input type="email" class="form-control" id="Email15" placeholder="Years">
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+        
+        <hr />
+        <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Status</label>
+                        <select class="form-control">
+                            <option>Status</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="table-responsive" style="width:100%; overflow-y:scroll">
+                        <table  class="table table table-striped" style="width:3500px;">
+                            <thead>
+                                <tr style="background-color:#192930; color:#fff">
+                                    <th>Name</th>
+                                    <th>Notice Period</th>
+                                    <th>Experience</th>
+                                    <th>Current Job title</th>
+                                    <th>Current Company</th>
+                                    <th>Current Location</th>
+                                    <th>Skills</th>
+                                    <th>Expected CTC range</th>
+                                    <th>Status</th>
+                                    <th>Job</th>
+                                    <th>RFH No</th>
+                                    <th>Department</th>
+                                    <th>Post to Job</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#"> Manjunath T R</a></td>
+                                    <td>90 days</td>
+                                    <td>7 Years 6 Months</td>
+                                    <td>Designing Head</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>J P Nagar</td>
+                                    <td>HTML5, CASS3, Bootstrap, Jquery mobile, Photoshop</td>
+                                    <td>8 Lackhs</td>
+                                    <td>Lorem ispum dolor sit amet</td>
+                                    <td>Lorem ispum dolor sit amet</td>
+                                    <td>Lorem ispum dolor sit amet</td>
+                                    <td>Lorem ispum dolor sit amet</td>
+                                    <td><button type="submit" class="btn btn-success btn-sm" style="border-color:#ccc; width:100%; font-weight:bold"> &nbsp;Post</button></td>
+                                    
+                                </tr>
+                            
+                               <tr>
+                                    <td><a href="#"> Manjunath T R</a></td>
+                                    <td>90 days</td>
+                                    <td>7 Years 6 Months</td>
+                                    <td>Designing Head</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>J P Nagar</td>
+                                    <td>HTML5, CASS3, Bootstrap, Jquery mobile, Photoshop</td>
+                                    <td>8 Lackhs</td>
+                                    <td>Lorem ispum dolor sit amet</td>
+                                    <td>Lorem ispum dolor sit amet</td>
+                                    <td>Lorem ispum dolor sit amet</td>
+                                    <td>Lorem ispum dolor sit amet</td>
+                                    <td><button type="submit" class="btn btn-danger btn-sm" style="border-color:#ccc; width:100%; font-weight:bold"> &nbsp;Remove</button></td>
+                                    
+                                </tr>
+
+                                <tr>
+                                   <td><a href="#"> Manjunath T R</a></td>
+                                    <td>90 days</td>
+                                    <td>7 Years 6 Months</td>
+                                    <td>Designing Head</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>J P Nagar</td>
+                                    <td>HTML5, CASS3, Bootstrap, Jquery mobile, Photoshop</td>
+                                    <td>8 Lackhs</td>
+                                    <td>Lorem ispum dolor sit amet</td>
+                                    <td>Lorem ispum dolor sit amet</td>
+                                    <td>Lorem ispum dolor sit amet</td>
+                                    <td>Lorem ispum dolor sit amet</td>                                    
+                                    <td><button type="submit" class="btn btn-success btn-sm" style="border-color:#ccc; width:100%; font-weight:bold"> &nbsp;Post</button></td>
+                                </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+            
+
+    </div>
+        
+</div>
+    
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="z-index:1000000">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        
+      </div>
+      <div class="modal-body">
+        Confirm to Reject
+      </div>
+      <div class="modal-footer">
+          <div class="row">
+              <div class="col-md-6"><button type="button" class="btn btn-default btn-sm" style="width:100%">No</button></div>
+              <div class="col-md-6"><button type="button" class="btn btn-success btn-sm" style="width:100%">Yes</button></div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+
+</body>
+</html>

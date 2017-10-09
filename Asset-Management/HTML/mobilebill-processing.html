@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+    @media (min-width: 768px) {
+.modal-content {
+    box-shadow: none;
+}
+    }
+</style>
+</head>
+<body style="background-color:#eae4dc">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <header>
+        <div class="gr-clr"></div>
+        <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="asset-class.html">Class</a></li>
+                                    <li><a href="asset-category.html">Category</a></li>
+                                    <li><a href="asset-sub-category.html">Sub category</a></li>
+                                    <li><a href="asset-variant.html">Variant</a></li>
+                                    <li><a href="mobile-eligibility.html">Mobile Eligibility</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Assets<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="asset-management.html">View Assets</a></li>
+                                    <li><a href="requisition.html">Requisition</a></li>
+                                </ul>
+                            </li> 
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mobile<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="mobile-management.html">Mobile Management</a></li>
+                                    <li><a href="mobilebill-processing.html">Mobile Bill Processing</a></li>
+                                </ul>
+                            </li>      
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+             <!-- <li><a href="#">Home</a></li>-->
+              <li class="active">Mobile Bill Processing</li>
+            </ol>        
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color:#646572">
+                                <h4 class="modal-title" style="color:#fff">Mobile Bill Processing</h4>                                
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Billing period From</label>
+                                             <input type='text' class="input" data-beatpicker="true" />
+                                          </div>
+                                    </div> 
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Billing period To</label>
+                                             <input type='text' class="input" data-beatpicker="true" />
+                                          </div>
+                                    </div> 
+                                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                         <label for="exampleInputEmail1">&nbsp;</label>
+                                        <a href="mobile-management.html"><button type="button" class="btn btn-warning" style="width:100%" data-dismiss="modal">Get</button></a>
+                                    </div>
+
+                                     <!--<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                 <div class="form-group">
+                                                     <label for="exampleInputEmail1">&nbsp;</label>
+                                                    <div id="custom-search-input">
+                                                        <div class="input-group col-md-12">
+                                                            <input type="text" class="  search-query form-control" placeholder="Search" style="height:38px;" />
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-success" type="button" style="padding: 11px;">
+                                                                    <span class=" glyphicon glyphicon-search"></span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                            </div> -->
+                                </div>
+                                
+                                <div class="row">
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
+                                        <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#home">Un processed</a></li>
+                                    <li><a data-toggle="tab" href="#menu2">Processed</a></li>
+                                    
+                                    <div class="pull-right" style="margin: 5px 10px 0 0;color: #007acc;"><span class="glyphicon glyphicon-download-alt" title="Download" aria-hidden="true"></span></div>
+                                  </ul>                                        
+                                <div class="tab-content">
+                                    <div id="home" class="tab-pane fade in active">
+                                      <div class="row">
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">&nbsp;</div>
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                 <div class="form-group">                                                     
+                                                    <div id="custom-search-input" style="padding-top:5px;">
+                                                        <div class="input-group col-md-12">
+                                                            <input type="text" class="  search-query form-control" placeholder="Search" style="height:38px;" />
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-success" type="button" style="padding: 11px;">
+                                                                    <span class=" glyphicon glyphicon-search"></span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                		                    <div class="col-xs-12">
+                                                <div class="table-responsive" style="width:100%;">
+                                                    <table  class="table table table-striped" style="width:2300px">
+                                                        <thead>
+                                                            <tr style="background-color:#192930; color:#fff">                                                        
+                                                                <th>Mobile No</th>
+                                                                <th>Type</th>
+                                                                <th>Bill Date</th>
+                                                                <th>Bill No</th>
+                                                                <th>From Date</th>
+                                                                <th>To Date</th>
+                                                                <th>Due date</th>
+                                                                <th>Account no</th>
+                                                                <th>One time charges</th>
+                                                                <th>Monthly charges</th>
+                                                                <th>Value added</th>
+                                                                <th>Mobile internet</th>
+                                                                <th>Roaming</th>
+                                                                <th>Discounts</th>
+                                                                <th>Taxes</th>
+                                                                <th>Total charges</th>
+                                                                <th>Currently Allocated to</th>
+                                                                <th>Eligibility</th>
+                                                                <th>Recovery Amount</th>
+                                                                <th>Exceptional Recovery Amount</th>
+                                                                <th>Exception Remarks</th>
+                                                                <th>Exception Given By</th>
+                                                                <th>Upload Date</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>9980652233</></td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td><input type="email" class="form-control" id="Email3" placeholder=""></td>
+                                                                <td><textarea class="form-control" rows="1"></textarea></td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                    
+                                                          <tr>
+                                                                <td>9980652233</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td><input type="email" class="form-control" id="Email1" placeholder=""></td>
+                                                                <td><textarea class="form-control" rows="1"></textarea></td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9980652233</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td><input type="email" class="form-control" id="Email2" placeholder=""></td>
+                                                                <td><textarea class="form-control" rows="1"></textarea></td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9980652233</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td><input type="email" class="form-control" id="Email4" placeholder=""></td>
+                                                                <td><textarea class="form-control" rows="1"></textarea></td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                  	                    </div>
+                                    </div>
+                                    <div id="menu2" class="tab-pane fade">
+                                      <h3>Processed</h3>
+                                    </div>
+                                  </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                                
+                            
+                        </div>
+                </div>
+            </div>
+
+                 <div class="col-md-12">
+                     <div style="background-color:#fff; padding:50px 0; text-align:center; font-size:14pt; margin-top:25px;">Drag and drop the file here to upload</div>
+                </div>
+    </div>
+        <div class="row" style="margin-top:20px;">
+                    <div class="col-md-6 col-md-offset-3"><button type="button" class="btn btn-primary" style="width:100%" data-toggle="modal" data-target="#myModal">Process</button></div>
+        </div>  
+</div>  
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="margin-top:70px">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#8ba927; color:#fff;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Alert</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+              <div class="col-md-12">The bill period of following items seem to overlap with bill periods of other existing bills!<br /><br />Please check and rectify </div>
+                                   
+                	    <div class="col-xs-12">
+                            <div class="table-responsive" style="width:100%;">
+                                <table  class="table table table-striped">
+                                    <thead>
+                                        <tr style="background-color:#192930; color:#fff">  
+                                            <th>Sl. No</th>
+                                            <th>Mobile No</th>
+                                            <th>Bill No</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>9980652233</td>
+                                            <td>121</td>      
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>9980652233</td>
+                                            <td>121</td>      
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>9980652233</td>
+                                            <td>121</td>      
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                         </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Proceed with Other Bills</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+	
+   
+</script>
+
+</body>
+</html>

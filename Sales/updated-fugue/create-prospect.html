@@ -1,0 +1,1050 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/telogomin.jpg" />
+
+<title>Create Prospect</title>
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+ <link rel="stylesheet" href="http://summernote.org/bower_components/summernote/dist/summernote.css">
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/intlTelInput.css">
+
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="css/master-style.css">
+<link href="css/new-timeline.css" rel="stylesheet" />
+<script type="text/javascript" src="http://summernote.org/bower_components/summernote/dist/summernote.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script src="js/home-page-script.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+ 
+    <script src="js/header.js"></script>
+ 
+        <script src="js/addmoretext.js"></script>
+        <script src="js/intlTelInput.js"></script> 
+		<script>
+		$(document).ready(function(){
+		$(".contelcode").intlTelInput({
+            allowExtensions: true,
+            autoFormat: false,
+            autoHideDialCode: false,
+            autoPlaceholder: false,
+            defaultCountry: "auto",
+            ipinfoToken: "yolo",
+            nationalMode: false,
+            numberType: "MOBILE",
+           
+            preventInvalidNumbers: true
+        });
+		});
+		</script>
+
+</head>
+<body style="background-color:#eae4dc !important; color:#000 !important;">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+     <header>
+		<div class="gr-clr"></div>
+            <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+						    <li><a href="dashboard.html">Dashboard </a></li>
+  						    <li><a href="inventory.html">Portfolio </a></li>
+							<li class="active"><a href="lead-data-view.html">Lead <span class="sr-only">(current)</span></a></li>
+                            <li><a href="termsheet.html">Sales Tracker </a></li>
+							<li><a href="collections.html">Collections </a></li>
+							<li><a href="invoices.html">Invoices </a></li>
+							<li><a href="#">Tracking </a></li>
+							<li><a href="#">Business Partner </a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Change Order</a></li>
+                                    <li><a href="#">Cancellation</a></li>
+                                    <li><a href="#">Transfer</a></li>
+									<li><a href="#">Customisation</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Products</a></li>
+                                     <li><a href="#">Business Segment</a></li>
+                                      <li><a href="#">Specification</a></li>
+									  <li><a href="#">T&amp;C</a></li>
+									  <li><a href="#">Schedule</a></li>
+									  <li><a href="#">Rules</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">User Management</a></li>
+                                    <li><a href="#">Roles Management</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+	</header>
+<!--header-->
+<!--Wrapper-->
+  
+<div class="container wrapper" style="background-color:#fff;">
+<section>
+<div class="row">
+
+<div class="wizard">
+<div class="head-panel-blue" style="margin-top:10px"><h4>Lead</h4></div>
+<div style="width:98%; margin:0 auto;">
+ <div class="lead-title">Create Prospect</div>  </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        <div class="step1" >
+                        <div class="step_details content " >
+						<div class="col-md-12">
+						<div class="col-md-6">
+                          <div class="head-panel-titlebox"><h3 class="heading">Personal Details</h3></div>
+                            <div class="row">
+									<div class="firstandlast">
+										<div class="col-md-2 padleft10">
+											<div class="form-group mar5l20">
+												<div class="salutation">							
+													<select class="form-control selectbtn" name="salutation" tabindex="-1" class="">
+													<option value="Salutation">Salutation</option>
+													<option value="Mr">Mr</option>
+													<option value="Mrs">Mrs</option>
+													<option value="Ms">Ms</option>
+													<option value="M/S">M/S</option>
+													<option value="Dr.">Dr.</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-5" style="padding:0; height:45px;">
+											<div class="form-group " style="margin:5px 20px 5px 0px;">
+												<input class="form-control" id="FirstName" placeholder="First Name" name="firstname" type="text"/>
+											</div> 
+										</div>
+										<div class="col-md-5" style="padding:0;">
+											<div class="form-group marb30o5">
+												<input class="form-control" id="LastName" placeholder="Last Name" name="lastname" type="text"/>
+										   </div> 
+										</div>
+									</div>
+									 <div class="col-md-12 comdetail"><p>Company name please select the salutation is M/S</p></div> 
+									<div class="companydetails">
+										<div class="col-md-12">
+											<div class="form-group ">
+												<input class="form-control" placeholder="Company Name" name="companyname" type="text"/>
+											</div>  
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-md-12 paddingnone">
+										<div class="col-md-2 padleft10">
+											<div class="form-group mar5l20">
+                                                            <div class="salutation">
+                                                              
+                                                                 <span id="countryCode" class="form-control contelcode" placeholder="Country">Country</span>
+                                                              
+                                                            </div>
+                                                        </div>
+										</div>
+										<div class="col-md-5 paddingnone">
+											<div class="form-group marb20o5">
+												<div class="input_fields_wrap_phone">
+													<div class="input-group">
+														<div>
+															<input type="text"  class="form-control phoneno" name="mytext[]" placeholder="Primary Phone">
+														</div>
+																<span class="input-group-addon right-btn"><button type="button" class="add_button_text"><i class="glyphicon glyphicon-plus"></i></button></span>
+			 
+													</div>
+														<p>Select + sign for more phone numbers </p>
+												</div>
+		 
+											</div> 
+										</div>
+										<div class="col-md-5 paddingnone">
+											<div class="form-group marb30o5">
+												<div class="input_fields_wrap_email">
+													<div class="input-group">
+														<div>
+															<input class="form-control col-md-10 emailid" placeholder="Primary Email" type="text" name="">
+														</div>
+															<span class="input-group-addon right-btn"><button type="button" class="add_button_email"><i class="glyphicon glyphicon-plus"></i></button></span>
+													</div>
+														<p>Select + sign for more Emails </p>
+												</div>
+											</div> 
+										</div>
+									</div>
+                            
+							</div>
+                           <div class="clearfix"></div>
+						</div>
+						<div class="col-md-6 martop10">
+							<div class="matchinfodetails marbot10">
+								<div class="panel subheadingpanel">Lead Details</div>
+									<div class="personalcurrentinfo">
+									<div class="col-md-12">
+												
+										<div>
+											<div class="row">
+												<div class="col-md-12">
+												<!-- 	<div style="width:93%; margin: 0 auto; color:#ff6a00; font-weight: bold;">Welcome to First name last name,</div> -->
+												<div class="col-md-6 paddingnone martop5">
+												<div  style="display: inline;"> 
+														<i class="fa fa-user perinfostyle"  aria-hidden="true"></i> Manjunath Ramesh
+													</div>
+													
+												
+														
+												</div>
+												<div class="col-md-6 paddingnone martop5">
+												
+														<div  style="display: inline;"> 
+														<i class="fa fa-graduation-cap perinfostyle" aria-hidden="true"></i> IT Admin
+													</div>
+													</div>
+													<div class="col-md-6 paddingnone martop5">
+												<div>
+														<span><i class="fa fa-envelope perinfostyle" aria-hidden="true"></i>  <span class="content" style="display:inline"> manjunath@total-environment.com</span></span>
+													</div>
+													
+													
+												</div>
+												<div class="col-md-6 paddingnone martop5">
+												
+													<div  style=" display: inline; "> 
+														<i class="fa fa-university perinfostyle" aria-hidden="true"></i> Total Environment
+													</div>
+												</div>
+												<div class="col-md-6 paddingnone martop5">
+												<div> 
+														<i class="fa fa-phone perinfostyle" aria-hidden="true"></i><span class="tenumber" style="display:inline">+91 974325432</span> 
+														</div>
+												</div>
+												
+												
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="callhistory">
+								<div class="panel" style="background-color: #3e7eae; padding: 5px 10px; color:#fff;">Call History</div>
+									<div class="">
+									</div>
+							</div>
+						</div>
+						</div>
+						   <div class="clearfix"></div>
+                        <div class="matchwrapper potentialmatch">
+							<div class="row">
+								<div class="head-panel-titlebox"><h4 class="heading" style="width: 98%">Potential Match</h4><span class="pull-right"><i class="fa fa-times" aria-hidden="true"></i></span></div>
+									<div class="matchwrapper">
+										<div class="row">
+										<div class="col-md-12">
+											<div class="col-md-3  ">
+												<div class="rounded matchinfo">
+												<div><i class="fa fa-user" aria-hidden="true"></i> : <span class="content" style="display:inline">Lorem</span></div>
+                                <div><i class="fa fa-phone" aria-hidden="true"></i>  : <span class="tenumber" style="display:inline">2323423424</span> </div>
+                                <div><span><i class="fa fa-envelope" aria-hidden="true"></i>  : <span class="content" style="display:inline">abc@abc.com</span>
+                                </span></div>
+                                
+                                </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                <div class="rounded matchinfo">
+												<div><i class="fa fa-user" aria-hidden="true"></i> : <span class="content" style="display:inline">Lorem</span></div>
+                                <div><i class="fa fa-phone" aria-hidden="true"></i>  : <span class="tenumber" style="display:inline">2323423424</span> </div>
+                                <div><span><i class="fa fa-envelope" aria-hidden="true"></i>  : <span class="content" style="display:inline">abc@abc.com</span>
+                                </span></div>
+                                
+                                </div>
+                                </div>
+                                <div class="col-md-3">
+                               <div class="rounded matchinfo">
+												<div><i class="fa fa-user" aria-hidden="true"></i> : <span class="content" style="display:inline">Lorem</span></div>
+                                <div><i class="fa fa-phone" aria-hidden="true"></i>  : <span class="tenumber" style="display:inline">2323423424</span> </div>
+                                <div><span><i class="fa fa-envelope" aria-hidden="true"></i>  : <span class="content" style="display:inline">abc@abc.com</span>
+                                </span></div>
+                                
+                                </div>
+                                </div>
+                                <div class="col-md-3">
+                               <div class="rounded matchinfo">
+												<div><i class="fa fa-user" aria-hidden="true"></i> : <span class="content" style="display:inline">Lorem</span></div>
+                                <div><i class="fa fa-phone" aria-hidden="true"></i>  : <span class="tenumber" style="display:inline">2323423424</span> </div>
+                                <div><span><i class="fa fa-envelope" aria-hidden="true"></i>  : <span class="content" style="display:inline">abc@abc.com</span>
+                                </span></div>
+                                
+                                </div>
+                                </div>
+								</div>
+							 </div>
+                                </div>
+                                </div> 
+                                </div>
+                               <div class="clearfix"></div>
+                                </div>
+                       <div class="linesep"></div>
+                        <ul class="list-inline pull-right margin-right-10" >
+                            <li><a target="_blank"><button type="button" class="btn btn-primary next-step">Save and continue</button></a></li>
+                        </ul>
+                        </div>
+                       
+                    </div>
+				</div>
+			   <div class="tab-content">
+                   
+                    <div class="tab-pane" role="tabpanel" id="step2"> 
+					 <div style="width:99%">
+                      
+                       <div class="pull-right martop10"	>
+                       <!-- <button class="btn btn-primary btn-sm " >Manual Allocate</button>  
+                       <button class="btn btn-primary btn-sm">Auto Allocate</button> -->  
+                       <button class="btn customwidthbtn btn-primary btn-sm">Self Allocate</button>
+<button class="btn btn-primary customwidthbtn btn-sm mallocate" data-toggle="modal" data-target="#myModal">Assign</button> 
+<button class="btn btn-primary customwidthbtn btn-sm timlinepop" data-toggle="modal" data-target="#timelineModal">Timeline</button>   					   
+                       <!-- <button class="btn btn-primary btn-sm">Save</button>    
+                       <button class="btn btn-danger btn-sm">Drop</button>  
+                       <button class="btn btn-danger btn-sm">Disqualify</button> -->
+                       </div>
+					   
+					  
+                       </div>
+                     
+                       <div class="step_details content">
+                        <div> 
+                       
+                                <div class="row">
+                                <div class="col-md-12">
+                                <div class="col-md-6">
+                                 <div class="row martop10">
+                                <div class="col-md-12">
+                             
+ <div class="personalinfodetails">
+ <div class="panel subheadingpanel">Prospect Details </div>
+
+ <div class="personalcurrentinfo">
+<div class="col-md-12">
+<div class="col-md-2 martop10">
+ <div class="personalinfocircle">
+<img src="images/profile.png" style="width: 50px;">
+</div> 
+</div>
+<div class="col-md-10">
+
+<div class="row">
+<div class="col-md-12">
+<div class="welcomestyle"> 
+Welcome to Manjunath Ramesh,</div> 
+<div class="col-md-6 martop5">
+
+
+<div class="clearfix"></div>
+<div  style=""> 
+<i class="fa fa-phone detinfostyle" aria-hidden="true"></i><span class="tenumber" style="display:inline">2323423424</span> 
+                                
+</div>
+<div  style=""> 
+<i class="fa fa-phone detinfostyle" aria-hidden="true"></i><span class="tenumber" style="display:inline">123456789</span> 
+                                
+</div>
+</div>
+<div class="col-md-6 martop5">
+
+
+<div><span><i class="fa fa-envelope detinfostyle" aria-hidden="true"></i>  <span class="content" style="display:inline">abc@abc.com</span>
+</span></div>
+<div class="clearfix"></div>
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+                                 </div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="col-md-12">
+  <div class="head-panel-titlebox" style="width:100% !important;"><h4 class="heading">Other details</h4></div> 
+ <div class="col-md-6"><div class="form-group " style="margin:5px 0;">
+  <label class="control-label " for="organisation">
+   Organisation
+  </label>
+   <input class="form-control" id="organisation" placeholder="Organisation" name="organisation" type="text"/>
+ </div></div>
+ <div class="col-md-6"> <div class="form-group " style="margin:5px 0;">
+  <label class="control-label " for="city">
+  City
+  </label>
+   <select class="form-control" name="city" id="city">
+                                                <option value="">Select</option>
+                                                <option value="Bangalore">Bangalore</option>
+                                                <option value="Pune">Pune</option>
+                                              
+                                            </select>
+ </div></div>
+</div>
+</div>
+<div class="clearfix"></div>
+
+                                <div class="row">
+                                <div class="col-md-12">
+                                 <div class="head-panel-titlebox" style="width:100% !important;"><h4 class="heading">Source of Enquiry</h4></div>
+                                <div class="col-md-4">
+                             <div class="form-group martb5">
+  <label class="control-label " for="firstconnect">
+   First Connect
+  </label>
+    <select class="form-control" name="firstconnect" id="firstconnect">
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                              
+                                            </select>
+ </div>  
+                            </div>
+                             <div class="col-md-4">
+                            <div class="form-group martb5">
+  <label class="control-label " for="subfirstconnect">
+    Sub First Connect
+  </label>
+    <select class="form-control" name="subfirstconnect" id="subfirstconnect">
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                              
+                                            </select>
+ </div>  
+                            </div> 
+                            
+                            <div class="col-md-4">
+                            <div class="form-group martb5">
+  <label class="control-label " for="primarysource">
+   Primary Source
+  </label>
+    <select class="form-control" name="primarysource" id="primarysource">
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                              
+                                            </select>
+ </div>  
+                            </div> 
+                             
+                             <div class="col-md-4">
+                              <div class="form-group martb5">
+  <label class="control-label " for="secondarysource">
+   Secondary Source
+  </label>
+    <select class="form-control" name="secondarysource" id="secondarysource">
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                              
+                                            </select>
+ </div>  
+                            </div>
+                            <div class="col-md-4">
+                             <div class="form-group martb5">
+  <label class="control-label " for="channalpartner">
+  Channal Partner
+  </label>
+   <select class="form-control" name="channalpartner" id="channalpartner">
+                                                <option value="">Select</option>
+                                                <option value="Bangalore">Bangalore</option>
+                                                <option value="Pune">Pune</option>
+                                              
+                                            </select>
+ </div>  
+                            </div>  
+                             <div class="col-md-4">
+                             <div class="form-group martb5">
+  <label class="control-label " for="salesengine">
+   Sales Engine
+  </label>
+    <select class="form-control" name="salesengine" id="salesengine">
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                              
+                                            </select>
+ </div>  
+                            </div>
+                              
+                               
+                                
+                                
+                             <div class="col-md-4">
+                            <div class="form-group martb5">
+  <label class="control-label " for="city">
+    City
+  </label>
+    <select class="form-control" name="city" id="city">
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                              
+                                            </select>
+ </div>  
+                            </div> 
+                            
+                            <div class="col-md-4">
+                            <div class="form-group martb5">
+  <label class="control-label " for="preferedlocation">
+   Prefered Location
+  </label>
+    <select class="form-control" name="preferedlocation" id="preferedlocation">
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                              
+                                            </select>
+ </div>  
+                            </div> 
+                                </div> 
+                                </div>
+<div class="clearfix"></div>
+<div class="col-md-12" style="margin-top:10px; border-top:1px dotted #ccc; padding:0;">
+								<div class="matchwrapper">
+                                  <div class="row">
+                              <!--   <div class="head-panel-titlebox" style="width:98% !important;"><h4 class="heading">Notes</h4></div> -->
+                                 
+                                 <div class="row"  style="width: 98% !important;margin: 10px 0 0 0; ">
+                                
+<!-- notes tabs -->
+
+<div class="col-md-12" style="padding-right:0;">
+<div id="exTab1">	
+<ul  class="nav nav-pills">
+			<li class="active">
+        		<a href="#1a" data-toggle="tab"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Add Notes</a>
+			</li>
+			<!-- <li>
+				<a href="#2a" data-toggle="tab"><i class="fa fa-upload" aria-hidden="true"></i> Upload files</a>
+			</li> -->
+			
+		</ul>
+
+			
+			
+      <div class="addnote">
+   <p>Add Notes sections</p>
+
+  </div>
+			
+
+<!-- tabs end--></div>
+
+
+                                 </div>
+								<!--  <div class="col-md-12" style="margin:5px 0;">
+								  <div class="callhistory">
+  <div class="panel" style="background-color: #3e7eae; padding: 5px 10px; color:#fff;">Call History</div>
+  
+
+  </div>
+								 </div>
+                                -->  </div>
+
+
+                                </div>
+                                </div>
+                                <div class="clearfix"></div>
+								</div>
+
+
+                                </div>
+                                <div class="col-md-6">
+                                 
+                                <div class="matchwrapper">
+                                     <div class="row">
+                                <div class="col-md-12">
+                                <div class="head-panel-titlebox" style="width:100% !important;"><h4 class="heading">Projects</h4></div>
+                                 <div class="projects_list">
+                                 <div class="row">
+                                 <div class="col-md-12" style="width:98%; margin:0 1%;">
+                                 <div class="row">
+                                 <div id="proj1" class="col-md-2 projects_list_selection">
+                                 <img src="images/Windmills-of-Your-Mind.png" class="img-responsive">
+                                <div class="projects_selection"></div>	
+                                 </div>
+                               
+                                 <div id="proj3" class="col-md-2 projects_list_selection">
+                                 <img src="images/A-Few-Honest-Words.png" class="img-responsive">
+                                <div class="projects_selection"></div>
+                                 </div>
+                                 <div id="proj4" class="col-md-2 projects_list_selection">
+                                 <img src="images/After-the-Rain.png" class="img-responsive">
+                                <div class="projects_selection"></div>
+                                 </div>
+                                 <div id="proj5" class="col-md-2 projects_list_selection">
+                                 <img src="images/Learning-to-Fly.png" class="img-responsive">
+                                <div class="projects_selection"></div>
+                                 </div>
+                                 <div id="proj7" class="col-md-2 projects_list_selection">
+                                 <img src="images/Pursuit-of-a-Radical-Rhapsody.png" class="img-responsive">
+                                 <div class="projects_selection"></div>
+
+                                 </div>
+								   <div id="proj8" class="col-md-2 projects_list_selection">
+                                 <img src="images/Songs-from-the-Wood.png" class="img-responsive">
+                                <div class="projects_selection"></div>
+                                 </div>
+                                 </div>
+                                 <div  class="row" style="margin-top:10px;">
+                                
+                               
+                                 <div id="proj9" class="col-md-2 projects_list_selection">
+                                 <img src="images/The-Magic-Faraway-Tree.png" class="img-responsive">
+                                 <div class="projects_selection"></div>
+                                 </div>
+                                
+                                 <div id="proj11" class="col-md-2 projects_list_selection">
+                                 <img src="images/The-Meadow-Dance.png" class="img-responsive">
+                                 <div class="projects_selection"></div>
+                                 </div>
+                                 <div id="proj12" class="col-md-2 projects_list_selection">
+                                 <img src="images/Van-Goghs-Garden.png" class="img-responsive">
+                                 <div class="projects_selection"></div>
+                                 </div>
+                                 </div>
+                                 </div>
+                                 </div>
+                                 </div>
+
+
+                                </div>
+                                <div class="clearfix"></div>
+
+                                <div class="project_more_details" style="border-top:1px dotted #ccc; width:94%; margin:10px 3%;">
+
+                                 <div class="row">
+                               
+                                 <div class="col-md-4">
+                             <div class="form-group">
+  <label class="control-label " for="producttype">
+   Product Type
+  </label>
+    <select class="form-control" name="producttype" id="producttype">
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                              
+                                            </select>
+ </div>  
+                            </div>
+                             <div class="col-md-4">
+                            <div class="form-group ">
+  <label class="control-label " for="product Area">
+    Product Area
+  </label>
+    <select class="form-control" name="productarea" id="productarea">
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                              
+                                            </select>
+ </div>  
+                            </div> 
+                              <div class="col-md-4">
+                            <div class="form-group ">
+  <label class="control-label " for="Specification">
+    
+    Specification
+  </label>
+    <select class="form-control" name="Specification" id="Specification">
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                              
+                                            </select>
+ </div>  
+                            </div> 
+                         
+                                </div>
+                              
+                                 </div>
+                                </div>
+                              
+                                <div class="row">
+                                <div class="head-panel-titlebox" style="width:98% !important;"><h4 class="heading">Factsheets</h4></div>
+                                  
+                                 <div class="row"  style="width: 98% !important;margin: 0;">
+                                
+
+<div class="col-md-12" style="padding-right:0">
+<div id="accordion">
+  <div class="accordion-group" >
+  <div class="panel" style="background-color:#00b0C9">
+    <div class="panel-heading" >
+      <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#project1">
+        <a style="text-decoration:none">
+          Windmills of Your Mind
+        </a><i class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
+      </h4>
+    </div>
+    <div id="project1" class="panel-collapse collapse">
+      <div class="accordion-inner panbodywhite">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel" style="background-color:#c74c28">
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" href="#project2">
+          <a   style="text-decoration:none">
+          A Few Honest Words
+        </a><i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
+      </h4>
+    </div>
+    <div id="project2" class="panel-collapse collapse">
+      <div class="accordion-inner panbodywhite">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel" style="background-color:#a6a8ab">
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" href="#project3">
+          <a   style="text-decoration:none">
+         After the Rain
+        </a><i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
+      </h4>
+    </div>
+    <div id="project3" class="panel-collapse collapse">
+      <div class="accordion-inner panbodywhite">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+   <div class="panel" style="background-color:#63b1dc">
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" href="#project4">
+          <a   style="text-decoration:none">
+         Learning To Fly
+        </a><i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
+      </h4>
+    </div>
+    <div id="project4" class="panel-collapse collapse">
+      <div class="accordion-inner panbodywhite">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel"  style="background-color:#9a2926">
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" href="#project5">
+          <a   style="text-decoration:none">
+          Pursuit of a Radical Rhapsody 
+        </a><i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
+      </h4>
+    </div>
+    <div id="project5" class="panel-collapse collapse">
+      <div class="accordion-inner panbodywhite">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel" style="background-color:#4d281b">
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" href="#project6">
+         <a   style="text-decoration:none">
+          Songs from the Wood 
+        </a><i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
+      </h4>
+    </div>
+    <div id="project6" class="panel-collapse collapse">
+      <div class="accordion-inner panbodywhite">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel"  style="background-color:#98c93c">
+    <div class="panel-heading"  >
+      <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#project7">
+         <a   style="text-decoration:none">
+           The Magic Faraway Tree
+        </a><i class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
+      </h4>
+    </div>
+    <div id="project7" class="panel-collapse collapse">
+      <div class="accordion-inner panbodywhite">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+ 
+    <div class="panel" style="background-color:#8f916a">
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" href="#project8">
+         <a   style="text-decoration:none">
+         The Meadow Dance
+        </a><i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
+      </h4>
+    </div>
+    <div id="project8" class="panel-collapse collapse">
+      <div class="accordion-inner panbodywhite">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  
+  <div class="panel" style="background-color:#435300">
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" href="#project9">
+          <a   style="text-decoration:none">
+          Van Goghs Garden 
+        </a><i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
+      </h4>
+    </div>
+    <div id="project9" class="panel-collapse collapse">
+      <div class="accordion-inner panbodywhite">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+ 
+  
+  
+
+
+    
+</div>
+</div>
+                                 </div>
+                                 </div>
+
+
+                                </div>
+                                </div>
+                                </div>
+                               
+								<div class="clearfix"></div>
+								
+								
+							   </div>
+                                </div>
+                                 <div class="clearfix"></div>
+                                
+
+                        </div> 
+                    <div class="clearfix"></div>
+                          <div style="border-bottom:dotted 1px #ccc;width: 97%;margin:0 auto 10px auto;padding-bottom: 10px;"></div>
+                         <ul class="list-inline pull-right margin-right-10">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                           <!-- <li><button type="button" class="btn btn-default next-step">Skip</button></li>-->
+                            <li><button type="button" class="btn btn-primary btn-info-full">Finished</button></li>
+                        </ul>
+					   </div> 
+					   
+                         </div>
+                    </div> 
+   
+	
+</div>
+   </div>
+   </section>
+   </div>
+    <!-- Wrapper ends --> 
+	</div>
+	
+	
+	<!-- Modal -->
+<div class="modal fade" id="myModal" style="margin-top: 60px;" tabindex="-1" role="dialog" style="flex-align: center" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" style="width: 32%; left: auto;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Assigned To</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group ">
+
+                    <select class="form-control" name="Assignedto" id="Alloc">
+                        <option value="">Select</option>
+                        <option value="Person name 1"></option>
+                        <option value="Person name 2"></option>
+
+                    </select>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <!--   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                <button type="button" class="btn btn-primary next_move" id="saveAlloc">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="timelineModal" style="margin-top: 60px;" tabindex="-1" role="dialog" style="flex-align: center" aria-labelledby="timelineModalLabel">
+    <div class="modal-dialog modal-lg" style="width: 60%; left: auto;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Timeline History</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row" style="width: 70%; margin: 0 auto">
+
+                    <div class="timeline timeline-single-column">
+
+                        <div class="timeline-item">
+                            <div class="timeline-point">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="timeline-heading">
+                                    <h4>Timeline Event</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Advenientibus aliorum eam ad per te sed. Facere debetur aut veneris accedens.</p>
+                                </div>
+                                <div class="timeline-footer">
+                                    <p class="text-right">Feb-22-2014</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="timeline-label">
+                            <span class="label label-primary">label</span>
+                        </span>
+
+                        <div class="timeline-item">
+                            <div class="timeline-point timeline-point-primary">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="timeline-event timeline-event-primary">
+                                <div class="timeline-heading">
+                                    <h4>Timeline Event</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Volvitur ingreditur id ait mea vero cum autem quod ait Cumque ego illum vero cum unde beata. Commendavi si non dum est in. Dionysiadem tuos ratio puella ut casus, tunc lacrimas effunditis magister cives Tharsis. Puellae addita verbaque' capellam sanctissima quid, apollinem existimas filiam rex cum autem quod tamen adnuente rediens eam est se in. Peracta licet ad nomine Maria non ait in modo compungi mulierem volutpat.</p>
+                                </div>
+                                <div class="timeline-footer">
+                                    <p class="text-right">Feb-27-2014</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-point timeline-point-warning">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="timeline-event timeline-event-warning">
+                                <div class="timeline-heading">
+                                    <h4>Timeline Event</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Adfertur guttae sapientiae ducitur est Apollonius ut a a his domino Lycoridem in lucem. Theophile atque bona dei cenam veniebant est cum. Iusto opes mihi Tyrum in modo compungi mulierem ubi augue eiusdem ordo quos vero diam omni catervis famulorum. Bene dictis ut diem finito servis unde.</p>
+                                </div>
+                                <div class="timeline-footer">
+                                    <p class="text-right">Mar-01-2014</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-point timeline-point-success">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="timeline-event timeline-event-success">
+                                <div class="timeline-heading">
+                                    <h4>Timeline Event</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Crede respiciens loco dedit beneficio ad suis alteri si puella eius in. Acceptis codicello lenonem in deinde plectrum anni ipsa quod eam est Apollonius.</p>
+                                </div>
+                                <div class="timeline-footer primary">
+                                    <p class="text-right">Mar-02-2014</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="timeline-label">
+                            <span class="label label-info">label</span>
+                        </span>
+
+                        <div class="timeline-item">
+                            <div class="timeline-point timeline-point-blank">
+                            </div>
+                            <div class="timeline-event">
+                                <div class="timeline-heading">
+                                    <h4>Timeline Event</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Crede respiciens loco dedit beneficio ad suis alteri si puella eius in. Acceptis codicello lenonem in deinde plectrum anni ipsa quod eam est Apollonius.</p>
+                                </div>
+                                <div class="timeline-footer primary">
+                                    <p class="text-right">Mar-02-2014</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="timeline-label">
+                            <button class="btn btn-danger"><i class="fa fa-ambulance"></i></button>
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

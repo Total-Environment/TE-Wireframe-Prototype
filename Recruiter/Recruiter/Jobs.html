@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+</style>
+</head>
+<body style="background-color:#eae4dc !important; color:#000 !important;">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+    <header id="headerdiv">
+       
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Job Templates</li>
+            </ol>
+            <div class="head-panel-grey"><h4>Job Templates</h4></div>
+        
+            <div class="row" style="width:100%;">
+                <div class="pull-right">
+                <a href="job-create.html"><button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"><span style="color:#8ba927" class="glyphicon glyphicon-plus"></span> &nbsp;Create New</button></a>
+                </div>
+            </div>
+            <div style="border-top: solid 1px #d0d0d0;  border-bottom: solid 1px #fff;"></div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12" style="padding:0 !important;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                     <div class="panel-head">Filter</div>
+                        <div class="row">
+                            <div class="panel panel-heading" style="width:89%; margin:5px auto;">
+                                <div class="leftpan-button clickable panel-collapsed">Company</div>
+                                <span class="pull-right" style="margin-top:-20px;"><i class="glyphicon glyphicon-chevron-down"></i></span>
+				                <div class="panel-body" style="display:none; padding:0">
+                                    <div style="border-bottom:dotted 1px #ccc"></div>
+                                    <div style="padding:3px 3px; background-color:#f1e8d5; border-radius:2px; width:90%; margin:3px auto;font-size:9pt;">
+                                        <div class="pull-left">Company </div>
+                                        <div class="pull-right"><i class="fa fa-close"></i></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div style="padding:3px 3px; background-color:#f1e8d5; border-radius:2px; width:90%; margin:3px auto;font-size:9pt;">
+                                        <div class="pull-left">Company </div>
+                                        <div class="pull-right"><i class="fa fa-close"></i></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                              
+                                    <div class="leftpan-button">                                        
+                                        <select class="form-control">
+                                        <option>Company</option>
+                                        <option>Company</option>
+                                        <option>Company</option>
+                                    </select>
+                                    </div>
+				                </div>
+			                </div>
+                            <div class="panel panel-heading" style="width:89%; margin:5px auto;">
+                                <div class="leftpan-button clickable panel-collapsed">LOB</div>
+                                <span class="pull-right" style="margin-top:-20px;"><i class="glyphicon glyphicon-chevron-down"></i></span>
+				                <div style="border-bottom:dotted 1px #ccc"></div><div class="panel-body" style="display:none; padding:0">
+                                    <div class="leftpan-button">
+                                        <select class="form-control">
+                                            <option>LOB</option>
+                                            <option>LOB</option>
+                                            <option>LOB</option>
+                                        </select>
+                                    </div>
+				                </div>
+			                </div>
+
+                            <div class="panel panel-heading" style="width:89%; margin:5px auto;">
+                                <div class="leftpan-button clickable panel-collapsed">Department</div>
+                                <span class="pull-right" style="margin-top:-20px;"><i class="glyphicon glyphicon-chevron-down"></i></span>
+				                <div style="border-bottom:dotted 1px #ccc"></div><div class="panel-body" style="display:none; padding:0">
+                                    <div class="leftpan-button">
+                                        <select class="form-control">
+                                            <option>Department</option>
+                                            <option>Department</option>
+                                            <option>Department</option>
+                                        </select>
+                                    </div>
+				                </div>
+			                </div>
+
+                            <div class="panel panel-heading" style="width:89%; margin:5px auto;">
+                                <div class="leftpan-button clickable panel-collapsed">Sub function 1</div>
+                                <span class="pull-right" style="margin-top:-20px;"><i class="glyphicon glyphicon-chevron-down"></i></span>
+				                <div style="border-bottom:dotted 1px #ccc"></div><div class="panel-body" style="display:none; padding:0">
+                                    <div class="leftpan-button">
+                                        <select class="form-control">
+                                            <option>Sub function 1</option>
+                                            <option>Sub function 2</option>
+                                            <option>Sub function 3</option>
+                                        </select>
+                                    </div>
+				                </div>
+			                </div>
+
+                            <div class="panel panel-heading" style="width:89%; margin:5px auto;">
+                                <div class="leftpan-button clickable panel-collapsed">Requestor</div>
+                                <span class="pull-right" style="margin-top:-20px;"><i class="glyphicon glyphicon-chevron-down"></i></span>
+				                <div style="border-bottom:dotted 1px #ccc"></div><div class="panel-body" style="display:none; padding:0">
+                                    <div class="leftpan-button">
+                                        <select class="form-control">
+                                            <option>Requestor Name</option>
+                                            <option>Requestor Name</option>
+                                            <option>Requestor Name</option>
+                                        </select>
+                                    </div>
+				                </div>
+			                </div>
+                        </div>
+                </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    <div class="row">                
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                            <div class="job-panel">
+                        <h4 class="job-pan-blue"><i class="fa fa-cog"></i>   Architect</h4>
+                        <div class="row margin-tb1020">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                <div class="job-cal">
+                                    <div class="job-cal-head">&nbsp;</div>
+                                    <div class="tenumber job-cal-body">JD</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9">Lorem ispum dolor sit amet net lorem ispum dolor sit amet net Lorem ispum dolor sit amet net lorem ispum dolor sit amet net Lorem ispum dolor sit amet net lorem ispum dolor sit amet net <br />Lorem ispum dolor sit amet net lorem ispum dolor sit amet net </div>
+                        
+                        </div>
+                        <div class=" pull-right" style="margin:10px;"><a href="hire-request-landing-page.html" class="btn btn-success" style="width:100%"> <i class="fa fa-eye"></i> View</a></div>
+                        <div class="clearfix"></div>
+
+                    </div>
+
+                    <div class="job-panel">
+                        <h4 class="job-pan-blue"><i class="fa fa-cog"></i> IT  Architect</h4>
+                        <div class="row margin-tb1020">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                <div class="job-cal">
+                                    <div class="job-cal-head">&nbsp;</div>
+                                    <div class="tenumber job-cal-body">JD</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9">Lorem ispum dolor sit amet net lorem ispum dolor sit amet net Lorem ispum dolor sit amet net lorem ispum dolor sit amet net Lorem ispum dolor sit amet net lorem ispum dolor sit amet net </div>
+                        
+                        </div>
+                        <div class=" pull-right" style="margin:10px;"><a href="hire-request-landing-page.html" class="btn btn-success" style="width:100%"> <i class="fa fa-eye"></i> View</a></div>
+                        <div class="clearfix"></div>
+
+                    </div>
+                    
+                    <div class="job-panel">
+                        <h4 class="job-pan-blue"><i class="fa fa-cog"></i>   Financial Accountant</h4>
+                        <div class="row margin-tb1020">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                <div class="job-cal">
+                                    <div class="job-cal-head">&nbsp;</div>
+                                    <div class="tenumber job-cal-body">JD</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9">Lorem ispum dolor sit amet net lorem ispum dolor sit amet net Lorem ispum dolor sit amet net lorem ispum dolor sit amet net Lorem ispum dolor sit amet net lorem ispum dolor sit amet net </div>
+                        
+                        </div>
+                        <div class=" pull-right" style="margin:10px;"><a href="hire-request-landing-page.html" class="btn btn-success" style="width:100%"> <i class="fa fa-eye"></i> View</a></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="job-panel">
+                        <h4 class="job-pan-blue"><i class="fa fa-cog"></i>   Project Manager</h4>
+                        <div class="row margin-tb1020">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                <div class="job-cal">
+                                    <div class="job-cal-head">&nbsp;</div>
+                                    <div class="tenumber job-cal-body">JD</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                                <h5>The Project Manager performs a wide range of duties including some or all of the following:</h5>
+
+                                <b>Plan the project</b><br />
+
+                                <ul style="margin-left:-25px;">
+                                <li>Define the scope of the project in collaboration with senior management</li>
+                                </ul>
+                            </div>
+                        
+                        </div>
+                        <div class=" pull-right" style="margin:10px;"><a href="hire-request-landing-page.html" class="btn btn-success" style="width:100%"> <i class="fa fa-eye"></i> View</a></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="job-panel">
+                        <h4 class="job-pan-blue"><i class="fa fa-cog"></i>   Site Engineer</h4>
+                        <div class="row margin-tb1020">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                <div class="job-cal">
+                                    <div class="job-cal-head">&nbsp</div>
+                                    <div class="tenumber job-cal-body">JD</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9">Lorem ispum dolor sit amet net lorem ispum dolor sit amet net Lorem ispum dolor sit amet net lorem ispum dolor sit amet net Lorem ispum dolor sit amet net lorem ispum dolor sit amet net </div>
+                        
+                        </div>
+                        <div class=" pull-right" style="margin:10px;"><a href="hire-request-landing-page.html" class="btn btn-success" style="width:100%"> <i class="fa fa-eye"></i> View</a></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="job-panel">
+                        <h4 class="job-pan-blue"><i class="fa fa-cog"></i> HR Manager</h4>
+                        <div class="row margin-tb1020">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                <div class="job-cal">
+                                    <div class="job-cal-head">&nbsp;</div>
+                                    <div class="tenumber job-cal-body">JD</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9">Lorem ispum dolor sit amet net lorem ispum dolor sit amet net Lorem ispum dolor sit amet net lorem ispum dolor sit amet net Lorem ispum dolor sit amet net lorem ispum dolor sit amet net </div>
+                        
+                        </div>
+                        <div class=" pull-right" style="margin:10px;"><a href="hire-request-landing-page.html" class="btn btn-success" style="width:100%"> <i class="fa fa-eye"></i> View</a></div>
+                        <div class="clearfix"></div>
+
+                    </div>
+
+
+
+                </div>
+            
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="job-panel">
+                        <h4 class="job-pan-green"><i class="fa fa-calendar-check-o"></i>   Scheduled Interviews for today</h4>
+                        <div style="padding:1px 20px;">
+                           <div class="input-group input-group-sm">
+                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            </div>                        
+                        </div>
+                        <hr />
+                    <div class="job-schedule-panel">
+                        <div class="row padtb5x20">                            
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Candidate:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> Manoj Kumar</div>
+                        </div>
+                        <div class="row padtb5x20">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Job:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> Project Manager</div>
+                        </div>
+                        <div class="row padtb5x20">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Evaluation Stage:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> HR Interview</div>
+                        </div>
+                        <div class="row padtb5x20">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Department:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> Site Operations</div>
+                        </div>
+                        <div class="row padtb5x20">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Time:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> 12:50 PM</div>                        
+                        </div>
+                    </div>
+                        <hr />
+                    <div class="job-schedule-panel">
+                        <div class="row padtb5x20">                            
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Candidate:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> Lorem ispum dolor</div>
+                        </div>
+                        <div class="row padtb5x20">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Job:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> Lorem ispum dolor</div>
+                        </div>
+                        <div class="row padtb5x20">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Evaluation Stage:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> Lorem ispum dolor</div>
+                        </div>
+                        <div class="row padtb5x20">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Department:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> Lorem ispum dolor</div>
+                        </div>
+                        <div class="row padtb5x20">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Time:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> 12:50 PM</div>                        
+                        </div>
+                    </div>
+                        <hr />
+                        <div class="job-schedule-panel">
+                        <div class="row padtb5x20">                            
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Candidate:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> Lorem ispum dolor</div>
+                        </div>
+                        <div class="row padtb5x20">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Job:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> Lorem ispum dolor</div>
+                        </div>
+                        <div class="row padtb5x20">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Evaluation Stage:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> Lorem ispum dolor</div>
+                        </div>
+                        <div class="row padtb5x20">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Department:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> Lorem ispum dolor</div>
+                        </div>
+                        <div class="row padtb5x20">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> Time:</div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7"> 12:50 PM</div>                        
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $('.panel-heading div.clickable').on("click", function (e) {
+                    if ($(this).hasClass('panel-collapsed')) {
+                        // expand the panel
+                        $(this).parents('.panel').find('.panel-body').slideDown();
+                        $(this).removeClass('panel-collapsed');
+                        $(this).parents('.panel').find('i:first').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                    }
+                    else {
+                        // collapse the panel
+                        $(this).parents('.panel').find('.panel-body').slideUp();
+                        $(this).addClass('panel-collapsed');
+                        $(this).parents('.panel').find('i:first').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                    }
+                });
+            });
+</script>
+<script>
+    $(document).ready(function () {
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+        });
+
+        $('#btnView').click(function () {
+            window.location.href = "";
+        });
+    });
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* print style */
+@media print {
+	
+    #footer {
+     position: fixed;
+     bottom: 0;
+	 left:0;
+   }
+   
+   #printablediv {
+     margin: 0 0 720px 0;
+   }
+   
+	#Header{ display: none !important; }
+	.no-print, .no-print *
+    {
+        display: none !important;
+    }
+.pdftable table{
+	width:700px;
+	margin:0 auto;
+}
+.dropdown-menu{display:none;}
+.pdf-format td.heading{
+	background-color:#808080; color:#fff; font-size:9pt; text-align:center; font-weight:bold;
+	padding:2px 0;
+	
+}
+.bgcolor_808080{background-color:#808080 !important; color:#fff !important;  -webkit-print-color-adjust: exact;}
+.bgcolor_76913a{background-color:#76913a !important; color:#fff !important; -webkit-print-color-adjust: exact; } /* background green*/
+.bgcolor_f79647{background-color:#f79647 !important; color:#fff !important; -webkit-print-color-adjust: exact;} /* background orange */
+.bgcolor_76913a p,.bgcolor_f79647 p, .bgcolor_224162 p, .bgcolor_224162 p,.bgcolor_60477a p{color:#fff !important; -webkit-print-color-adjust: exact;}
+.bgcolor_224162{background-color:#224162 !important;  color:#fff !important; -webkit-print-color-adjust: exact;} /* background blue */
+.bgcolor_60477a{background-color:#60477a !important; color:#fff !important; -webkit-print-color-adjust: exact; } /* background purple*/
+.bg_ligreen{background-color:#ecf0df  !important;  -webkit-print-color-adjust: exact;}
+ .bg_liorange{background-color:#fbeada  !important;  -webkit-print-color-adjust: exact;}
+ .bg_liblue{background-color:#dbeef4  !important;   -webkit-print-color-adjust: exact;}
+ .bg_lipurple{background-color:#e2deed  !important;   -webkit-print-color-adjust: exact;}
+ .bgcolor_bfbfbf{background-color:#bfbfbf !important;   -webkit-print-color-adjust: exact;}
+.pdftable .pdfbordertable{
+	display:table;
+	border:1px solid #c0c0c0;
+}
+
+ .pdfbordertable td{
+	display:table-cell;	border:1px solid #acacac;font-size:9pt;
+}
+.txtalgncenter{
+	text-align:center;
+}
+.txtalgnright{
+	text-align:right;
+	
+}
+
+.boldborder{border:2px solid #000 !important; color:#000 !important;}
+.color_f79646{
+	background-color:#f79646 !important;
+	color:#fff;
+}
+.pdftitle{ color:#fff; font-size:10pt; text-align:center; font-weight:bold;}
+.bgcolor_808080{
+	background-color:#808080 !important;
+	-webkit-print-color-adjust: exact;
+}
+.color_f79646{
+	background-color:#f79646 !important;
+	color:#fff !important;
+	 -webkit-print-color-adjust: exact; 
+}
+.bgcolor_fdeada{background-color:#fdeada !important; -webkit-print-color-adjust: exact;}
+
+.pdftitle{background-color:#808080 !important;  -webkit-print-color-adjust: exact;  color:#fff !important; font-size:9pt; text-align:center; font-weight:bold;}
+.bgcolor_98c93c{
+	background-color:#98c93c !important;  -webkit-print-color-adjust: exact;  color:#fff !important;
+}/* ul.specchangemenu{display:none !important;} */
+}
+
+
+
+/* screen style */
+.noneborder{border:none !important;}
+
+.pdftable table{
+	width:700px;
+	margin:0 auto;
+}
+.pdf-format td.heading{
+	background-color:#808080; color:#fff; font-size:10pt; text-align:center; font-weight:bold;
+	padding:2px 0;
+	
+}
+.dotline{
+	display:block;
+	width:100%; border-bottom:1px solid #e1e1e1;margin:5px 0;
+}
+.pdftitle{ color:#fff; font-size:10pt; text-align:center; font-weight:bold;}
+.bgcolor_808080{
+	background-color:#808080 !important;
+	color:#fff !important;
+	-webkit-print-color-adjust: exact;
+}
+.pdftable .pdfbordertable{
+	display:table;
+	border:1px solid #c0c0c0;
+}
+ .pdfbordertable td{
+	display:table-cell;	border:1px solid #c0c0c0;font-size:9pt;
+}
+.txtalgncenter{
+	text-align:center;
+}
+.txtalgnright{
+	text-align:right;
+	
+}
+
+.boldborder{border:2px solid #000 !important; color:#000 !important;}
+.color_f79646{
+	background-color:#f79646 !important;
+	color:#fff !important;
+	 -webkit-print-color-adjust: exact; 
+}
+.bgcolor_fdeada{background-color:#fdeada !important; -webkit-print-color-adjust: exact;}
+
+.pdftitle{background-color:#808080 !important;  -webkit-print-color-adjust: exact;  color:#fff !important; font-size:9pt; text-align:center; font-weight:bold;}
+
+#printablediv #footer{ display:none;}
+.bgcolor_98c93c{
+	background-color:#98c93c !important;  -webkit-print-color-adjust: exact;  color:#fff !important;
+}
+

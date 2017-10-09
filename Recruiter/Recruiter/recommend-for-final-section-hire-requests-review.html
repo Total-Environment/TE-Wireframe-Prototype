@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+</style>
+</head>
+<body style="background-color:#eae4dc">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <header id="headerdiv">
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Review and Recommend for Final Section</li>
+            </ol>
+            <div class="head-panel-grey"><h4>Review and Recommend for Final Section</h4></div>
+        
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">HR Recruitment Owner</label>
+                        <input type="email" class="form-control" id="Email1" placeholder="Auto populated based on log in">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">RFH No</label>
+                        <input type="email" class="form-control" id="Email2" placeholder="RFH No">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Job</label>
+                        <input type="email" class="form-control" id="Email3" placeholder="Dropdown showing jobs in the RFH">
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-head">Final Shortlist Candidates</div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="table-responsive">
+                        <table  class="table table table-striped">
+                            <thead>
+                                <tr style="background-color:#192930; color:#fff">
+                                    <th>Candiate Name</th>
+                                    <th>RFH No</th>
+                                    <th>Job</th>
+                                    <th>Overall score</th>
+                                    <th>Expected CTC</th>
+                                    <th>Details</th>
+                                    <th>Decision</th>
+                                    <th>Remarks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">Kiran Kumar</a></td>
+                                    <td class="text-right"><a href="#">1</a></td>
+                                    <td>IT Architect</td>
+                                    <td class="text-right">04</td>
+                                    <td><a href="#" type="submit" data-toggle="modal" data-target=".bs-example-modal-lg" style="font-weight:bold">View interview details</a></td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td><select class="form-control">
+                                        <option>Offer</option>
+                                        <option>Reject</option>
+                                        <option>Park</option>
+                                    </select></td>
+                                    <td>Lorem ispum dolor</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td><a href="#">Kiran Kumar</a></td>
+                                    <td class="text-right"><a href="#">1</a></td>
+                                    <td>IT Architect</td>
+                                    <td class="text-right">04</td>
+                                    <td><a href="#">View interview details</a></td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td><select class="form-control">
+                                        <option>Offer</option>
+                                        <option>Reject</option>
+                                        <option>Park</option>
+                                    </select></td>
+                                    <td>Lorem ispum dolor</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="#">Kiran Kumar</a></td>
+                                    <td class="text-right"><a href="#">1</a></td>
+                                    <td>IT Architect</td>
+                                    <td class="text-right">04</td>
+                                    <td><a href="#">View interview details</a></td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td><select class="form-control">
+                                        <option>Offer</option>
+                                        <option>Reject</option>
+                                        <option>Park</option>
+                                    </select></td>
+                                    <td>Lorem ispum dolor</td>
+                                </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+            <div style="width:50%; margin:15px auto;"><a href="#"><button class="btn btn-warning btn-lg" style="width:100%">Recommend</button></a></div>
+    </div>
+</div>
+    
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="z-index:1000000">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#89a926; color:#fff">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Interview details</h4>
+      </div>
+      <div class="modal-body">
+        
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row" style="background-color:#fff; margin:0 5px 10px 5px; padding:10px 0; color:#000; border-bottom:solid 2px #ccc; font-weight:bold">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#9c9c9c">Job Description:</div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" >Lorem ispum dolor Lorem ispum dolor</div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row" style="background-color:#fff; margin:0 5px 10px 5px; padding:10px 0; color:#000; border-bottom:solid 2px #ccc; font-weight:bold">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#9c9c9c">RFH:</div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" >TE2233</div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row" style="background-color:#fff; margin:0 5px 10px 5px; padding:10px 0; color:#000; border-bottom:solid 2px #ccc; font-weight:bold">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#9c9c9c">ResumeID:</div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" >TE001</div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row" style="background-color:#fff; margin:0 5px 10px 5px; padding:10px 0; color:#000; border-bottom:solid 2px #ccc; font-weight:bold">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#9c9c9c">Candidate Name:</div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" >Kiran Kumar</div>
+                    </div>
+
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="table-responsive">
+                        <table  class="table table table-striped">
+                            <thead>
+                                <tr style="background-color:#192930; color:#fff">
+                                    <th>Selection Stage</th>
+                                    <th>Status</th>
+                                    <th>Marks</th>
+                                    <th>Competency Score</th>
+                                    <th>Interview Remarks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="line-height:2.0">Satage 1 <br> Satage 2 <br> Satage 3 <br> Satage 4 <br></td>
+                                    <td style="line-height:2.0; color:#89a926; font-weight:bold">Selected <br> Selected <br> Selected <br> Selected <br></td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>Lorem ispum dolor</td>
+                                </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+          <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Current CTC</label>
+                        <input type="email" class="form-control" id="Email4" placeholder="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Expected CTC</label>
+                        <input type="email" class="form-control" id="Email8" placeholder="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">	Notice period</label>
+                        <input type="email" class="form-control" id="Email9" placeholder="">
+                    </div>
+                </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Negotiable upto</label>
+                        <input type="email" class="form-control" id="Email10" placeholder="">
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+
+</body>
+</html>

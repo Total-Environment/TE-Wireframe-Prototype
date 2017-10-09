@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+<style>
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: none !important;
+}
+.panel-body {
+    padding: 0px 10px;
+}
+a:link {color: #fff; text-decoration:none;}
+a:visited {color: #fff; text-decoration:none;}
+a:hover {color: #fff; text-decoration:none;}
+a:active {color: #fff; text-decoration:none;}
+</style>
+    <script>
+
+    </script>
+</head>
+<body style="background-color:#f9f8f8">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+           
+		   <div class="panel-group" id="accordion1">
+
+    <!-- This group shows how panels may be nested. But what about a plain div inside a panel? -->
+    <div class="panel">
+        <div class="panel-heading" style="background-color:#85a520; padding:10px; color:#fff">
+             <h4 class="panel-title">
+                 <a data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+					<div class="pull-left">Lorem ispum</div>
+					<div class="pull-right">Lorem ispum</div>
+					<div class="clearfix"></div>
+                 </a>
+             </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" style="margin-top:10px;">
+            <div class="panel-body">
+
+                <div class="panel-group" id="accordion2">
+                    <div class="panel panel">
+					 <a data-toggle="collapse" data-parent="#accordion2" href="#collapseThreeOne" style="color:fff; text-decoration:none">
+                        <div class="panel-heading" style="background-color:#666; padding:10px;">
+                             <h4 class="panel-title" >
+                                    <img src="images/arrow-next.png" style="width:15px" /><span style="padding-left:10px">Lorem ispum</span>
+                              </h4>
+                        </div>
+						 </a>
+                        <div id="collapseThreeOne" class="panel-collapse collapse">
+                            <div class="panel-body" style="padding:5px; border-bottom:dotted 1px #ccc">Lorem ispum</div>
+							<div class="panel-body" style="padding:5px; border-bottom:dotted 1px #ccc">Lorem ispum</div>
+							<div class="panel-body" style="padding:5px; border-bottom:dotted 1px #ccc">Lorem ispum</div>
+                        </div>
+                    </div>
+                    <div class="panel panel">
+					 <a data-toggle="collapse" data-parent="#accordion2" href="#collapseThreeTwo">
+                        <div class="panel-heading" style="background-color:#666; padding:10px;">
+                            <h4 class="panel-title">                                           
+                                 <img src="images/arrow-next.png" style="width:15px" /><span style="padding-left:10px">Lorem ispum</span>
+                            </h4>
+                        </div>
+						</a>
+                        <div id="collapseThreeTwo" class="panel-collapse collapse">
+                            <div class="panel-body" style="padding:5px; border-bottom:dotted 1px #ccc">Lorem ispum</div>
+							<div class="panel-body" style="padding:5px; border-bottom:dotted 1px #ccc">Lorem ispum</div>
+							<div class="panel-body" style="padding:5px; border-bottom:dotted 1px #ccc">Lorem ispum</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+        </div>
+      
+        </div>        
+    </div>
+    
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+<script>
+    $('.btn-toggle').click(function () {
+        $(this).find('.btn').toggleClass('active');
+
+        if ($(this).find('.btn-primary').size() > 0) {
+            $(this).find('.btn').toggleClass('btn-primary');
+        }
+        if ($(this).find('.btn-danger').size() > 0) {
+            $(this).find('.btn').toggleClass('btn-danger');
+        }
+        if ($(this).find('.btn-success').size() > 0) {
+            $(this).find('.btn').toggleClass('btn-success');
+        }
+        if ($(this).find('.btn-info').size() > 0) {
+            $(this).find('.btn').toggleClass('btn-info');
+        }
+
+        $(this).find('.btn').toggleClass('btn-default');
+
+    });
+
+    $('form').submit(function () {
+        alert($(this["options"]).val());
+        return false;
+    });
+</script>
+</body>
+</html>

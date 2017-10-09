@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+
+   
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+    @media (min-width: 768px) {
+.modal-content {
+    box-shadow: none;
+}
+    }
+
+</style>
+</head>
+<body style="background-color:#eae4dc">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <header>
+        <div class="gr-clr"></div>
+        <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="asset-class.html">Class</a></li>
+                                    <li><a href="asset-category.html">Category</a></li>
+                                    <li><a href="asset-sub-category.html">Sub category</a></li>
+                                    <li><a href="asset-variant.html">Variant</a></li>
+                                    <li><a href="mobile-eligibility.html">Mobile Eligibility</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Assets<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="asset-management.html">View Assets</a></li>
+                                    <li><a href="requisition.html">Requisition</a></li>
+                                </ul>
+
+                            </li> 
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mobile<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="mobile-management.html">Mobile Management</a></li>
+                                    <li><a href="mobilebill-processing.html">Mobile Bill Processing</a></li>
+                                </ul>
+                            </li>      
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+              <li><a href="asset-management-view.html">View Assets</a></li>
+              <li class="active">Create Asset</li>
+            </ol>        
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color:#646572">
+                                <h4 class="modal-title" style="color:#fff">Create Asset</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Asset ID</label>
+                                             <input type="email" class="form-control" id="Email3" placeholder="">
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Manufacturer Serial No</label>
+                                             <input type="email" class="form-control" id="Email4" placeholder="">
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">TE Serial No</label>
+                                             <input type="email" class="form-control" id="Email5" placeholder="">
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Status</label>
+                                             <input type="email" class="form-control" id="Email6" placeholder="">
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Asset Class</label>
+                                             <select class="form-control">
+                                                <option>Asset Class 1</option>
+                                                <option>Asset Class 2</option>
+                                                 <option>Asset Class 3</option>
+                                                <option>Asset Class 4</option>
+                                            </select>
+                                         </div>
+                                    </div>                                 
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Asset Category</label>
+                                             <select class="form-control">
+                                                <option>Asset Category 1</option>
+                                                <option>Asset Category 2</option>
+                                                 <option>Asset Category 3</option>
+                                                <option>Asset Category 4</option>
+                                            </select>
+                                         </div>
+                                    </div>                                 
+                                
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Asset Sub Category</label>
+                                             <select class="form-control">
+                                                <option>Asset Sub Category 1</option>
+                                                <option>Asset Sub Category 2</option>
+                                                 <option>Asset Sub Category 3</option>
+                                                <option>Asset Sub Category 4</option>
+                                            </select>
+                                         </div>
+                                    </div>  
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Asset Type</label>
+                                             <select class="form-control">
+                                                <option>Employee</option>
+                                                <option>Common</option>
+                                            </select>
+                                         </div>
+                                    </div>  
+                                    </div>
+                                
+                                <div class="row" style="margin-top:20px;">
+                                    <div class="pull-left" style="margin-left:1%">                                       
+                                        <div class="btn-group">
+                                          <button type="button" class="btn btn-success">Asset Variant</button>
+                                          <button type="button" class="btn btn-success dropdown-toggle" style="padding: 14px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                          </button>
+                                          <ul class="dropdown-menu">
+                                            <li><a href="#">RAM</a></li>
+                                            <li><a href="#">HDD</a></li>
+                                            <li><a href="#">Processor Speed</a></li>
+                                          </ul>
+                                        </div>
+                                    </div>
+                                    <div class="pull-left" style="margin-left:1%">                                       
+                                        <div class="btn-group">
+                                          <button type="button" class="btn btn-warning">Variant Value</button>
+                                          <button type="button" class="btn btn-warning dropdown-toggle" style="padding: 14px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                          </button>
+                                          <ul class="dropdown-menu">
+                                            <li><a href="#">2 GB</a></li>
+                                            <li><a href="#">4 GB</a></li>
+                                            <li><a href="#">8 GB</a></li>
+                                            <li><a href="#">16 GB</a></li>
+                                              <li><a href="#">32 GB</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">More</a></li>
+                                          </ul>
+                                        </div>
+                                    </div>
+                                    <!--<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                             <input type="email" class="form-control" id="Email16" placeholder="More" style="width:90%; float:left">
+                                             <span class="glyphicon glyphicon-plus" aria-hidden="true" style="margin:7px 5px; color:#0094ff" title="Add"></span>
+                                          </div>
+                                    </div>-->
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <div class="tag-bt-btn">RAM 2GB <span class="glyphicon glyphicon-remove" style="font-size:8pt; color:#808080" aria-hidden="true"></span></div>
+                                             <div class="tag-bt-btn">HDD 1TB <span class="glyphicon glyphicon-remove" style="font-size:8pt; color:#808080" aria-hidden="true"></span></div>
+                                             <div class="tag-bt-btn">Processor Speed 2 GHz <span class="glyphicon glyphicon-remove" style="font-size:8pt; color:#808080" aria-hidden="true"></span></div>
+                                             <div class="tag-bt-btn">512 GB <span class="glyphicon glyphicon-remove" style="font-size:8pt; color:#808080" aria-hidden="true"></span></div>
+                                             <div class="clearfix"></div>
+                                          </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Asset Description</label>
+                                            <textarea class="form-control" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">PO Date</label>
+                                             <input type='text' class="input" data-beatpicker="true" />
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Warranty Expiry Date</label>
+                                             <input type='text' class="input" data-beatpicker="true" />
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Brand</label>
+                                             <input type="email" class="form-control" id="Email7" placeholder="">
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Useful Life in Years</label>
+                                             <input type="email" class="form-control" id="Email1" placeholder="">
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Asset Value/Purchase Price</label>
+                                             <input type="email" class="form-control" id="Email2" placeholder="">
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Monthly Lease Charges</label>
+                                             <input type="email" class="form-control" id="Email8" placeholder="">
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <div class="form-group">
+                                            <label for="exampleInputEmail1">Leased Asset</label>
+                                            <label class="switch">
+                                                <input class="switch-input" type="checkbox" />
+                                                <span class="switch-label" data-on="Yes" data-off="No"></span> <span class="switch-handle"></span> 
+                                             </label>
+                                          </div>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <div class="form-group">
+                                            <label for="exampleInputEmail1">Child Asset</label>
+                                            <label class="switch">
+                                                <input class="switch-input" type="checkbox" />
+                                                <span class="switch-label" data-on="Yes" data-off="No"></span> <span class="switch-handle"></span> 
+                                             </label>
+                                          </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Parent Asset</label>
+                                             <input type="email" class="form-control" id="Email9" placeholder="">
+                                          </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Remarks</label>
+                                            <textarea class="form-control" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Owner Company</label>
+                                             <input type="email" class="form-control" id="Email10" placeholder="">
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Asset Quantity</label>
+                                             <input type="email" class="form-control" id="Email11" placeholder="">
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Allocated Count</label>
+                                             <input type="email" class="form-control" id="Email12" placeholder="">
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Salvage Value</label>
+                                             <input type="email" class="form-control" id="Email13" placeholder="">
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Allocation</label>
+                                             <input type="email" class="form-control" id="Email14" placeholder="">
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Currently Allocated to</label>
+                                             <input type="email" class="form-control" id="Email15" placeholder="">
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                     <div class="row">
+                                        <a href="asset-management-view.html"><div class="col-md-6"><button type="button" class="btn btn-warning" style="width:100%" data-dismiss="modal">Create</button></div></a>
+                                          <a href="asset-management-view.html"><div class="col-md-6"><button type="button" class="btn btn-primary" style="width:100%" data-dismiss="modal">Edit</button></div></a>
+                                </div>                           
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </div>
+        
+</div>
+    
+</div>   
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+	
+	
+</script>
+
+</body>
+</html>

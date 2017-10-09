@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+    <link href="css/circle.css" rel="stylesheet" />
+    <script src="js/progress-circle.js"></script>
+
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }#circle {
+  margin: -5px 0 0 8px;
+}
+#submit {
+  cursor: pointer;
+  font-weight: bold;
+  float: right;
+  color: #90c844;
+}
+</style>
+</head>
+<body style="background-color:#eae4dc !important; color:#000 !important;">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+    <header id="headerdiv">
+       
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Hire Request</li>
+            </ol>
+            <div class="head-panel-grey"><h4>Hire Request</h4></div>
+            <div style="background-color:#fff; padding:10px; margin-top:-10px">
+            <div class="row" style="width:100%;">
+                <div class="pull-right">
+                    <a href="hire-request.html"><button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"><span style="color:#8ba927" class="glyphicon glyphicon-plus"></span> &nbsp;Create New</button></a>
+                </div>
+            </div>
+            <div style="border-top: solid 1px #d0d0d0;  border-bottom: solid 1px #fff;"></div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+
+                <div class="panel-head">Filter</div>
+                    <div class="panel panel-heading">
+                        <div class="leftpan-button1 clickable panel-collapsed">Company</div>
+                        <span class="pull-right" style="margin-top:-30px;"><i class="glyphicon glyphicon-chevron-down"></i></span>
+				        <div class="panel-body" style="display:none">
+                            <div class="leftpan-button">
+                                <select class="form-control">
+                                <option>Company</option>
+                                <option>Company</option>
+                                <option>Company</option>
+                            </select>
+                            </div>
+				        </div>
+			        </div>
+                    <div class="panel panel-heading">
+                        <div class="leftpan-button1 clickable panel-collapsed">LOB</div>
+                        <span class="pull-right" style="margin-top:-30px;"><i class="glyphicon glyphicon-chevron-down"></i></span>
+				        <div class="panel-body" style="display:none">
+                            <div class="leftpan-button">
+                                <select class="form-control">
+                                    <option>LOB</option>
+                                    <option>LOB</option>
+                                    <option>LOB</option>
+                                </select>
+                            </div>
+				        </div>
+			        </div>
+
+                    <div class="panel panel-heading">
+                        <div class="leftpan-button1 clickable panel-collapsed">Department</div>
+                        <span class="pull-right" style="margin-top:-30px;"><i class="glyphicon glyphicon-chevron-down"></i></span>
+				        <div class="panel-body" style="display:none">
+                            <div class="leftpan-button">
+                                <select class="form-control">
+                                    <option>Department</option>
+                                    <option>Department</option>
+                                    <option>Department</option>
+                                </select>
+                            </div>
+				        </div>
+			        </div>
+
+                    <div class="panel panel-heading">
+                        <div class="leftpan-button1 clickable panel-collapsed">Sub function 1</div>
+                        <span class="pull-right" style="margin-top:-30px;"><i class="glyphicon glyphicon-chevron-down"></i></span>
+				        <div class="panel-body" style="display:none">
+                            <div class="leftpan-button">
+                                <select class="form-control">
+                                    <option>Sub function 1</option>
+                                    <option>Sub function 2</option>
+                                    <option>Sub function 3</option>
+                                </select>
+                            </div>
+				        </div>
+			        </div>
+
+                    <div class="panel panel-heading">
+                        <div class="leftpan-button1 clickable panel-collapsed">Requestor</div>
+                        <span class="pull-right" style="margin-top:-30px;"><i class="glyphicon glyphicon-chevron-down"></i></span>
+				        <div class="panel-body" style="display:none">
+                            <div class="leftpan-button">
+                                <select class="form-control">
+                                    <option>Requestor Name</option>
+                                    <option>Requestor Name</option>
+                                    <option>Requestor Name</option>
+                                </select>
+                            </div>
+				        </div>
+			        </div>
+                </div>
+
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" >
+                        <div class="scorlbar">
+                         
+                            <div class="row datagrid-bg1 ">
+                                <div class="col-md-12" >
+                                    <div class="datagrig-head1 width" style="width:6%">RFH No</div>
+                                    <div class="datagrig-head1 width" style="border:none; width:15%">Job</div>                                    
+                                    <div class="datagrig-head1 width" style="width:13%">Department</div>
+                                    <div class="datagrig-head1 width" style="width:8%">Vacancies</div>
+                                    <div class="datagrig-head1 width" style="width:10%">Hire by date</div>
+                                    <div class="datagrig-head1 width" style="width:14%">Status</div>
+                                    <div class="datagrig-head1 width" style="width:6%">	Hired</div>
+                                    <div class="datagrig-head1 width" style="width:14%">Requested by </div>
+                                    <div class="datagrig-head1 width" style="width:14%">	Candidates</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="row datagrid-bg ">
+
+                                <div class="col-md-12" >                                    
+                                    <div class="datagrid-body-inner1 width15" style="width:6%"><a href="hire-request-view.html">Te001</a></div>
+                                    <div class="datagrid-body-inner1 width13" style="width:15%">
+                                        <div class="pull-left"><a href="hire-request-view.html">Project Manager</a></div>  
+                                        <div class="pull-left effect" style="margin:3px 0 0 5px;"> <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm" ><i class="fa fa-caret-down" style="color:#0094ff; font-size:12pt;"></i></a></div>
+                                        <div class="clearfix"></div>
+                                        </div>
+                                    <div class="datagrid-body-inner1 width12" style="width:13%">Architecture</div>
+                                    <div class="datagrid-body-inner width12" style="width:8%">01</div>
+                                    <div class="datagrid-body-inner1 width10" style="width:10%">12-May-16</div>
+                                    <div class="datagrid-body-inner1 width13" style="width:14%">Pending for Approval</div>
+                                    <div class="datagrid-body-inner1 width12" style="width:6%">99</div>
+                                    <div class="datagrid-body-inner1 width12" style="width:14%">Manjunath Ramesh</div>
+                                    <div class="datagrid-body-inner1 width10" style="width:14%"><a href="applicants.html"> View Candidates</a></div>
+                                    <div class="clearfix"></div>
+                                    <div class="pan-123" style="display:none; margin-top:5px; width:100%; ">  
+                                        <div style=" border-bottom:dotted 1px #ccc; margin-bottom:5px;"></div> 
+                                                                               
+                                        <div class="row datagrid-bg1 "  style="margin:0 !important; background-color:#8ba927">
+                                            <div class="col-md-12" >
+                                                <div class="datagrig-head1 width" >Te001 - Project Manager</div>      
+                                                <div style="clear:both"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row datagrid-bg " style="margin:0 !important; padding:0 !important;width:100%; margin:auto">
+                                            
+                                                <div class="table-responsive" >
+                                                <table class="table pan-123" style="display:none; margin-bottom:0">                                            
+                                                    <tbody>
+                                                        <tr style="border-bottom:0 !important">
+                                                            <td style="width:175px; text-align:center; border-right:solid 1px #ccc;"><span class="badge" style="background-color:#ff6a00">25</span><br />Total Applications</td>
+                                                            <td style="width:150px; text-align:center; border-right:solid 1px #ccc; padding:0 8px 0 25px;">
+                                                                <div id="circle"></div>        
+                                                                <div style="margin-left:-22px;">Convertion    </div>            
+                                                            </td>
+                                                            <td style=" text-align:center;"class="link-bt"><span class="badge" style="background-color:#0094ff">1</span><br /><a href="#" > New</a></td>
+                                                             <td style="text-align:center;"class="link-bt"><span class="badge" style="background-color:#0094ff">15</span><br /><a href="#">Shortlisted</a></td>
+                                                             <td style="text-align:center;"class="link-bt"><span class="badge" style="background-color:#0094ff">14</span><br /><a href="#">Interviewed</a></td>
+                                                            <td style="text-align:center;"class="link-bt"><span class="badge" style="background-color:#0094ff">10</span><br /><a href="#">Selected</a></td>
+                                                            <td style="text-align:center;"class="link-bt"><span class="badge" style="background-color:#0094ff">8</span><br /><a href="#">Offered</a></td>
+                                                            <td style="text-align:center;"class="link-bt"><span class="badge" style="background-color:#0094ff">6</span><br /><a href="#">Joined</a></td>
+                                                        </tr>                            
+                                                  </tbody>
+                                                </table>
+                                              </div>  
+                                            
+                                        </div>
+                                    </div>
+                                         
+                                    </div>                               
+                                
+                                </div>
+                            <div class="row datagrid-bg ">
+
+                                <div class="col-md-12" >                                    
+                                    <div class="datagrid-body-inner1 width15" style="width:6%"><a href="#">Te001</a></div>
+                                    <div class="datagrid-body-inner1 width13 " style="width:15%">
+                                        <div class="pull-left">Project Manager</div>  
+                                        <div class="pull-left" style="margin:3px 0 0 5px;"><i class="fa fa-caret-down" style="color:#0094ff; font-size:12pt;"></i></div>
+                                        <div class="clearfix"></div>
+                                        </div>
+                                    <div class="datagrid-body-inner1 width12" style="width:13%">Architecture</div>
+                                    <div class="datagrid-body-inner width12" style="width:8%">01</div>
+                                    <div class="datagrid-body-inner1 width10" style="width:10%">12-May-16</div>
+                                    <div class="datagrid-body-inner1 width13" style="width:14%">Pending for Approval</div>
+                                    <div class="datagrid-body-inner1 width12" style="width:6%">99</div>
+                                    <div class="datagrid-body-inner1 width12" style="width:14%">Manjunath Ramesh</div>
+                                    <div class="datagrid-body-inner1 width10" style="width:14%"><a href="applicants.html"> View Candidates</a></div>
+                                    <div class="clearfix"></div>
+                                         
+                                    </div>                               
+                                
+                                </div>
+                            </div>
+                        </div>
+                  
+                </div>
+            </div>
+            </div>
+            
+    </div>
+</div>
+    <script>
+        jQuery(document).on('ready', function () {
+            jQuery('.mybar_in_view').waypoint(function () {
+                jQuery(this).yjsgroundprogress();
+            }, {
+                offset: '100%',
+                triggerOnce: true
+            });
+        });
+</script>
+
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $('.panel-heading div.clickable').on("click", function (e) {
+                    if ($(this).hasClass('panel-collapsed')) {
+                        // expand the panel
+                        $(this).parents('.panel').find('.panel-body').slideDown();
+                        $(this).removeClass('panel-collapsed');
+                        $(this).parents('.panel').find('i:first').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                    }
+                    else {
+                        // collapse the panel
+                        $(this).parents('.panel').find('.panel-body').slideUp();
+                        $(this).addClass('panel-collapsed');
+                        $(this).parents('.panel').find('i:first').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                    }
+                });
+            });
+</script>
+<script>
+    $(document).ready(function () {
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+        });
+
+        $('#btnView').click(function () {
+            window.location.href = "";
+        });
+    });
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+    $('.effect').click(function () {
+
+        $('.pan-123').toggle();
+    });
+</script>
+<script>
+    (function ($) {
+        $('#circle').progressCircle();
+
+        //$('#submit').click(function () {
+        var nPercent = $('#percent').val() ? $('#percent') .val() : 24;
+        var showPercentText = $('#percentOn').prop('checked');
+        var thickness = $('#thickness').val() ? $('#thickness').val() : 3;
+        var circleSize = $('#circle-size').val() ? $('#circle-size').val() : 100;
+
+        $('#circle').progressCircle({
+            nPercent: nPercent,
+            showPercentText: showPercentText,
+            thickness: thickness,
+            circleSize: circleSize
+        });
+        //})
+    })(jQuery);
+</script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</body>
+</html>

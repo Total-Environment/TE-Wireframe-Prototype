@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+</style>
+</head>
+<body style="background-color:#eae4dc">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <header id="headerdiv">
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Offer</a></li>
+              <li><a href="#">Make Final Offer</a></li>
+              <li><a href="#">Comparator</a></li>
+              <li class="active">Offer Details</li>
+            </ol>
+            
+
+            <div class="head-panel-grey"><h4>Offer Details</h4></div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-right">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Status</label>
+                        <select class="form-control">
+                            <option>Draft</option>
+                            <option>Approved</option>
+                            <option>Released</option>
+                            <option>Accepted</option>
+                            <option>Rejected</option>
+                            <option>Negotiated</option>
+                            <option>Joined</option>
+                            <option>Did not join</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Offer ID</label>
+                        <input type="email" class="form-control" id="Email3" placeholder="Offer ID">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Amendment</label>
+                        <input type="email" class="form-control" id="Email4" placeholder="Candidate Name">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Candidate Name</label>
+                        <input type="email" class="form-control" id="Email1" placeholder="Candidate Name">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Offer Date</label>
+                        <input type="email" class="form-control" id="Email2" placeholder="Offer Date">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Acceptance Within Days</label>
+                        <input type="email" class="form-control" id="Email5" placeholder="Acceptance Within Days">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Offer CTC</label>
+                        <input type="email" class="form-control" id="Email7" placeholder="Offer CTC">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Notice Period</label>
+                        <input type="email" class="form-control" id="Email6" placeholder="Notice Period">
+                    </div>
+                </div>                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Probation period</label>
+                        <input type="email" class="form-control" id="Email8" placeholder="Probation period">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Amendment No</label>
+                        <input type="email" class="form-control" id="Email9" placeholder="Amendment No">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Created by</label>
+                        <input type="email" class="form-control" id="Email10" placeholder="Amendment No">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Approved by</label>
+                        <input type="email" class="form-control" id="Email11" placeholder="Amendment No">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Agreed Joining Date</label>
+                        <input type="email" class="form-control" id="Email12" placeholder="Amendment No">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                   <div class="form-group">
+                    <div for="exampleInputEmail1"> Accepted by Candidate?</div>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="Radio3" value="option1"> Yes
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="Radio4" value="option2"> No
+                    </label>
+                </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                    <div for="exampleInputEmail1"> Joining Status ?</div>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="Radio1" value="option1"> Joined
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="Radio2" value="option2"> Not Joined
+                    </label>
+                </div>
+                </div>                
+            </div>
+           
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Actual Joining Date</label>
+                        <input type="email" class="form-control" id="Email13" placeholder="Amendment No">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Date of Acceptance</label>
+                        <input type="email" class="form-control" id="Email15" placeholder="Offer ID">
+                    </div>
+                </div>
+                
+
+                
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-6"><a href="#"><button class="btn btn-warning btn-SM" style="width:100%">Save</button></a></div>
+                <div class="col-md-6"><a href="#"><button class="btn btn-primary btn-SM" style="width:100%">Generate Break up</button></a></div>
+                
+            </div>
+            <br />
+            <div class="panel-head"<h4>CTC Break up</h4></div>
+
+            
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="table-responsive">
+                        <table  class="table table table-striped">
+                            
+                            <tbody>
+                                <tr style="background-color:#ef9519; color:#fff">
+                                    <td style="font-weight:bold;">A</td>                                   
+                                    <td>Fixed</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">1</td>                                   
+                                    <td>Basic</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">2</td>                                   
+                                    <td>House Rent Allowance</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">3</td>                                   
+                                    <td>Special Allowance</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">4</td>                                   
+                                    <td>Flexible Benefits</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">5</td>                                   
+                                    <td>Car EMI</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">6</td>                                   
+                                    <td>Site Allowance</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">7</td>                                   
+                                    <td>Conveyance Allowance</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">9</td>                                   
+                                    <td>Leave Travel Allowance (Tax free twice in four years)</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">10</td>                                   
+                                    <td>Provident Fund (Company contribution)</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">11</td>                                   
+                                    <td>Gratuity (Eligible on completion of 5 years only)</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">12</td>                                   
+                                    <td>Super Annuation (Company Contribution)	</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">13</td>                                   
+                                    <td>Mediclaim</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">14</td>                                   
+                                    <td>Medical Reimbursement</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number"></td>                                   
+                                    <td></td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr style="background-color:#ef9519; color:#fff">
+                                    <td style="font-weight:bold;">B</td>                                   
+                                    <td>Variable</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">1</td>                                   
+                                    <td>Performance Pay </td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">2</td>                                   
+                                    <td>Sales Incentive</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                                <tr>
+                                    <td class="text-right number">3</td>                                   
+                                    <td>Milestone Bonus</td> 
+                                    <td>System Calculated</td>  
+                                </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-4"><a href="Offer-details1.html"><button class="btn btn-primary btn-SM" style="width:100%">Generate</button></a></div>
+                <div class="col-md-4"><a href="#"><button class="btn btn-primary btn-SM" style="width:100%">Preview</button></a></div>
+                <div class="col-md-4"><a href="#"><button class="btn btn-warning btn-SM" style="width:100%">Download</button></a></div>
+            </div>
+            <br />
+    </div>
+</div>
+    </div>
+<script>
+    $(document).ready(function () {
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+        });
+    });
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+
+</body>
+</html>

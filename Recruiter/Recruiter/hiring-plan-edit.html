@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+</style>
+</head>
+<body style="background-color:#eae4dc">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <header id="headerdiv">
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Hiring Plan</li>
+            </ol>
+            <div class="head-panel-grey"><h4>Hiring Plan</h4></div>
+        
+            <div class="row"> 
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Status</label>
+                        <select class="form-control">
+                            <option>Draft</option>
+                            <option>Pending for Approval</option>
+                            <option>Approval</option>
+                        </select>
+                    </div>
+                </div>               
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Plan Date</label>
+                        <input type="email" class="form-control" id="Email2" placeholder="Plan Date">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Company</label>
+                        <select class="form-control">
+                            <option>Company Name</option>
+                            <option>Company Name</option>
+                            <option>Company Name</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">LOB</label>
+                        <select class="form-control">
+                            <option>LOB</option>
+                            <option>LOB</option>
+                            <option>LOB</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Department</label>
+                        <select class="form-control">
+                            <option>Department</option>
+                            <option>Department</option>
+                            <option>Department</option>
+                        </select>
+                    </div>
+                </div>                               
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Project</label>
+                        <input type="email" class="form-control" id="Email1" placeholder="Project">
+                    </div>
+                </div> 
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">HOD</label>
+                        <input type="email" class="form-control" id="Email3" placeholder="HOD">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Plan Period</label>
+                        <input type="email" class="form-control" id="Email4" placeholder="Period Code">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Prepared by</label>
+                        <input type="email" class="form-control" id="Email10" placeholder="Period Code">
+                    </div>
+                </div>
+            </div>
+            <div class="panel-head">Plan Details</div>            
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Opening Head count </label>
+                        <input type="email" class="form-control" id="Email5" placeholder="System calculated from Employee database">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Current Department Cost </label>
+                        <input type="email" class="form-control" id="Email52" placeholder="System calculated from Employee database">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Planned Addition</label>
+                        <input type="email" class="form-control" id="Email6" placeholder="Cumulated from table below">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Actual Recruited till date</label>
+                        <input type="email" class="form-control" id="Email7" placeholder="System calculated">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Actual separated till date</label>
+                        <input type="email" class="form-control" id="Email8" placeholder="System calculated">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Actual head count</label>
+                        <input type="email" class="form-control" id="Email9" placeholder="System calculated">
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="table-responsive" style="width:100%; overflow-y:scroll">
+                        <table  class="table table table-striped" style="width:3500px;">
+                            <thead style="font-size:9pt;">
+                                <tr style="background-color:#192930; color:#fff">
+                                    <th>Job Code</th>
+                                    <th>Job Role</th>
+                                    <th>Opening Head Count</th>
+                                    <th>Budgeted HeadCount for the period</th>
+                                    <th>Budgeted CTC Per Person</th>
+                                    <th>Tolerance in CTC Per person (%)</th>
+                                    <th>Total Budgeted CTC for Role</th>
+                                    <th>Minimum Qualification</th>
+                                    <th>Years of Experience</th>
+                                    <th>Work Location</th>
+                                    <th>Grade</th>
+                                    <th>Background of requirement</th>
+                                    <th>Hire by (Date)</th>
+                                    <th>Hire schedule</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="email" class="form-control" id="Email37" placeholder="TE001"></td>
+                                    <td><input type="email" class="form-control" id="Email50" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email11" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email12" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email13" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email14" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email15" placeholder="Lorem ispum dolor"></td>
+                                    <td>
+                                        <select class="form-control">
+                                          <option>Lorem ispum dolor</option>
+                                          <option>Lorem ispum dolor</option>
+                                          <option>Lorem ispum dolor</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="email" class="form-control" id="Email17" placeholder="Lorem ispum dolor"></td>
+                                    <td>
+                                        <select class="form-control">
+                                          <option>Bangalore</option>
+                                          <option>Mysore</option>
+                                          <option>Pune</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="form-control">
+                                          <option>Lorem ispum dolor</option>
+                                          <option>Lorem ispum dolor</option>
+                                          <option>Lorem ispum dolor</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="email" class="form-control" id="Email20" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email21" placeholder="Lorem ispum dolor"></td>
+                                    <td><a type="submit" data-toggle="modal" data-target=".bs-example-modal-lg" style="font-weight:bold">Schedule</a></td>                          
+                                </tr>
+                            
+                                <tr>
+                                    <td><input type="email" class="form-control" id="Email22" placeholder="TE002"></td>
+                                    <td><input type="email" class="form-control" id="Email16" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email18" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email19" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email23" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email24" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email25" placeholder="Lorem ispum dolor"></td>
+                                    <td>
+                                        <select class="form-control">
+                                          <option>Lorem ispum dolor</option>
+                                          <option>Lorem ispum dolor</option>
+                                          <option>Lorem ispum dolor</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="email" class="form-control" id="Email26" placeholder="Lorem ispum dolor"></td>
+                                    <td>
+                                        <select class="form-control">
+                                          <option>Bangalore</option>
+                                          <option>Mysore</option>
+                                          <option>Pune</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="form-control">
+                                          <option>Lorem ispum dolor</option>
+                                          <option>Lorem ispum dolor</option>
+                                          <option>Lorem ispum dolor</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="email" class="form-control" id="Email27" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email28" placeholder="Lorem ispum dolor"></td>
+                                    <td><a type="submit" data-toggle="modal" data-target=".bs-example-modal-lg" style="font-weight:bold">Schedule</a></td>                                   
+                                </tr>
+
+                                <tr>
+                                    <td><input type="email" class="form-control" id="Email36" placeholder="TE003"></td>
+                                    <td><input type="email" class="form-control" id="Email29" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email30" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email31" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email32" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email33" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email34" placeholder="Lorem ispum dolor"></td>
+                                    <td>
+                                        <select class="form-control">
+                                          <option>Lorem ispum dolor</option>
+                                          <option>Lorem ispum dolor</option>
+                                          <option>Lorem ispum dolor</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="email" class="form-control" id="Email38" placeholder="Lorem ispum dolor"></td>
+                                    <td>
+                                        <select class="form-control">
+                                          <option>Bangalore</option>
+                                          <option>Mysore</option>
+                                          <option>Pune</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="form-control">
+                                          <option>Lorem ispum dolor</option>
+                                          <option>Lorem ispum dolor</option>
+                                          <option>Lorem ispum dolor</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="email" class="form-control" id="Email39" placeholder="Lorem ispum dolor"></td>
+                                    <td><input type="email" class="form-control" id="Email40" placeholder="Lorem ispum dolor"></td>
+                                    <td><a type="submit" data-toggle="modal" data-target=".bs-example-modal-lg" style="font-weight:bold">Schedule</a></td>                                
+                                </tr>
+                          </tbody>
+                        </table>
+                        
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="row" style="margin:10px 0">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="#"><button class="btn btn-success btn-md" style="width:100%">Save draft</button></a></div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="hiring-plan-view.html"><button class="btn btn-warning btn-md" style="width:100%">Submit</button></a></div>
+                  </div>
+    </div>
+        
+</div>
+    
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="z-index:1000000">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Hire Plan Schedule</h4>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+                        <table  class="table table table-striped">
+                            <thead>
+                                <tr style="background-color:#192930; color:#fff">
+                                    <th>No of candidates</th>
+                                    <th>Hire by Quarter</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="email" class="form-control" id="Email42" placeholder=""></td>
+                                    <td><input type="email" class="form-control" id="Email43" placeholder=""></td>
+                                </tr>
+                            
+                                <tr>
+                                    <td><input type="email" class="form-control" id="Email45" placeholder=""></td>
+                                    <td><input type="email" class="form-control" id="Email46" placeholder=""></td>                               
+                                </tr>
+
+                                <tr>
+                                    <td><input type="email" class="form-control" id="Email48" placeholder=""></td>
+                                    <td><input type="email" class="form-control" id="Email51" placeholder=""></td>                              
+                                </tr>
+                          </tbody>
+                        </table>
+                      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+
+</body>
+</html>

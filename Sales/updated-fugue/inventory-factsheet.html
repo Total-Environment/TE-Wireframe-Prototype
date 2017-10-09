@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/master-style.css">
+
+<link rel="stylesheet" type="text/css" href="css/tefont.css"/>
+<script src="js/portfolio/portfolio-script.js"></script>
+
+<link href="css/portfolio/inventory-style.css" rel="stylesheet" />
+<script src="js/portfolio/enscroll-0.6.2.min.js" rel="stylesheet"></script>
+<!-- print style -->
+<link href="css/portfolio/print.css" media="print" rel="stylesheet" />
+<link href="css/portfolio/print.css" media="screen" rel="stylesheet" />
+<!-- print style -->
+<script type="text/javascript" src="js/portfolio/inventory-script.js"></script>
+
+<!-- Anything Slider optional plugins -->
+ <script src="js/portfolio/jquery.easing.1.2.js"></script>
+ <!-- Anything Slider -->
+ <link href="css/portfolio/anythingslider.css" rel="stylesheet">
+ <script src="js/portfolio/jquery.anythingslider.min.js"></script>
+  
+</head>
+<body>
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+
+    <header>
+		<div class="gr-clr"></div>
+            <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+						    <li><a href="dashboard.html">Dashboard </a></li>
+  						    <li class="active"><a href="inventory.html">Portfolio <span class="sr-only">(current)</span> </a></li>
+							<li ><a href="lead-data-view.html">Lead </a></li>
+                            <li><a href="termsheet.html">Sales Tracker </a></li>
+							<li><a href="collections.html">Collections </a></li>
+							<li><a href="invoices.html">Invoices </a></li>
+							<li><a href="#">Tracking </a></li>
+							<li><a href="#">Business Partner </a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Change Order</a></li>
+                                    <li><a href="#">Cancellation</a></li>
+                                    <li><a href="#">Transfer</a></li>
+									<li><a href="#">Customisation</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Products</a></li>
+                                     <li><a href="#">Business Segment</a></li>
+                                      <li><a href="#">Specification</a></li>
+									  <li><a href="#">T&amp;C</a></li>
+									  <li><a href="#">Schedule</a></li>
+									  <li><a href="#">Rules</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">User Management</a></li>
+                                    <li><a href="#">Roles Management</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+	</header>
+
+	<!--header-->
+<!--Wrapper-->
+  
+<div class="wrapper" style="background-color:#fff;">
+
+<div class="row" style="margin:0;">
+<section>
+
+<!--  portfolio page start -->
+<div class="portfolio-page">
+        <div style="margin:10px -2px;">
+		<!-- container start -->
+			 <div class="container" style="width:100%; margin:0; padding:0;">
+                <div class="row">
+                    <div class="col-md-12">
+					<!-- <div class="changeview"><span class=""><i class="fa fa-list-ul" aria-hidden="true"></i> Back to Project List</span></div>  -->
+					
+						<div class="container" style="margin:0; width:100%">
+						<!-- inventory project detail view start -->
+						<div class="selcproject">
+						<div class="row">
+						<div class="col-md-12" style="margin:0; padding:0; ">
+						
+								<div 
+								</div>
+								<div class="col-md-12" style="padding:0;">
+								<div class="panel inven-panel-title" style=""> Projects <span class="pull-right projdis" style="padding-right:10px"> Projects <span class="caret"></span></span>
+</div>
+<div class="projectlist">
+ <div class="col-md-12" style="width:98%; margin:0 1%;">
+                                 <div class="row pull-right">
+                                 <div id="proj1" class="inven-proj-list">
+                                 <img src="images/Windmills-of-Your-Mind.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj2" class="inven-proj-list">
+                                 <img src="images/In-That-Quiet-Earth-Bangalore.jpg" class="img-responsive">
+                                 
+                                 </div>
+                                 <div id="proj3" class="inven-proj-list">
+                                 <img src="images/A-Few-Honest-Words.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj4" class=" inven-proj-list">
+                                 <img src="images/After-the-Rain.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj5" class="inven-proj-list">
+                                 <img src="images/Learning-to-Fly.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj6" class="inven-proj-list">
+                                 <img src="images/Lost-in-the-Greens.png" class="img-responsive">
+                                
+                                 </div>
+								  <div id="proj7" class="inven-proj-list">
+                                 <img src="images/Pursuit-of-a-Radical-Rhapsody.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj8" class="inven-proj-list">
+                                 <img src="images/Songs-from-the-Wood.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj9" class="inven-proj-list">
+                                 <img src="images/The-Magic-Faraway-Tree.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj10" class="inven-proj-list">
+                                 <img src="images/The-Magic-Faraway-Tree-II.png" class="img-responsive">
+
+                                 </div>
+                                 <div id="proj11" class="inven-proj-list">
+                                 <img src="images/The-Meadow-Dance.png" class="img-responsive">
+
+                                 </div>
+                                 <div id="proj12" class="inven-proj-list">
+                                 <img src="images/Van-Goghs-Garden.png" class="img-responsive">
+
+                                 </div>
+                                 </div>
+                                 </div>
+                               
+
+</div>
+<div class="clearfix"></div>
+					           <div style="width:98%; margin:0 auto;">
+							   <div class="projlisttabs">
+	<!-- Tabs start -->
+    <ul class="nav nav-tabs" id="tabs">
+	<li ><a href="inventory-projectinfo.html">Project Info</a></li>
+        <li ><a href="inventory-inventory.html">Inventory</a></li>
+		<li><a href="inventory-pricebook.html">Price Book</a></li>
+         <li><a href="inventory-templates.html">Templates</a></li>
+		<li><a href="inventory-progress.html">Progress</a></li>
+		<li><a href="inventory-taxdetails.html">Tax Details</a></li>
+		<li><a href="inventory-layouts.html">Layouts</a></li>
+		<li class="active"><a href="#factsheet" data-toggle="tab">Fact Sheet</a></li>
+		<li ><a href="inventory-bankdetails.html">Bank Details</a></li>
+		<li  class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle moreinfo">More  <span class="caret"></span> </a>
+		 <ul class="dropdown-menu" style="margin-left:-50px;">
+                <li><a href="inventory-more-product.html">Product Details</a></li>
+                <li><a href="inventory-more-carpark.html">Car Park</a></li>
+                <li><a href="inventory-more-tower-details.html">Tower Details</a></li>
+				 <li><a href="inventory-more-unit-details.html">Unit Details</a></li>
+                 <li><a href="inventory-more-salesplan.html">Sales Plan & Target</a></li>
+                <li><a href="inventory-more-salesgoaldetails.html">Sales Goal Details</a></li>
+				 <li><a href="inventory-more-premiumpricebook.html">Premimum</a></li>
+				  <li><a href="inventory-more-schedule.html">Schedule</a></li>
+            </ul>
+		</li>
+    </ul>
+    <!-- Tabs end -->
+
+    <!-- Tab Content start -->
+    <div class="tab-content">
+     
+    
+		<!-- factsheet Details  -->
+		<div class="tab-pane active in fade" id="factsheet">
+		<div style="width:100%;">
+		<div style="width:99%; margin:0 auto">
+		<div class="inve-tab-panel-title ltf">Learning to Fly </div>
+			
+		</div>
+		
+		
+		</div>
+		<div style="width:80%; margin:10px auto">
+		
+		<div class="pull-right" style="padding:10px 0;" ><button class="btn btn-default  btn-sm showdet">+ Expand All</button><button class="btn btn-sm hidedet btn-default">- Collapse All</button></div>
+		<div class="clearfix"></div>
+		<dl id="faqs">
+  <dt>Acres</dt>
+  <dd><p>3.7</p></dd>
+ 
+  <dt>Short Description</dt>
+  <dd><p>"Located in JP Nagar, Bangalore
+Tower 1 & 3 (Circular) has 21 levels and has 84 units each
+Tower 2 (Rectangular) has 22 levels with 40 units and 2 Penthouse units.A thick Residential Neighbourhood, Easy access to Malls, Institutions & Hospitals,Amenities. The site is situated in the midst of a residential zone and surrounded with low-rise residential units. The project is easily accessible from different parts of the cityLocated in JP Nagar, Bangalore
+Tower 1 & 3 (Circular) has 21 levels and has 84 units each
+Tower 2 (Rectangular) has 22 levels with 40 units and 2 Penthouse units.A thick Residential Neighbourhood, Easy access to Malls, Institutions & Hospitals,Amenities. The site is situated in the midst of a residential zone and surrounded with low-rise residential units. The project is easily accessible from different parts of the city"	</p>
+</dd>
+ 
+  <dt>Address/Lacation on map</dt>
+  <dd><p>"JP Nagar 29th Main, 6th Phase, Google Co-ordinates :55°30'5''N, 37°20'3''E
+55.501N, 37.33E"</p></dd>
+
+
+
+ <dt>Directions & 3 Prominent nearby Landmarks</dt>
+  <dd>	<p> Just above the Gundappa Underpass, Inbetween Nandhini and Adiga Restaurant, Puttenahalli Signal, 6th Ph JP Nagar, From Bannerghatta road,  get over the Gundappa underpass and on LHS MC D, cross the signal and take 1st left & 1st Right Dead end LHS project. From Sarakki Signal, get over the underpass Take Right in the signal and 1st Right Dead end LHS project.	</p></dd>
+
+  
+  
+  <dt>No of Phase</dt>
+  <dd>	<p> 2	</p></dd>
+
+<dt>No of Floors
+</dt>
+  <dd>	<p> 21 and 22
+	</p></dd>
+  
+  <dt>Phase Status
+</dt>
+  <dd>	<p> Tower 2 1st slab done and tower 3 2 slabs done
+	</p></dd>
+  <dt>No of Units
+</dt>
+  <dd>	<p> 122
+	</p></dd>
+
+<dt>Type of Homes
+</dt>
+  <dd>	<p> Simplex/Penthouse only in tower 2
+	</p></dd>
+  
+  <dt>Bedrooms
+</dt>
+  <dd>	<p> 3 BR and 4 BR
+	</p></dd>
+   <dt>Pricing
+</dt>
+  <dd>	<p> 3.6
+	</p></dd>
+
+<dt>Carpet Area - Sqft
+</dt>
+  <dd>	<p> 0	</p></dd>
+  
+  <dt>Built up area- Sqft
+</dt>
+  <dd>	<p> 65
+	</p></dd>
+  <dt>Date of Prelaunch
+</dt>
+  <dd>	<p> 2013
+	</p></dd>
+
+<dt>Date of Launch
+</dt>
+  <dd>	<p> 2014
+	</p></dd>
+  
+  <dt>Date of Handover
+</dt>
+  <dd>	<p> 2017
+	</p></dd>
+   <dt>Saleable Area
+</dt>
+  <dd>	<p> 3077, 3103, 5250
+	</p></dd>
+
+<dt>Product Type
+</dt>
+  <dd>	<p> 	</p></dd>
+  
+  <dt>Availability
+</dt>
+  <dd>	<p> 142
+	</p></dd>
+  <dt>Amenities
+</dt>
+  <dd>	<p> -	</p></dd>
+
+<dt>Car Park
+</dt>
+  <dd>	<p> -	</p></dd>
+  
+  <dt>Specifications
+</dt>
+  <dd>	<p> Orange
+	</p></dd>
+   <dt>Sales flow
+</dt>
+  <dd>	<p> Anand
+</p></dd>
+
+<dt>Ph & Email id
+</dt>
+  <dd>	<p> -	</p></dd>
+  
+  <dt>Rate Per Sqft
+</dt>
+  <dd>	<p> Reference area - Carpet Area(Garden)+common area, clubhouse share, lifts lobbies
+	</p></dd>
+  <dt>Floor Rise Cost
+</dt>
+  <dd>	<p> 50 Rs. Per Floor from 2nd level
+	</p></dd>
+
+<dt>Regn+VAT+ST
+</dt>
+  <dd>	<p> 18%
+	</p></dd>
+  
+  <dt>Upgradation to Purple
+</dt>
+  <dd>	<p> 1000/sq ft
+	</p></dd>
+  
+</dl>
+		
+		
+		</div>
+</div>
+		<!-- factsheet Details -->
+		
+		</div>
+		<!-- Tab Content end -->
+	
+	
+</div>
+								</div>
+			
+								</div>
+								</div>
+						
+						</div>
+					
+					
+					
+					</div>
+                </div>
+							
+							<!-- inventory projec detail view end -->
+							<div class="clearfix"></div>
+							<div style="border-bottom:dotted 1px #ccc;width: 97%;margin:0 auto 10px auto;padding-bottom: 10px;"></div>
+						</div>
+					</div>
+					</div>
+				</div>
+		<!-- container end -->		
+			</div>
+			</div> 
+<!-- portfolio page end -->
+</section>
+</div>
+</div>
+
+
+ 
+<div class="clearfix"></div>
+
+</div>
+
+</body>
+</html>
+
+

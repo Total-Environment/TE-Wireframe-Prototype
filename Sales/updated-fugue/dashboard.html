@@ -1,0 +1,2412 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--  -->
+<link rel="shortcut icon" href="images/telogomin.jpg" />
+<title>Details</title>
+<link rel="stylesheet" href="css/lead/bootstrap.css">
+<link rel="stylesheet" href="css/lead/font-awesome.min.css" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link href="css/lead/dashboard-style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script src="js/lead/jquery-ui.js"></script>
+<script src="js/lead/dashboard-script.js"></script>
+<script type="text/javascript" src="js/lead/bootstrap.min.js"></script>
+<!-- Anything Slider optional plugins -->
+ <script src="js/lead/jquery.easing.1.2.js"></script>
+ <!-- Anything Slider -->
+ <link href="css/lead/anythingslider.css" rel="stylesheet">
+ <script src="js/lead/jquery.anythingslider.min.js"></script>
+<!-- chart scripts-->
+<script src="js/lead/highcharts.js"></script>
+<script src="js/lead/highcharts-more.js"></script>
+<script src="js/lead/exporting.js"></script>
+<script src="js/lead/chart-script.js"></script>
+<!-- chart scripts-->
+<script src="js/lead/dashboard-accordion.js"></script>
+<style>
+    .projectinfotable td {
+    text-align: left;
+    font-size: 12px;
+    line-height: 4px !important;
+    padding: 8px !important;
+}
+</style>
+
+
+</head>
+<body style="background-color:#eae4dc !important; color:#000 !important;">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+     <header>
+		<div class="gr-clr"></div>
+            <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+						    <li class="active"><a href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a></li>
+  						    <li><a href="inventory.html">Portfolio </a></li>
+							<li ><a href="lead-data-view.html">Lead </a></li>
+                           <li><a href="termsheet.html">Sales Tracker </a></li>
+							<li><a href="collections.html">Collections </a></li>
+							<li><a href="invoices.html">Invoices </a></li>
+							<li><a href="#">Tracking </a></li>
+							<li><a href="#">Business Partner </a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Change Order</a></li>
+                                    <li><a href="#">Cancellation</a></li>
+                                    <li><a href="#">Transfer</a></li>
+									<li><a href="#">Customisation</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Products</a></li>
+                                     <li><a href="#">Business Segment</a></li>
+                                      <li><a href="#">Specification</a></li>
+									  <li><a href="#">T&amp;C</a></li>
+									  <li><a href="#">Schedule</a></li>
+									  <li><a href="#">Rules</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">User Management</a></li>
+                                    <li><a href="#">Roles Management</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+	</header>
+<!--header-->
+<!--Wrapper-->
+	<div class="container wrapper" style="background: #fff;">
+		<div class="row">
+			<section>
+				<div style="margin: 65px auto 0 auto;">
+					<div class="title-panel">Dashboard <div class="pull-right dash_filter">Filter <span class="caret"></span></div></div>
+					<div class="dashfilter_container"><div class="dashfilter_box">
+					
+					<div class="col-md-12">
+					<div class="col-md-6"><div class="dashfilter_projects">					
+					<ul id="filterslider1">
+						<li>
+								<div id="proj1" class="inven-proj-list">
+                                 <img src="images/Windmills-of-Your-Mind.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj2" class="inven-proj-list">
+                                 <img src="images/In-That-Quiet-Earth-Bangalore.jpg" class="img-responsive">
+                                 
+                                 </div>
+                                 <div id="proj3" class="inven-proj-list">
+                                 <img src="images/A-Few-Honest-Words.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj4" class="inven-proj-list">
+                                 <img src="images/After-the-Rain.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj5" class="inven-proj-list">
+                                 <img src="images/Learning-to-Fly.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj6" class="inven-proj-list">
+                                 <img src="images/Lost-in-the-Greens.png" class="img-responsive">
+                                
+                                 </div>
+								  <div id="proj7" class="inven-proj-list">
+                                 <img src="images/Pursuit-of-a-Radical-Rhapsody.png" class="img-responsive">
+                                 </div>
+						
+                                 
+						</li>
+						
+						<li>
+							<div id="proj8" class="inven-proj-list">
+                                 <img src="images/Songs-from-the-Wood.png" class="img-responsive">
+                                 </div>
+						<div id="proj9" class="inven-proj-list">
+                                 <img src="images/The-Magic-Faraway-Tree.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj10" class="inven-proj-list">
+                                 <img src="images/The-Magic-Faraway-Tree-II.png" class="img-responsive">
+
+                                 </div>
+                                 <div id="proj11" class="inven-proj-list">
+                                 <img src="images/The-Meadow-Dance.png" class="img-responsive">
+
+                                 </div>
+                                 <div id="proj12" class="inven-proj-list">
+                                 <img src="images/Van-Goghs-Garden.png" class="img-responsive">
+
+                                 </div>
+						</li>
+					</ul>
+					</div>
+	</div>
+					<div class="col-md-6"><div class="dashfilter_leads">					
+					<ul id="filterslider2">
+						<li>
+							<div class="leadfilterbox filbgcolor_64b3de"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_01b1c9"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_435501"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_fa870a"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_a8a9ad"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_982b28"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_573728"><div class="center">
+  <p>MR</p>
+</div></div>
+<div class="leadfilterbox filbgcolor_64b3de"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_01b1c9"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_435501"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_fa870a"><div class="center">
+  <p>MR</p>
+</div></div>
+						</li>
+						<li>
+							<div class="leadfilterbox filbgcolor_64b3de"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_01b1c9"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_435501"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_fa870a"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_a8a9ad"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_982b28"><div class="center">
+  <p>MR</p>
+</div></div>
+								<div class="leadfilterbox filbgcolor_573728"><div class="center">
+  <p>MR</p>
+</div></div>
+						</li>
+					</ul>
+					</div>
+	</div>
+					</div>
+						
+				</div></div>
+				   <div class="dashboard" style="margin-bottom:30px;">
+				   <div class="col-md-12 padnone">
+						<div class="col-md-6 padleft10">
+						<div  class="tempdepmat">
+						<div class="title_panel_dash">Temperature & Depth </div>
+					<div id="bubblechart" style="height: 400px; min-width: 310px; max-width: 600px; margin: 0 auto"></div>
+					</div>
+					
+					<div  class="acttarsales">
+						<div class="title_panel_dash">Actual vs Target </div>
+					<div class="dashtabs">
+			<!-- Tabs start -->
+			<ul class="nav nav-tabs" id="tabs">
+				<li class="active"><a href="#acttarsales" data-toggle="tab">Sales</a></li>
+				<li><a href="#acttarcol" data-toggle="tab">Collection	</a></li>
+            </ul>
+    <!-- Tabs end -->
+	
+	
+	<div class="tab-content">
+     
+        <!-- Actual Sales -->
+        <div class="tab-pane active in fade" id="acttarsales">
+		<div class="col-md-12" style="margin:10px 0;">
+		
+		
+<div id="stackedchartsales" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		<div class="clearfix"></div>
+		
+	</div>
+		</div>
+		 <!-- Actual Sales -->
+		  <!-- Collections -->
+        <div class="tab-pane fade" id="acttarcol">
+			<div class="col-md-12" style="margin:10px 0;">
+			
+<div id="stackedchartcoll" style="min-width: 710px; height: 400px; margin: 0 auto"></div>
+			<div class="clearfix"></div>
+		
+	</div>
+		</div>
+		 <!-- Collections -->
+		 
+		</div>
+               	</div>
+           
+					</div>
+						</div>
+						<div class="col-md-6" style="padding:0 10px;">
+						
+					<div class="panel-group" id="dashboardaccodion">
+    <div class="panel panel-default">
+        <div class="panel-heading collapsed" data-toggle="collapse"  data-parent="#dashboardaccodion" href="#panel1">
+            <h4 class="panel-title">
+                <a>Inventory</a>
+            </h4>
+        </div>
+        <div id="panel1" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <!-- inventory project list view start -->
+							<div id="categories-list" class="row list-group inventorylist">
+							<!-- inventory proj item list start -->
+								<div class="item-list  col-md-6">
+								
+								<div class="row marnone padnone">
+								<div class="item-box">
+								<div class="col-md-4 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/A-Few-Honest-Words.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-8 marnone padnone">
+									<table class = "table projectinfotable">
+   									   
+										   <tbody>
+                                               <tr style="background-color:#f1f1f1">
+												 <td>Unit</td>
+												 <td>Area</td>
+												 <td>value</td>
+											  </tr>
+												<tr>
+												 <td>5</td>
+												 <td>21,819</td>
+												 <td>16.83</td>
+											  </tr>
+											   <tr style="color:rgb(19, 169, 19)">
+												 <td>5</td>
+												 <td>21,819</td>
+												 <td>16.83</td>
+											  </tr>
+											   <tr>
+												 <td>0</td>
+												 <td>0</td>
+												 <td>0</td>
+											  </tr>
+										   </tbody>
+										</table>	</div>
+									</div>
+								</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-6">
+								<div class="row marnone padnone">
+								<div class="item-box">
+								<div class="col-md-4 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/After-the-Rain.png" alt="" />
+								</div>
+								</div>
+									<div class="col-md-8 marnone padnone">
+<table class = "table projectinfotable">
+   									   
+										    <tbody>
+                                                 <tr style="background-color:#f1f1f1">
+												 <td>Unit</td>
+												 <td>Area</td>
+												 <td>value</td>
+											  </tr>
+												<tr>
+												 <td>363</td>
+												 <td>13,59,918</td>
+												 <td>1,660.16</td>
+											  </tr>
+											   <tr style="color:rgb(19, 169, 19)">
+												 <td>87</td>
+												 <td>3,27,384</td>
+												 <td>338.2</td>
+											  </tr>
+											   <tr>
+												 <td>276</td>
+												 <td>10,32,534</td>
+												 <td>1,321.96</td>
+											  </tr>
+										   </tbody>
+										</table>
+									</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-6">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-4 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/Learning-to-Fly.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-8 marnone padnone">
+<table class = "table projectinfotable">
+   									   
+										   <tbody>
+                                               <tr style="background-color:#f1f1f1">
+												 <td>Unit</td>
+												 <td>Area</td>
+												 <td>value</td>
+											  </tr>
+												<tr>
+												 <td>212</td>
+												 <td>7,01,876</td>
+												 <td>840.53</td>
+											  </tr>
+											   <tr style="color:rgb(19, 169, 19)">
+												 <td>70</td>
+												 <td>2,04,615</td>
+												 <td>212.95</td>
+											  </tr>
+											   <tr>
+												 <td>142</td>
+												 <td>4,97,261</td>
+												 <td>627.58</td>
+											  </tr>
+										   </tbody>
+										</table>								</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list col-md-6">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-4 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/Windmills-of-Your-Mind.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-8 marnone padnone">
+<table class = "table projectinfotable">
+   									   
+										   <tbody>
+                                               <tr style="background-color:#f1f1f1">
+												 <td>Unit</td>
+												 <td>Area</td>
+												 <td>value</td>
+											  </tr>
+												<tr>
+												 <td>392</td>
+												 <td>17,08,066</td>
+												 <td>1237.1</td>
+											  </tr>
+											   <tr style="color:rgb(19, 169, 19)">
+												 <td>342</td>
+												 <td>14,42,076</td>
+												 <td>907.57</td>
+											  </tr>
+											   <tr>
+												 <td>50</td>
+												 <td>2,65,990</td>
+												 <td>329.44</td>
+											  </tr>
+										   </tbody>
+										</table>									</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-6">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-4 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/Van-Goghs-Garden.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-8 marnone padnone">
+<table class = "table projectinfotable">
+   									   
+										    <tbody>
+                                                <tr style="background-color:#f1f1f1">
+												 <td>Unit</td>
+												 <td>Area</td>
+												 <td>value</td>
+											  </tr>
+												<tr>
+												 <td>19</td>
+												 <td>1,06,650</td>
+												 <td>229.42</td>
+											  </tr>
+											  <tr style="color:rgb(19, 169, 19)">
+												 <td>16</td>
+												 <td>90,187</td>
+												 <td>182.87</td>
+											  </tr>
+											   <tr>
+												 <td>3</td>
+												 <td>16,463</td>
+												 <td>46.55</td>
+											  </tr>
+										   </tbody>
+										</table>									</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-6">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-4 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/Pursuit-of-a-Radical-Rhapsody.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-8 marnone padnone">
+<table class = "table projectinfotable">
+   									   
+										    <tbody>
+                                                <tr style="background-color:#f1f1f1">
+												 <td>Unit</td>
+												 <td>Area</td>
+												 <td>value</td>
+											  </tr>
+												<tr>
+												 <td>909</td>
+												 <td>31,08,956</td>
+												 <td>1,371.6</td>
+											  </tr>
+											  <tr style="color:rgb(19, 169, 19)">
+												 <td>204</td>
+												 <td>5,92,659</td>
+												 <td>418.11</td>
+											  </tr>
+											   <tr>
+												 <td>705</td>
+												 <td>25,16,297</td>
+												 <td>953.49</td>
+											  </tr>
+										   </tbody>
+										</table>									</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-6">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-4 item-img">
+
+								<div class="item-data">
+										<img class="group list-group-image" src="images/The-Meadow-Dance.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-8 marnone padnone">
+<table class = "table projectinfotable">
+   									   
+										  <tbody>
+                                              <tr style="background-color:#f1f1f1">
+												 <td>Unit</td>
+												 <td>Area</td>
+												 <td>value</td>
+											  </tr>
+												<tr>
+												 <td>83</td>
+												 <td>3,73,286</td>
+												 <td>349.63</td>
+											  </tr>
+											   <tr style="color:rgb(19, 169, 19)">
+												 <td>20</td>
+												 <td>91,502</td>
+												 <td>77.29</td>
+											  </tr>
+											   <tr>
+												 <td>63</td>
+												 <td>2,81,784</td>
+												 <td>272.34</td>
+											  </tr>
+										   </tbody>
+										</table>								</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-6">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-4 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/Songs-from-the-Wood.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-8 marnone padnone">
+<table class = "table projectinfotable">
+   									   
+										    <tbody>
+                                                <tr style="background-color:#f1f1f1">
+												 <td>Unit</td>
+												 <td>Area</td>
+												 <td>value</td>
+											  </tr>
+												<tr>
+												 <td>141</td>
+												 <td>7,77,922</td>
+												 <td>1,117.64</td>
+											  </tr>
+											  <tr style="color:rgb(19, 169, 19)">
+												 <td>2</td>
+												 <td>9,032</td>
+												 <td>9.97</td>
+											  </tr>
+											   <tr>
+												 <td>139</td>
+												 <td>7,63,890</td>
+												 <td>1,107.67</td>
+											  </tr>
+										   </tbody>
+										</table>									</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-6">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-4 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/The-Magic-Faraway-Tree.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-8 marnone padnone">
+<table class = "table projectinfotable">
+   									   
+										    <tbody>
+                                                <tr style="background-color:#f1f1f1">
+												 <td>Unit</td>
+												 <td>Area</td>
+												 <td>value</td>
+											  </tr>
+												<tr>
+												 <td>431</td>
+												 <td>14,15,084</td>
+												 <td>1,101.15</td>
+											  </tr>
+											  <tr style="color:rgb(19, 169, 19)">
+												 <td>99</td>
+												 <td>3,38,865</td>
+												 <td>219.56</td>
+											  </tr>
+											   <tr>
+												 <td>332</td>
+												 <td>10,76,219</td>
+												 <td>881.59</td>
+											  </tr>
+										   </tbody>
+										</table></div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+									
+							</div>
+						<!--  inventory project list view end -->
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading collapsed" data-toggle="collapse"  data-parent="#dashboardaccodion" href="#panel2">
+            <h4 class="panel-title">
+                <a>Customer Events</a>
+            </h4>
+        </div>
+        <div id="panel2" class="panel-collapse collapse">
+            <div class="panel-body dash_panel_body">
+			<div class="dashcustboxtable">
+               	<table class="dash_cust_event scroll" cellspacing="0">
+        <thead>
+            <tr>
+                <th class="txtalignleft"><input type="text" placeholder="Customer" class="form-control searchTxt"></th>
+                <th><input type="text" placeholder="Unit No" class="txtaligncenter form-control searchTxt"></th>
+                <!--<th><input type="text" placeholder="Unit Type" class="form-control txtaligncenter searchTxt"></th>-->
+                <th><input type="text" placeholder="Phone" class="form-control txtaligncenter searchTxt"></th>
+                <th><input type="text" placeholder="Email" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Event Type" class="form-control txtaligncenter searchTxt"></th>
+				<!--<th><input type="text" placeholder="Birthday" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Anniversary" class="form-control txtaligncenter searchTxt"></th>-->
+			</tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				  <td class="txtaligncenter">
+                      Birthday:12 March<br />
+                      Anniversary: 12 May
+				  </td>
+            </tr>
+			<tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				  <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				  <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				  <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				  <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				  <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr><tr>
+                <td>Kumar</td>
+                <td class="txtaligncenter">1031</td>
+                <!--<td class="txtaligncenter">TE</td>-->
+                  <td class="txtaligncenter">9743024532</td>
+                 <td class="txtaligncenter">kumar@gmail.com</td>
+				 <td class="txtaligncenter">
+                      Birthday:12 March
+				  </td>
+            </tr>
+        </tbody>
+		<tfoot>
+		<tr>
+		<td class="footer" colspan="8" > 
+		<div class="pull-right">Go to page: <input type="text" value="1" class="footertxt input_radius">
+		<span style="padding:0 10px;">Show Rows: 
+		<select class="footerselect input_radius">
+		<option>10</option>
+		<option>20</option>
+		<option>50</option>
+		<option>100</option>
+		</select>
+		</span>
+		<span>1-10 of 100</span>
+		<span style="padding-left:10px;">
+		<button class="leftbutn">&nbsp;</button><button class="rightbutn">&nbsp;</button></span>
+		</div></td>
+		</tr>
+		</tfoot>
+    </table>
+	</div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading collapsed" data-toggle="collapse"  data-parent="#dashboardaccodion" href="#panel3">
+            <h4 class="panel-title">
+                <a>Upcoming Followups</a>
+            </h4>
+        </div>
+        <div id="panel3" class="panel-collapse collapse">
+                  <div class="panel-body dash_panel_body">
+			<div class="dashcustboxtable">
+               	<table class="dash_cust_event scroll" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th class="txtalignleft"><input type="text" placeholder="Customer" class="form-control searchTxt"></th>
+                <th><input type="text" placeholder="Email" class="txtaligncenter form-control searchTxt"></th>
+                <th><input type="text" placeholder="Mobile" class="form-control txtaligncenter searchTxt"></th>
+                <th><input type="text" placeholder="Date" class="form-control txtaligncenter searchTxt"></th>
+                <th><input type="text" placeholder="Time" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Event" class="form-control txtaligncenter searchTxt"></th>
+				
+			</tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr>
+			 <tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr> <tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr> <tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr> <tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr> <tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr> <tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr> <tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr> <tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr> <tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr> <tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr>
+			<tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr><tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr><tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr><tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr><tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr><tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr><tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr><tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr><tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr><tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr><tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr><tr>
+                <td>Gouvrav</td>
+                <td class="txtaligncenter">gouvrav@gmail.com</td>
+                <td class="txtaligncenter">9743024532</td>
+                  <td class="txtaligncenter">20-Jun-16</td>
+                 <td class="txtaligncenter">04:25 PM</td>
+				  <td class="txtaligncenter">Call</td>
+              
+            </tr>
+			
+        </tbody>
+		<tfoot>
+		<tr>
+		<td class="footer" colspan="6" > 
+		<div class="pull-right">Go to page: <input type="text" value="1" class="footertxt input_radius">
+		<span style="padding:0 10px;">Show Rows: 
+		<select class="footerselect input_radius">.
+		<option>10</option>
+		<option>20</option>
+		<option>50</option>
+		<option>100</option>
+		</select>
+		</span>
+		<span>1-10 of 100</span>
+		<span style="padding-left:10px;">
+		<button class="leftbutn">&nbsp;</button><button class="rightbutn">&nbsp;</button></span>
+		</div></td>
+		</tr>
+		</tfoot>
+    </table>
+	</div>
+            </div>
+      
+        </div>
+    </div>
+
+	   <div class="panel panel-default">
+        <div class="panel-heading collapsed" data-toggle="collapse"  data-parent="#dashboardaccodion" href="#panel4">
+            <h4 class="panel-title">
+                <a>Approval</a>
+            </h4>
+        </div>
+        <div id="panel4" class="panel-collapse collapse">
+                  <div class="panel-body dash_panel_body">
+				  
+			<div class="dashtabs">
+			<!-- Tabs start -->
+    <ul class="nav nav-tabs" id="tabs">
+	<li class="active"><a href="#portfolio" data-toggle="tab">portfolio</a></li>
+        <li ><a href="#sales" data-toggle="tab">Sales</a></li>
+		<li><a href="#cem" data-toggle="tab">CEM	</a></li>
+            </ul>
+    <!-- Tabs end -->
+	
+	
+	<div class="tab-content">
+     
+        <!-- portfolio -->
+        <div class="tab-pane active in fade" id="portfolio">
+		<div class="col-md-12" style="margin:10px 0;">
+			<div class="col-md-6" style="margin:0 auto; border-right:1px solid #99a1a3;">
+			<div class="portfolio_left_box">
+			<table class="dash_port_table">
+			<tr>
+			<td width="200">Payment Schedule:</td><td width="50">0</td>
+			</tr>
+			<tr>
+			<td>Unit:</td><td>0</td>
+			</tr>
+			<tr>
+			<td>Common Pricebook:</td><td>0</td>
+			</tr>
+			</table>
+			</div>
+			</div>
+			<div class="col-md-6"  style="margin:0 auto; padding-left:60px;">
+			<div class="">
+			<table class="dash_port_table">
+			<tr>
+			<td width="150">JD Share Plan:</td><td width="50">6</td>
+			</tr>
+			<tr>
+			<td>Pricebook:</td><td>0</td>
+			</tr>
+			<tr>
+			<td>Subvention:</td><td>0</td>
+			</tr>
+			</table>
+			</div>
+			</div>
+		<div class="clearfix"></div>
+		<div class="pull-right"><button class="btn btn-warning btn-xs">Pending</button></div>
+	</div>
+		</div>
+		 <!-- portfolio -->
+		  <!-- Sales -->
+        <div class="tab-pane fade" id="sales">
+			<div class="col-md-12" style="margin:10px 0;">
+			<div class="col-md-6" style="margin:0 auto; border-right:1px solid #99a1a3;">
+			<div class="portfolio_left_box">
+			<table class="dash_port_table">
+			<tr>
+			<td width="200">Offer:</td><td width="50">15</td>
+			</tr>
+			<tr>
+			<td>Unit:</td><td>0</td>
+			</tr>
+			<tr>
+			<td>MOU Offer:</td><td>0</td>
+			</tr>
+                <tr>
+			<td width="150">Claims:</td><td width="50">0</td>
+			</tr>
+			</table>
+			</div>
+			</div>
+			<div class="col-md-6"  style="margin:0 auto; padding-left:60px;">
+			<div class="">
+			<table class="dash_port_table">
+			<tr>
+			<td>Business Partner:</td><td>1</td>
+			</tr>
+			<tr>
+			<td>Partner Renewals:</td><td>1</td>
+			</tr>
+                <tr>
+			<td>Offer Expire Extension:</td><td>0</td>
+			</tr>
+                 <tr>
+			<td>Receipt:</td><td>0</td>
+			</tr>
+			</table>
+			</div>
+			</div>
+		<div class="clearfix"></div>
+		<div class="pull-right"><button class="btn btn-warning btn-xs">Pending</button></div>
+	</div>
+		</div>
+		 <!-- portfolio -->
+		  <!-- cem -->
+        <div class="tab-pane fade" id="cem">
+		<div class="col-md-12" style="margin:10px 0;">
+			<div class="col-md-6" style="margin:0 auto; border-right:1px solid #99a1a3;">
+			<div class="portfolio_left_box">
+			<table class="dash_port_table">
+			<tr>
+			<td width="200">Customization:</td><td width="50">4</td>
+			</tr>
+			<tr>
+			<td>Change Order:</td><td>11</td>
+			</tr>
+			<tr>
+			<td>Cancellation:</td><td>8</td>
+			</tr>
+                <tr>
+			<td>Transfer:</td><td>1
+                <tr>
+			<td>Account Transfer:</td><td>1</td>
+			</tr>
+                <tr>
+			<td>Stamp Duty Calculation:</td><td>0</td>
+			</tr>
+			</table>
+			</div>
+			</div>
+			<div class="col-md-6"  style="margin:0 auto; padding-left:60px;">
+			<div class="">
+			<table class="dash_port_table">
+			<tr>
+			<td width="150">Reimbursement:</td><td width="50">7</td>
+			</tr>
+			<tr>
+			<td>Delay  Compesation:</td><td>2</td>
+			</tr>
+			<tr>
+			<td>Milestone Billing Confirmation:</td><td>0</td>
+			</tr>
+                <tr>
+			<td>Customer BOQ:</td><td>8</td>
+			</tr>
+                <tr>
+			<td>Milestone Projection Revision:</td><td>27</td>
+			</tr>
+			</table>
+			</div>
+			</div>
+		<div class="clearfix"></div>
+		<div class="pull-right"><button class="btn btn-warning btn-xs">Pending</button></div>
+	</div>
+		</div>
+		 <!-- cem -->
+		</div>
+               	</div>
+            </div>
+      
+        </div>
+    </div>
+
+	   <div class="panel panel-default">
+        <div class="panel-heading collapsed" data-toggle="collapse"  data-parent="#dashboardaccodion" href="#panel5">
+            <h4 class="panel-title">
+               <a>Collections</a>
+            </h4>
+        </div>
+        <div id="panel5" class="panel-collapse collapse">
+                  <div class="panel-body dash_panel_body">
+			<div class="dashtabs">
+			<!-- Tabs start -->
+    <ul class="nav nav-tabs" id="tabs">
+	<li class="active"><a href="#daily" data-toggle="tab">Daily</a></li>
+        <li ><a href="#upcoming" data-toggle="tab">Upcoming</a></li>
+		
+            </ul>
+    <!-- Tabs end -->
+	
+	
+	<div class="tab-content">
+     
+        <!-- daily -->
+        <div class="tab-pane active in fade" id="daily">
+		<div class="dashcollectiontable" style="margin-top:10px;">
+               	<table class="dash_cust_event scroll" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th class="txtalignleft"><input type="text" placeholder="Customer" class="form-control searchTxt"></th>
+                <th><input type="text" placeholder="Amount" class="txtaligncenter form-control searchTxt"></th>
+                <th><input type="text" placeholder="Unit" class="form-control txtaligncenter searchTxt"></th>
+                <th><input type="text" placeholder="Project" class="form-control txtaligncenter searchTxt"></th>
+                <th><input type="text" placeholder="Mode" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Reference" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Recorded by" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Status" class="form-control txtaligncenter searchTxt"></th>
+				
+			</tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>
+		   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>	
+			
+        </tbody>
+		<tfoot>
+		<tr>
+		<td class="footer" colspan="8" > 
+		<div class="pull-right">Go to page: <input type="text" value="1" class="footertxt input_radius">
+		<span style="padding:0 10px;">Show Rows: 
+		<select class="footerselect input_radius">.
+		<option>10</option>
+		<option>20</option>
+		<option>50</option>
+		<option>100</option>
+		</select>
+		</span>
+		<span>1-10 of 100</span>
+		<span style="padding-left:10px;">
+		<button class="leftbutn">&nbsp;</button><button class="rightbutn">&nbsp;</button></span>
+		</div></td>
+		</tr>
+		</tfoot>
+    </table>
+	</div>
+           </div>
+		 <!-- daily -->
+		  <!-- upcoming -->
+        <div class="tab-pane fade" id="upcoming">
+		<div class="dashcollectiontable">
+               	<table class="dash_cust_event scroll" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th class="txtalignleft"><input type="text" placeholder="Customer" class="form-control searchTxt"></th>
+                <th><input type="text" placeholder="Amount" class="txtaligncenter form-control searchTxt"></th>
+                <th><input type="text" placeholder="Unit" class="form-control txtaligncenter searchTxt"></th>
+                <th><input type="text" placeholder="Project" class="form-control txtaligncenter searchTxt"></th>
+                <th><input type="text" placeholder="Mode" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Reference" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Recorded by" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Status" class="form-control txtaligncenter searchTxt"></th>
+				
+			</tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>
+		   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>   <tr>
+                <td>Shridhar</td>
+                <td class="txtalignright">1,00,00,000</td>
+                <td class="txtaligncenter">1101</td>
+                  <td class="txtaligncenter">Learning to Fly</td>
+                 <td class="txtaligncenter">Cheque</td>
+				  <td class="txtaligncenter">298092</td>
+				   <td class="txtaligncenter">Ravi kaviluhole</td>
+				    <td class="txtaligncenter">D</td>
+              
+            </tr>	
+			
+        </tbody>
+		<tfoot>
+		<tr>
+		<td class="footer" colspan="8" > 
+		<div class="pull-right">Go to page: <input type="text" value="1" class="footertxt input_radius">
+		<span style="padding:0 10px;">Show Rows: 
+		<select class="footerselect input_radius">.
+		<option>10</option>
+		<option>20</option>
+		<option>50</option>
+		<option>100</option>
+		</select>
+		</span>
+		<span>1-10 of 100</span>
+		<span style="padding-left:10px;">
+		<button class="leftbutn">&nbsp;</button><button class="rightbutn">&nbsp;</button></span>
+		</div></td>
+		</tr>
+		</tfoot>
+    </table>
+	</div>
+     	</div>
+		 <!-- upcoming -->
+		
+		</div>
+               	</div>
+           
+            </div>
+      
+        </div>
+    </div>
+
+	   <!--<div class="panel panel-default">
+        <div class="panel-heading collapsed" data-toggle="collapse"  data-parent="#dashboardaccodion" href="#panel6">
+            <h4 class="panel-title">
+                <a>Pending Approval Followups</a>
+            </h4>
+        </div>
+        <div id="panel6" class="panel-collapse collapse">
+                  <div class="panel-body dash_panel_body">
+			<div class="">
+               	<table class="dash_pending_app scroll" cellspacing="0">
+        <thead>
+            <tr>
+                <th class="txtalignleft"><input type="text" placeholder="Activity Log" class="form-control searchTxt"></th>
+                <th><input type="text" placeholder="Activity Name" class="txtaligncenter form-control searchTxt"></th>
+                <th><input type="text" placeholder="Time" class="form-control txtaligncenter searchTxt"></th>
+                <th><input type="text" placeholder="By" class="form-control txtaligncenter searchTxt"></th>
+                
+				
+			</tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr>
+		    <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr> <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr> <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr> <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr> <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr> <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr> <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr> <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr> <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr> <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr> <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr> <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr> <tr>
+                <td>04:25</td>
+                <td class="txtaligncenter">Somnath</td>
+                <td class="txtaligncenter">07:25 PM	</td>
+                  
+                 <td class="txtaligncenter">Chandan Kumar</td>
+				
+              
+            </tr>
+			
+        </tbody>
+		<tfoot>
+		<tr>
+		<td class="footer" colspan="4" > 
+		<div class="pull-right">Go to page: <input type="text" value="1" class="footertxt input_radius">
+		<span style="padding:0 10px;">Show Rows: 
+		<select class="footerselect input_radius">.
+		<option>10</option>
+		<option>20</option>
+		<option>50</option>
+		<option>100</option>
+		</select>
+		</span>
+		<span>1-10 of 100</span>
+		<span style="padding-left:10px;">
+		<button class="leftbutn">&nbsp;</button><button class="rightbutn">&nbsp;</button></span>
+		</div></td>
+		</tr>
+		</tfoot>
+    </table>
+	</div>
+     	
+            </div>
+      
+        </div>
+    </div>-->
+
+	   <div class="panel panel-default">
+        <div class="panel-heading collapsed" data-toggle="collapse"  data-parent="#dashboardaccodion" href="#panel7">
+            <h4 class="panel-title">
+                <a>Upcoming Expire</a>
+            </h4>
+        </div>
+        <div id="panel7" class="panel-collapse collapse">
+                  <div class="panel-body dash_panel_body">
+			<div class="dash_upcoming_exp">
+               	<table class="dash_upcome_expire scroll" cellspacing="0">
+        <thead>
+            <tr>
+                <th class="txtalignleft"><input type="text" placeholder="Expire Date" class="form-control searchTxt"></th>
+                <th><input type="text" placeholder="Order Id" class="txtaligncenter form-control searchTxt"></th>
+                <th><input type="text" placeholder="Project" class="form-control txtaligncenter searchTxt"></th>
+                <th><input type="text" placeholder="Unit" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Value" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Status" class="form-control txtaligncenter searchTxt"></th>
+                <th><input type="text" placeholder="On" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="By" class="form-control txtaligncenter searchTxt"></th>
+				
+			</tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr>
+		    <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr> <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr> <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr> <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr> <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr> <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr> <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr> <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr> <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr> <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr> <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr> <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr> <tr>
+                <td>12-May-2016</td>
+                <td class="txtaligncenter">001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+              
+            </tr>
+			
+        </tbody>
+		<tfoot>
+		<tr>
+		<td class="footer" colspan="8" > 
+		<div class="pull-right">Go to page: <input type="text" value="1" class="footertxt input_radius">
+		<span style="padding:0 10px;">Show Rows: 
+		<select class="footerselect input_radius">.
+		<option>10</option>
+		<option>20</option>
+		<option>50</option>
+		<option>100</option>
+		</select>
+		</span>
+		<span>1-10 of 100</span>
+		<span style="padding-left:10px;">
+		<button class="leftbutn">&nbsp;</button><button class="rightbutn">&nbsp;</button></span>
+		</div></td>
+		</tr>
+		</tfoot>
+    </table>
+	</div>
+     	
+            </div>
+      
+        </div>
+    </div>
+<div class="panel panel-default">
+        <div class="panel-heading collapsed" data-toggle="collapse"  data-parent="#dashboardaccodion" href="#panel8">
+            <h4 class="panel-title">
+                <a>Pending Closure</a>
+            </h4>
+        </div>
+        <div id="panel8" class="panel-collapse collapse">
+                  <div class="panel-body dash_panel_body">
+			<div class="dash_upcoming_exp">
+               	<table class="dash_upcome_expire scroll" cellspacing="0">
+        <thead>
+            <tr>
+               
+                <th  class="txtalignleft"><input type="text" placeholder="Order Id" class="txtaligncenter form-control searchTxt"></th>
+                <th><input type="text" placeholder="Project" class="form-control txtaligncenter searchTxt"></th>
+                <th><input type="text" placeholder="Unit" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Value" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="Status" class="form-control txtaligncenter searchTxt"></th>
+                <th><input type="text" placeholder="On" class="form-control txtaligncenter searchTxt"></th>
+				<th><input type="text" placeholder="By" class="form-control txtaligncenter searchTxt"></th>
+				 <th><input type="text" placeholder="Expire Date" class="form-control searchTxt"></th>
+				
+			</tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+               
+                <td >001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+               <td class="txtaligncenter">12-May-2016</td>
+            </tr>
+		    <tr>
+               
+                <td >001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+               <td class="txtaligncenter">12-May-2016</td>
+            </tr><tr>
+               
+                <td >001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+               <td class="txtaligncenter">12-May-2016</td>
+            </tr><tr>
+               
+                <td >001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+               <td class="txtaligncenter">12-May-2016</td>
+            </tr><tr>
+               
+                <td >001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+               <td class="txtaligncenter">12-May-2016</td>
+            </tr><tr>
+               
+                <td >001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+               <td class="txtaligncenter">12-May-2016</td>
+            </tr><tr>
+               
+                <td >001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+               <td class="txtaligncenter">12-May-2016</td>
+            </tr><tr>
+               
+                <td >001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+               <td class="txtaligncenter">12-May-2016</td>
+            </tr><tr>
+               
+                <td >001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+               <td class="txtaligncenter">12-May-2016</td>
+            </tr><tr>
+               
+                <td >001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+               <td class="txtaligncenter">12-May-2016</td>
+            </tr><tr>
+               
+                <td >001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+               <td class="txtaligncenter">12-May-2016</td>
+            </tr><tr>
+               
+                <td >001</td>
+                <td class="txtaligncenter">LtR	</td>
+                  
+                 <td class="txtalignright">20</td>
+				 <td class="txtalignright">3,52,00,000</td>
+				 <td class="txtaligncenter">Pending Approval	</td>
+				 <td class="txtaligncenter">Manju</td>
+				 <td class="txtaligncenter">12-May-2016</td>
+               <td class="txtaligncenter">12-May-2016</td>
+            </tr>
+        </tbody>
+		<tfoot>
+		<tr>
+		<td class="footer" colspan="8" > 
+		<div class="pull-right">Go to page: <input type="text" value="1" class="footertxt input_radius">
+		<span style="padding:0 10px;">Show Rows: 
+		<select class="footerselect input_radius">.
+		<option>10</option>
+		<option>20</option>
+		<option>50</option>
+		<option>100</option>
+		</select>
+		</span>
+		<span>1-10 of 100</span>
+		<span style="padding-left:10px;">
+		<button class="leftbutn">&nbsp;</button><button class="rightbutn">&nbsp;</button></span>
+		</div></td>
+		</tr>
+		</tfoot>
+    </table>
+	</div>
+     	
+            </div>
+      
+        </div>
+    </div>
+
+	
+	</div></div>
+					
+				   
+				   
+				 </div>
+				</div>
+				</div>
+				
+			</section>
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+
+</html>
+
+
+
+
+

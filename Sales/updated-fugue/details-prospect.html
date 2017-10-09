@@ -1,0 +1,3544 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link href="css/style.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/master-style.css">
+<link href="css/tefont.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://summernote.org/bower_components/summernote/dist/summernote.css">
+<link href='css/fullcalendar.min.css' rel='stylesheet' />
+<link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+<!-- print style -->
+<link href="css/lead/print.css" media="print" rel="stylesheet" />
+<link href="css/lead/print.css" media="screen" rel="stylesheet" />
+<!-- print style -->
+<link href='css/scheduler.min.css' rel='stylesheet' />
+<link href='css/fullcalendar.css' rel='stylesheet' />
+<link rel="stylesheet" href="css/intlTelInput.css">
+<link href="css/bootstrap-datepicker.min.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src='js/moment.min.js'></script>
+<script type="text/javascript" src="http://summernote.org/bower_components/summernote/dist/summernote.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src='js/fullcalendar.min.js'></script>
+<script src='js/scheduler.min.js'></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link href="css/new-timeline.css" rel="stylesheet" />
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<script src="js/bootstrap-datepicker.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.ddslick.min.js"></script>
+  <script src="js/intlTelInput.js"></script> 
+<script src="js/addmoretext.js"></script>
+<script src="js/lead/detailprospect-script.js"></script>
+<link href="css/lead/detailprospect-style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-color:#eae4dc !important; color:#000 !important;">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+
+    <header>
+		<div class="gr-clr"></div>
+            <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+						    <li><a href="dashboard.html">Dashboard </a></li>
+  						    <li><a href="inventory.html">Portfolio </a></li>
+							<li class="active"><a href="lead-data-view.html">Lead <span class="sr-only">(current)</span></a></li>
+                            <li><a href="termsheet.html">Sales Tracker </a></li>
+							<li><a href="collections.html">Collections </a></li>
+							<li><a href="invoices.html">Invoices </a></li>
+							<li><a href="#">Tracking </a></li>
+							<li><a href="#">Business Partner </a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Change Order</a></li>
+                                    <li><a href="#">Cancellation</a></li>
+                                    <li><a href="#">Transfer</a></li>
+									<li><a href="#">Customisation</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Products</a></li>
+                                     <li><a href="#">Business Segment</a></li>
+                                      <li><a href="#">Specification</a></li>
+									  <li><a href="#">T&amp;C</a></li>
+									  <li><a href="#">Schedule</a></li>
+									  <li><a href="#">Rules</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">User Management</a></li>
+                                    <li><a href="#">Roles Management</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+	</header>
+
+	<!--header-->
+<!--Wrapper-->
+  
+<div class="wrapper" style="background-color:#fff;">
+<div class="row" style="margin:0;">
+<section>
+<div class="wizard">
+
+           
+<div class="head-panel-blue" style="margin-top:10px"><h4>Lead</h4></div>
+            <div style="width:98%; margin:10px auto;">
+ <div class="lead-title">Prospect Details</div>  </div>
+                       <div class="step_details content" >
+					 
+                       <div style="width:99%" style="margin-top:10px;">
+                      
+                       <div class="pull-right">
+					 <!--   <button class="btn btn-warning btn-sm">Qualified</button>   -->
+                       <button class="btn btn-primary btn-sm">Prospect</button>  
+                       <button class="btn btn-primary btn-sm">Suspect</button>  
+                       <button class="btn btn-danger btn-sm">Blacklist</button>    
+                       <button class="btn btn-danger btn-sm">Trash</button>  
+                       </div>
+                       </div>
+                    
+                         
+                         
+
+                             
+                                <div class="row">
+                                <div class="col-md-12">
+                                <div class="col-md-4" style="margin-top:10px;">
+                                 <div class="row">
+                                <div class="col-md-12">
+
+                             
+ <div class="personalinfodetails">
+ <div class="panel" style="background-color: #3e7eae; padding: 5px 10px; color:#fff;">Prospect Details <span class="pull-right"><a title="Edit" style="cursor: pointer;" class="editinfoper"><i class="fa fa-pencil-square" style="color:#fff;" aria-hidden="true"></i></a></span></div>
+
+ <div class="personalcurrentinfo">
+<div class="col-md-12" >
+<div class="col-md-2" style="margin-top:10px;">
+<div class="personalinfocircle">
+<img src="images/profile.png" style="width: 48px;">
+</div>
+</div>
+<div class="col-md-10">
+
+<div class="row">
+<div class="col-md-12" style="margin:5px 0; padding:0;">
+<div style="width:93%; margin: 0 auto; color:#ff6a00; font-weight: bold;"> 
+Welcome to First name last name,</div>
+<div class="col-md-6" style=" margin-top:5px; padding:0 0 0 5px; ">
+
+<div  style="display: inline;"> 
+<i class="fa fa-graduation-cap" style="color:#f68c02; padding-right: 5px; font-size:9pt;" aria-hidden="true"></i>IT Admin
+</div>
+<div class="clearfix"></div>
+<div  style=""> 
+<i class="fa fa-phone" style="color:#f68c02; padding-right: 10px; font-size:9pt;" aria-hidden="true"></i><span class="tenumber" style="display:inline">2323423424</span> 
+                                
+</div>
+<div  style=""> 
+<i class="fa fa-map-marker" style="color:#f68c02; padding-right: 11px; font-size:9pt;" aria-hidden="true"></i>#<span class="tenumber" style="display:inline; text-align: left;">20,</span><span class="content" style="display:inline">Address line1</span>,<br> <span class="content" style="display:inline; padding-left:20px;">Area</span>,<br> <span class="content" style="display:inline;padding-left:20px;">Land Mark</span>,<br> <span class="content" style="display:inline;padding-left:20px;">City</span>
+
+</div>
+</div>
+<div class="col-md-6" style=" margin-top:5px; ">
+<div  style=" display: inline; "> 
+<i class="fa fa-university" style="color:#f68c02; padding-right: 5px; font-size:9pt;" aria-hidden="true"></i>Total Environment Pvt Ltd
+
+</div>
+<div class="clearfix"></div>
+<div><span><i class="fa fa-envelope" style="color:#f68c02; padding-right: 5px; font-size:9pt;" aria-hidden="true"></i>  <span class="content" style="display:inline">manju@total-environment.com</span>
+</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+<div class="personaleditinfo">
+ <div class="panel" style="background-color: #3e7eae; padding: 5px 10px; color:#fff;">Edit Details <!-- <span class="pull-right"><a title="Edit" style="cursor: pointer;" class="submitperbtn"><i class="fa fa-pencil-square" style="color:#fff;" aria-hidden="true"></i></a></span> --></div>
+	<div class="col-md-12" style="padding:0;">
+		  <div class="firstandlast" >
+                                                    <div class="col-md-4" style="padding: 0px 5px;">
+                                                        <div class="form-group" style="margin: 5px 0 ">
+                                                            <div class="salutation">
+
+                                                               
+
+                                                                <select class="form-control valid input_radius selectbtn" id="Salutation_New_data" name="Salutation1" tabindex="-1">
+                                                                    <option value="Salutation">Salutation</option>
+                                                                    <option value="Mr">Mr</option>
+                                                                    <option value="Mrs">Mrs</option>
+                                                                    <option value="Ms">Ms</option>
+                                                                    <option value="M/S">M/S</option>
+                                                                    <option value="Dr.">Dr.</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4" style="padding: 0 5px;">
+                                                        <div class="form-group " style="margin: 5px 0px;">
+
+                                                   
+
+                                                            <input class="form-control input_radius mandatory" id="FirstName" placeholder="First Name" name="firstname" type="text" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4" style="padding: 0;">
+                                                        <div class="form-group" style="margin: 5px 0px">
+
+                                                   
+
+                                                            <input class="form-control input_radius" id="LastName" placeholder="Last Name" name="lastname" type="text" />
+
+                                                        </div>
+                                                    </div>
+                                                   
+                                                </div>
+	
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="col-md-12" style="padding:0;">
+	   <div class="col-md-4" style="padding:0px 5px;">
+                                                        <div class="form-group" style="margin: 5px 0">
+                                                            <div class="delcouncode">
+                                                              
+                                                                 <span id="countryCode" class="form-control contelcode" >Country Code</span>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8" style="padding:0 0 0 5px ;">
+                                                        <div class="form-group " style="margin: 5px 0;">
+                                                            <div class="input_fields_wrap_phone">
+                                                                <div class="input-group">
+                                                                    <div>
+
+                                                                     
+                                                                        <input type="text" id="Mobile" class="form-control input_radius has-error mandatory" name="mytext[]" placeholder="Primary Phone">
+                                                                    </div>
+
+                                                                   
+                                                                    <span class="input-group-addon right-btn">
+                                                                        <button type="button" class="add_button_text"><i class="glyphicon glyphicon-plus"></i></button>
+                                                                    </span>
+
+                                                                </div>
+                                                                <p>Select + sign for more phone numbers </p>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                
+	</div>
+	<div class="clearfix"></div>
+    <div class="col-md-12" style="padding:0 0 0 5px;">
+           
+                                                        <div class="form-group " style="margin: 5px 0">
+                                                            <div class="input_fields_wrap_email">
+                                                                <div class="input-group">
+                                                                    <div>
+
+                                                                       
+                                                                        <input class="form-control input_radius mandatory col-md-10" id="Emailid" placeholder="Primary Email" type="text" name="">
+                                                                    </div>
+                                                                  
+                                                                    <span class="input-group-addon right-btn">
+                                                                        <button type="button" class="add_button_email"><i class="glyphicon glyphicon-plus"></i></button>
+                                                                    </span>
+                                                                </div>
+                                                                <p>Select + sign for more Emails </p>
+                                                            </div>
+                                                        </div>
+                                                  
+        </div>
+	<div class="col-md-12" style="padding:0;">
+		<div class="col-md-4 padlr5px">
+ <div class="form-group martb5px">
+
+   <input id="Desig_data" class="form-control"  placeholder="Designation" name="designation" type="text"/>
+ </div> 
+		</div>
+		<div class="col-md-4 padlr5px">
+<div class="form-group martb5px">
+  
+   <input id="Organa_data" class="form-control"  placeholder="Organisation" name="organisation" type="text"/>
+ </div>  
+		</div>
+<div class="col-md-4" style="padding:0 5px">
+    <div class="form-group " style="margin:5px 0;">
+ 
+      <input class="form-control  ff_elem" id="f_elem_city" placeholder="City" name="ff_nm_from[]" type="text" />
+
+
+ </div>  
+    </div>
+	</div>
+	<div class="clearfix"></div>
+	
+
+
+<div class="borderline"></div>
+
+ <div class="pull-right" style="margin-top:10px;"><button class="btn btn-sm" style="margin-right:5px;">Save</button><button class="btn  btn-sm submitperbtn">Cancel</button></div> 
+</div>
+
+
+
+
+
+
+                                                                 	
+
+                                </div>
+</div>
+
+
+                                <div class="row" style="margin-top:10px;">
+                                <div class="col-md-12">
+                                 <div class="row">
+                                <div class="col-md-12">
+
+ <div class="enqinfodetails">
+  <div class="panel" style="background-color: #3e7eae; padding: 5px 10px; color:#fff;">Source of Enquiry Details <span class="pull-right"><a title="show/hide" style="cursor: pointer; margin-left:5px;" class="showinfoenq"><i class="fa fa-plus-square" style="color:#fff;" aria-hidden="true"></i></a><a title="show/hide" style="cursor: pointer; margin-left:5px;" class="hideinfoenq"><i class="fa fa-minus-square" style="color:#fff;" aria-hidden="true"></i></a></span>  <span class="pull-right"><a title="Edit" style="cursor: pointer; " class="editinfoenq"><i class="fa fa-pencil-square" style="color:#fff;" aria-hidden="true"></i></a></span></div>
+ <div class="enqcurrentinfo">
+<div class="col-md-12">
+
+
+
+<div class="row">
+<div class="col-md-12">
+			<div class="col-md-4 paddingnone"><div class="padding5"><label>First Connect:</label></div></div>
+			<div class="col-md-8 padl0r30"><div class="padding5"><span class="spanunderline">Phone</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 paddingnone"><div class="padding5"><label>Sub First Connect:</label></div></div>
+			<div class="col-md-8 padl0r30"><div class="padding5"><span class="spanunderline">InCall</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 paddingnone"><div class="padding5"><label>Primary Source:</label></div></div>
+			<div class="col-md-8 padl0r30"><div class="padding5"><span class="spanunderline">Social Media</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 paddingnone"><div class="padding5"><label>Secondary Source:</label></div></div>
+			<div class="col-md-8 padl0r30"><div class="padding5"><span class="spanunderline">Facebook</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 paddingnone"><div class="padding5"><label>Campaign:</label></div></div>
+			<div class="col-md-8 padl0r30"><div class="padding5"><span class="spanunderline">PoaRR_Facebook</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 paddingnone"><div class="padding5"><label>Sales Engine:</label></div></div>
+			<div class="col-md-8 padl0r30"><div class="padding5"><span class="spanunderline">GS-Gulf Sales</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 paddingnone"><div class="padding5"><label>City:</label></div></div>
+			<div class="col-md-8 padl0r30"><div class="padding5"><span class="spanunderline">Bangalore</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 paddingnone"><div class="padding5"><label>Prfered Location:</label></div></div>
+			<div class="col-md-8 padl0r30"><div class="padding5"><span class="spanunderline">Sarjapur</span></div></div>
+			<div class="clearfix"></div>
+			
+			<div class="col-md-4 paddingnone"><div class="padding5"><label>Product Type:</label></div></div>
+			<div class="col-md-8 padl0r30"><div class="padding5"><span class="spanunderline">D35</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 paddingnone"><div class="padding5"><label>Product Area:</label></div></div>
+			<div class="col-md-8 padl0r30"><div class="padding5"><span class="spanunderline">Sqft</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 paddingnone"><div class="padding5"><label>Specification:</label></div></div>
+			<div class="col-md-8 padl0r30"><div class="padding5"><span class="spanunderline">Blue</span></div></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+</div>
+<div class="enqeditinfo">
+  <div class="panel" style="background-color: #3e7eae; padding: 5px 10px; color:#fff;">Your Enquiry Details <span class="pull-right"><a title="Edit" style="cursor: pointer;" ><i class="fa fa-pencil-square" style="color:#fff;" aria-hidden="true"></i></a></span></div>
+	<div class="col-md-12" style="padding:0">
+		  <div class="col-md-4 padlr5px">
+ <div class="form-group martb5px">
+    <select class="form-control" name="firstconnect" id="firstconnect">
+                                                 <option value="" disabled selected>First Connect</option>
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                              
+                                            </select>
+ </div>  
+		</div>
+	  <div class="col-md-4 padlr5px">
+ <div class="form-group martb5px">
+ 
+    <select class="form-control" name="subfirstconnect" id="subfirstconnect">
+                                                 <option value="" disabled selected>Sub First Connect</option>
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                              
+                                            </select>
+ </div>  
+		</div>
+          <div class="col-md-4 padlr5px">
+ <div class="form-group martb5px">
+ 
+    <select class="form-control" name="primarysource" id="primarysource">
+                                              <option value="" disabled selected>Primary Source</option>
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                              
+                                            </select>
+ </div>  
+		</div>
+        </div>
+    <div class="col-md-12" style="padding:0">
+        	  <div class="col-md-4 padlr5px">
+ <div class="form-group martb5px">
+ 
+    <select class="form-control" name="secondarysource" id="secondarysource">
+                                              <option value="" disabled selected>Seecondary Source</option>
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                              
+                                            </select>
+ </div>   
+		</div>
+          <div class="col-md-4 padlr5px">
+ <div class="form-group martb5px">
+ 
+   <select class="form-control" name="channalpartner" id="channalpartner">
+                                                <option value="" disabled selected>Channel Partner</option>
+                                                <option value="Bangalore"></option>
+                                                <option value="Pune"></option>
+                                              
+                                            </select>
+ </div>   
+		</div>
+     <div class="col-md-4 padlr5px">
+ <div class="form-group martb5px">
+
+    <select class="form-control" name="salesengine" id="salesengine">
+                                               <option value="" disabled selected>Sales Engine</option>
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                              
+                                            </select>
+ </div>   
+		</div>
+ </div>
+    <div class="col-md-12" style="padding:0">
+         <div class="col-md-4 padlr5px">
+ <div class="form-group martb5px">
+ 
+    <select class="form-control" name="city" id="city">
+                                                <option value="" disabled selected>City</option>
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                              
+                                            </select>
+ </div>  
+		</div>
+		  <div class="col-md-4 padlr5px">
+ <div class="form-group martb5px">
+  
+    <select class="form-control" name="preferedlocation" id="preferedlocation">
+                                                <option value="" disabled selected>Prefered Location</option>
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                              
+                                            </select>
+ </div>    
+		</div>
+          <div class="col-md-4 padlr5px">
+ <div class="form-group martb5px">
+ 
+   <input class="form-control" id="area" placeholder="Area" name="area" type="text"/>
+ </div>
+		</div>
+
+ </div>
+    <div class="col-md-12" style="padding:0">		
+        <div class="col-md-4 padlr5px">
+ <div class="form-group martb5px">
+ 
+   <input class="form-control" id="landmark" placeholder="Land Mark" name="area" type="text"/>
+ </div> 
+		</div>
+         <div class="col-md-4 padlr5px">
+ <div class="form-group martb5px">
+ 
+   <select class="form-control" name="city" id="city">
+                                               <option value="" disabled selected>City	</option>
+                                                <option value="Bangalore"></option>
+                                                <option value="Pune"></option>
+                                              
+                                            </select>
+ </div>  
+		</div>
+		<div class="col-md-4" style="padding:0">
+
+		</div>
+	</div>
+	
+
+<div class="col-md-12" style="margin-top:10px;">
+Your Projects:
+<div style="border-top:1px dotted #ccc; width:100%; margin:10px 0;"></div>
+	 <div class="projects_list">
+                                 <div class="row">
+                                 <div class="col-md-12" style="width:98%; margin:0 1%;">
+                                 <div class="row">
+                                 <div id="proj1" class="col-md-2 projects_list_selection">
+                                 <img src="images/Windmills-of-Your-Mind.png" class="img-responsive">
+                                <div class="projects_selection"></div>	
+                                 </div>
+                                 <div id="proj2" class="col-md-2 projects_list_selection">
+                                 <img src="images/In-That-Quiet-Earth-Bangalore.jpg" class="img-responsive">
+                                 <div class="projects_selection"></div>
+                                 </div>
+                                 <div id="proj3" class="col-md-2 projects_list_selection">
+                                 <img src="images/A-Few-Honest-Words.png" class="img-responsive">
+                                <div class="projects_selection"></div>
+                                 </div>
+                                 <div id="proj4" class="col-md-2 projects_list_selection">
+                                 <img src="images/After-the-Rain.png" class="img-responsive">
+                                <div class="projects_selection"></div>
+                                 </div>
+                                 <div id="proj5" class="col-md-2 projects_list_selection">
+                                 <img src="images/Learning-to-Fly.png" class="img-responsive">
+                                <div class="projects_selection"></div>
+                                 </div>
+                                 <div id="proj6" class="col-md-2 projects_list_selection">
+                                 <img src="images/Lost-in-the-Greens.png" class="img-responsive">
+                                <div class="projects_selection"></div>
+                                 </div>
+                                 </div>
+                                 <div  class="row" style="margin-top:10px;">
+                                 <div id="proj7" class="col-md-2 projects_list_selection">
+                                 <img src="images/Pursuit-of-a-Radical-Rhapsody.png" class="img-responsive">
+                                 <div class="projects_selection"></div>
+
+                                 </div>
+                                 <div id="proj8" class="col-md-2 projects_list_selection">
+                                 <img src="images/Songs-from-the-Wood.png" class="img-responsive">
+                                <div class="projects_selection"></div>
+                                 </div>
+                                 <div id="proj9" class="col-md-2 projects_list_selection">
+                                 <img src="images/The-Magic-Faraway-Tree.png" class="img-responsive">
+                                 <div class="projects_selection"></div>
+                                 </div>
+                                 <div id="proj10" class="col-md-2 projects_list_selection">
+                                 <img src="images/The-Magic-Faraway-Tree-II.png" class="img-responsive">
+                                 <div class="projects_selection"></div>
+                                 </div>
+                                 <div id="proj11" class="col-md-2 projects_list_selection">
+                                 <img src="images/The-Meadow-Dance.png" class="img-responsive">
+                                 <div class="projects_selection"></div>
+                                 </div>
+                                 <div id="proj12" class="col-md-2 projects_list_selection">
+                                 <img src="images/Van-Goghs-Garden.png" class="img-responsive">
+                                 <div class="projects_selection"></div>
+                                 </div>
+                                 </div>
+                                 </div>
+                                 </div>
+                                 </div>
+<div style="border-top:1px dotted #ccc; width:100%; margin:10px 0;"></div>
+<div class="clearfix"></div>
+
+ <div class="project_more_details" style="margin-top:0 !important;">
+
+                                 <div class="row">
+                               
+                                 <div class="col-md-4 padlr5px">
+                             <div class="form-group martb5px">
+ 
+    <select class="form-control valid input_radius" name="producttype" id="ProductType">
+                                                 <option value="" disabled selected>Product Type	</option>
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                              
+                                            </select>
+ </div>  
+                            </div>
+                             <div class="col-md-4 padlr5px">
+                            <div class="form-group martb5px">
+ 
+    <select class="form-control  input_radius" name="productarea" id="ProductArea">
+                                               <option value="" disabled selected>Product Area	</option>
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                              
+                                            </select>
+ </div>  
+                            </div> 
+                                <div class="col-md-4 padlr5px">
+                            <div class="form-group ">
+ 
+    <select class="form-control valid input_radius" name="Specification" id="Specification">
+                                                <option value="" disabled selected>Specification</option>
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                              
+                                            </select>
+ </div>  
+                            </div> 
+                         
+                                </div>
+                            <div style="border-top:1px dotted #ccc; width:100%; margin:10px 0;"></div>  
+                                 </div>
+
+		
+	</div>
+	<div class="clearfix"></div>
+
+
+<div class="margin-top:10px;"></div>
+
+ 	<div class="pull-right"><button class="btn btn-sm " style="margin-right:5px;">Save</button><button class="btn btn-sm submitbtn">Cancel</button></div>
+</div>
+
+
+                                </div>
+                                </div>
+                               
+ <div class="row" style="margin-top:10px;">
+                                <div class="col-md-12">
+
+ <div class="assinfodetails">
+  <div class="panel" style="background-color: #3e7eae; padding: 5px 10px; color:#fff;">Assignment Details 
+      <span class="pull-right"><a title="show/hide" style="cursor: pointer; margin-left:5px;" class="showinfoass">
+          <i class="fa fa-plus-square" style="color:#fff;" aria-hidden="true"></i></a>
+          <a title="show/hide" style="cursor: pointer; margin-left:5px;" class="hideinfoass">
+              <i class="fa fa-minus-square" style="color:#fff;" aria-hidden="true"></i></a>
+
+      </span>
+     <span class="pull-right"><a title="Edit" style="cursor: pointer; " class="editinfoassign"><i class="fa fa-pencil-square" style="color:#fff;" aria-hidden="true"></i></a></span>
+     
+
+  </div>
+   <div class="assigninfo">
+<div class="col-md-12">
+
+
+
+<div class="row">
+<div class="col-md-12">
+<div class="col-md-6 paddingnone"><div class="padding5"><label>Enquiry Created by:</label></div></div>
+			<div class="col-md-6 padl0r30"><div class="padding5">Manjunath</div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-6 paddingnone"><div class="padding5"><label>Sales Consultant:</label></div></div>
+			<div class="col-md-6 padl0r30"><div class="padding5">Gajanan</div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-6 paddingnone"><div class="padding5"><label>Assisted Sales Consultant:</label></div></div>
+			<div class="col-md-6 padl0r30"><div class="padding5">Gajanan</div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-6 paddingnone"><div class="padding5"><label>Closed Sales Consultant:</label></div></div>
+			<div class="col-md-6 padl0r30"><div class="padding5">Gajanan</div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-6 paddingnone"><div class="padding5"><label>Date:</label></div></div>
+			<div class="col-md-6 padl0r30"><div class="padding5">26-Apr-2016</div></div>
+			<div class="clearfix"></div>
+    <div class="col-md-4 paddingnone"><div class="padding5"><label>Your Interested Projects:</label></div></div>
+			<div class="col-md-8 padl0r30"><div class="padding5"><span class="spanunderline">   <img src="images/Windmills-of-Your-Mind.png" class="intprj img-responsive">  <img src="images/A-Few-Honest-Words.png" class="intprj img-responsive"></span></div></div>
+			<div class="clearfix"></div>
+
+	</div>
+	<div class="clearfix"></div></div>
+
+</div>
+</div>
+   
+</div> 
+   <div class="editinfoass">
+           <div class="panel" style="background-color: #3e7eae; padding: 5px 10px; color:#fff;">Your Assign Details <span class="pull-right"><a title="Edit" style="cursor: pointer;" ><i class="fa fa-pencil-square" style="color:#fff;" aria-hidden="true"></i></a></span></div>
+<div class="col-md-12 paddingnone">
+    <div class="col-md-4 padlr5px">
+        <div class="form-group martb5px" >
+ 
+   <input class="form-control" id="Enquiry_Created" placeholder="Enquiry Created by" name="Enquiry Created by" type="text"/>
+ </div>
+        </div>
+   <div class="col-md-4 padlr5px">
+        <div class="form-group martb5px" >
+ 
+   <input class="form-control" id="Sales_Consultant" placeholder="Sales Consultant" name="Sales Consultant" type="text"/>
+ </div>
+        </div>
+      <div class="col-md-4 padlr5px">
+        <div class="form-group martb5px" >
+
+   <input class="form-control" id="Closed_Sales_Consultant" placeholder="Closed Sales Consultant" name="Closed Sales Consultant" type="text"/>
+ </div>
+        </div>
+    </div>
+       <div class="col-md-12" style="padding:0;">
+     <div class="col-md-4 padlr5px">
+        <div class="form-group martb5px" >
+ 
+   <input class="form-control" id="Enquiry_Created_by" placeholder="Created Date" name="Enquiry Created by" type="text"/>
+ </div>
+        </div>
+    <div class="col-md-4 padlr5px">
+        <div class="form-group martb5px" >
+ 
+   <input class="form-control" id="Sales_Consultant" placeholder="Date" name="Sales Consultant" type="text"/>
+ </div>
+        </div>
+       <div class="col-md-4 padlr5px">
+        <div class="form-group martb5px" >
+
+   <input class="form-control" id="Closed_Sales_Consultant" placeholder="Date" name="Closed Sales Consultant" type="text"/>
+ </div>
+        </div>
+    </div>
+<div class="margin-top:10px;"></div>
+       <div class="clearfix"></div>
+       <div class="borderline"></div>
+ 	<div class="pull-right"><button class="btn btn-sm " style="margin-right:5px;">Save</button>&nbsp;<button class="btn btn-sm subassbtn">Cancel</button></div>
+     </div>
+     </div>
+</div>	 
+              
+
+
+ <div class="row" style="margin-top:10px;">
+      <div class="col-md-12">
+ <div class="terminfodetails">
+  <div class="panel detail-title-panel"> Term Sheets <span class="pull-right"><a title="show/hide" class="showterminfo marleft5"><i class="fa fa-plus-square" aria-hidden="true"></i></a><a title="show/hide" class="hideterminfo marleft5"><i class="fa fa-minus-square"  aria-hidden="true"></i></a></span></div>
+   <div class="terminfo">
+<div class="col-md-12">
+
+
+
+<div class="row">
+<div class="col-md-12 paddingnone">
+		
+<div class="projectslist" style="overflow-x:scroll;overflow-y:hidden;width:100%;">
+							<table class="prjlsttable">
+								<thead>
+								<tr>
+								<th class="frstchild">Order Id</th>
+									<th>Project</th>
+									<th>Unit</th>
+									<th>Value</th>
+									<th>Status</th>
+									<th>Pre on</th>
+									<th>Pre by</th>
+									<th>Expire date</th>
+									</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="frstchild" >001</td>
+									<td >LtR</td>
+									<td >20</td>
+									<td >3,58,00,000</td>
+									<td >Draft</td>
+									
+									<td >12-May-2016</td><td>Manju</td>
+									<td >12-May-2016</td>
+									</tr>
+									<tr>
+									<td class="frstchild" >002</td>
+									<td>ATF</td>
+									<td>125</td>
+									<td>3,58,00,000</td>
+									<td>Pending for Approval</td>
+									
+									<td>12-May-2016</td><td>Manju</td>
+									<td>12-May-2016</td>
+									</tr>
+									<tr>
+									<td class="frstchild" >003</td>
+									<td>PoaRR</td>
+									<td>20</td>
+									<td>3,58,00,000</td>
+									<td>Approval</td>
+									
+									<td>12-May-2016</td><td>Manju</td>
+									<td>12-May-2016</td>
+									</tr>
+								</tbody>
+							</table>
+							</div>
+							
+
+	</div>
+	<div class="clearfix"></div></div>
+
+</div>
+</div>
+</div> 
+ </div>
+ </div>
+ <div class="row" style="margin-top:10px;">
+      <div class="col-md-12">
+ <div class="comminfodetails">
+  <div class="panel detail-title-panel"> Communication <span class="pull-right"><span class="padright40 creemailcomm"><i class="fa fa-envelope-o" aria-hidden="true"></i>   Create</span><a title="show/hide" class="showcomminfo marleft5"><i class="fa fa-plus-square" aria-hidden="true"></i></a><a title="show/hide" class="hidecomminfo marleft5"><i class="fa fa-minus-square"  aria-hidden="true"></i></a></span></div>
+   <div class="comminfo">
+<div class="col-md-12">
+
+
+
+<div class="row">
+<div class="col-md-12 paddingnone">
+		
+<div class="projectslist">
+							<table class="commtable">
+								<thead>
+								<tr>
+								<th class="frstchild">Name</th>
+									<th>Subject</th>
+									<th>Description</th>
+									<th>Date</th>
+									<th>Status</th>
+									
+									</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="frstchild" >Manju</td>
+									<td >SftW</td>
+									<td >Lorem ipsum</td>
+									<td >14-Jun-16</td>
+									<td >Draft</td>
+									
+									
+									</tr>
+									<tr>
+									<td class="frstchild" >Manju</td>
+									<td >SftW</td>
+									<td >Lorem ipsum</td>
+									<td >14-Jun-16</td>
+									<td >Draft</td>
+									
+									
+									</tr>
+									<tr>
+									<td class="frstchild" >Manju</td>
+									<td >SftW</td>
+									<td >Lorem ipsum</td>
+									<td >14-Jun-16</td>
+									<td >Draft</td>
+									
+									
+									</tr>
+								</tbody>
+							</table>
+							</div>
+							
+
+	</div>
+	<div class="clearfix"></div></div>
+
+</div>
+</div>
+</div> 
+ </div>
+ </div>
+  
+
+
+ <div class="row" style="margin-top:10px;">
+      <div class="col-md-12">
+ <div class="temprateinfodetails">
+    <div  style=" padding: 5px 10px; color:#333; font-weight:bold;"> Tags:</div>
+	  <div style="padding:0 10px;">
+	  <i class="fa fa-tags" aria-hidden="true" style="color:#a37949"></i> Lorpem, Lorpem
+	</div>
+</div> 
+ </div>
+ 
+   
+</div>
+ <div class="row" style="margin-top:10px;">
+      <div class="col-md-12">
+ <div class="temprateinfodetails">
+  <div  style=" padding: 5px 10px; color:#333; font-weight:bold;">Temperature Meter</div>
+  <div style="padding:0 10px;">
+<div class="box-tempratevalue">
+									<div class="box-tempround">
+										<div class="tempmeter">
+											<p class="level1 bgcolor_f6cdcb">1</p>	
+											<p class="level2">2</p>	
+											<p class="level3">3</p>	
+											<p class="level4">4</p>	
+											<p class="level5 last-child">5</p>	
+										</div>
+									</div>
+									
+								
+								</div>
+</div>								  
+</div> 
+ </div>
+ </div>
+ <div class="row" style="margin-top:10px;">
+      <div class="col-md-12">
+ <div class="temprateinfodetails">
+    <div  style=" padding: 5px 10px; color:#333; font-weight:bold;">Evaluation</div>
+	  <div style="padding:0 10px;">
+ <div class="rating">
+<a class="btn btn-primary ratestar pop" data-container="body" data-placement="top"  data-html="true" tabindex="0" data-toggle="popover" id="pop3rate1"><span>1</span></a>
+<a class="btn btn-primary ratestar pop" data-container="body" data-placement="top"  data-html="true" tabindex="0" data-toggle="popover"  id="pop3rate2"><span>2</span></a>
+<a class="btn btn-primary ratestar pop" data-container="body" data-placement="top"  data-html="true" tabindex="0" data-toggle="popover"  id="pop3rate3"><span>3</span></a>
+<a class="btn btn-primary ratestar pop" data-container="body" data-placement="top"  data-html="true" tabindex="0" data-toggle="popover"  id="pop3rate4"><span>4</span></a>
+<a class="btn btn-primary ratestar pop" data-container="body" data-placement="top"  data-html="true" tabindex="0" data-toggle="popover"  id="pop3rate5"><span>5</span></a>
+<a class="btn btn-primary ratestar pop" data-container="body" data-placement="top"  data-html="true" tabindex="0" data-toggle="popover" id="pop3rate6"><span>6</span></a>
+<a class="btn btn-primary ratestar pop" data-container="body" data-placement="top"  data-html="true" tabindex="0" data-toggle="popover"  id="pop3rate7"><span>7</span></a>
+<a class="btn btn-primary ratestar pop" data-container="body" data-placement="top"  data-html="true" tabindex="0" data-toggle="popover"  id="pop3rate8"><span>8</span></a>
+<a class="btn btn-primary ratestar pop" data-container="body" data-placement="top"  data-html="true" tabindex="0" data-toggle="popover"  id="pop3rate9"><span>9</span></a>
+<a class="btn btn-primary ratestar pop" data-container="body" data-placement="top"  data-html="true" tabindex="0" data-toggle="popover"  id="pop3rate10"><span>10</span></a>
+									</div>
+	</div>
+</div> 
+ </div>
+ 
+   
+</div>	 
+                             
+                            
+                              
+                               
+                                
+                                
+                          
+                            
+                          
+                            </div> 
+                                </div> 
+                             
+
+
+                               
+                                </div>
+                                <div class="col-md-8" style="padding-left:0;">
+								<!-- Add notes followups upload files-->
+								<div class="notfolup">
+                                 <div class="matchwrapper">
+                                 <div class="row"  style="width: 98% !important;margin: 10px 0 0 0;">
+								<!-- notes tabs -->
+<div class="col-md-12" style="padding-right:0">
+<div>	
+ <ul class="tab-list">
+   <li>
+       		<a><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Add Notes</a>
+			</li>
+			<li>
+    <a class="folwp"><i class="fa fa-flag" aria-hidden="true"></i> Follow ups</a>
+    
+  </li>
+			<li>
+				<a><i class="fa fa-upload" aria-hidden="true"></i> Upload files</a>
+			</li> 
+			
+ </ul>
+ </div>
+<div class="clearfix"></div>
+<div class="addnoteinitialscreen">
+<div class="fakeInput">Click here to add notes...</div>
+</div>
+ <div class="selectionentry" id="addnotes">
+        <div style="margin-top:10px">
+<div class="addnote">
+   <p>Add Notes sections</p>
+
+  </div>
+
+  <div class="panel pull-right"><button class="btn btn-sm btn-success" onclick="save();">Save</button> <button class="btn btn-sm btn-default">Close</button></div>
+    </div>
+				</div>
+<div class="clearfix"></div>
+<div class="selectionentry" id="followups">
+          		<div class="col-md-12" style="padding:0; margin-top:10px;">
+          			<div class="col-md-6" style="padding:0 3px; border:1px solid #ccc;">
+          			<div id='calendarnew'></div>
+          			</div>
+          			<div class="col-md-6" style="padding:0 3px;">
+          			<div class="col-md-12"  style="padding:0px 3px;">
+          			<div class="col-md-10" style="padding:0 3px;">
+          			 <div class="form-group followupstext" style="margin:0;">
+  
+   <input class="form-control followups-selct" id="Call" placeholder="Call" name="followups" type="text"/>
+
+  
+ </div>
+ </div>
+ <div class="col-md-2" style="padding:0 3px;">
+  <select id="demo-htmlselect">
+        <option value="Call" data-imagesrc="images/call.png" style="width:30px;">Call</option>
+        <option value="Meeting" data-imagesrc="images/meeting.png" style="width:30px;">Meeting</option>
+        <option value="Task" data-imagesrc="images/task.png" style="width:30px;">Task</option>
+        <option value="Deadline" data-imagesrc="images/flag.png" style="width:30px;">Deadline</option>
+        <option value="Email" data-imagesrc="images/send.png" style="width:30px;">Email</option>
+        <option value="Site Visit" data-imagesrc="images/sitevisit.png" style="width:30px;">Site Visit</option>
+       
+    </select>
+</div>
+
+
+</div>
+<div class="col-md-12" style="padding:0px 0px 0 6px;">
+          			<div class="col-md-4"  style="padding:5px 3px;">
+ <div class="form-group datecontl">
+	<label class="control-label " for="date">
+  Date
+  </label>
+        <div class="usericondate">
+           <input id="datepicker"  class="form-control date-pick" placeholder="Date" type="text" >
+           <span class="clear"></span>
+        </div>
+	
+</div>
+
+
+  
+ </div>	
+<div class="col-md-4"  style="padding:5px  3px; ">
+<div class="form-group datecontl">
+	<label class="control-label " for="date">
+ Time
+  </label>
+         <div class="usericontime">
+          <select id="time-select">
+          <option value="" disabled selected>Time</option> <option>12:00 AM</option>
+<option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option>
+<option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option>
+       
+    </select>
+        <span class="clear"></span>
+        </div>
+	
+</div> 
+
+
+  
+ </div>	
+<div class="col-md-4"  style="padding:5px 3px;">
+<div class="form-group datecontl">
+	<label class="control-label " for="date">
+ Duration
+  </label>
+       <div class="usericondur">
+          <select id="dur-select">
+           <option value="" disabled selected>duration</option>
+       <option>12:00 AM</option>
+<option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option>
+<option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option><option>12:15 AM</option>
+<option>12:30 AM</option>
+<option>12:45 AM</option>
+<option>01:00 AM</option>
+<option>01:15 AM</option>
+<option>01:30 AM</option>
+<option>01:45 AM</option>
+       
+    </select>
+      <span class="clear"></span>
+        </div>
+	
+</div>
+
+
+  
+ </div>	
+
+ </div>
+<div class="clearfix"></div>
+<div class="col-md-12 folupnote" style="padding:5px 0 5px 10px;">
+<div class="followupnote">
+   <p>Add Notes sections</p>
+
+  </div>
+</div>
+<div class="clearfix"></div>
+
+
+</div>
+
+ <div class="panel pull-right" style="margin-top:10px;"><button class="btn btn-sm btn-default">Close</button>  <button class="btn btn-sm btn-success">Add</button></div>
+</div>
+	
+
+          			</div>
+<div class="clearfix"></div>
+<div class="selectionentry" id="uploadfiles">
+				<div style="margin-top:10px">
+          			 <div class="upload-drop-zone" id="drop-zone">
+            Just drag and drop files here
+          </div>
+          </div>
+				</div>
+<div class="clearfix"></div>
+	   
+			</div>
+<div class="clearfix"></div>
+
+<div class="row" style="width:100%; margin:10px auto">
+             
+                <div class="timeline timeline-single-column">
+                    <span class="timeline-label">
+                        <div class="label label-primary">Planned</div>
+                    </span>
+                    <div class="timeline-item">
+                        <div class="timeline-point">
+                            <img src="images/call.png" style="width:14px; margin-top:-5px;">
+                        </div>
+                        <div class="timeline-event">
+                            <div class="timeline-heading">
+                                <h4>Call</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Advenientibus aliorum eam ad per te sed. Facere debetur aut veneris accedens.</p>
+                            </div>
+                            <div class="timeline-footer">
+ <p class="text-left">Feb-22-2014</p><p style="padding-left:10px;">Srikanth akula</p>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                   <div class="timeline-item">
+                        <div class="timeline-point">
+                           <img src="images/meeting.png" style="width:14px; margin-top:-5px;">
+                        </div>
+                        <div class="timeline-event">
+                            <div class="timeline-heading">
+                                <h4>Meeting</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Advenientibus aliorum eam ad per te sed. Facere debetur aut veneris accedens.</p>
+                            </div>
+                            <div class="timeline-footer">
+ <p class="text-left">Feb-22-2014</p><p style="padding-left:10px;">Srikanth akula</p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                 
+
+                   
+                </div>
+				
+				
+				
+            </div>
+			
+			
+	
+<div class="row" style="width:100%; margin:10px auto">
+             
+                <div class="timeline timeline-single-column">
+                    <span class="timeline-label">
+                        <div class="label label-primary">Past</div>
+                    </span>
+                    <div class="timeline-item">
+                        <div class="timeline-point">
+                            <img src="images/call.png" style="width:14px; margin-top:-5px;">
+                        </div>
+                        <div class="timeline-event">
+                            <div class="timeline-heading">
+                                <h4>Call</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Advenientibus aliorum eam ad per te sed. Facere debetur aut veneris accedens.</p>
+                            </div>
+                            <div class="timeline-footer">
+ <p class="text-left">Feb-22-2014</p><p style="padding-left:10px;">Srikanth akula</p>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                   <div class="timeline-item">
+                        <div class="timeline-point">
+                           <img src="images/meeting.png" style="width:14px; margin-top:-5px;">
+                        </div>
+                        <div class="timeline-event">
+                            <div class="timeline-heading">
+                                <h4>Meeting</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Advenientibus aliorum eam ad per te sed. Facere debetur aut veneris accedens.</p>
+                            </div>
+                            <div class="timeline-footer">
+ <p class="text-left">Feb-22-2014</p><p style="padding-left:10px;">Srikanth akula</p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                 
+
+                   
+                </div>
+				
+				
+				
+            </div>
+			
+  
+<!-- tabs end--></div>
+                               
+                                 </div>
+</div> 
+ <!-- Add notes followups upload files-->
+ <div class="clearfix"></div>
+ 
+<!-- Terms Page Starts-->
+							<div class="detailpgtermsheet">
+							<div class="pull-right pdfgen">
+							<button class="btn btn-sm btn-default print-link no-print" onclick="javascript:printDivNew('printedittable')">
+                <i class="fa fa-print" aria-hidden="true"></i> Print
+                </button></div>
+							<div class="detailspgterm">
+						
+							 <div class="termspagefixedbox">
+							<ul>
+							<li class="discountview"><a title="Discount"><i class="fa fa-credit-card"></i></a></li>
+							<li class="costsplit"><a title="Cost Split"><i class="fa fa-star-half-o"></i></a></li>
+							<li class="npvcalculator"><a title="NPV Calculator"><i class="fa fa-calculator" aria-hidden="true"></i></a></li>
+								<li class="addcarpark"><a title="Add Car Park"><i class="fa fa-car"></i></a></li>
+							<li class="specialview"><a title="Special Conditions
+							"><i class="fa fa-diamond"></i></a></li>
+							</ul>
+							<div id='discont'>
+							<div class="discountinfo"><h1>Discount Details</h1>
+							<table class="discounttable table-bordered">
+							<thead>
+							<tr>
+								<th width="520">Discount Details</th>
+								<th width="80">% age</th>
+								<th width="100">Per Sqft</th>
+								<th width="100" class="txtalgnright">23008,088</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr class="subhead">
+							<td>Effective discount On Base Price</td>
+							<td class="txtalgnright">33.98</td>
+							<td class="txtalgnright">4,486</td>
+							<td class="txtalgnright">23008,088</td>
+							</tr>
+							<tr>
+							<td style="padding-left:15px;">1. Price Discount</td>
+							<td class="txtalgnright">33.98</td>
+							<td class="txtalgnright">4,486</td>
+							<td class="txtalgnright">23008,088</td>
+							</tr>
+							<tr>
+							<td style="padding-left:30px;">a. Towards Basic Cost</td>
+							<td class="txtalgnright">33.98</td>
+							<td class="txtalgnright">4,314</td>
+							<td class="txtalgnright">22126,506</td>
+							</tr>
+							<tr>
+							<td style="padding-left:30px;">b. Towards Payment Terms</td>
+							<td class="txtalgnright">1.30</td>
+							<td class="txtalgnright">172</td>
+							<td class="txtalgnright">8,81,582</td>
+							</tr>
+							<tr>
+							<td style="padding-left:15px;">2. Customisation Credit</td>
+							<td class="txtalgnright">0.00</td>
+							<td class="txtalgnright">0</td>
+							<td class="txtalgnright">0</td>
+							</tr>
+							<tr>
+							<td style="padding-left:15px;">3. Special Conditions Discount</td>
+							<td class="txtalgnright">0.00</td>
+							<td class="txtalgnright">0</td>
+							<td class="txtalgnright">0</td>
+							</tr>
+							
+							<tr class="subhead">
+							<td>Enquiry Source</td>
+							<td colspan="3" class="txtalignleft">Unknown</td>
+							</tr>
+							</tbody>
+							
+							</table>
+							
+							<div class="col-md-12 paddingnone">
+							<div class="col-md-4 paddingnone"><div class="padding10"><label>Sales Classification</label></div></div>
+			<div class="col-md-2 paddingnone"><div class="padding10"><span class="spanunderline">General Sale</span></div></div>
+			<div class="col-md-4"><div class="padding10"><label>Connect Sales Consultant</label></div></div>
+			<div class="col-md-2 paddingnone"><div class="padding10"><span class="spanunderline">Vinitha</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-4"><div class="padding10"><label>DPI Applicable</label></div></div>
+			<div class="col-md-2 paddingnone"><div class="padding10"><input type="checkbox" /></div></div>
+			<div class="col-md-4"><div class="padding10"><label>Closing Sales Consultant</label></div></div>
+			<div class="col-md-2 paddingnone"><div class="padding10"><span class="spanunderline">Vinitha</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-4"><div class="padding10"><label>&nbsp;</label></div></div>
+			<div class="col-md-2 paddingnone">&nbsp;</div>
+			<div class="col-md-4"><div class="padding10"><label>Assistant Sales Consultant</label></div></div>
+			<div class="col-md-2 paddingnone"><div class="padding10"><span class="spanunderline">&nbsp;</span></div></div>
+			<div class="clearfix"></div>
+							</div>
+							</div>
+							
+							</div>
+							<div id='costspt'>
+							<div class="discountinfo">
+							<table class="discounttable table-bordered">
+							<thead>
+							<tr>
+								<th width="220">Cost Split</th>
+								<th width="100">&nbsp;</th>
+								<th width="40">&nbsp;</th>
+								<th width="80">&nbsp;</th>
+								<th width="40">&nbsp;</th>
+								<th width="60">&nbsp;</th>
+								<th width="100" class="txtalgnright">48910,144</th>
+							</tr>
+							</thead>
+							<tbody>
+							
+							<tr>
+							<td style="padding-left:15px;">Land cost</td>
+							<td class="txtalgnright">5,129</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+								<td class="txtalgnright">5,336</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">273,68,344</td>
+							</tr>
+							<tr>
+							<td style="padding-left:15px;">Construction cost</td>
+							<td class="txtalgnright">5,129</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+								<td class="txtalgnright">4,000</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">205,16,100</td>
+							</tr>
+							
+							<tr>
+							<td style="padding-left:15px;">Maintanance cost</td>
+							<td class="txtalgnright">5,129</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+								<td class="txtalgnright">200</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">10,25,800</td>
+							</tr>
+							
+							
+							</tbody>
+							
+							</table>
+							<table class="discounttable table-bordered">
+							<thead>
+							<tr>
+								<th width="220">Tax details</th>
+								<th width="100">&nbsp;</th>
+								<th width="40">&nbsp;</th>
+								<th width="80">&nbsp;</th>
+								<th width="40">&nbsp;</th>
+								<th width="60">&nbsp;</th>
+								<th width="100" class="txtalgnright">34,21,043</th>
+							</tr>
+							</thead>
+							<tbody>
+							
+							<tr>
+							<td style="padding-left:15px;">Estimated Service Tax</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+								<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">12,92,508</td>
+							</tr>
+							<tr>
+							<td style="padding-left:15px;">Estimated VAT</td>
+								<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+								<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">20,82,374</td>
+							</tr>
+							
+							<tr>
+							<td style="padding-left:15px;">Estimated Swachh Bharat Cess</td>
+								<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+								<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">46,161</td>
+							</tr>
+							
+							
+							</tbody>
+							
+							</table>
+							
+							
+							</div>
+							
+							</div>
+							
+							
+							<div id='npvcal'>
+							<div class="discountinfo">
+						
+							<table class="npvtableper table-bordered">
+							<tbody>
+							<tr class="dispercent">
+							
+							<td width="500" colspan="4">&nbsp;</td>
+							
+							
+							<td width="50" class="txtalgnright">NPV</td>
+								<td width="50" id="NPVDiscount" class="txtalgnright inline-edit" style="color:#333" contenteditable> 15% </td>
+							<td width="200" colspan="2"> </td>
+							</tr>
+							</tbody>
+							</table>
+							<table class="npvtable table-bordered" style="margin-top:20px">
+							
+							<thead>
+							<tr>
+								<th width="100">Expected Date</th>
+								<th width="100">Offered Date
+</th>
+								<th width="40">&nbsp;</th>
+								<th width="80">Sale Value
+</th>
+								<th width="40">&nbsp;</th>
+								<th width="60">NPV Amount</th>
+								<th width="60">&nbsp;</th>
+								<th width="100" >Discount
+</th>
+							</tr>
+							</thead>
+							<tbody>
+							
+							<tr class="total">
+							<td style="padding-left:15px;">&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td class="txtalgnright"> 3,99,07,500 </td>
+							<td class="txtalgnright">&nbsp;</td>
+								<td class="txtalgnright currency"> 642,78,738 </td>
+							<td class="txtalgnright currency">  26,54,712 </td>
+							<td class="txtalgnright"> 3.97%
+
+</td>
+							</tr>
+							<tr class="Nms">
+							<td class="expdatefield txtalgncenter inline-edit" contenteditable style="padding-left:15px;"><input class="exdate1" type="text" value="02-May-2016"></td>
+							<td id="OfferedDate" class="sdate1 txtalgncenter" >02-May-2016</td>
+							<td class="txtalgnright">15%</td>
+							<td class="txtalgnright"> 40,00,000</td>
+								<td class="txtalgnright">-0.02</td>
+							<td class="txtalgnright currency"> 250,54,395</td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							</tr>
+							
+								<tr class="Nms">
+							<td class="expdatefield txtalgncenter inline-edit" contenteditable style="padding-left:15px;"><input class="exdate1" type="text" value="02-May-2016"></td>
+							<td class="sdate1 txtalgncenter">02-May-2016</td>
+							<td class="txtalgnright">25%</td>
+							<td class="txtalgnright"> 79,70,000</td>
+								<td class="txtalgnright"> 0.04 </td>
+							<td class="txtalgnright currency"> - </td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							</tr>
+								<tr class="Nms">
+							<td class="expdatefield txtalgncenter inline-edit" contenteditable style="padding-left:15px;"><input class="exdate1" type="text" value="02-May-2016"></td>
+							<td class="sdate1 txtalgncenter">02-May-2016</td>
+							<td class="txtalgnright">15%</td>
+							<td class="txtalgnright">  67,80,000</td>
+								<td class="txtalgnright">  0.36  </td>
+							<td class="txtalgnright currency">  81,75,331  </td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							</tr>
+								<tr class="Nms">
+							<td class="expdatefield txtalgncenter inline-edit" contenteditable style="padding-left:15px;"><input class="exdate1" type="text" value="02-May-2016"></td>
+							<td class="sdate1 txtalgncenter">02-May-2016</td>
+							<td class="txtalgnright">13%</td>
+							<td class="txtalgnright">  23,90,000 </td>
+								<td class="txtalgnright">  0.61  </td>
+							<td class="txtalgnright currency">  79,50,042  </td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							</tr>
+							
+								<tr class="Nms">
+							<td class="expdatefield txtalgncenter inline-edit" contenteditable style="padding-left:15px;"><input class="exdate1" type="text" value="02-May-2016"></td>
+							<td class="sdate1 txtalgncenter">02-May-2016</td>
+							<td class="txtalgnright">13%</td>
+							<td class="txtalgnright">  23,90,000 </td>
+								<td class="txtalgnright">  0.61  </td>
+							<td class="txtalgnright currency">  79,50,042  </td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							</tr>
+								<tr class="Nms">
+							<td class="expdatefield txtalgncenter inline-edit" contenteditable style="padding-left:15px;"><input class="exdate1" type="text" value="02-May-2016"></td>
+							<td class="sdate1 txtalgncenter">02-May-2016</td>
+							<td class="txtalgnright">13%</td>
+							<td class="txtalgnright">  23,90,000 </td>
+								<td class="txtalgnright">  0.61  </td>
+							<td class="txtalgnright currency">  79,50,042  </td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							</tr>
+								<tr class="Nms">
+							<td class="expdatefield txtalgncenter inline-edit" contenteditable style="padding-left:15px;"><input class="exdate1" type="text" value="02-May-2016"></td>
+							<td class="sdate1 txtalgncenter">02-May-2016</td>
+							<td class="txtalgnright">13%</td>
+							<td class="txtalgnright">  23,90,000 </td>
+								<td class="txtalgnright">  0.61  </td>
+							<td class="txtalgnright currency">  79,50,042  </td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							</tr>
+								<tr class="Nms">
+							<td class="expdatefield txtalgncenter inline-edit" contenteditable style="padding-left:15px;"><input class="exdate1" type="text" value="02-May-2016"></td>
+							<td class="sdate1 txtalgncenter">02-May-2016</td>
+							<td class="txtalgnright">13%</td>
+							<td class="txtalgnright">  23,90,000 </td>
+								<td class="txtalgnright">  0.61  </td>
+							<td class="txtalgnright currency">  79,50,042  </td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							</tr>
+								<tr class="Nms">
+							<td class="expdatefield txtalgncenter inline-edit" contenteditable style="padding-left:15px;"><input class="exdate1" type="text" value="02-May-2016"></td>
+							<td class="sdate1 txtalgncenter">02-May-2016</td>
+							<td class="txtalgnright">13%</td>
+							<td class="txtalgnright">  23,90,000 </td>
+								<td class="txtalgnright">  0.61  </td>
+							<td class="txtalgnright currency">  79,50,042  </td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							</tr>
+								<tr class="Nms">
+							<td class="expdatefield txtalgncenter inline-edit" contenteditable style="padding-left:15px;"><input class="exdate1" type="text" value="02-May-2016"></td>
+							<td class="sdate1 txtalgncenter">02-May-2016</td>
+							<td class="txtalgnright">13%</td>
+							<td class="txtalgnright">  23,90,000 </td>
+								<td class="txtalgnright">  0.61  </td>
+							<td class="txtalgnright currency">  79,50,042  </td>
+							<td class="txtalgnright ">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							</tr>
+								<tr class="Nms">
+							<td class="expdatefield txtalgncenter inline-edit" contenteditable style="padding-left:15px;"><input class="exdate1" type="text" value="02-May-2016"></td>
+							<td class="sdate1 txtalgncenter">02-May-2016</td>
+							<td class="txtalgnright">13%</td>
+							<td class="txtalgnright">  23,90,000 </td>
+								<td class="txtalgnright">  0.61  </td>
+							<td class="txtalgnright currency">  79,50,042  </td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							</tr>
+								<tr class="Nms">
+							<td class="expdatefield txtalgncenter inline-edit" contenteditable style="padding-left:15px;"><input class="exdate1" type="text" value="31-Oct-2019"></td>
+							<td class="sdate1 txtalgncenter">31-Oct-2019</td>
+							<td class="txtalgnright">13%</td>
+							<td class="txtalgnright">  23,90,000 </td>
+								<td class="txtalgnright">  0.61  </td>
+							<td class="txtalgnright currency">  79,50,042  </td>
+							<td class="txtalgnright">&nbsp;</td>
+							<td class="txtalgnright">&nbsp;</td>
+							</tr>
+							
+							</tbody>
+							
+							</table>
+							
+							
+							
+							</div>
+							
+							</div>
+							
+							</div>
+							
+							
+							<div class="clearfix"></div>
+							 <div id="printedittable" class="printable">
+
+								 <div class="pdftable">
+    <div class="tableslist">
+		<div class="tables">
+		<div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+		 <table class="pdf-format">
+	  <tbody>
+	  <tr class="notdisplay">
+	   <td>
+	   <div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+	   <table>
+	   <tr>
+	   <td style="width:500px;">
+	   <p style="font-size:8pt; margin-top:10px; margin-bottom:5px;"><span style="font-weight:bold; color:#000;">Total Environment Building Systems Private Ltd</span><br>
+"IMAGINE", 78, ITPL Main Road, EPIP Zone, Whitefiled, Bangalore 560 066<br>
+T:+91804245 30000 F: +91 80 2841 6624 E: discover@total-environment.com</p>
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+		  <tr><td class="pdftitle bgcolor_808080" style=" padding:2px 0;">The Magic Faraway Tree | Offer	 </td></tr>
+	   <tr>
+	   <td style="height:6px;"></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="20">&nbsp;</td>
+	   <td width="600"><div id="fullname">&nbsp;</div></td>
+	   <td width="120">&nbsp;</td>
+	   </tr>
+	  
+	   </table>
+	   </td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td><table class="pdfbordertable" style="border-top:none;">
+	   <tr>
+	   <td width="80" class="txtalgncenter nobotborder">Unit</td>
+	   <td width="90" class="txtalgncenter nobotborder">Level [Floor]</td>
+	   <td width="85" class="txtalgncenter nobotborder">Specification</td>
+	    <td width="95" class="txtalgncenter nobotborder">Customisation</td>
+	   <td width="70" class="txtalgncenter nobotborder">Carpet Area</td>
+	   <td width="80" class="txtalgncenter nobotborder">Bulit-up Area</td>
+	    <td width="80" class="txtalgncenter nobotborder">Saleable Area</td>
+	   <td width="90" class="txtalgnright nobotborder" style="padding-right:2px;">Consideration</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter boldborder inline-edit "><span class="unitvaledit" contenteditable="true">3084</span></td>
+	   <td class="txtalgncenter">8 [7]</td>
+	   <td class="txtalgncenter ">
+<div class="dropdown">
+  <button class="btn dropdown-toggle fontbold specchange" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <div class="color_f79646 fontbold initialval">Orange
+    <span class="caret"></span></div>
+  </button>
+  <ul class="dropdown-menu specchangemenu" aria-labelledby="dropdownMenu1">
+  <li class="color_76913a"><a data-value="Green">Green</a></li>
+    <li class="color_f79646"><a data-value="Orange">Orange</a></li>
+    <li class="color_224162"><a data-value="Blue">Blue</a></li>
+    <li class="color_60477a"><a data-value="Purple">Purple</a></li>
+   
+  </ul>
+</div>
+
+</td>
+	   <td class="txtalgncenter noborderright">Ebuild</td>
+	   <td class="txtalgnright boldborder" style="padding-right:2px;">3,041</td>
+	   <td class="txtalgnright boldborder" style="padding-right:2px;" >3,598</td>
+	   <td class="txtalgnright boldborder" style="padding-right:2px;">4,498</td>
+	   <td class="txtalgnright boldborder" style="padding-right:2px;">3,99,07,500</td>
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	    <tr>
+	   <td height="3" class="nobotborder"></td>
+	   </tr>
+	   <tr>
+	   <td>
+	  <table class="pdfbordertable nobotborder">
+	   <tr>
+	   <td class="txtalgncenter" width="20">1</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;" width="340">Cost of Residential Unit</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" width="90">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" width="100">8,472</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" width="120">3,81,08,500</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Basic Cost</td>
+	   <td class="txtalgnright pvalue" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span  contenteditable="true" class=" xvalue">7,450</span></td>
+	   <td class="txtalgnright svalue" style="padding:3px 2px 3px 3px;">3,35,10,100</td>
+	   </tr>
+	     <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">For Specific Floor</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">350</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">15,74,300</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Amenities</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">150</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">6,74,700</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;"><div class="dropdown"> <div class="dropdown-toggle fontbold ebuildchange" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <div class="fontbold initialval">Ebuild <span class="caret"></span></div>
+	
+  </div>
+  <ul class="dropdown-menu ebuildchangemenu" aria-labelledby="dropdownMenu2">
+  <li><a data-value="Ebuild">Ebuild</a></li>
+    <li><a data-value="Personalized Design">Personalized Design</a></li>
+   
+   
+  </ul></div> </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">100</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,49,800</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">upgrade Charges </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">0</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">0</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Utilities </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">200</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">8,99,600</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Car Park(s) </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   </tr>
+	    <tr class="carparkadding">
+	   <td class="txtalgncenter " width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 15px;"><span style="font-size:8pt">Regular Independent Car Park/s</span> </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" ><span class="inline-edit"  contenteditable="true">2</span></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">10,00,000</td>
+	   </tr>
+	  
+	   <tr>
+	   <td class="txtalgncenter nobotborder" width="20">2</td>
+	   <td class="nobotborder" style="text-align:left; padding:3px 0 3px 5px;">Maintenance Fund</td>
+	   <td class="txtalgnright nobotborder" style="padding:3px 2px 3px 3px;">3,598</td>
+	   <td class="txtalgnright nobotborder" style="padding:3px 2px 3px 3px;">500</td>
+	   <td class="txtalgnright nobotborder" style="padding:3px 2px 3px 3px;">17,99,000</td>
+	   </tr>
+	    
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable editabletable">
+		<tr>
+	   <td colspan="5" height="5" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 5px; 	 " width="440"><span style="font-weight:bold;">Payment Schedule</span></td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;" width="90"><span style="font-weight:bold;">Expected Date</span></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" width="120">3,99,07,500</td>
+	   </tr>
+	   <tr>
+	   <td height="5" colspan="4"></td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter slnoedit" width="20">1</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">Earnest Money Deposit</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;">02-May-2016</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">40,00,000</td>
+	   </tr>	
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">2</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px; ">1st Installment [Advance] - within 30 days of Securing Plan Sanction</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">79,70,000</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">3</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of Foundation Footings</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">67,80,000</span></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">4</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 1st Structural Slab</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">5</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 5th Structural Slab</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">6</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px; ">On the Casting of 10th Structural Slab </td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">7</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 15th Structural Slab</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter slnoedit" width="20">8</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 20th Structural Slab</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate"> 02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter slnoedit" width="20">9</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 25th Structural Slab</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px; "><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	   <tr class="milestoneadding">
+	   <td class="txtalgncenter slnoedit" width="20">10</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 30th Structural Slab</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span><span class="addmilestone"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">11</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Completion of Internal Plaster in the Unit</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">12</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On Virtual Completion of the Unit</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;">31-Oct-2019</td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	   </table>
+		</td>
+	   </tr>
+		</tbody>
+		
+		</table>
+		<div class="specialconditionview">
+	<table class="special_entries">
+		 <tr>
+	   <td height="3"></td>
+	   </tr>
+		<tr>
+	    <td class="separatedline"></td>
+	   </tr>
+	    <tr>
+	   <td height="3"></td>
+	   </tr>
+		<tr>
+		<td style="font-size:9pt;padding:3px 0 3px 5px; font-weight:bold; margin-top:20px;">Special Conditions:</td>
+		</tr>
+		<tr>
+		<td>
+			<div class="specialdata"></div>
+		</td>
+		</tr>
+		</table>
+	
+	<div class="col-md-12 paddingnone">
+	<div class="col-md-8 paddingnone">
+	<div class="specialcondition"></div>
+	
+	<!-- <textarea class="inline-edit" style="width:100%; height:70px;" placeholder="text Area">Text Area Section</textarea> --></div>
+	<div class="col-md-4 "> <input type="text" style="margin:0 0 5px 0;" placeholder="Date"><input type="text" style="margin:0 0 5px 0;" placeholder="Amount"> 
+<button type="button" class="btn btn-primary savesplnote">Save</button>
+<button type="button" class="btn btn-primary clearsplnote">Clear</button>    </div>
+	
+	</div>
+	<p class="displaycontent"></p>
+	  </div>
+		<table>
+		
+		
+	  <tfoot>
+	  <!--   <tr>
+	   <td height="154"></td>
+	   </tr> -->
+	     
+	   <tr>
+	    <td class="separatedline"></td>
+	   </tr>
+	   <tr  class="notdisplay">
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	 <tr class="notdisplay">
+	   <td style="border:2px solid #000">
+		<table>
+		<tbody><tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tbody><tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</tbody></table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tbody><tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	    <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr  class="notdisplay">
+	   <td style="text-align:center;">Page 1 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	
+	</tfoot>
+	   </table>
+	<div class="dotline no-print notdisplay"></div> 
+		</div>
+		<div class="tables notdisplay">
+		<div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+		<table class="pdf-format ">
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	   <tr><td class="pdftitle" style="font-size:16px; text-align:center; font-weight:bold; padding:2px 0;">The Magic Faraway Tree | Offer	 </td></tr>
+	   <tr>
+	   <td style="height:6px;"></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="350">&nbsp;</td>
+	   <td class="noborderright" style="padding:3px 2px 3px 3px; font-size:9pt;" width="120">Units | Specification</td>
+	   <td style="padding:3px 2px 3px 3px;" width="105" class="txtalgncenter chguntval boldborder">3084</td>
+	   <td style="padding:3px 2px 3px 3px;" width="130" class="txtalgncenter specific_color color_f79646 fontbold">Orange</td>
+	   </tr>
+	  
+	   </table>
+	   </td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td>General Terms & Conditions</td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top" width="30">1.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Earnest Money Deposit [EMD] must be paid in full to block the unit. There are multiple sales consultants &
+channel partners working on the sales of the project and if units are blocked for extended periods, we limit the
+options available for other customers. Hence the unit will be automatically released for sale to others in the market,
+if the signed Term Sheet AND full EMD is not received from you within 14 days from the offer date.</td>
+	   </tr>
+	   <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>2.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">It is clearly agreed by the Intending Purchaser/s herein that this EMD amount is only for the purpose of blocking the
+home for a period of one month and the same shall be refunded after forfeiting an amount calculated at 4% of the
+Termsheet Value and the blocking automatically cancelled if the 1st installment of "Advance" is not paid within
+thirty days of blocking.</td>
+	   </tr>
+	     <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>3.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">Definitive Agreements shall be signed up after the 1st installment of "Advance" is paid in full. Draft versions of the
+same are available on request.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>4.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">These homes have been especially designed and detailed by "Shibanee & Kamal Architects". Any design decisions, whether interior or exterior, shall be at the sole discretion of "Shibanee& Kamal Architects". No external
+Architects/Designers shall be entertained. Before purchasing a home from us, please ensure that you are completely comfortable with our design philosophy.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>5.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Carpet Area of a home shall be measured as the area where a carpet can be technically laid, before installation
+of woodwork and fenestration, and shall include the areas of bathrooms, balconies, utility spaces, internal stairs and
+gardens and 50% of the area of service platforms. At all locations, where a French window or door separates a
+room from a terrace garden, deck or balcony the carpet area shall include the door threshold area. In case of Terrace
+Gardens the internal area, excluding the peripheral beams, shall be included at 100%</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>6.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">In order to provide transparency and a standard measure to customers, Total Environment uses the Carpet Area of the apartment as a basis for calculating Saleable Area and has stayed away from the concept of Super Built-Up Area used by the Industry. However, to provide parity for price comparison, a standard divisor of 80% is applied on the Carpet Area to arrive at Saleable Area. Therefore, the Carpet Area is 80% of the Saleable Area.	</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>7.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Built-Up Area shall include the entire apartment area measured to the center of any walls that are common
+with an adjacent apartment or the common area lobby, service area, exit stairs and elevator shafts, and to the outer
+face of all external walls. The Built-Up Area shall include bathrooms, balconies, utility spaces, internal stairs and
+terrace gardens and 50% of the area of service platforms, and all internal walls. Gardens, decks & water bodies, if built on concrete slabs shall be taken at 100%.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>8.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">If you have selected standard customisation through eBuild, the customisation options shall be limited to those
+available through eBuild. If you have selected Personalised Customisation, options available through this shall be
+restricted at the sole discretion of our Architects. Further, such personal sessions with our Architects shall be
+limited to a maximum of 3 (Three) sessions running for a cumulative total of 9 (Nine) hours and these sessions are
+only possible at our office at 78, ITPL Road, Whitefield, Bangalore. The Personalised Customisation Option is
+available for a limited number of units only and, on first come first serve basis and therefore may not be available at
+a later point in time. Also, please note that In case, you have opted out from customisation, absolutely no single
+change shall be permitted from the standard plan and specifications, including any minor change requests.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>9.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The above unit can be transferred only after the 1st instalment of "Advance" has been paid in full AND the
+definitive Agreements signed. The unit can be transferred at a charge along with applicable taxes AND in such case,
+the potential Transferee would have to meet and be approved by the Developers. The applicable transfer charge
+shall be at 8% of Sale Consideration if transferred in the period up to the casting of the last slab of the tower in
+which the Unit is situated, 4% of Sale Consideration if transferred in the period between the casting of last slab of
+the tower in which the unit is situated till Virtual Completion of the Unit and 1% of the Sale Consideration if
+transferred in the period between Virtual Completion till registration of the Sale Deed in favour of the Purchasers.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>10.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Handover date specified in this Term-Sheet is tentative and is dependent on the date of sign-off on your customisation.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>11.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The above consideration amount is inclusive of undivided Interest in the land as well as the construction of the home and the allocated car parks.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>12.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">Land ownership shall be in the form of share of undivided interest in land only. Once your home is handed over, no further construction shall be possible at a later date.	</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	   <tr><td height="5"></td></tr>
+	   <tr>
+	    <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	 <tr class="notdisplay">
+	   <td style="border:2px solid #000">
+		<table>
+		<tbody><tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tbody><tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</tbody></table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tbody><tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	    <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 2 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	   </table>
+	<div class="dotline no-print"></div> 
+		</div>
+		<div class="tables notdisplay">
+		<div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+		<table class="pdf-format ">
+		
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	   <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	width="30">13.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Maintenance Fund is planned to cover security, diesel for running the generator, AMC's for the generators,
+elevators, pool, pumps and motors, landscaping and housekeeping of common areas, garbage collection, painting of
+common areas when required. It does not cover the cost of repairs to the buildings or individual units of any kind
+whatsoever - such repairs shall be carried out after payment in advance against an estimate for the same. A
+statement shall be sent every year showing interest (@ 9%) credited against the average balance in the fund &
+amount consumed out of it @ actual cost including management cost + 20% Maintenance Fee.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>14.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">All Cheques are to be drawn in the name of "Total Environment Building System Private Limited".</td>
+	   </tr>
+	     <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>15.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">Apartment numbering is in the form of a four digit number where the first digit represents the Block or Tower, the 2nd & 3rd digits represent the Level on which it is located and the 4th digit represents the apartment type on each floor. Therefore, apartment 1034 is in Block 1, on the 3rd level (Second floor), Type-4.</td>
+	   </tr>
+	     <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>16.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">In addition to the above amounts, Service Tax,VAT and GST as applicable at prevailing rates shall be payable along with every instalment. Stamp Duty and Registration Fees as well as incidental expenses for the same, shall be payable on actuals.</td>
+	   </tr>
+	     <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>17.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">This offer does not provide any exclusivity and Total Environment reserves the right to continue to offer this home to other interested parties.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	    <tr><td height="520"></td></tr>
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	 <tr class="notdisplay">
+	   <td style="border:2px solid #000">
+		<table>
+		<tbody><tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tbody><tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</tbody></table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tbody><tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="10"></td>
+	   </tr>
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 3 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	   </table>
+	<div class="dotline no-print"></div> 
+		</div>
+		<div class="tables notdisplay">
+		<div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+		<table class="pdf-format ">
+		
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	   <tr><td class="pdftitle"  style="font-size:16px; text-align:center; font-weight:bold; padding:2px 0;">The Magic Faraway Tree | Offer	 </td></tr>
+	   <tr>
+	   <td style="height:6px;"></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="350">&nbsp;</td>
+	   <td class="noborderright" style="padding:3px 2px 3px 3px; font-size:9pt;" width="120">Units | Specification</td>
+	   <td style="padding:3px 2px 3px 3px;" width="105" class="txtalgncenter chguntval boldborder">3084</td>
+	   <td style="padding:3px 2px 3px 3px;" width="130" class="txtalgncenter specific_color color_f79646 fontbold">Orange</td>
+	   </tr>
+	  
+	   </table>
+	   </td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td style="padding:3px 2px 0px 3px;" class="txtalgncenter specific_col_one color_f79646 fontbold"><span style="color:#fff !important; -webkit-print-color-adjust: exact; ">Orange</span> Specifications | The Magic Faraway Tree</td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="nobotborder notopborder noborderright">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;"class="fontbold nobotborder notopborder">Structure</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright notopborder" style="padding:3px 8px 3px 3px; vertical-align:middle;">Shell</td>
+	   <td class="notopborder" style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">RCC frame structure with masonry partitions. The height of each floor shall be 9'6'' or greater from slab to slab.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright  notopborder" style="padding:3px 8px 3px 3px; vertical-align:middle;">Masonry</td>
+	   <td class="nobotborder notopborder" style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">High quality exposed brick masonry using specially procured high-strength terracotta wire-cut bricks and /or stone masonry shall be provided for parts of the exteriors with deep-set waterproof pointing. For other parts and for the internal walls, terracotta blocks, table molded brick masonry or Aerocon blocks or Concrete block masonry with plaster shall be provided.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" class="nobotborder"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;" class="fontbold">Flooring & Dado</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Living & Dining</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Beige coloured imported marble laid with paper joints and finished with 8 coats polish.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Kitchen</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Beige coloured imported marble laid with paper joints and finished with 8 coats polish.
+Granite counter with glazed tiles above the counter upto a height of 2'.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Family Space</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Wooden Laminate flooring.</td>
+	   </tr>
+	  
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Utility</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Green Marble flooring. No dado or counter shall be provided.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Bedrooms + Box Room</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Kota stone laid with paper joints and finished with 8 coats polish.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Other Bathrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Brown Granite on the floor & counter and glazed tiles on the walls upto 7' in the shower
+area and 3' in other areas.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Wood Deck</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Brazilian Ipe or other natural hardwood, finished with oil.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Master Bathroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Imported marble on the floor and counter, Marazzi tiles on the walls upto 7' in shower area
+and 3' in other areas.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Maid's Room</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Kota stone laid with paper joints and finished with 8 coats polish.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Maid's Bathroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Green Marble on the floor and Glazed tiles on the walls to a height of 7'.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;"class="fontbold">Sanitary & Plumbing</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Water Closets</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Western style, porcelain EWC of Kohler or equivalent make shall be provided in all
+bathrooms while a Parryware make EWC shall be provided in the maids bathroom.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Wash Basins</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Porcelain wash basins of Kohler or equivalent make shall be provided in all bathrooms.
+Parryware wash basin in the Maid's Bathroom. All basins shall be provided with a 32mm CP
+waste coupling & CP bottle trap of standard make.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Cockroach Traps</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A detachable stainless steel cockroach trap with lid of Chilly or equivalent make shall be
+provided in all bathrooms.</td>
+	   </tr>
+	 
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Bathtubs</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">One Bathtub of Parryware / Woven Gold or equivaqlent make shall be provided in the
+Master bathroom.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Kitchen Sink</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Stainless steel sink with drainboard.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Faucets</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All faucets shall be CP, heavy body metal fittings of Grohe or equivalent make. Hot water
+connection shall be provided to the shower and wash basin in each bathroom and to the
+sink in the kitchen.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Overhead Showers</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Overhead showers of Jaquar or equivalent make shall be provided in all bathrooms.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Health Faucets</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Health faucets of Jaquar or equivalent make shall be provided in all bathrooms.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Plumbing</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All water supply lines & drainage lines shall be in PVC pipes. Sewage lines shall be in
+stoneware.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Washing Machine Point</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">One cold water inlet and drainage outlet for a washing machine shall be provided in the
+Utility.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	   
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+ <tr class="notdisplay">
+	   <td style="border:2px solid #000">
+		<table>
+		<tbody><tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tbody><tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</tbody></table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tbody><tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="5"></td>
+	   </tr>
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 4 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	  </table>
+	<div class="dotline no-print"></div> 
+		</div>
+		<div class="tables notdisplay">
+		<div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+		<table class="pdf-format ">
+	
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	  
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;"class="fontbold">Electrical</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Wiring</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All wiring shall be of Havells or equivalent make, concealed in PVC conduits.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Switches & Sockets</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All switches shall be of Crabtree or equivalent make. Apart from the basic light and fan
+controls, the following number of sockets shall be provided in various rooms:</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Living / Dining</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">4 nos - 5 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Kitchen</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">3 nos - 5 amp switch & socket, 4 nos - 15 amp switch and socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Utility</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">1 nos -5 amp switch & socket, 1 no -15 amp switch and socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Master Bedroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">4 nos - 5 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Bathrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">1 nos - 5 amp switch & socket, 1 no. - 15 amp switch and socket</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Family</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">2 nos - 5 amp switch & socket,1 no- 15 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Maid's Room</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">1 no. - 5 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Other Bedrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">2 nos - 5 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Telephone</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">1 Telephone Point each shall be provided in living and master bedroom. Provision for Fibre
+to the home (FTTH) connectivity shall be provided.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Television</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">One Television Point each shall be provided in either living or family and guest bedroom.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Light Fixtures</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No light fixtures shall be provided anywhere in the home.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Power & Back-up</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A power connection of 5 KVA shall be provided to each unit for H15 and 10 KVA for HD45.
+Back-up power shall be provided for the same capacity</td>
+	   </tr>
+	   
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;"class="fontbold">Doors & Windows</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Frames & Shutters</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Door and window frames and shutters shall be in Engineered Solid Wood. All door shutters
+shall be in solid core flush (block board or honeycomb board) shutters provided with a
+natural wood veneer. All bathroom windows, external utility fenestration, maid's room door
+and window shall have aluminium frame and shutters.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Mosquito Screens</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No Mosquito Screens shall be provided for any of the Windows or French Windows</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Finish</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">The internal door shutters and frames shall be provided with a melamine matt finish while
+the window shutters exposed to the elements shall be provided with oil staining finished
+with a brush or, alternatively, with PU (Polyurethane) finish</td>
+	   </tr>
+	  
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Window Grills</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No window grills shall be provided or permitted for the French Windows. Grills shall only be
+provided for those regular windows where there is a sheer drop. Grills shall not be provided
+for bathroom windows.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Friction Stays</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All swing windows shall be fitted with friction stays allowing the windows to stay open in
+any position</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Door stoppers</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Magnetic / concealed door stoppers shall be provided for the Main door and bedroom
+doors.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Hardware</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All hardware shall be in brush finished stainless steel. The main door shall be provided with
+a night latch of Godrej or equivalent make. All other doors will be provided with door bolts
+and a mortise lock or tubular / cylindrical lock.</td>
+	   </tr>
+	    
+	   </table>
+	   </td>
+	   </tr>
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;"class="fontbold">Paint</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Paint</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All internal paint in Acrylic Distemper. No external paint shall be provided over exposed
+brick or stone masonry. For other areas, cement based paint shall be used. Any steel
+railings etc. shall be provided with a zinc-chromate primer and synthetic enamel paint.</td>
+	   </tr>
+	 
+	  
+	   </table>
+	   </td>
+	   </tr>
+	   
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;" class="fontbold">Electro-domestic Equipment</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Hob</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A 4-burner cooking hob with electrical ignition and an SS backing plate shall be provided in
+the kitchen.</td>
+	   </tr>
+	 <tr>
+	   <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Chimney</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A 90cm ductable electric chimney with anodised aluminium filters shall be provided in the
+kitchen.</td>
+	   </tr>
+	  <tr>
+	   <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Dishwasher</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A dishwasher of Ariston or equivalent make shall be provided in the kitchen.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	  <tr>
+	  <td height="6"></td>
+	  </tr>
+	  
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	  <tr class="notdisplay">
+	   <td style="border:2px solid #000">
+		<table>
+		<tbody><tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tbody><tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</tbody></table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tbody><tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="6"></td>
+	   </tr>
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 5 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	  </table>
+	<div class="dotline no-print"></div> 
+		</div>
+		<div class="tables notdisplay">
+		<div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+		<table class="pdf-format ">
+		
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	  
+	   
+	  
+	   
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Geysers</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">25 litre geysers – 4 nos. of Racold or equivalent make shall be provided in the bathrooms
+and in the utility area. The Kitchen, Utility and Maids Bath shall share the geyser provided
+in the Utility.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Microwave</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No microwave is provided by default.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Oven</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No oven is provided by default.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Refrigerator</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No refrigerator is provided by default.</td>
+	   </tr>
+	    
+	   
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td style="background-color:#fdeada" class="noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;" class="fontbold">Cabinetry & Furniture</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Kitchen</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Floor & wall mounted cabinets complete with cutlery tray, vegetable baskets, breakfast
+counter etc. in laminate of Veneta Cucine or equivalent make shall be provided.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Master Bedroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Double bed with bedside tables, 4 module walk-in wardrobe.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Master Bathroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Mirror with backing ply and edge trim, louvred shutters below the counter.</td>
+	   </tr>
+	  
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Childrens' Bedroom/s</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">2 single beds with bedside table/s, 2.5 module wardrobes.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Other Bedrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Double bed with bedside tables, 2.5 module wardrobes.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Other Bathrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Mirror with backing ply and edge trim.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Basic Materials</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All woodwork except for modular units shall be in termite resistant good quality plywood
+or MDF panels and natural veneer or laminate. Modular units shall be in particle board and
+veneer or laminate.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Hardware</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All hardware shall be in brush finished stainless steel of Hettich or equivalent make with
+soft close system for the drawers in wardrobes and telescopic channels for the drawers in
+the study units.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Finishing</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Natural veneer exteriors shall be finished in melamine matt finish and the interiors in
+laminate.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Mattresses</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Mattresses shall NOT be provided for any of the beds.</td>
+	   </tr>
+	    
+	   </table>
+	   </td>
+	   </tr>
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td style="background-color:#fdeada" class="noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;" class="fontbold">Landscaping</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Soil</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Good quality red soil and sand mixture with manure shall serve as the base layer for
+landscaping.</td>
+	   </tr>
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Irrigation</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Sprinklers and a drip irrigation system shall be provided for landscaped areas.</td>
+	   </tr>
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Soft Landscaping</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Grass, shrubs and bamboo etc. shall be provided and all garden areas shall be completely
+landscaped. Expensive exotic plants may be provided at additional cost.</td>
+	   </tr>
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Water Body</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A water body shall also be provided in the garden.	</td>
+	   </tr>
+	 
+	  
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+	   <td height="5"></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	    <tr>
+		<td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Note: All specifications above are subject to change and decisions taken from time to time by the Developers shall be final
+and binding. In the brands mentioned above, the Developers may use equivalent brands at their discretion.</td>
+		</tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	<tr>
+	<td height="190"></td>
+	</tr>
+	  
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	   <tr class="notdisplay">
+	   <td style="border:2px solid #000">
+		<table>
+		<tbody><tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tbody><tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</tbody></table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tbody><tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	   </td>
+	   </tr>
+		
+ <tr>
+	   <td height="10"></td>
+	   </tr>
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 6 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	  </table>
+	 
+		</div>
+	</div>
+	  
+	 
+	   </div>
+</div>    
+	
+							</div>
+							 </div>
+							<!-- Terms Page End -->
+							 <div class="communicationcontainer">
+							<div class="col-md-12">
+							<div class="commentry">To <input type="text" placeholder="" name="Toaddress" /></div>
+							<div class="commentry">Cc <input type="text" placeholder="" name="CcAddress" /><span class="pull-right bccsel">Bcc</span></div>
+							<div class="commentry bccview">Bcc <input type="text" placeholder="" name="BccAddress" /><span class="pull-right remvebcc"><i class="fa fa-times" aria-hidden="true"></i></span></div> 
+							<div class="commentry">Subject <input type="text" placeholder="" name="subject" /></div>
+							<div class="commentry">Select Template <span><i class="fa fa-paperclip" aria-hidden="true"></i></span><input type="text" placeholder="" name="subject" /></div>
+							<div class="clearfix"></div>
+							<div class="comm_note"></div>
+							<div class="pull-right"><button class="btn btn-xs btn-primary commbutnstyle">Send</button></div>
+							</div>
+							   </div>
+							    <div class="clearfix"></div>
+								
+								
+								
+								<!-- details about communication page -->
+								 <div class="communicationdetailscontainer">
+							<div class="col-md-12">
+							<div class="commentry">To manju@total-environment.com</div>
+							<div class="commentry">Cc srikanth.akula@total-environment.com<span class="pull-right bccsel">Bcc</span></div>
+							<div class="commentry bccview">Bcc <input type="text" placeholder="" name="BccAddress" /><span class="pull-right remvebcc"><i class="fa fa-times" aria-hidden="true"></i></span></div> 
+							<div class="commentry">Subject SftW</div>
+							<div class="commentry">Select Template <span><i class="fa fa-paperclip" aria-hidden="true"></i></span><input type="text" placeholder="" name="subject" /></div>
+							<div class="clearfix"></div>
+							<div style="padding:10px;"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p></div>
+							<!-- <div class="pull-right"><button class="btn btn-xs btn-primary commbutnstyle">Send</button></div> -->
+							</div>
+							   </div>
+							    <div class="clearfix"></div>
+								<!-- details about communication page -->
+                                </div>
+                                </div>
+                                <div class="clearfix"></div>
+                              
+                                </div>
+                                  <div class="clearfix"></div>
+                                
+                        </div> 
+                          <div style="border-bottom:dotted 1px #ccc;width: 97%;margin:0 auto 10px auto;padding-bottom: 10px;"></div>
+                         <ul class="list-inline pull-right margin-right-10">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                           <!-- <li><button type="button" class="btn btn-default next-step">Skip</button></li>-->
+                            <li><button type="button" class="btn btn-primary btn-info-full">Finished</button></li>
+                        </ul>
+                        
+               
+                    <div class="clearfix"></div>
+                </div>
+           
+        </div>
+    </section>
+   </div>
+</div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+<!-- Rating star 1 popup container starts -->
+<div id="pop3rate1_content" class="popSourceBlock">
+    
+    <div class="popContent">
+        <div class="popover-body">
+		<div class="popovertitle">Notes</div>
+		<div class="popovercontent">
+		<div class="questions">Lorem ipsum 1 dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula?</div>
+		<div class="noteentry">
+		<div class="popovernote"></div>
+		<div class="pull-right" style="margin-bottom:10px;"><button class="btn btn-primary popclose">Submit</button></div>
+		</div>
+		</div>
+	
+	</div>
+
+    </div>
+</div>
+<!--  Rating star 1 popup container End -->
+
+<!-- Rating star 2 popup container starts -->
+<div id="pop3rate2_content" class="popSourceBlock">
+    
+    <div class="popContent">
+        <div class="popover-body">
+		<div class="popovertitle">Notes</div>
+		<div class="popovercontent">
+		<div class="questions">Lorem ipsum 2 dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula?</div>
+		<div class="noteentry">
+		<div class="popovernote"></div>
+		<div class="pull-right" style="margin-bottom:10px;"><button class="btn btn-primary popclose">Submit</button></div>
+		</div>
+		</div>
+	
+	</div>
+
+    </div>
+</div>
+<!--  Rating star 2 popup container End -->
+
+<!-- Rating star 3 popup container starts -->
+<div id="pop3rate3_content" class="popSourceBlock">
+    
+    <div class="popContent">
+        <div class="popover-body">
+		<div class="popovertitle">Notes</div>
+		<div class="popovercontent">
+		<div class="questions">Lorem ipsum 3 dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula?</div>
+		<div class="noteentry">
+		<div class="popovernote"></div>
+		<div class="pull-right" style="margin-bottom:10px;"><button class="btn btn-primary popclose">Submit</button></div>
+		</div>
+		</div>
+	
+	</div>
+
+    </div>
+</div>
+<!--  Rating star 3 popup container End -->
+
+<!-- Rating star 4 popup container starts -->
+<div id="pop3rate4_content" class="popSourceBlock">
+    
+    <div class="popContent">
+        <div class="popover-body">
+		<div class="popovertitle">Notes</div>
+		<div class="popovercontent">
+		<div class="questions">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula?</div>
+		<div class="noteentry">
+		<div class="popovernote"></div>
+		<div class="pull-right" style="margin-bottom:10px;"><button class="btn btn-primary popclose">Submit</button></div>
+		</div>
+		</div>
+	
+	</div>
+
+    </div>
+</div>
+<!--  Rating star 4 popup container End -->
+
+<!-- Rating star 5 popup container starts -->
+<div id="pop3rate5_content" class="popSourceBlock">
+    
+    <div class="popContent">
+        <div class="popover-body">
+		<div class="popovertitle">Notes</div>
+		<div class="popovercontent">
+		<div class="questions">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula?</div>
+		<div class="noteentry">
+		<div class="popovernote"></div>
+		<div class="pull-right" style="margin-bottom:10px;"><button class="btn btn-primary popclose">Submit</button></div>
+		</div>
+		</div>
+	
+	</div>
+
+    </div>
+</div>
+<!--  Rating star 5 popup container End -->
+
+<!-- Rating star 6 popup container starts -->
+<div id="pop3rate6_content" class="popSourceBlock">
+    
+    <div class="popContent">
+        <div class="popover-body">
+		<div class="popovertitle">Notes</div>
+		<div class="popovercontent">
+		<div class="questions">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula?</div>
+		<div class="noteentry">
+		<div class="popovernote"></div>
+		<div class="pull-right" style="margin-bottom:10px;"><button class="btn btn-primary popclose">Submit</button></div>
+		</div>
+		</div>
+	
+	</div>
+
+    </div>
+</div>
+<!--  Rating star 6 popup container End -->
+
+<!-- Rating star 7 popup container starts -->
+<div id="pop3rate7_content" class="popSourceBlock">
+    
+    <div class="popContent">
+        <div class="popover-body">
+		<div class="popovertitle">Notes</div>
+		<div class="popovercontent">
+		<div class="questions">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula?</div>
+		<div class="noteentry">
+		<div class="popovernote"></div>
+		<div class="pull-right" style="margin-bottom:10px;"><button class="btn btn-primary popclose">Submit</button></div>
+		</div>
+		</div>
+	
+	</div>
+
+    </div>
+</div>
+<!--  Rating star 7 popup container End -->
+
+<!-- Rating star 8 popup container starts -->
+<div id="pop3rate8_content" class="popSourceBlock">
+    
+    <div class="popContent">
+        <div class="popover-body">
+		<div class="popovertitle">Notes</div>
+		<div class="popovercontent">
+		<div class="questions">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula?</div>
+		<div class="noteentry">
+		<div class="popovernote"></div>
+		<div class="pull-right" style="margin-bottom:10px;"><button class="btn btn-primary popclose">Submit</button></div>
+		</div>
+		</div>
+	
+	</div>
+
+    </div>
+</div>
+<!--  Rating star 8 popup container End -->
+
+<!-- Rating star 9 popup container starts -->
+<div id="pop3rate9_content" class="popSourceBlock">
+    
+    <div class="popContent">
+        <div class="popover-body">
+		<div class="popovertitle">Notes</div>
+		<div class="popovercontent">
+		<div class="questions">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula?</div>
+		<div class="noteentry">
+		<div class="popovernote"></div>
+		<div class="pull-right" style="margin-bottom:10px;"><button class="btn btn-primary popclose">Submit</button></div>
+		</div>
+		</div>
+	
+	</div>
+
+    </div>
+</div>
+<!--  Rating star 9 popup container End -->
+
+<!-- Rating star 10 popup container starts -->
+<div id="pop3rate10_content" class="popSourceBlock">
+    
+    <div class="popContent">
+        <div class="popover-body">
+		<div class="popovertitle">Notes</div>
+		<div class="popovercontent">
+		<div class="questions">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula?</div>
+		<div class="noteentry">
+		<div class="popovernote"></div>
+		<div class="pull-right" style="margin-bottom:10px;"><button class="btn btn-primary popclose">Submit</button></div>
+		</div>
+		</div>
+	
+	</div>
+
+    </div>
+</div>
+<!--  Rating star 10 popup container End -->
+  
+
+</body>
+</html>

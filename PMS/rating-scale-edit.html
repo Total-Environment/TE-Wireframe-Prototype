@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+</style>
+</head>
+<body style="background-color:#f9f8f8">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <header id="headerdiv">
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+                <li><a href="#">Appraisal Templates</a></li>
+              <li class="active">Rating Scale</li>
+            </ol>
+            <div class="head-panel-grey"><h4>Rating Scale</h4></div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Appraisal Period Code</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Appraisal Period Name</label>
+                        <input type="email" class="form-control" id="Email1" placeholder="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">From Date</label>
+                        <input type='text' class="input" data-beatpicker="true" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">To Date</label>
+                        <input type='text' class="input" data-beatpicker="true" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="table-responsive">
+                        <table summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
+                            <thead>
+                                <tr style="background-color:#646572; color:#fff">
+                                    <th>Rating</th>
+                                    <th>Description</th>
+                                    <th>Variable Pay %</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="email" class="form-control" id="Email2" placeholder=""></td>
+                                    <td><input type="email" class="form-control" id="Email3" placeholder=""></td>
+                                    <td><input type="email" class="form-control" id="Email4" placeholder="30"></td>
+                                </tr>
+                            
+                                <tr>
+                                    <td><input type="email" class="form-control" id="Email5" placeholder="2"></td>
+                                    <td><input type="email" class="form-control" id="Email6" placeholder=""></td>
+                                    <td><input type="email" class="form-control" id="Email7" placeholder="50"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="email" class="form-control" id="Email8" placeholder="3"></td>
+                                    <td><input type="email" class="form-control" id="Email9" placeholder="Good for role - But replacable"></td>
+                                    <td><input type="email" class="form-control" id="Email10" placeholder="80"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="email" class="form-control" id="Email11" placeholder="4"></td>
+                                    <td><input type="email" class="form-control" id="Email12" placeholder="Perfect for the role - Replacable with difficulty"></td>
+                                    <td><input type="email" class="form-control" id="Email13" placeholder="100"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="email" class="form-control" id="Email14" placeholder="5"></td>
+                                    <td><input type="email" class="form-control" id="Email15" placeholder="Extraordinary fit for the role - Irreplacable"></td>
+                                    <td><input type="email" class="form-control" id="Email16" placeholder="120"></td>
+                                </tr>
+
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+            <hr />
+            <div style="width:50%; margin:15px auto;"><a href="rating-scale.html"><button class="btn btn-warning btn-md" style="width:100%">Save</button></a></div>
+    </div>
+        
+</div>
+    
+    
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+
+</body>
+</html>

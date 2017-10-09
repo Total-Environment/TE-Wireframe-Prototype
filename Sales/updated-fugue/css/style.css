@@ -1,0 +1,99 @@
+@import url("http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css")
+html  {
+    line-height: 1.6;
+}
+
+body {
+  margin:0;
+   font-family: TENumber, 'aller_lightregular' !important;
+
+}
+.tenumber{font-family: 'MetaNormal-Roman';font-weight:normal !important; text-align:right;}
+.heading{font-family: 'aller_lightregular';font-weight:bold !important; }
+.content{font-family: 'aller_lightregular';font-weight:normal !important; }
+header,{ display:block}
+
+header {
+	width:100%;	     
+     position:fixed;
+     z-index:9999;
+     -webkit-box-shadow: 0px 4px 5px 1px rgba(191,189,191,1);
+-moz-box-shadow: 0px 4px 5px 1px rgba(191,189,191,1);
+box-shadow: 0px 4px 5px 1px rgba(191,189,191,1);
+}
+
+.fuguelogo {
+	width:161px;
+}
+.telogo {
+	width:224px;
+    position:absolute; margin-left:30%;
+}
+.navbar-demo {
+   background: rgba(70, 70, 81, 1.0);
+  border-color: rgba(0, 0, 0, .0);
+  margin:0 0;
+}
+.navbar-demo .navbar-brand {
+  color: #fff;
+  margin:0 10px 0 -15px;
+  padding:0;
+}
+.navbar-demo .navbar-brand:hover, .navbar-demo .navbar-brand:focus {
+  color: #fff;
+}
+.navbar-demo .navbar-text {
+  color: #808080;
+}
+.navbar-demo .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-demo .navbar-nav > li > a:hover, .navbar-demo .navbar-nav > li > a:focus  {
+  color: #fff;
+  background: rgba(87, 87, 99, .9);
+}
+.navbar-demo .navbar-nav > .active > a, .navbar-demo .navbar-nav > .active > a:hover, .navbar-demo .navbar-nav > .active > a:focus {
+  color: #FFF;
+  background: rgba(87, 87, 99, .9);
+}
+.navbar-demo .navbar-nav > .open > a, .navbar-demo .navbar-nav > .open > a:hover, .navbar-demo .navbar-nav > .open > a:focus {
+  color: #fff;
+  background: rgba(87, 87, 99, .9);
+}
+.navbar-demo .navbar-toggle {
+  border-color: #646572 !important;
+}
+.navbar-demo .navbar-toggle:hover, .navbar-demo .navbar-toggle:focus {
+  background-color: #60606c;
+  color:#FFF;
+}
+.navbar-demo .navbar-toggle .icon-bar {
+  background-color: #ccc;
+}
+.navbar-demo .navbar-collapse,
+.navbar-demo .navbar-form {
+  border-color: none;
+}
+.navbar-demo .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-demo .navbar-link:hover {
+  color: #ecdbff;
+}
+
+@media (max-width: 767px) {
+  .navbar-demo .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+  }
+  .navbar-demo .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-demo .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ecdbff;
+  }
+  .navbar-demo .navbar-nav .open .dropdown-menu > .active > a, .navbar-demo .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-demo .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ecdbff;
+    background-color: #fff;
+  }
+  .navbar-demo .navbar-nav > li > a {
+  color: #fff;
+  border-bottom:solid 1px #585866;
+}
+}

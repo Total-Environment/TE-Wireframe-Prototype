@@ -1,0 +1,37 @@
+@font-face {
+        font-family: 'Neo Sans Light';
+        src: url('font/Neo Sans Light.eot');
+        src: url('font/Neo Sans Light.eot?#iefix') format('embedded-opentype'),
+        url('font/Neo Sans Light.svg#Neo Sans') format('svg'),
+        url('font/Neo Sans Light.woff') format('woff'),
+        url('font/Neo Sans Light.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+        font-family: 'Neo Sans Pro Medium';
+        src: url('font/Neo Sans Pro Medium.eot');
+        src: url('font/Neo Sans Pro Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/Neo Sans Pro Medium.svg#Neo Sans') format('svg'),
+        url('font/Neo Sans Pro Medium.woff') format('woff'),
+        url('font/Neo Sans Pro Medium.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+}
+	/*@font-face {
+        font-family: 'MetaNormal-Roman';
+        src: url('font/45623780-MtNoRo__.eot');
+        src: url('font/45623780-MtNoRo__.eot?#iefix') format('embedded-opentype'),
+        url('font/45623780-MtNoRo__.svg#MetaNormal-Roman') format('svg'),
+        url('font/45623780-MtNoRo__.woff') format('woff'),
+        url('font/45623780-MtNoRo__.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }*/
+
+    @font-face {
+    font-family: 'TENumber';
+    src: url('font/MtNoRo__.eot');
+    src: url('font/MtNoRo__.eot?#iefix') format('embedded-opentype'), url('font/MtNoRo__.svg#MetaNormal-Roman') format('svg'), url('font/MtNoRo__.woff') format('woff'), url('font/MtNoRo__.ttf') format('truetype');
+    unicode-range: U+30-39;
+}

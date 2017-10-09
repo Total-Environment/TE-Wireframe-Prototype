@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+    @media (min-width: 768px) {
+.modal-content {
+    box-shadow: none;
+}
+    }
+</style>
+</head>
+<body style="background-color:#eae4dc">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <header>
+        <div class="gr-clr"></div>
+        <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="asset-class.html">Class</a></li>
+                                    <li><a href="asset-category.html">Category</a></li>
+                                    <li><a href="asset-sub-category.html">Sub category</a></li>
+                                    <li><a href="asset-variant.html">Variant</a></li>
+                                    <li><a href="mobile-eligibility.html">Mobile Eligibility</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Assets<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="asset-management.html">View Assets</a></li>
+                                    <li><a href="requisition.html">Requisition</a></li>
+                                </ul>
+                            </li> 
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mobile<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="mobile-management.html">Mobile Management</a></li>
+                                    <li><a href="mobilebill-processing.html">Mobile Bill Processing</a></li>
+                                </ul>
+                            </li>      
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+             <!-- <li><a href="#">Home</a></li>-->
+              <li class="active">Approval</li>
+            </ol>        
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color:#646572">
+                                <h4 class="modal-title" style="color:#fff">Approval</h4>                                
+                            </div>
+                            <div class="modal-body">                               
+                                
+                                <div class="row" style="margin-bottom:15px">
+                                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                 <div class="pull-left" style="margin-left:1%">                                       
+                                                    <div class="btn-group">
+                                                      <button type="button" class="btn btn-success">Class</button>
+                                                      <button type="button" class="btn btn-success dropdown-toggle" style="padding: 14px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="caret"></span>
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                      </button>
+                                                      <ul class="dropdown-menu">
+                                                          <li><a href="#">All</a></li>
+                                                        <li><a href="#">IT</a></li>
+                                                        <li><a href="#">Site</a></li>
+                                                        <li><a href="#">HR</a></li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="pull-left" style="margin-left:1%">                                       
+                                                    <div class="btn-group">
+                                                      <button type="button" class="btn btn-warning">Category</button>
+                                                      <button type="button" class="btn btn-warning dropdown-toggle" style="padding: 14px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="caret"></span>
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                      </button>
+                                                      <ul class="dropdown-menu">
+                                                        <li><a href="#">All</a></li>
+                                                        <li><a href="#">Hardware</a></li>
+                                                        <li><a href="#">Software</a></li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                      
+                                            </div> 
+                                      </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">                                         
+                                      <div class="row">
+                		                    <div class="col-xs-12">
+                                                <div class="table-responsive" style="width:100%;">
+                                                    <table  class="table table table-striped">
+                                                        <thead>
+                                                            <tr style="background-color:#192930; color:#fff">   
+                                                                <th>&nbsp;</th>                                                     
+                                                                <th>Asset Id</th>
+                                                                <th>Sub-Category</th>
+                                                                <th>Description</th>
+                                                                <th>Transaction Type</th>
+                                                                <th>Serial No</th>
+                                                                <th>Useful life</th>
+                                                                <th>Life till now</th>
+                                                                <th>Remarks</th>
+                                                                <th>Currently Allocated to</th>
+                                                                <th>Book Value</th>
+                                                                <th>Salvage Value</th>
+                                                                <th>Recovery Amount</th>
+                                                                <th>Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th><label><input type="checkbox"></label></th>                                                                
+                                                                <td>LP10001</td>
+                                                                <td>Laptop</td>
+                                                                <td>High End Dell Laptop</td>
+                                                                <td>Scrapped</td>
+                                                                <td>D00908001</td>
+                                                                <td style="text-align:center">10</td>
+                                                                <td style="text-align:center">7</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>1888 Vinay Mohan</td>
+                                                                <td style="text-align:center">1200</td>
+                                                                <td style="text-align:center">10000</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>Pending for Approva</td>
+                                                                                                                  
+                                                            </tr>
+                                                    
+                                                          <tr>
+                                                                <th><label><input type="checkbox"></label></th>                                                                
+                                                                <td>DT00989</td>
+                                                                <td>Desktop</td>
+                                                                <td>Desktop for Designers</td>
+                                                                <td>Lost</td>
+                                                                <td>D00897791</td>
+                                                                <td style="text-align:center">10</td>
+                                                                <td style="text-align:center">8</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>1989 Kumar Singh</td>
+                                                                <td style="text-align:center">5000</td>
+                                                                <td style="text-align:center">2000</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>Pending for Approva</td>
+                                                                                                                  
+                                                            </tr>
+                                                            <tr>
+                                                                <th><label><input type="checkbox"></label></th>                                                                
+                                                                <td>LP10001</td>
+                                                                <td>Laptop</td>
+                                                                <td>High End Dell Laptop</td>
+                                                                <td>Scrapped</td>
+                                                                <td>D00908001</td>
+                                                                <td style="text-align:center">10</td>
+                                                                <td style="text-align:center">7</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>1888 Vinay Mohan</td>
+                                                                <td style="text-align:center">1200</td>
+                                                                <td style="text-align:center">10000</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>Pending for Approva</td>
+                                                                                                                  
+                                                            </tr>
+                                                    
+                                                          <tr>
+                                                                <th><label><input type="checkbox"></label></th>                                                                
+                                                                <td>DT00989</td>
+                                                                <td>Desktop</td>
+                                                                <td>Desktop for Designers</td>
+                                                                <td>Lost</td>
+                                                                <td>D00897791</td>
+                                                                <td style="text-align:center">10</td>
+                                                                <td style="text-align:center">8</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>1989 Kumar Singh</td>
+                                                                <td style="text-align:center">5000</td>
+                                                                <td style="text-align:center">2000</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>Pending for Approva</td>
+                                                                                                                  
+                                                            </tr>
+                                                            <tr>
+                                                                <th><label><input type="checkbox"></label></th>                                                                
+                                                                <td>LP10001</td>
+                                                                <td>Laptop</td>
+                                                                <td>High End Dell Laptop</td>
+                                                                <td>Scrapped</td>
+                                                                <td>D00908001</td>
+                                                                <td style="text-align:center">10</td>
+                                                                <td style="text-align:center">7</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>1888 Vinay Mohan</td>
+                                                                <td style="text-align:center">1200</td>
+                                                                <td style="text-align:center">10000</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>Pending for Approva</td>
+                                                                                                                  
+                                                            </tr>
+                                                    
+                                                          <tr>
+                                                                <th><label><input type="checkbox"></label></th>                                                                
+                                                                <td>DT00989</td>
+                                                                <td>Desktop</td>
+                                                                <td>Desktop for Designers</td>
+                                                                <td>Lost</td>
+                                                                <td>D00897791</td>
+                                                                <td style="text-align:center">10</td>
+                                                                <td style="text-align:center">8</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>1989 Kumar Singh</td>
+                                                                <td style="text-align:center">5000</td>
+                                                                <td style="text-align:center">2000</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>Pending for Approva</td>
+                                                                                                                  
+                                                            </tr>
+                                                            <tr>
+                                                                <th><label><input type="checkbox"></label></th>                                                                
+                                                                <td>LP10001</td>
+                                                                <td>Laptop</td>
+                                                                <td>High End Dell Laptop</td>
+                                                                <td>Scrapped</td>
+                                                                <td>D00908001</td>
+                                                                <td style="text-align:center">10</td>
+                                                                <td style="text-align:center">7</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>1888 Vinay Mohan</td>
+                                                                <td style="text-align:center">1200</td>
+                                                                <td style="text-align:center">10000</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>Pending for Approva</td>
+                                                                                                                  
+                                                            </tr>
+                                                    
+                                                          <tr>
+                                                                <th><label><input type="checkbox"></label></th>                                                                
+                                                                <td>DT00989</td>
+                                                                <td>Desktop</td>
+                                                                <td>Desktop for Designers</td>
+                                                                <td>Lost</td>
+                                                                <td>D00897791</td>
+                                                                <td style="text-align:center">10</td>
+                                                                <td style="text-align:center">8</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>1989 Kumar Singh</td>
+                                                                <td style="text-align:center">5000</td>
+                                                                <td style="text-align:center">2000</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>Pending for Approva</td>
+                                                                                                                  
+                                                            </tr>
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                  	                    </div>
+                                        <div class="row">
+                                          <div class="col-md-6 col-md-offset-3"><button type="button" class="btn btn-primary" style="width:100%; margin:15px 0" data-dismiss="modal">Approve</button></div>
+                                </div> 
+                                        
+                                    </div>
+                                    
+                                </div>
+                                  
+                                
+                            
+                        </div>
+
+                </div>
+
+            </div>
+
+    </div>
+        
+</div>  
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+	
+   
+</script>
+
+</body>
+</html>

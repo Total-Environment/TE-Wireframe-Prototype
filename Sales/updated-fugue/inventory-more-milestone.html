@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/master-style.css">
+
+<link rel="stylesheet" type="text/css" href="css/tefont.css"/>
+
+<script src="js/portfolio/portfolio-script.js"></script>
+
+<link href="css/portfolio/inventory-style.css" rel="stylesheet" />
+<script src="js/portfolio/enscroll-0.6.2.min.js" rel="stylesheet"></script>
+<!-- print style -->
+<link href="css/portfolio/print.css" media="print" rel="stylesheet" />
+<link href="css/portfolio/print.css" media="screen" rel="stylesheet" />
+<!-- print style -->
+<script type="text/javascript" src="js/portfolio/inventory-script.js"></script>
+<!-- <script src="js/jQuery.print.js"></script> -->
+<!-- Anything Slider optional plugins -->
+ <script src="js/portfolio/jquery.easing.1.2.js"></script>
+ <!-- Anything Slider -->
+ <link href="css/portfolio/anythingslider.css" rel="stylesheet">
+ <script src="js/portfolio/jquery.anythingslider.min.js"></script>
+ 
+</head>
+<body>
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+
+    <header>
+		<div class="gr-clr"></div>
+            <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+						    <li><a href="dashboard.html">Dashboard </a></li>
+  						    <li class="active"><a href="inventory.html">Portfolio <span class="sr-only">(current)</span> </a></li>
+							<li ><a href="lead-data-view.html">Lead </a></li>
+                             <li><a href="termsheet.html">Sales Tracker </a></li>
+							<li><a href="collections.html">Collections </a></li>
+							<li><a href="invoices.html">Invoices </a></li>
+							<li><a href="#">Tracking </a></li>
+							<li><a href="#">Business Partner </a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Change Order</a></li>
+                                    <li><a href="#">Cancellation</a></li>
+                                    <li><a href="#">Transfer</a></li>
+									<li><a href="#">Customisation</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Products</a></li>
+                                     <li><a href="#">Business Segment</a></li>
+                                      <li><a href="#">Specification</a></li>
+									  <li><a href="#">T&amp;C</a></li>
+									  <li><a href="#">Schedule</a></li>
+									  <li><a href="#">Rules</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">User Management</a></li>
+                                    <li><a href="#">Roles Management</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+	</header>
+
+	<!--header-->
+<!--Wrapper-->
+  
+<div class="wrapper" style="background-color:#fff;">
+
+<div class="row" style="margin:0;">
+<section>
+
+<!--  portfolio page start -->
+<div class="portfolio-page">
+        <div style="margin:10px -2px;">
+		<!-- container start -->
+			 <div class="container" style="width:100%; margin:0; padding:0;">
+                <div class="row">
+                    <div class="col-md-12">
+					<!-- <div class="changeview"><span class=""><i class="fa fa-list-ul" aria-hidden="true"></i> Back to Project List</span></div>  -->
+					
+						<div class="container" style="margin:0; width:100%">
+						<!-- inventory project detail view start -->
+						<div class="selcproject">
+						<div class="row">
+						<div class="col-md-12" style="margin:0; padding:0; ">
+						
+								<div 
+								</div>
+								<div class="col-md-12" style="padding:0;">
+								<div class="panel inven-panel-title" style=""> Projects <span class="pull-right projdis" style="padding-right:10px"> Projects <span class="caret"></span></span>
+</div>
+<div class="projectlist">
+ <div class="col-md-12" style="width:98%; margin:0 1%;">
+                                 <div class="row pull-right">
+                                 <div id="proj1" class="inven-proj-list">
+                                 <img src="images/Windmills-of-Your-Mind.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj2" class="inven-proj-list">
+                                 <img src="images/In-That-Quiet-Earth-Bangalore.jpg" class="img-responsive">
+                                 
+                                 </div>
+                                 <div id="proj3" class="inven-proj-list">
+                                 <img src="images/A-Few-Honest-Words.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj4" class=" inven-proj-list">
+                                 <img src="images/After-the-Rain.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj5" class="inven-proj-list">
+                                 <img src="images/Learning-to-Fly.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj6" class="inven-proj-list">
+                                 <img src="images/Lost-in-the-Greens.png" class="img-responsive">
+                                
+                                 </div>
+								  <div id="proj7" class="inven-proj-list">
+                                 <img src="images/Pursuit-of-a-Radical-Rhapsody.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj8" class="inven-proj-list">
+                                 <img src="images/Songs-from-the-Wood.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj9" class="inven-proj-list">
+                                 <img src="images/The-Magic-Faraway-Tree.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj10" class="inven-proj-list">
+                                 <img src="images/The-Magic-Faraway-Tree-II.png" class="img-responsive">
+
+                                 </div>
+                                 <div id="proj11" class="inven-proj-list">
+                                 <img src="images/The-Meadow-Dance.png" class="img-responsive">
+
+                                 </div>
+                                 <div id="proj12" class="inven-proj-list">
+                                 <img src="images/Van-Goghs-Garden.png" class="img-responsive">
+
+                                 </div>
+                                 </div>
+                                 </div>
+                               
+
+</div>
+<div class="clearfix"></div>
+					           <div style="width:98%; margin:0 auto;">
+							   <div class="projlisttabs">
+	<!-- Tabs start -->
+    <ul class="nav nav-tabs" id="tabs">
+	<li ><a href="inventory-projectinfo.html">Project Info</a></li>
+        <li ><a href="inventory-projectinfo.html">Inventory</a></li>
+		<li><a href="inventory-projectinfo.html">Price Book</a></li>
+         <li><a href="inventory-projectinfo.html">Templates</a></li>
+		<li><a href="inventory-projectinfo.html">Progress</a></li>
+		<li><a href="inventory-taxdetails.html">Tax Details</a></li>
+		<li><a href="inventory-taxdetails.html">Layouts</a></li>
+		<li><a href="inventory-factsheet.html">Fact Sheet</a></li>
+		<li><a href="inventory-bankdetails.html">Bank Details</a></li>
+		<li  class="active dropdown"><a data-toggle="dropdown" class="dropdown-toggle moreinfo">More  <span class="caret"></span> </a>
+		 <ul class="dropdown-menu" style="margin-left:-50px;">
+                <li><a href="inventory-more-product.html">Product Details</a></li>
+                <li><a href="inventory-more-carpark.html">Car Park</a></li>
+                <li><a href="inventory-more-tower-details.html">Tower Details</a></li>
+				<li><a href="inventory-more-unit-details.html">Unit Details</a></li>
+                 <li><a href="inventory-more-salesplan.html">Sales Plan & Target</a></li>
+                <li><a href="inventory-more-salesgoaldetails.html">Sales Goal Details</a></li>
+				 <li><a href="inventory-more-premiumpricebook.html">Premimum</a></li>
+				  <li><a href="inventory-more-schedule.html">Schedule</a></li>
+            </ul>
+		</li>
+    </ul>
+    <!-- Tabs end -->
+
+    <!-- Tab Content start -->
+    <div class="tab-content">
+      
+		<!-- Tax Details -->
+		<div class="tab-pane active in fade" id="premiumpricebook">
+		<div style="width:100%;">
+		<div style="width:99%; margin:0 auto">
+		<div class="inve-tab-panel-title ltf">Learning to Fly </div>
+			<div class="template-title">Milestone Details</div>
+		</div>
+		</div>
+		<div class="col-md-12 milestoneinfo">
+		
+			<div class="col-md-2"><div class="padding10"><label>Schedule Name Tower</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">Tower 9 Commercial Block</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>Project</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">Learning To Fly</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-2"><div class="padding10"><label>Tower</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">T9</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>Product Type</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">U50</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-12" style="padding-left:30px;"><input type="checkbox" /> Scheme Applicable</div>
+		</div>
+		
+	<table class="invent-more-milestone" cellspacing="0">
+        <thead>
+		
+            <tr>
+                <th class="txtalignleft"><input type="text" placeholder="Milestone" class="form-control searchTxt">	</th>
+				<th><input type="text" placeholder="Order" class="form-control searchTxt"></th>       
+                <th><input type="text" placeholder="Code" class="form-control searchTxt"></th> 
+				<th><input type="text" placeholder="Baseline Date" class="form-control searchTxt"></th>				
+                <th><input type="text" placeholder="Schedule Date" class="form-control searchTxt"></th>
+				<th><input type="text" placeholder="Today's Offer Date" class="form-control searchTxt"></th>
+				<th><input type="text" placeholder="Revenue Ratio" class="form-control searchTxt"></th>
+				<th><input type="text" placeholder="Scheme Revenue Ratio" class="form-control searchTxt"></th>
+				<th><input type="text" placeholder="Payment Type" class="form-control searchTxt"></th>
+				<th><input type="text" placeholder="Relative Milestone" class="form-control searchTxt"></th>
+				<th><input type="text" placeholder="Relative Interval (days)" class="form-control searchTxt"></th>
+				<th><input type="text" placeholder="Milestone Type" class="form-control searchTxt"></th>
+				<th><input type="text" placeholder="Last Modified By" class="form-control searchTxt"></th>
+				<th><input type="text" placeholder="Last Modified On" class="form-control searchTxt"></th>
+				
+			</tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td class="txtalignleft">Earnest Money Deposit</td>
+                <td class="txtalignright" style="padding-right:10px;">1</td>
+                <td>EMD</td>
+				<td>23-Mar-2016</td>
+				<td>23-Mar-2016</td>
+				<td>10-Jun-2016</td>
+				<td class="txtalignright" style="padding-right:10px;">10</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Relative to Sale Date</td>
+				<td class="txtaligncenter">-</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Unit Specific</td>
+				<td class="txtalignleft">System</td>
+				<td class="txtaligncenter">10-Jun-2016</td>
+				
+            </tr>
+			<tr>
+                <td class="txtalignleft">Earnest Money Deposit</td>
+                <td class="txtalignright" style="padding-right:10px;">1</td>
+                <td>EMD</td>
+				<td>23-Mar-2016</td>
+				<td>23-Mar-2016</td>
+				<td>10-Jun-2016</td>
+				<td class="txtalignright" style="padding-right:10px;">10</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Relative to Sale Date</td>
+				<td class="txtaligncenter">-</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Unit Specific</td>
+				<td class="txtalignleft">System</td>
+				<td class="txtaligncenter">10-Jun-2016</td>
+				
+            </tr><tr>
+                <td class="txtalignleft">Earnest Money Deposit</td>
+                <td class="txtalignright" style="padding-right:10px;">1</td>
+                <td>EMD</td>
+				<td>23-Mar-2016</td>
+				<td>23-Mar-2016</td>
+				<td>10-Jun-2016</td>
+				<td class="txtalignright" style="padding-right:10px;">10</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Relative to Sale Date</td>
+				<td class="txtaligncenter">-</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Unit Specific</td>
+				<td class="txtalignleft">System</td>
+				<td class="txtaligncenter">10-Jun-2016</td>
+				
+            </tr><tr>
+                <td class="txtalignleft">Earnest Money Deposit</td>
+                <td class="txtalignright" style="padding-right:10px;">1</td>
+                <td>EMD</td>
+				<td>23-Mar-2016</td>
+				<td>23-Mar-2016</td>
+				<td>10-Jun-2016</td>
+				<td class="txtalignright" style="padding-right:10px;">10</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Relative to Sale Date</td>
+				<td class="txtaligncenter">-</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Unit Specific</td>
+				<td class="txtalignleft">System</td>
+				<td class="txtaligncenter">10-Jun-2016</td>
+				
+            </tr><tr>
+                <td class="txtalignleft">Earnest Money Deposit</td>
+                <td class="txtalignright" style="padding-right:10px;">1</td>
+                <td>EMD</td>
+				<td>23-Mar-2016</td>
+				<td>23-Mar-2016</td>
+				<td>10-Jun-2016</td>
+				<td class="txtalignright" style="padding-right:10px;">10</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Relative to Sale Date</td>
+				<td class="txtaligncenter">-</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Unit Specific</td>
+				<td class="txtalignleft">System</td>
+				<td class="txtaligncenter">10-Jun-2016</td>
+				
+            </tr><tr>
+                <td class="txtalignleft">Earnest Money Deposit</td>
+                <td class="txtalignright" style="padding-right:10px;">1</td>
+                <td>EMD</td>
+				<td>23-Mar-2016</td>
+				<td>23-Mar-2016</td>
+				<td>10-Jun-2016</td>
+				<td class="txtalignright" style="padding-right:10px;">10</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Relative to Sale Date</td>
+				<td class="txtaligncenter">-</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Unit Specific</td>
+				<td class="txtalignleft">System</td>
+				<td class="txtaligncenter">10-Jun-2016</td>
+				
+            </tr><tr>
+                <td class="txtalignleft">Earnest Money Deposit</td>
+                <td class="txtalignright" style="padding-right:10px;">1</td>
+                <td>EMD</td>
+				<td>23-Mar-2016</td>
+				<td>23-Mar-2016</td>
+				<td>10-Jun-2016</td>
+				<td class="txtalignright" style="padding-right:10px;">10</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Relative to Sale Date</td>
+				<td class="txtaligncenter">-</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Unit Specific</td>
+				<td class="txtalignleft">System</td>
+				<td class="txtaligncenter">10-Jun-2016</td>
+				
+            </tr><tr>
+                <td class="txtalignleft">Earnest Money Deposit</td>
+                <td class="txtalignright" style="padding-right:10px;">1</td>
+                <td>EMD</td>
+				<td>23-Mar-2016</td>
+				<td>23-Mar-2016</td>
+				<td>10-Jun-2016</td>
+				<td class="txtalignright" style="padding-right:10px;">10</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Relative to Sale Date</td>
+				<td class="txtaligncenter">-</td>
+				<td class="txtalignright" style="padding-right:10px;">0</td>
+				<td>Unit Specific</td>
+				<td class="txtalignleft">System</td>
+				<td class="txtaligncenter">10-Jun-2016</td>
+				
+            </tr>
+        </tbody>
+		<tfoot>
+		<tr>
+		<td class="footer" colspan="14" > 
+		<div class="pull-right">Go to page: <input type="text" value="1" class="footertxt input_radius">
+		<span style="padding:0 10px;">Show Rows: 
+		<select class="footerselect input_radius">.
+		<option>10</option>
+		<option>20</option>
+		<option>50</option>
+		<option>100</option>
+		</select>
+		</span>
+		<span>1-10 of 100</span>
+		<span style="padding-left:10px;">
+		<button class="leftbutn">&nbsp;</button><button class="rightbutn">&nbsp;</button></span>
+		</div></td>
+		</tr>
+		</tfoot>
+    </table>
+	</div>
+	</div>
+		<!-- Tax Details -->
+		
+		</div>
+		<!-- Tab Content end -->
+	
+	
+</div>
+								</div>
+			
+								</div>
+								</div>
+						
+						</div>
+					
+					
+					
+					</div>
+                </div>
+							
+							<!-- inventory projec detail view end -->
+							<div class="clearfix"></div>
+							<div style="border-bottom:dotted 1px #ccc;width: 97%;margin:0 auto 10px auto;padding-bottom: 10px;"></div>
+						</div>
+					</div>
+					</div>
+				</div>
+		<!-- container end -->		
+			</div>
+			</div> 
+<!-- portfolio page end -->
+</section>
+</div>
+</div>
+
+
+ 
+<div class="clearfix"></div>
+
+</div>
+
+</body>
+</html>
+
+

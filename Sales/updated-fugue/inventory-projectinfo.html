@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/master-style.css">
+<link rel="stylesheet" type="text/css" href="css/tefont.css"/>
+
+<script src="js/portfolio/portfolio-script.js"></script>
+
+<link href="css/portfolio/inventory-style.css" rel="stylesheet" />
+<script src="js/portfolio/enscroll-0.6.2.min.js" rel="stylesheet"></script>
+<!-- print style -->
+<link href="css/portfolio/print.css" media="print" rel="stylesheet" />
+<link href="css/portfolio/print.css" media="screen" rel="stylesheet" />
+<!-- print style -->
+<script type="text/javascript" src="js/portfolio/inventory-script.js"></script>
+<!-- <script src="js/jQuery.print.js"></script> -->
+<!-- Anything Slider optional plugins -->
+ <script src="js/portfolio/jquery.easing.1.2.js"></script>
+ <!-- Anything Slider -->
+ <link href="css/portfolio/anythingslider.css" rel="stylesheet">
+ <script src="js/portfolio/jquery.anythingslider.min.js"></script>
+ 
+</head>
+<body>
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+
+    <header>
+		<div class="gr-clr"></div>
+            <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+						   <li><a href="dashboard.html">Dashboard </a></li>
+  						    <li class="active"><a href="inventory.html">Portfolio <span class="sr-only">(current)</span> </a></li>
+							<li ><a href="lead-data-view.html">Lead </a></li>
+                            <li><a href="termsheet.html">Sales Tracker </a></li>
+							<li><a href="collections.html">Collections </a></li>
+							<li><a href="invoices.html">Invoices </a></li>
+							<li><a href="#">Tracking </a></li>
+							<li><a href="#">Business Partner </a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Change Order</a></li>
+                                    <li><a href="#">Cancellation</a></li>
+                                    <li><a href="#">Transfer</a></li>
+									<li><a href="#">Customisation</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Products</a></li>
+                                     <li><a href="#">Business Segment</a></li>
+                                      <li><a href="#">Specification</a></li>
+									  <li><a href="#">T&amp;C</a></li>
+									  <li><a href="#">Schedule</a></li>
+									  <li><a href="#">Rules</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">User Management</a></li>
+                                    <li><a href="#">Roles Management</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+	</header>
+
+	<!--header-->
+<!--Wrapper-->
+  
+<div class="wrapper" style="background-color:#fff;">
+
+<div class="row" style="margin:0;">
+<section>
+
+<!--  portfolio page start -->
+<div class="portfolio-page">
+        <div style="margin:10px -2px;">
+		<!-- container start -->
+			 <div class="container" style="width:100%; margin:0; padding:0;">
+                <div class="row">
+                    <div class="col-md-12">
+					<!-- <div class="changeview"><span class=""><i class="fa fa-list-ul" aria-hidden="true"></i> Back to Project List</span></div>  -->
+					
+						<div class="container" style="margin:0; width:100%">
+						<!-- inventory project detail view start -->
+						<div class="selcproject">
+						<div class="row">
+						<div class="col-md-12" style="margin:0; padding:0; ">
+						
+								<div 
+								</div>
+								<div class="col-md-12" style="padding:0;">
+								<div class="panel inven-panel-title" style=""> Projects <span class="pull-right projdis" style="padding-right:10px"> Projects <span class="caret"></span></span>
+</div>
+<div class="projectlist">
+ <div class="col-md-12" style="width:98%; margin:0 1%;">
+                                 <div class="row pull-right">
+                                 <div id="proj1" class="inven-proj-list">
+                                 <img src="images/Windmills-of-Your-Mind.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj2" class="inven-proj-list">
+                                 <img src="images/In-That-Quiet-Earth-Bangalore.jpg" class="img-responsive">
+                                 
+                                 </div>
+                                 <div id="proj3" class="inven-proj-list">
+                                 <img src="images/A-Few-Honest-Words.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj4" class=" inven-proj-list">
+                                 <img src="images/After-the-Rain.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj5" class="inven-proj-list">
+                                 <img src="images/Learning-to-Fly.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj6" class="inven-proj-list">
+                                 <img src="images/Lost-in-the-Greens.png" class="img-responsive">
+                                
+                                 </div>
+								  <div id="proj7" class="inven-proj-list">
+                                 <img src="images/Pursuit-of-a-Radical-Rhapsody.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj8" class="inven-proj-list">
+                                 <img src="images/Songs-from-the-Wood.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj9" class="inven-proj-list">
+                                 <img src="images/The-Magic-Faraway-Tree.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj10" class="inven-proj-list">
+                                 <img src="images/The-Magic-Faraway-Tree-II.png" class="img-responsive">
+
+                                 </div>
+                                 <div id="proj11" class="inven-proj-list">
+                                 <img src="images/The-Meadow-Dance.png" class="img-responsive">
+
+                                 </div>
+                                 <div id="proj12" class="inven-proj-list">
+                                 <img src="images/Van-Goghs-Garden.png" class="img-responsive">
+
+                                 </div>
+                                 </div>
+                                 </div>
+                               
+
+</div>
+<div class="clearfix"></div>
+					           <div style="width:98%; margin:0 auto;">
+							   <div class="projlisttabs">
+	<!-- Tabs start -->
+    <ul class="nav nav-tabs" id="tabs">
+	<li class="active"><a href="inventory-projectinfo.html" data-toggle="tab">Project Info</a></li>
+        <li ><a href="inventory-inventory.html">Inventory</a></li>
+		<li><a href="inventory-pricebook.html" >Price Book</a></li>
+         <li><a href="inventory-templates.html">Templates</a></li>
+		<li ><a href="inventory-progress.html" >Progress</a></li>
+		<li><a href="inventory-taxdetails.html">Tax Details</a></li>
+		<li><a href="inventory-layouts.html">Layouts</a></li>
+		<li><a href="inventory-factsheet.html">Fact Sheet</a></li>
+		<li><a href="inventory-bankdetails.html">Bank Details</a></li>
+		<li  class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle moreinfo">More  <span class="caret"></span> </a>
+		 <ul class="dropdown-menu" style="margin-left:-50px;">
+                <li><a href="inventory-more-product.html">Product Details</a></li>
+                <li><a href="inventory-more-carpark.html">Car Park</a></li>
+                <li><a href="inventory-more-tower-details.html">Tower Details</a></li>
+				  <li><a href="inventory-more-unit-details.html">Unit Details</a></li>
+                 <li><a href="inventory-more-salesplan.html">Sales Plan & Target</a></li>
+                <li><a href="inventory-more-salesgoaldetails.html">Sales Goal Details</a></li>
+				 <li><a href="inventory-more-premiumpricebook.html">Premimum</a></li>
+				  <li><a href="inventory-more-schedule.html">Schedule</a></li>
+            </ul>
+		</li>
+    </ul>
+    <!-- Tabs end -->
+
+    <!-- Tab Content start -->
+    <div class="tab-content">
+       <!-- Projectinfo -->
+        <div class="tab-pane active in fade" id="Projectinfo">
+          <div class="col-md-12" style="padding:0; margin-top:10px;"> 
+		<div style="width:100%;">
+		<div style="width:99%; margin:0 auto">
+		<div class="inve-tab-panel-title ltf">Learning to Fly </div>
+		
+		</div>
+		</div>	
+	<div class="col-md-12 milestoneinfo">
+		
+			<div class="col-md-2"><div class="padding10"><label>Project Name</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">Learning To Fly</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>Project Code</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">0066</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-2"><div class="padding10"><label>Company</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">Total Environment Living Space Pvt<span class="pull-right">2100</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>Color Code</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">#63b1dc</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-2"><div class="padding10"><label>Project Abbreviation</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">LTF</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>&nbsp;</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span><input type="checkbox" checked /> Is Sales </span><span style="padding-left:10px"><input type="checkbox"  /> Is PMD</span></div></div>
+			
+			<div class="clearfix"></div>
+			<div style="border-top:1px solid #9fceea; padding:4px 0;"></div>
+			<div class="col-md-12 padnone">
+			<dl id="faqs">
+  <dt>Total Land Area</dt>
+  <dd><div class="col-md-12 milestoneinfo">
+		
+			<div class="col-md-2"><div class="padding10"><label>Total Site Area</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline"> 1,41,942 </span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>Kharab Land
+</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline"> 2,327 </span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-2"><div class="padding10"><label>Relinquished Areas
+</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline"> 16,118 
+</div><div class="subpart"><p>Inludes Park & Area relinquished for Road expansion</p></span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>Commercial Land
+</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline"> 12,980 
+</span></div><div class="subpart"><p>excludes some portion of land next to Cemetery
+</p></div></div>
+			<div class="clearfix"></div>
+			<div class="dottedlinespace"></div>
+			<div class="col-md-2"><div class="padding10"><label>Civic Amenities</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline"> 6,424 
+</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>Electrical Substation
+</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline"> 2,400 
+ 
+</span></div></div>
+
+
+<div class="clearfix"></div>
+<div class="dottedlinespace"></div>
+<div class="col-md-2"><div class="padding10"><label>Residential Site Area
+</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">  1,01,693 
+ </span></div><div class="subpart"><p>Inludes  Villa Areas</p></div></div>
+			<div class="col-md-2"><div class="padding10"><label>Villa Plot Areas
+
+</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">  29,742 
+ </span></div><div class="subpart"><p>Inludes  Villa Areas in the setback</p></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-2"><div class="padding10"><label>Residential Site Area for Apartments
+
+</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">  71,951 
+
+</div></div>
+			
+			<div class="clearfix"></div>
+			<div class="dottedlinespace"></div>
+			<div class="col-md-2"><div class="padding10"><label>Allowable Residential FSI
+</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline"> 3,60,634 
+
+</span></div><div class="subpart"><p>Allowable FSI Factor of 3.0
+</p></div></div>
+			<div class="col-md-2"><div class="padding10"><label>FSI utilized by Villas
+
+</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">  26,919 
+
+ 
+</span></div></div>
+
+<div class="clearfix"></div>
+<div class="dottedlinespace"></div>
+<div class="col-md-2"><div class="padding10"><label>FSI available for Apartments
+
+</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline"> 3,60,634 
+
+</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>FSI utilized by Villas
+
+</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">  3,33,714 
+ 
+
+ 
+</span></div></div>
+<div class="clearfix"></div>
+<div class="col-md-2"><div class="padding10"><label>UDI Factor for Apartments
+
+
+</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">  0.216 
+ 
+
+</span></div><div class="subpart"><p>To be Multiplied with the Unit BuA
+</p></div></div>
+			</div>
+    <div class="clearfix"></div>     
+</dd>
+
+
+
+		 
+       </dd>
+ 
+  <dt>Signatory</dt>
+  <dd> <div class="col-md-12 milestoneinfo">
+		
+			<div class="col-md-2"><div class="padding10"><label>Signatory</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline"> 03-Apr-2014</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>Expected Completion Date</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">31-Jul-2018</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-2"><div class="padding10"><label>Sales Head</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">Kamal</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>Project Site Layout </label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="pull-right">066-1b AFS Annexure 01... <span class="down"></span> </span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-2"><div class="padding10"><label>Building Plan Sanction No</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">Anand Murthy</span></div></div>
+			
+			</div>
+		<div class="clearfix"></div>	
+</dd>
+  <dt>Address Details</dt>
+  <dd>  <div class="col-md-12  milestoneinfo">
+		
+			<div class="col-md-2"><div class="padding10"><label>Survey No</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline"> 12 / 2B</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>City</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">Bangalore</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-2"><div class="padding10"><label>Locality</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">J P Nagar</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>State</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">Karnataka</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-2"><div class="padding10"><label>Street</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">17th Cross, 29th Main Road, off 1</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>Country</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">India</span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-2"><div class="padding10"><label>Landmark</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">Near J P Nagar</span></div></div>
+			<div class="col-md-2"><div class="padding10"><label>Pincode</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline"><span class="pull-right">560078</span></span></div></div>
+			<div class="clearfix"></div>
+			<div class="col-md-2"><div class="padding10"><label>Municipal Zone</label></div></div>
+			<div class="col-md-4 padl0r30"><div class="padding10"><span class="spanunderline">Urban</span></div></div>
+			</div>	
+			
+</dd>
+</dl>
+			
+			</div>
+			
+			
+			
+		
+		  <div class="clearfix"></div>
+	</div>
+	<!-- Projectinfo -->
+       
+		
+		</div>
+		<!-- Tab Content end -->
+	
+	
+</div>
+								</div>
+			
+								</div>
+								</div>
+						
+						</div>
+					
+					
+					
+					</div>
+                </div>
+							
+							<!-- inventory projec detail view end -->
+							<div class="clearfix"></div>
+							<div style="border-bottom:dotted 1px #ccc;width: 97%;margin:0 auto 10px auto;padding-bottom: 10px;"></div>
+						</div>
+					</div>
+					</div>
+				</div>
+		<!-- container end -->		
+			</div>
+			</div> 
+<!-- portfolio page end -->
+</section>
+</div>
+</div>
+
+
+ 
+<div class="clearfix"></div>
+
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,1069 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--  -->
+<link rel="shortcut icon" href="images/telogomin.jpg" />
+<title>Details</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://summernote.org/bower_components/summernote/dist/summernote.css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href='css/scheduler.min.css' rel='stylesheet' />
+<link href='css/fullcalendar.css' rel='stylesheet' />
+<link href="css/lead/monthly.css" rel="stylesheet" />
+<!-- print style -->
+<link href="css/lead/print.css" media="print" rel="stylesheet" />
+<link href="css/lead/print.css" media="screen" rel="stylesheet" />
+<!-- print style -->
+<link href="css/new-timeline.css" rel="stylesheet" />
+<link href="css/datepicker.css" rel="stylesheet" />
+<link href="css/lead/termsheet-style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src='js/moment.min.js'></script>
+<script type="text/javascript" src="http://summernote.org/bower_components/summernote/dist/summernote.js"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src='js/fullcalendar.min.js'></script>
+<script type="text/javascript" src='js/scheduler.min.js'></script>
+<script type="text/javascript" src="js/lead/monthly.js"></script>
+<script src="js/lead/tableHeadFixer.js"></script>
+<script type="text/javascript" src="js/jquery.ddslick.min.js"></script>
+
+<script type="text/javascript" src="js/lead/termsheet-script.js"></script>
+</head>
+<body style="background-color:#eae4dc !important; color:#000 !important;">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+     <header>
+		<div class="gr-clr"></div>
+            <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+						   <li><a href="dashboard.html">Dashboard </a></li>
+  						    <li><a href="inventory.html">Portfolio <span class="sr-only">(current)</span> </a></li>
+							<li ><a href="lead-data-view.html">Lead </a></li>
+                           <li class="active"><a href="termsheet.html">Sales Tracker <span class="sr-only">(current)</span></a></li>
+							<li><a href="collections.html">Collections </a></li>
+							<li><a href="invoices.html">Invoices </a></li>
+							<li><a href="#">Tracking </a></li>
+							<li><a href="#">Business Partner </a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Change Order</a></li>
+                                    <li><a href="#">Cancellation</a></li>
+                                    <li><a href="#">Transfer</a></li>
+									<li><a href="#">Customisation</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Products</a></li>
+                                     <li><a href="#">Business Segment</a></li>
+                                      <li><a href="#">Specification</a></li>
+									  <li><a href="#">T&amp;C</a></li>
+									  <li><a href="#">Schedule</a></li>
+									  <li><a href="#">Rules</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">User Management</a></li>
+                                    <li><a href="#">Roles Management</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+	</header>
+<!--header-->
+<!--Wrapper-->
+	<div class="container wrapper" style="background: #fff;">
+		<div class="row">
+			<section>
+				<div style="margin: 65px auto 0 auto;">
+					<div class="title-panel">Sales Tracker </div>
+						<!-- Tabs start -->
+						 <div style="width:98%; margin:0 auto;">
+						 <div class="box-info-container" id="LeadDetails01">
+								<div class="box-left-border">
+								<div class="box-info">
+							
+								
+									<div class="col-md-12 paddingnone">
+									<div class="col-md-4">
+										<div class="box-personname">Srikanth Akula</div>
+</div>
+<div class="col-md-4 "><div class="box-personmailnew"><i class="fa fa-envelope" style="padding-right:4px;" aria-hidden="true"></i> manjunath@gmail.com</div>
+</div>
+<div class="col-md-4 pull-right" >
+<div class="box-personphonenew "><i class="fa fa-phone" style="padding-right:4px;" aria-hidden="true"></i>+91 97430 24532</div>
+											</div>
+			
+
+						</div>
+								<div class="clearfix"></div>
+							<div class="box-sourcenote">	
+									<div class="col-md-3 paddingnone">
+								<div class="box-otherdetailsnew"> Sales Consultant : <span>Manjunath Ramesh</span></div>
+								</div>
+								<div class="col-md-1 paddingnone">
+								<div class="box-otherdetailsnew">	Unit : 3084</div></div>
+								<div class="col-md-2 paddingnone">
+								<div class="box-otherdetailsnew text-right"> Specification : <span class="specdetals bgcolor_f79647">Orange</span></div>
+								</div>
+								<div class="col-md-2 paddingnone">
+								<div class="box-otherdetailsnew text-right"> Consideration : 1,99,07,500</div>
+								</div>
+								<div class="col-md-2 paddingnone">
+								<div class="box-otherdetailsnew text-right"> Total Receivable : 1,59,07,500</div>
+								</div>
+								<div class="col-md-2 paddingnone">
+								<div class="box-otherdetailsnew text-right"> Total Payable : 3,99,07,500</div>
+								</div>
+								</div>
+								
+								
+								
+								</div>
+								<div class="clearfix"></div>	
+							</div>
+							
+							</div>
+							
+							<div class="clearfix"></div>
+							
+							<div class="col-md-12 padnone">
+							<div class="title-panel">Customer Data Sheet <div class="pull-right"><button class="btn btn-xs btn-warning floatleft  marginright10">Send CDS to Customer</button> <span class="floatleft  marginright10"><i class="fa fa-plus-circle" aria-hidden="true"></i></span><span class="floatleft  marginright10"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></div></div>
+							<div class="col-md-3 padnone" >
+								<ul class="nav nav-pills nav-stacked strack">
+									<li ><a href="salestracker-soa.html">SOA</a></li>
+									<li><a href="salestracker-termsheet.html">Termsheet</a></li>
+									<li class="active"><a href="salestracker-cds.html">Customer Data Sheet</a></li>
+									<li><a href="salestracker-collections.html">Collections</a></li>
+									<li><a href="salestracker-invoices.html">Invoices</a></li>
+									<li><a href="salestracker-agreement.html">Agreement</a></li>
+									<li class="subsec"><a>Transaction <span class="pull-right plus_minus">+</span></a>
+									<ul class="submenu">
+										<li><a>Change Order</a></li>
+										<li><a>Cancellation</a></li>
+										<li><a>Transfer</a></li>
+										<li><a>Refund</a></li>
+										<li><a>Delay Compensation</a></li>
+									</ul>
+									
+									</li>
+									<li><a>Document</a></li>
+									<li><a>Hand Over</a></li>
+									<li><a>Car Park Allocation</a></li>
+									<li><a href="salestracker-notes.html">Notes</a></li>
+									<li  ><a href="salestracker-followups.html">Followups</a></li>
+								</ul>
+							</div>
+							<div class="col-md-9 padnone">
+							<div class="salestracker_container">
+							
+<!-- Notes Start-->						
+							<div class="salestracker_content">
+							
+							 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 cnt-list-panel-bg">
+                <div class="cnt-list-add" >
+                    
+                        <div class="col-md-6 padnone">
+                          <div class="padding5">
+                            <a href="index-create.html" style="color:#fff;">
+                            <div class="add-contact"><span class="glyphicon glyphicon-plus-sign pull-left add-contact-icon" aria-hidden="true"></span> Add contact</div></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 padnone text-right">
+                            <div class="padding3">                                 
+                                <label style="float:right"><input type="checkbox"/></label>
+                                <div class="select-all-txt"> Select All </div>
+                            </div>
+                        </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div style="width:99%;">
+                    <a style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/srikanth.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0; padding-left:30px;">
+                                
+                                <div class="headtxt">Srikanth Akula</div>
+                                <div class="contenttxt">srikanth.akula@total-environment.com</div>
+                                <div class="contenttxt">9980855000 
+                                    <div style="position:absolute; right:-30px; bottom:0;"><img src="images/vip.png" style="height:15px;"><img src="images/friend-of-te.png" style="height:15px;"></div></div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/manju.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                             <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0; padding-left:30px;">
+                                
+                                <div class="headtxt">Manjunath T R</div>
+                                <div class="contenttxt">manjunath.ramesh@total-environment.com</div>
+                                <div class="contenttxt">9980652233 
+                                    <div style="position:absolute; right:-30px; bottom:0;"><img src="images/friend-of-te.png" style="height:15px;"></div></div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/sai.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                           <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0; padding-left:30px;">
+                                <div class="headtxt">saikumar.s</div>
+                                <div class="contenttxt">saikumar.s@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/anil.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0; padding-left:30px;">
+                                <div class="headtxt">Anil Baradia</div>
+                                <div class="contenttxt">anil.baradia@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/keerthi.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0; padding-left:30px;">
+                                <div class="headtxt">Keerthi KS</div>
+                                <div class="contenttxt">keerthi.ks@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a  style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/jyothi.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                           <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0; padding-left:30px;">
+                                <div class="headtxt">jyothi A</div>
+                                <div class="contenttxt">jyothi.akkayappa@total-envirnment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/shivam.jpg" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0; padding-left:30px;">
+                                <div class="headtxt">Shivam Srivastava</div>
+                                <div class="contenttxt">Shivam.srivastava@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/profile.png" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                             <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0; padding-left:30px;">
+                                <div class="headtxt">Profile Name</div>
+                                <div class="contenttxt">manjunath.ramesh@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/profile.png" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0; padding-left:30px;">
+                                <div class="headtxt">Profile Name</div>
+                                <div class="contenttxt">manjunath.ramesh@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/profile.png" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                             <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0; padding-left:30px;">
+                                <div class="headtxt">Profile Name</div>
+                                <div class="contenttxt">manjunath.ramesh@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/profile.png" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                          <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0; padding-left:30px;">
+                                <div class="headtxt">Profile Name</div>
+                                <div class="contenttxt">manjunath.ramesh@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#" style="color:#000;">
+                    <div class="profile-bg">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-2 col-xs-2">
+                                <div class="profile-icon-bg"><img src="images/profile.png" style="width:40px;" class="" alt="" /></div>
+                            </div>
+                           <div class="col-lg-8 col-md-7 col-sm-8 col-xs-8" style="padding-right:0; padding-left:30px;">
+                                <div class="headtxt">Manjunath T R</div>
+                                <div class="contenttxt">manjunath.ramesh@total-environment.com</div>
+                            </div>
+                            <div class="col-md-2"><label style="float:right"><input type="checkbox" style="zoom: 1.3;"></label></div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 padding0">
+                <div class="filter-bg">
+                <div class="padding10">
+                   <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" >                                                           
+                                <a href="#" ><span class="glyphicon glyphicon-edit profile-edit-icon" style="position:absolute; top:10px; left:25px"></span></a>
+                                <div class="profile-bg-big"> <img src="images/srikanth.jpg" class="img-responsive" style="border: 3px solid white; outline: #ccc solid 1px;" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12" >
+                            <div style="position:absolute; right:20px;">
+                                <div class="pull-left"><img src="images/vip.png" style="height:20px;"></div>
+                                <div class="pull-left"><img src="images/friend-of-te.png" style="height:20px; padding:0 5px;"></div>
+                            </div>
+                            <div class="headtxt-big">Srikanth Akula</div>
+                            <div class="margin-tb5 row">
+                                <div class="icon-org pull-left"><span class="fa fa-briefcase"></span></div>
+                                <div class="org-headtxt-big pull-left"><span style="font-family: 'MetaNormal-Roman'; font-weight:normal"> Manager </span></div>
+                            </div>
+
+                            <div class="margin-tb5 row">
+                                <div class="icon-org pull-left"><span class="fa fa-building"></span></div>
+                                <div class="org-headtxt-big pull-left"><span style="font-family: 'MetaNormal-Roman'; font-weight:normal">TOTAL ENVIRONMENT BUILDING SYSTEMS PVT. LTD</span></div>
+                            </div>
+
+                            <div class="margin-tb5 row">
+                                <div class="icon-org pull-left"><span class="fa fa-phone"></span></div>
+                                <div class="org-headtxt-big pull-left"><span style="font-family: 'MetaNormal-Roman'; font-weight:normal">+91 9980855000</span></div>
+                            </div>
+
+                            <div class="margin-tb5 row">
+                                <div style="position:absolute; right:0; color:#ff6a00; font-size:8pt;"><a href="#" data-toggle="modal" data-target="#address">More</a></div>
+                               <div class="icon-org pull-left"><span class="fa fa-book"></span> </div>
+                                <div class="pull-left">
+                                    <div class="contenttxt1">
+                                         #53, 6th Main, 5th Cross,<br />
+                                        Hoodi Circle,<br />
+                                        Bangalotre <span style="font-family: 'MetaNormal-Roman';"> 560036</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="margin-tb5 row">
+                                <div class="icon-org pull-left"><span class="fa fa-envelope"></span></div>
+                                <div class="pull-left">srikanth.akula@total-environment.com</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background-color:#3c8ece; padding:5px; color:#fff">Profile</div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="collapse-panel">
+                                <div class="col-pan-head">Personal</div>
+                                <div class="row" >
+                                    <div class="col-md-5 col-pan-text"><i class="fa fa-mars-stroke" aria-hidden="true"></i> Gender</div>
+                                    <div class="col-md-7 col-pan-textb">Male</div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-5 col-pan-text"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Birthday</div>
+                                    <div class="col-md-7 col-pan-textb">Birthday</div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-5 col-pan-text"><i class="fa fa-calendar" aria-hidden="true"></i> Anniversary</div>
+                                    <div class="col-md-7 col-pan-textb">Anniversary</div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-5 col-pan-text"><i class="fa fa-flag" aria-hidden="true"></i> Nationality</div>
+                                    <div class="col-md-7 col-pan-textb">Nationality</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="collapse-panel">
+                                <div class="col-pan-head">Professional</div>
+                                <div class="row" >
+                                    <div class="col-md-5 col-pan-text"><i class="fa fa-building" aria-hidden="true"></i> Organization</div>
+                                    <div class="col-md-7 col-pan-textb">Total Environment</div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-5 col-pan-text"><i class="fa fa-briefcase" aria-hidden="true"></i> Department</div>
+                                    <div class="col-md-7 col-pan-textb">IT Solutions</div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-5 col-pan-text"><i class="fa fa-briefcase" aria-hidden="true"></i> Industry</div>
+                                    <div class="col-md-7 col-pan-textb">Real Estate</div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-5 col-pan-text"><i class="fa fa-credit-card" aria-hidden="true"></i> Value</div>
+                                    <div class="col-md-7 col-pan-textb">2.9 Crores</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="collapse-panel">
+                                <div class="col-pan-head">Interest</div>
+                                <div class="row" >
+                                    <div class="col-md-5 col-pan-text"><i class="fa fa-users" aria-hidden="true"></i> Communities</div>
+                                    <div class="col-md-7 col-pan-textb">Wind Mills of Your Mind</div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-5 col-pan-text"><i class="fa fa-paint-brush" aria-hidden="true"></i> Hobbies</div>
+                                   <!-- <div class="col-md-7 col-pan-textb">
+                                        <div class="tag-bg"><span class="fa fa-paint-brush" style="color:#ff6a00"> </span> Swimming  </div>
+                                        <div class="tag-bg"><span class="fa fa-paint-brush" style="color:#ff6a00"> </span> Music  </div>
+                                    </div>-->
+                                    <div class="col-md-7 col-pan-textb">Swimming, Music</div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-5 col-pan-text"><i class="fa fa-cutlery" aria-hidden="true"></i> Food</div>
+                                    <div class="col-md-7 col-pan-textb">Kabab, Biriyani</div>
+                                </div>
+                                <div style="border-bottom:dotted 1px #ccc;"></div>
+                                <div class="row" >
+                                    <div class="col-md-5 col-pan-text"><i class="fa fa-plane" aria-hidden="true"></i> Holiday</div>
+                                    <div class="col-md-7 col-pan-textb">Goa</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="collapse-panel">
+                                <div class="col-pan-head" style="text-align:left">Family</div>
+                                <div class="row" >
+                                    <div class="col-md-12">
+                                        <div class="tag-bg"><span class="fa fa-male"> </span> Ramesh (Father)  </div>
+                                        <div class="tag-bg"><span class="fa fa-female"> </span>  Radha (Mother) </div>
+                                        <div class="tag-bg"><span class="fa fa-male"> </span> Raghav (Brother)  </div>
+                                        <div class="tag-bg"><span class="fa fa-female"> </span>  Nayana (Sister) </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background-color:#3c8ece; padding:5px; color:#fff">Relationship With TE Group</div>
+                       <div class="row">
+                           <div class="col-md-6">
+                            <div class="collapse-panel">
+                                <div class="col-pan-head">Level</div>
+                                <div class="row" >
+                                    <div class="col-md-12">
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Friend of TE </div>
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> VIP </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                           <div class="col-md-6">
+                            <div class="collapse-panel">
+                                <div class="col-pan-head">Category</div>
+                                <div class="row" >
+                                    <div class="col-md-12">
+                                        <div class="tag-bg-live"><span class="fa fa-building"></span> Employee <i class="fa fa-key" style="padding:0 3px;"></i></div>
+                                        <div class="tag-bg-past"><span class="fa fa-home"></span> Vendor <i class="fa fa-star" style="padding:0 3px;"></i></div>
+                                        <div class="tag-bg"><span class="fa fa-building"> </span> Customer </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                           
+                       </div>
+
+                    <div style="background-color:#3c8ece; padding:5px; color:#fff">Customer Group</div>
+                       <div class="row">
+                           <div class="col-md-12">
+                            <div class="collapse-panel">
+                                <div class="row" >
+                                    <div class="col-md-12">
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Babshaw Group </div>
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Agarwal </div>
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Ambani </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>                       
+                           
+                       </div>
+
+                    <div style="background-color:#3c8ece; padding:5px; color:#fff">Marketing and Communication Group</div>
+                       <div class="row">
+                           <div class="col-md-12">
+                            <div class="collapse-panel">
+                                <div class="row" >
+                                    <div class="col-md-12">
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Project Launch </div>
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Corporate </div>
+                                        <div class="tag-bg"><span class="fa fa-users" style="color:#ff6a00"> </span> Diwali Gift Group </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>                       
+                           
+                       </div>
+
+                    <!--<br />
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-building pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt">ORGANIZATION</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 0 0; color:#000; font-weight:bold">Total Environment</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="glyphicon glyphicon-briefcase pull-left form-icon margin10" aria-hidden="true"></div><div class="form-labletxt"> DEPARTMENT</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 0 0; color:#000; font-weight:bold">IT</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="form-labletxt">TITLE</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 0 0; color:#000; font-weight:bold">CEO</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >                            
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-envelope pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">E-mail</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div style="padding:3px 10px; border-radius:3px; background-color:#eaeaea; margin:0 5px; float:left"><span class="fa fa-briefcase" style="color:#ff6a00"></span> anil.baradia@total Environment.com</div>
+                                                <div style="padding:3px 10px; border-radius:3px; background-color:#eaeaea; float:left"><span class="fa fa-home" style="color:#ff6a00"></span> anil.baradia@gmail.com</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >                            
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-phone pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">Phone</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div style="padding:3px 10px; border-radius:3px; background-color:#eaeaea; margin:0 5px; float:left"><span class="fa fa-briefcase" style="color:#ff6a00"></span> +91 9901177911</div>
+                                                <div style="padding:3px 10px; border-radius:3px; background-color:#eaeaea; float:left"><span class="fa fa-home" style="color:#ff6a00"></span> +91 9980652233</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >                            
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-globe pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">URL</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div style="padding:3px 10px; border-radius:3px; background-color:#eaeaea; margin:0 5px; float:left"><span class="fa fa-briefcase" style="color:#ff6a00"></span> http://www.totalenvironment.in/ </div>
+                                                <div style="padding:3px 10px; border-radius:3px; background-color:#eaeaea; float:left"><span class="fa fa-home" style="color:#ff6a00"></span> http://www.totalenvironment.in/ </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="row">                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >          
+                            <div style="background-color:#72afdf; padding:5px; color:#fff">Address</div><br />                  
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+                                        <div class="form-labletxt" style="text-align:left; ">                                                                                                                               
+                                           <div style="font-weight:bold; padding:5px; font-size:12pt; margin-bottom:5px; border-bottom:dotted 1px #ff6a00"><span class="fa fa-home" style="color:#ff6a00"></span> Home</div>
+                                             #53, 6th Main, 5th Cross,<br />
+                                        Hoodi Circle,<br />
+                                        Bangalotre 560036
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+                                        <div class="form-labletxt" style="text-align:left;  border:none">                                                                                                                               
+                                           <div style="font-weight:bold; padding:5px; font-size:12pt; margin-bottom:5px; border-bottom:dotted 1px #ff6a00"><span class="fa fa-briefcase" style="color:#ff6a00"></span> Work</div>
+                                            Imagine, No 78,<br />
+                                            ITPL Main Road, EPIP Zone, Whitefield, Bangalore <br />Bangalore 560066
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                                                      
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >                            
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-user pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">Relationship</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                 <a href="#" data-toggle="tooltip" title="Residential Real Estate"><div class="tag-bg"><span class="fa fa-building"> </span> Customer </div></a>
+                                                <a href="#" data-toggle="tooltip" title="Commercial Real Estate"><div class="tag-bg-live"><span class="fa fa-building"></span> Employee <i class="fa fa-key" style="padding:0 3px;"></i></div></a>
+                                                <a href="#" data-toggle="tooltip" title="Resorts"><div class="tag-bg-past"><span class="fa fa-home"></span> Vendor <i class="fa fa-star" style="padding:0 3px;"></i></div></a>
+                                                <a href="#" data-toggle="tooltip" title="F&B"><div class="tag-bg"><span class="fa fa-cutlery"> </span> Customer <i class="fa fa-exclamation" style="padding:0 3px;"></i></div></a>
+
+                                                <a href="#" data-toggle="tooltip" title="Music"><div class="tag-bg"><span class="fa fa-music"> </span> Customer </div></a>
+                                                <a href="#" data-toggle="tooltip" title="Property Management"><div class="tag-bg"><span class="fa fa-cogs"> </span> Customer </div></a>
+                                                <a href="#" data-toggle="tooltip" title="Furniture"><div class="tag-bg"><span class="fa fa-home"> </span> Customer </div></a>
+                                                <a href="#" data-toggle="tooltip" title="Education"><div class="tag-bg"><span class="fa fa-university"> </span> Customer </div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                 
+                                                      
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-users pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">Groups</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Bob Shah Group </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Rahul Agarwal Group </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Windmills of Your Mind Group </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                                                  
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-cutlery pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">Food Preferences</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Vegetarian  </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span>  Teetotaler </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Gluten Free  </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span>  Jain </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Beer preference  </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span>  Non Smoking </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                  
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-music pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">Interest</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Swimming  </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span>  Music </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                       
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-envelope pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">Mailing Lists</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Corporate Communicatoin </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> New Project Launch </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span>  Corporate Gift </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                      
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-envelope pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt" style="padding:12px;">SMS Lists</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 8px 0; color:#000;">
+                                            <div class="row">
+                                                <div class="tag-bg"><span class="fa fa-user"> </span> Swimming  </div>
+                                                <div class="tag-bg"><span class="fa fa-user"> </span>  Music </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <br />
+                    <div style="background-color:#72afdf; padding:5px; color:#fff">Notes</div>
+                    <div style="margin:15px 0; padding-bottom:5px; border-bottom: dotted 1px #808080">
+                        <div>Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet </div>
+                        <div class="text-right" style="color:#2e97e9">By Name (who wrote)</div>
+                    </div>
+
+                    <div style="margin:15px 0; padding-bottom:5px; border-bottom: dotted 1px #808080">
+                        <div>Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet </div>
+                        <div class="text-right" style="color:#2e97e9">By Name (who wrote)</div>
+                    </div>
+
+                    <br />
+                    <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                            <div class="formbg">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-mars-stroke pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt">GENDER</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                         <div style="padding: 8px 0 0 0; color:#000; font-weight:bold">Male</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-birthday-cake pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt">BIRTHDAY</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 0 0; color:#000; font-weight:bold">08-08-1980</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-calendar pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt">ANNIVERSARY</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div style="padding: 8px 0 0 0; color:#000; font-weight:bold">12-05-2010</div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="formbg-next">
+                                <div class="row formbg-align">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" >
+                                        <div class="fa fa-user pull-left form-icon margin10" aria-hidden="true"></div>
+                                        <div class="form-labletxt">Family</div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-8" >
+                                        <div class="tag-bg"><span class="fa fa-male"> </span> Ramesh (Father)  </div>
+                                        <div class="tag-bg"><span class="fa fa-female"> </span>  Radha (Mother) </div>
+                                        <div class="tag-bg"><span class="fa fa-user"> </span> Vishwa (Friends)  </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    
+                </div>
+            </div>
+        </div>
+    
+							
+							</div>
+<!-- Notes End -->							
+							
+							</div>
+							</div>
+							</div>
+							</div>
+							</div>
+							
+				
+			</section>
+		</div>
+
+	</div>
+</div>
+
+<!-- Address -->
+<div class="modal fade" id="address" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top:100px;">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <div class="modal-header" style="background-color:#8ba927;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="headtxt-big" style="color:#fff;">Address</div>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-4" style="border-right:dotted 1px #ccc;">
+                    <div class="heading" style="color:#3c8ece">Address 1</div>
+                    <div style="border-bottom:dotted 1px #ccc; margin:5px 0;"></div>
+                    <div class="contenttxt1">
+                            #53, 6th Main, 5th Cross,<br />
+                        Hoodi Circle,<br />
+                        Bangalotre <span style="font-family: 'MetaNormal-Roman';"> 560036</span>
+                    </div>
+                </div>
+                <div class="col-md-4" style="border-right:dotted 1px #ccc;">
+                    <div class="heading" style="color:#3c8ece">Address 2</div>
+                    <div style="border-bottom:dotted 1px #ccc; margin:5px 0;"></div>
+                    <div class="contenttxt1">
+                            Imagine, No 78,<br />
+ITPL Main Road, EPIP Zone, Whitefield, Bangalore <br />
+Bangalore 560066<span style="font-family: 'MetaNormal-Roman';"> 560036</span>
+                    </div>
+                </div>
+                <div class="col-md-4" style="border-right:dotted 1px #ccc;">
+                    <div class="heading" style="color:#3c8ece">Address 3</div>
+                    <div style="border-bottom:dotted 1px #ccc; margin:5px 0;"></div>
+                    <div class="contenttxt1">
+                            #53, 6th Main, 5th Cross,<br />
+                        Hoodi Circle,<br />
+                        Bangalotre <span style="font-family: 'MetaNormal-Roman';"> 560036</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer" style="text-align:center" >
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Create Business Card -->
+<div class="modal fade modal-admin" id="export" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top:100px;>
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="org-headtxt-big">Export Contacts</div>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="heading">Select the contacts you would like to export:</div>
+                    <div class="marginspace10">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> <span class="headtxt">All Contacts</span>
+                        </label>
+                    </div>
+                    <div class="marginspace10">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="Radio1" value="option1"> <span class="headtxt">Selected Contacts (1)</span>
+                        </label>
+                    </div>
+                    <div class="marginspace10">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="Radio2" value="option1"> <span class="headtxt"> Tag</span>
+                        </label>
+                    </div>
+                    <div class="marginspace10">
+                        <select class="form-control">
+                          <option>Tag Name 1</option>
+                          <option>Tag Name 2</option>
+                          <option>Tag Name 3</option>
+                        </select>
+                   </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="heading">Select the type of export you would like</div>
+                    <div class="marginspace10">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="Radio3" value="option1"> <span class="headtxt"><b>Google CSV Format</b></span>
+                            <div class="padding5">(for importing into a Google account)</div>
+                        </label>                        
+                    </div>
+                    <div class="marginspace10">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="Radio4" value="option1"> <span class="headtxt"><b>Outlook CSV Format</b></span>
+                            <div class="padding5">(for importing into Outlook or another application)</div>
+                        </label>
+                    </div>
+                    <div class="marginspace10">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="Radio5" value="option1"> <span class="headtxt"><b> vCard format</b></span>
+                            <div class="padding5">(for importing into Apple Address Book or another application)</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer" style="text-align:center" >
+        <button type="button" class="btn btn-warning">Export</button>
+        </div>
+    </div>
+    </div>
+</div>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+        })
+    </script>
+
+    <script>
+         $('.modal-admin').css('width', '60%');
+         $('.modal-admin').css('margin', '100px auto 100px auto');
+         $('.modal-admin').modal('hide')
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip({
+                placement: 'top'
+            });
+        });
+</script>
+
+</body>
+
+</html>
+
+
+
+
+

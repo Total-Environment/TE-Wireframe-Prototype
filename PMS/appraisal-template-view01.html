@@ -1,0 +1,685 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+   .badge-box {
+    background-color: #eae4dc;
+    padding: 3px 5px;
+    margin: 5px;
+    border-radius: 3px;
+}
+</style>
+    <script>
+
+    </script>
+</head>
+<body style="background-color:#f9f8f8">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <header id="headerdiv"></header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Company KRAs</li>
+            </ol>
+            <div class="head-panel-grey">
+                <h4>Company KRAs
+                    <span class="pull-right" style="    margin-top: -5px;">
+                        <button type="submit" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal"  style="border-color:#ccc; font-weight:bold"><span style="color:#8ba927" class="glyphicon glyphicon-plus"></span> &nbsp;KRA</button>
+                    </span>
+                </h4>
+
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Appraisal Period</label>
+                        <input type="email" class="form-control" id="Email2" placeholder="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Applicable Companies</label>
+                        <select class="form-control">
+                            <option>Companies drop Down Auto Search and multy select</option>
+                            <option>Company l</option>
+                            <option>Company 2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">&nbsp;</label>
+                        <div style="background-color:#fff; padding:6px 5px; border:solid 1px #cccccc; border-radius:3px">
+                            <span class="badge-box"> Company 1 <span class="glyphicon glyphicon-remove" style="font-size:8pt; color:#808080" aria-hidden="true"></span></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>   
+            <hr style="margin:0 0 15px 0 " />
+            <div class="row" style="margin:5px">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#fff">
+                    <div class="row" style="margin:5px">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" >Weight:</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                            
+                        </div>  
+                    </div>
+                </div> 
+            </div>
+            <div class="row" style="background-color:#bae5fc; margin:5px; border:solid 1px #000">                
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#3099d2; border-bottom: solid 1px #000;">
+                    <div class="row" style="margin:5px">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#fff; font-weight:bold">
+                                
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" ><span class="glyphicon glyphicon-th-large" style="color:#fff" aria-hidden="true"></span>&nbsp; CORPORATE</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#fff; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit"style="color:#fff" aria-hidden="true"></span></div>
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="    margin-top: 2px;">
+                                    <button type="submit" class="btn btn-default btn-sm pull-right" data-toggle="modal" data-target="#myModal1"  style="border-color:#ccc; font-weight:bold"><span style="color:#8ba927" class="glyphicon glyphicon-plus"></span> &nbsp;KPI</button>
+                                </div>   
+                           </div>                 
+                        </div>  
+                    </div>
+                </div>    
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-bottom:dotted 1px #000;padding: 0 34px 0 34px;">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:5%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Achieve Sales (Cr)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <span class="glyphicon glyphicon-plus" style="padding-left:10px" aria-hidden="true"></span></div>          
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-bottom:dotted 1px #000;padding: 0 34px 0 34px; background-color:#ddf1fb">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:7%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Hand over Units (Nos)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <span class="glyphicon glyphicon-plus" style="padding-left:10px" aria-hidden="true"></span></div>                                
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-bottom:dotted 1px #000;padding: 0 34px 0 34px; background-color:#ddf1fb">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:7%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Collections (Cr)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <span class="glyphicon glyphicon-plus" style="padding-left:10px" aria-hidden="true"></span></div>                                 
+                        </div>  
+                    </div>
+                </div>
+                 
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0 34px 0 34px;">
+                    <div class="row" style="background-color:#bae5fc;">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:5%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Construct space (Square feet)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <span class="glyphicon glyphicon-plus" style="padding-left:10px" aria-hidden="true"></span></div>                                 
+                        </div>   
+                    </div>
+                </div> 
+                               
+            </div>
+
+            <div class="row" style="background-color:#3099d2; margin:5px; border:solid 1px #000">                
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#3099d2; border-bottom: solid 1px #000;">
+                    <div class="row" style="margin:5px">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#fff; font-weight:bold">
+                                
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" ><span class="glyphicon glyphicon-th-large" style="color:#fff" aria-hidden="true"></span>&nbsp; DELIVERY</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#fff; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" style="color:#fff" aria-hidden="true"></span></div>
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="    margin-top: 2px;">
+                                    <button type="submit" class="btn btn-default btn-sm pull-right" data-toggle="modal" data-target="#myModal1"  style="border-color:#ccc; font-weight:bold"><span style="color:#8ba927" class="glyphicon glyphicon-plus"></span> &nbsp;KPI</button>
+                                </div>   
+                           </div>                 
+                        </div>  
+                    </div>
+                </div>    
+                <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-bottom:dotted 1px #000;padding: 0 34px 0 34px;">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:5%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Achieve Sales (Cr)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></div>                       
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-bottom:dotted 1px #000;padding: 0 34px 0 34px; background-color:#ecf4fb">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:7%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Hand over Units (Nos)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></div>                       
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-bottom:dotted 1px #000;padding: 0 34px 0 34px; background-color:#ecf4fb">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:7%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Collections (Cr)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></div>                       
+                        </div>  
+                    </div>
+                </div>
+                 
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0 34px 0 34px;">
+                    <div class="row" style="background-color:#d8e8f5;">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:5%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Construct space (Square feet)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></div>                       
+                        </div>   
+                    </div>
+                </div>--> 
+                               
+            </div>
+
+            <div class="row" style="background-color:#3099d2; margin:5px; border:solid 1px #000">                
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#3099d2; border-bottom: solid 1px #000;">
+                    <div class="row" style="margin:5px">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#fff; font-weight:bold">
+                                
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" ><span class="glyphicon glyphicon-th-large" style="color:#fff" aria-hidden="true"></span>&nbsp; QUALITY</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#fff; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" style="color:#fff" aria-hidden="true"></span></div>
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="    margin-top: 2px;">
+                                    <button type="submit" class="btn btn-default btn-sm pull-right" data-toggle="modal" data-target="#myModal1"  style="border-color:#ccc; font-weight:bold"><span style="color:#8ba927" class="glyphicon glyphicon-plus"></span> &nbsp;KPI</button>
+                                </div>   
+                           </div>                 
+                        </div>  
+                    </div>
+                </div>    
+                <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-bottom:dotted 1px #000;padding: 0 34px 0 34px;">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:5%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Achieve Sales (Cr)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></div>                       
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-bottom:dotted 1px #000;padding: 0 34px 0 34px; background-color:#e8e9ef">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:7%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Hand over Units (Nos)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></div>                       
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-bottom:dotted 1px #000;padding: 0 34px 0 34px; background-color:#e8e9ef">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:7%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Collections (Cr)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></div>                       
+                        </div>  
+                    </div>
+                </div>
+                 
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0 34px 0 34px;">
+                    <div class="row" style="background-color:#d7d8de;">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:5%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Construct space (Square feet)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></div>                       
+                        </div>   
+                    </div>
+                </div> -->
+                               
+            </div>
+
+            <div class="row" style="background-color:#3099d2; margin:5px; border:solid 1px #000">                
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#3099d2; border-bottom: solid 1px #000;">
+                    <div class="row" style="margin:5px">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#fff; font-weight:bold">
+                                
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" ><span class="glyphicon glyphicon-th-large" style="color:#fff" aria-hidden="true"></span>&nbsp; CUSTOMER</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#fff; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" style="color:#fff" aria-hidden="true"></span></div>
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="    margin-top: 2px;">
+                                    <button type="submit" class="btn btn-default btn-sm pull-right" data-toggle="modal" data-target="#myModal1"  style="border-color:#ccc; font-weight:bold"><span style="color:#8ba927" class="glyphicon glyphicon-plus"></span> &nbsp;KPI</button>
+                                </div>   
+                           </div>                 
+                        </div>  
+                    </div>
+                </div>    
+                <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-bottom:dotted 1px #000;padding: 0 34px 0 34px;">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:5%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Achieve Sales (Cr)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></div>                       
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-bottom:dotted 1px #000;padding: 0 34px 0 34px; background-color:#ecf4fb">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:7%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Hand over Units (Nos)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></div>                       
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border-bottom:dotted 1px #000;padding: 0 34px 0 34px; background-color:#ecf4fb">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:7%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span> Collections (Cr)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></div>                       
+                        </div>  
+                    </div>
+                </div>
+                 
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0 34px 0 34px;">
+                    <div class="row" style="background-color:#d8e8f5;">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" style="padding-left:5%" ><span class="glyphicon glyphicon-play" style="color:#ff6a00; font-size: 8pt;" aria-hidden="true"></span>Construct space (Square feet)</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="border-right:solid 1px #9c9c9c">
+                            <div class="row" style="margin:0 5px 5px 5px; padding:5px 0; color:#000; font-weight:bold">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:right">100</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div style="text-align:right; padding-top:8px"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></div>                       
+                        </div>   
+                    </div>
+                </div> -->
+                               
+            </div>
+            
+
+        </div>        
+    </div>
+    
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="z-index:10000">
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#8ba927; color:#fff">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add KRA</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">KRA</label>
+                    <input type="email" class="form-control" id="Email1" placeholder="">
+                </div>                
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                 <div class="form-group">
+                    <div style="padding: 5px 0;">Editable</div>
+                    <div class="btn-group btn-toggle">
+                        <button class="btn btn-xs btn-default">Yes</button>
+                        <button class="btn btn-xs btn-warning active">No</button>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Description</label>
+                    <textarea class="form-control" placeholder=""></textarea>
+                </div>                
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Weight</label>
+                    <input type="email" class="form-control" id="Email3" placeholder="">
+                </div>                
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                 <div class="form-group">
+                    <div style="padding: 5px 0;">Editable</div>
+                    <div class="btn-group btn-toggle">
+                        <button class="btn btn-xs btn-default">Yes</button>
+                        <button class="btn btn-xs btn-success active">No</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+    <div class="modal fade bs-example-modal-lg" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="z-index:10000">
+
+  <div class="modal-dialog" style="width: 80%;" >
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#8ba927; color:#fff">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add KPI</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">KRA</label>
+                    <select class="form-control">
+                            <option>Corporate</option>
+                            <option>Corporate 1</option>
+                            <option>Corporate 2</option>
+                        </select>
+                </div>                
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">KPI</label>
+                    <input type="email" class="form-control" id="Email4" placeholder="">
+                </div>                
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                 <div class="form-group">
+                    <div style="padding: 5px 0;">Editable</div>
+                    <div class="btn-group btn-toggle">
+                        <button class="btn btn-xs btn-default">Yes</button>
+                        <button class="btn btn-xs btn-success active">No</button>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Description</label>
+                    <textarea class="form-control" placeholder=""></textarea>
+                </div>                
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Weight</label>
+                    <input type="email" class="form-control" id="Email5" placeholder="">
+                </div>                
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                 <div class="form-group">
+                    <div style="padding: 5px 0;">Editable</div>
+                    <div class="btn-group btn-toggle">
+                        <button class="btn btn-xs btn-default">Yes</button>
+                        <button class="btn btn-xs btn-success active">No</button>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Value</label>
+                    <input type="email" class="form-control" id="Email6" placeholder="">
+                </div>                
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                 <div class="form-group">
+                    <div style="padding: 5px 0;">Editable</div>
+                    <div class="btn-group btn-toggle">
+                        <button class="btn btn-xs btn-default">Yes</button>
+                        <button class="btn btn-xs btn-success active">No</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+    <!-- /.modal -->
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+<script>
+    $('.btn-toggle').click(function () {
+        $(this).find('.btn').toggleClass('active');
+
+        if ($(this).find('.btn-primary').size() > 0) {
+            $(this).find('.btn').toggleClass('btn-primary');
+        }
+        if ($(this).find('.btn-danger').size() > 0) {
+            $(this).find('.btn').toggleClass('btn-danger');
+        }
+        if ($(this).find('.btn-success').size() > 0) {
+            $(this).find('.btn').toggleClass('btn-success');
+        }
+        if ($(this).find('.btn-info').size() > 0) {
+            $(this).find('.btn').toggleClass('btn-info');
+        }
+
+        $(this).find('.btn').toggleClass('btn-default');
+
+    });
+
+    $('form').submit(function () {
+        alert($(this["options"]).val());
+        return false;
+    });
+</script>
+</body>
+</html>

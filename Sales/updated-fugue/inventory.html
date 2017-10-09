@@ -1,0 +1,577 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/master-style.css">
+<link rel="stylesheet" type="text/css" href="css/tefont.css"/>
+
+<script src="js/portfolio/portfolio-script.js"></script>
+<link href="css/portfolio/inventory-style.css" rel="stylesheet" />
+<script src="js/portfolio/enscroll-0.6.2.min.js" rel="stylesheet"></script>
+<!-- print style -->
+<link href="css/portfolio/print.css" media="print" rel="stylesheet" />
+<link href="css/portfolio/print.css" media="screen" rel="stylesheet" />
+<!-- print style -->
+<script type="text/javascript" src="js/portfolio/inventory-script.js"></script>
+
+<!-- Anything Slider optional plugins -->
+ <script src="js/portfolio/jquery.easing.1.2.js"></script>
+ <!-- Anything Slider -->
+ <link href="css/portfolio/anythingslider.css" rel="stylesheet">
+ <script src="js/portfolio/jquery.anythingslider.min.js"></script>
+ 
+</head>
+<body>
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+
+    <header>
+		<div class="gr-clr"></div>
+            <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+						    <li><a href="dashboard.html">Dashboard </a></li>
+  						    <li class="active"><a href="inventory.html">Portfolio <span class="sr-only">(current)</span> </a></li>
+							<li ><a href="lead-data-view.html">Lead </a></li>
+                           
+                            <li><a href="termsheet.html">Sales Tracker </a></li>
+							<li><a href="collections.html">Collections </a></li>
+							<li><a href="invoices.html">Invoices </a></li>
+							<li><a href="#">Tracking </a></li>
+							<li><a href="#">Business Partner </a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Change Order</a></li>
+                                    <li><a href="#">Cancellation</a></li>
+                                    <li><a href="#">Transfer</a></li>
+									<li><a href="#">Customisation</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Products</a></li>
+                                     <li><a href="#">Business Segment</a></li>
+                                      <li><a href="#">Specification</a></li>
+									  <li><a href="#">T&amp;C</a></li>
+									  <li><a href="#">Schedule</a></li>
+									  <li><a href="#">Rules</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">User Management</a></li>
+                                    <li><a href="#">Roles Management</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+	</header>
+
+	<!--header-->
+<!--Wrapper-->
+  
+<div class="wrapper" style="background-color:#fff;">
+
+<div class="row" style="margin:0;">
+<section>
+<!-- portfolio-list page start -->
+<div class="portfolio-list-page">
+        <div style="margin-top:10px;">
+		<!-- container start -->
+			 <div class="container" style="width:100%; margin:0; padding:0;">
+                <div class="row">
+                    <div class="col-md-12">
+					
+					<div class="title-panel"> Projects</div>
+						<div class="container" style="margin:0 auto; width:98%">
+						<!-- inventory project list view start -->
+							<div id="categories-list" class="row list-group inventorylist">
+							<!-- inventory proj item list start -->
+								<div class="item-list  col-md-4">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-3 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/A-Few-Honest-Words.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-9" style="margin:0;padding:0 0 0 10px;">
+									<table class = "table projectinfotable">
+   									    <thead>
+											  <tr>
+												 <th>Unit</th>
+												 <th>Area</th>
+												 <th>Value</th>
+											  </tr>
+										   </thead>
+										   <tbody>
+												<tr>
+												 <td>5</td>
+												 <td>21,819</td>
+												 <td>16.83</td>
+											  </tr>
+											   <tr>
+												 <td>5</td>
+												 <td>21,819</td>
+												 <td>16.83</td>
+											  </tr>
+											   <tr>
+         <td>0</td>
+         <td>0</td>
+		 <td>0</td>
+      </tr>
+										   </tbody>
+										</table>
+										</div>
+									</div>
+								</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-4">
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-3 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/After-the-Rain.png" alt="" />
+								</div>
+								</div>
+									<div class="col-md-9" style="margin:0;padding:0 0 0 10px;">
+									<table class = "table projectinfotable">
+   
+   <thead>
+      <tr>
+         <th>Unit</th>
+         <th>Area</th>
+		 <th>Value</th>
+      </tr>
+   </thead>
+   
+   <tbody>
+      <tr>
+         <td>363</td>
+         <td>13,59,918</td>
+		 <td>	1,660.16</td>
+      </tr>
+      
+       <tr>
+         <td>87</td>
+         <td>	3,27,384</td>
+		 <td>	338.2</td>
+      </tr>
+	   <tr>
+         <td>276</td>
+         <td>10,32,534</td>
+		 <td>	1,321.96</td>
+      </tr>
+   </tbody>
+	
+</table>
+</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-4">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-3 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/Learning-to-Fly.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-9" style="margin:0;padding:0 0 0 10px;">
+									<table class = "table projectinfotable">
+  
+   
+   <thead>
+      <tr>
+         <th>Unit</th>
+         <th>Area</th>
+		 <th>Value</th>
+      </tr>
+   </thead>
+   
+   <tbody>
+      <tr>
+         <td>212</td>
+         <td>7,01,876</td>
+		 <td>840.53</td>
+      </tr>
+      
+       <tr>
+         <td>70</td>
+         <td>	2,04,615</td>
+		 <td>	212.95</td>
+      </tr>
+	   <tr>
+         <td>142</td>
+         <td>	4,97,261</td>
+		 <td>	627.58</td>
+      </tr>
+   </tbody>
+	
+</table>
+</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-4">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-3 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/Windmills-of-Your-Mind.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-9" style="margin:0;padding:0 0 0 10px;">
+									<table class = "table projectinfotable">
+  
+   
+   <thead>
+      <tr>
+         <th>Unit</th>
+         <th>Area</th>
+		 <th>Value</th>
+      </tr>
+   </thead>
+   
+   <tbody>
+      <tr>
+         <td>392</td>
+         <td>17,08,066</td>
+		 <td>1237.1</td>
+      </tr>
+      
+       <tr>
+         <td>342</td>
+         <td>14,42,076</td>
+		 <td>907.57</td>
+      </tr>
+	   <tr>
+         <td>50</td>
+         <td>2,65,990</td>
+		 <td>329.44</td>
+      </tr>
+   </tbody>
+	
+</table>
+</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-4">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-3 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/Van-Goghs-Garden.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-9" style="margin:0;padding:0 0 0 10px;">
+									<table class = "table projectinfotable">
+  
+   
+   <thead>
+      <tr>
+         <th>Unit</th>
+         <th>Area</th>
+		 <th>Value</th>
+      </tr>
+   </thead>
+   
+   <tbody>
+      <tr>
+         <td>19</td>
+         <td>1,06,650</td>
+		 <td>229.42</td>
+      </tr>
+      
+       <tr>
+         <td>16</td>
+         <td>90,187</td>
+		 <td>182.87</td>
+      </tr>
+	   <tr>
+         <td>3</td>
+         <td>16,463</td>
+		 <td>46.55</td>
+      </tr>
+   </tbody>
+	
+</table>
+</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-4">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-3 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/Pursuit-of-a-Radical-Rhapsody.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-9" style="margin:0;padding:0 0 0 10px;">
+									<table class = "table projectinfotable">
+  
+   
+   <thead>
+      <tr>
+         <th>Unit</th>
+         <th>Area</th>
+		 <th>Value</th>
+      </tr>
+   </thead>
+   
+   <tbody>
+      <tr>
+         <td>909</td>
+         <td>31,08,956</td>
+		 <td>1,371.6</td>
+      </tr>
+      
+       <tr>
+         <td>204</td>
+         <td>5,92,659</td>
+		 <td>418.11</td>
+      </tr>
+	   <tr>
+         <td>705</td>
+         <td>25,16,297</td>
+		 <td>953.49</td>
+      </tr>
+   </tbody>
+	
+</table>
+</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-4">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-3 item-img">
+
+								<div class="item-data">
+										<img class="group list-group-image" src="images/The-Meadow-Dance.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-9" style="margin:0;padding:0 0 0 10px;">
+									<table class = "table projectinfotable">
+  
+   
+   <thead>
+      <tr>
+         <th>Unit</th>
+         <th>Area</th>
+		 <th>Value</th>
+      </tr>
+   </thead>
+   
+   <tbody>
+      <tr>
+         <td>83</td>
+         <td>3,73,286</td>
+		 <td>349.63</td>
+      </tr>
+      
+       <tr>
+         <td>20</td>
+         <td>91,502</td>
+		 <td>77.29</td>
+      </tr>
+	   <tr>
+         <td>63</td>
+         <td>2,81,784</td>
+		 <td>272.34</td>
+      </tr>
+   </tbody>
+	
+</table>
+</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-4">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-3 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/Songs-from-the-Wood.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-9" style="margin:0;padding:0 0 0 10px;">
+									<table class = "table projectinfotable">
+  
+   
+   <thead>
+      <tr>
+         <th>Unit</th>
+         <th>Area</th>
+		 <th>Value</th>
+      </tr>
+   </thead>
+   
+   <tbody>
+      <tr>
+         <td>141</td>
+         <td>7,77,922</td>
+		 <td>1,117.64</td>
+      </tr>
+      
+       <tr>
+         <td>2</td>
+         <td>9,032</td>
+		 <td>9.97</td>
+      </tr>
+	   <tr>
+         <td>139</td>
+         <td>7,63,890</td>
+		 <td>1,107.67</td>
+      </tr>
+   </tbody>
+	
+</table>
+</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+								<!-- inventory proj item list start -->
+								<div class="item-list  col-md-4">
+								
+								<div class="row" style="margin:0; padding:0">
+								<div class="item-box">
+								<div class="col-md-3 item-img">
+								<div class="item-data">
+										<img class="group list-group-image" src="images/The-Magic-Faraway-Tree.png" alt="" />
+									</div>
+									
+									</div>
+									<div class="col-md-9" style="margin:0;padding:0 0 0 10px;">
+									<table class = "table projectinfotable">
+  
+   
+   <thead>
+      <tr>
+         <th>Unit</th>
+         <th>Area</th>
+		 <th>Value</th>
+      </tr>
+   </thead>
+   
+   <tbody>
+      <tr>
+         <td>431</td>
+         <td>14,15,084</td>
+		 <td>1,101.15</td>
+      </tr>
+      
+       <tr>
+         <td>99</td>
+         <td>3,38,865</td>
+		 <td>219.56</td>
+      </tr>
+	   <tr>
+         <td>332</td>
+         <td>10,76,219</td>
+		 <td>881.59</td>
+      </tr>
+   </tbody>
+	
+</table>
+</div>
+									</div>
+									</div>
+							</div>
+								<!-- inventory proj item list end -->	
+									
+							</div>
+						<!--  inventory project list view end -->
+					
+							<div class="clearfix"></div>
+							<!-- <div style="border-bottom:dotted 1px #ccc;width: 97%;margin:0 auto 10px auto;padding-bottom: 10px;"></div> -->
+						</div>
+					</div>
+					</div>
+				</div>
+		<!-- container end -->		
+			</div>
+			</div> 
+<!-- portfolio-list page end -->
+
+</section>
+</div>
+</div>
+
+
+ 
+
+
+</div>
+
+</body>
+</html>
+
+

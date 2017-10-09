@@ -1,0 +1,1791 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--  -->
+<link rel="shortcut icon" href="images/telogomin.jpg" />
+<title>Details</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://summernote.org/bower_components/summernote/dist/summernote.css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href='css/scheduler.min.css' rel='stylesheet' />
+<link href='css/fullcalendar.css' rel='stylesheet' />
+<link href="css/lead/monthly.css" rel="stylesheet" />
+<!-- print style -->
+<link href="css/lead/print.css" media="print" rel="stylesheet" />
+<link href="css/lead/print.css" media="screen" rel="stylesheet" />
+<!-- print style -->
+<link href="css/datepicker.css" rel="stylesheet" />
+<link href="css/lead/termsheet-style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src='js/moment.min.js'></script>
+<script type="text/javascript" src="http://summernote.org/bower_components/summernote/dist/summernote.js"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src='js/fullcalendar.min.js'></script>
+<script type="text/javascript" src='js/scheduler.min.js'></script>
+<script type="text/javascript" src="js/lead/monthly.js"></script>
+<script src="js/lead/tableHeadFixer.js"></script>
+<script type="text/javascript" src="js/jquery.ddslick.min.js"></script>
+
+<script type="text/javascript" src="js/lead/termsheet-script.js"></script>
+</head>
+<body style="background-color:#eae4dc !important; color:#000 !important;">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+     <header>
+		<div class="gr-clr"></div>
+            <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+						   <li><a href="dashboard.html">Dashboard </a></li>
+  						    <li ><a href="inventory.html">Portfolio <span class="sr-only">(current)</span> </a></li>
+							<li ><a href="lead-data-view.html">Lead </a></li>
+                            <li class="active"><a href="termsheet.html">Sales Tracker <span class="sr-only">(current)</span></a></li>
+							
+							<li><a href="collections.html">Collections </a></li>
+							<li><a href="invoices.html">Invoices </a></li>
+							<li><a href="#">Tracking </a></li>
+							<li><a href="#">Business Partner </a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Change Order</a></li>
+                                    <li><a href="#">Cancellation</a></li>
+                                    <li><a href="#">Transfer</a></li>
+									<li><a href="#">Customisation</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Products</a></li>
+                                     <li><a href="#">Business Segment</a></li>
+                                      <li><a href="#">Specification</a></li>
+									  <li><a href="#">T&amp;C</a></li>
+									  <li><a href="#">Schedule</a></li>
+									  <li><a href="#">Rules</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">User Management</a></li>
+                                    <li><a href="#">Roles Management</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+	</header>
+<!--header-->
+<!--Wrapper-->
+	<div class="container wrapper" style="background: #fff;">
+		<div class="row">
+			<section>
+				<div style="margin: 65px auto 0 auto;">
+					<div class="title-panel">Sales Tracker </div>
+						<!-- Tabs start -->
+						 <div style="width:98%; margin:0 auto;">
+						 <div class="box-info-container" id="LeadDetails01">
+								<div class="box-left-border">
+								<div class="box-info">
+							
+								
+									<div class="col-md-12 paddingnone">
+									<div class="col-md-4">
+										<div class="box-personname">Srikanth Akula</div>
+</div>
+<div class="col-md-4 "><div class="box-personmailnew"><i class="fa fa-envelope" style="padding-right:4px;" aria-hidden="true"></i> manjunath@gmail.com</div>
+</div>
+<div class="col-md-4 pull-right" >
+<div class="box-personphonenew "><i class="fa fa-phone" style="padding-right:4px;" aria-hidden="true"></i>+91 97430 24532</div>
+											</div>
+			
+
+						</div>
+								<div class="clearfix"></div>
+							<div class="box-sourcenote">	
+									<div class="col-md-3 paddingnone">
+								<div class="box-otherdetailsnew"> Sales Consultant : <span>Manjunath Ramesh</span></div>
+								</div>
+								<div class="col-md-1 paddingnone">
+								<div class="box-otherdetailsnew">	Unit : 3084</div></div>
+								<div class="col-md-2 paddingnone">
+								<div class="box-otherdetailsnew text-right"> Specification : <span class="specdetals bgcolor_f79647">Orange</span></div>
+								</div>
+								<div class="col-md-2 paddingnone">
+								<div class="box-otherdetailsnew text-right"> Consideration : 1,99,07,500</div>
+								</div>
+								<div class="col-md-2 paddingnone">
+								<div class="box-otherdetailsnew text-right"> Total Receivable : 1,59,07,500</div>
+								</div>
+								<div class="col-md-2 paddingnone">
+								<div class="box-otherdetailsnew text-right"> Total Payable : 3,99,07,500</div>
+								</div>
+								</div>
+								
+								
+								
+								</div>
+								<div class="clearfix"></div>	
+							</div>
+							
+							</div>
+							
+							<div class="clearfix"></div>
+							
+							<div class="col-md-12 padnone">
+							<div class="title-panel">Termsheet</div>
+							<div class="col-md-3 padnone" >
+									<ul class="nav nav-pills nav-stacked strack">
+									<li ><a href="salestracker-soa.html">SOA</a></li>
+									<li class="active"><a href="salestracker-termsheet.html">Termsheet</a></li>
+									<li ><a href="salestracker-cds.html">Customer Data Sheet</a></li>
+									<li ><a href="salestracker-collections.html">Collections</a></li>
+									<li><a href="salestracker-invoices.html">Invoices</a></li>
+									<li ><a href="salestracker-agreement.html">Agreement</a></li>
+									<li class="subsec"><a>Transaction <span class="pull-right plus_minus">+</span></a>
+									<ul class="submenu">
+										<li><a>Change Order</a></li>
+										<li><a>Cancellation</a></li>
+										<li><a>Transfer</a></li>
+										<li><a>Refund</a></li>
+										<li><a>Delay Compensation</a></li>
+									</ul>
+									
+									</li>
+									<li><a>Document</a></li>
+									<li><a>Hand Over</a></li>
+									<li><a>Car Park Allocation</a></li>
+									<li><a href="salestracker-notes.html">Notes</a></li>
+									<li  ><a href="salestracker-followups.html">Followups</a></li>
+								</ul>
+						
+							</div>
+							<div class="col-md-9 padnone">
+							<div class="salestracker_container">
+							
+<!-- Termsheet Start-->						
+							<div class="salestracker_content" style="background-color:#cacaca;">
+							<div>
+							
+							<div class="detailpgtermsheet">
+							
+							<div class="detailspgterm" >
+						
+							<div class="pull-right pdfgen" style="margin:5px -36px 5px 0;">
+							<button class="btn btn-sm btn-default print-link no-print" onclick="javascript:printDiv('printedittable')">
+                Print  <i class="fa fa-print" aria-hidden="true"></i> 
+                </button></div>
+							 <div id="printedittable" class="printable">
+
+								 <div class="pdftable">
+    <div class="tableslist" style="float:left; background-color:#fff; padding:20px;">
+		<div class="tables">
+		<div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+		 <table class="pdf-format">
+	  <tbody>
+	  <tr class="notdisplay">
+	   <td>
+	  <!--  <div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>  -->
+	<div class="pagebreak"></div>
+	   <table>
+	   <tr>
+	   <td style="width:500px;">
+	   <p style="font-size:8pt; margin-top:10px; margin-bottom:5px;"><span style="font-weight:bold; color:#000;">Total Environment Building Systems Private Ltd</span><br>
+"IMAGINE", 78, ITPL Main Road, EPIP Zone, Whitefiled, Bangalore 560 066<br>
+T:+91804245 30000 F: +91 80 2841 6624 E: discover@total-environment.com</p>
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+		  <tr><td class="pdftitle bgcolor_808080" style=" padding:2px 0;">The Magic Faraway Tree | Offer	 </td></tr>
+	   <tr>
+	   <td style="height:6px;"></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="20">&nbsp;</td>
+	   <td width="600" class="intentpurchaser">Srikanth Akula</td>
+	   <td width="120" class="txtalgncenter intentpurchaserdate">08-Jun-2016</td>
+	   </tr>
+	  
+	   </table>
+	   </td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td><table class="pdfbordertable" style="border-top:none;">
+	   <tr>
+	   <td width="80" class="txtalgncenter nobotborder">Unit</td>
+	   <td width="90" class="txtalgncenter nobotborder">Level [Floor]</td>
+	   <td width="85" class="txtalgncenter nobotborder">Specification</td>
+	    <td width="95" class="txtalgncenter nobotborder">Customisation</td>
+	   <td width="70" class="txtalgncenter nobotborder">Carpet Area</td>
+	   <td width="80" class="txtalgncenter nobotborder">Bulit-up Area</td>
+	    <td width="80" class="txtalgncenter nobotborder">Saleable Area</td>
+	   <td width="90" class="txtalgnright nobotborder" style="padding-right:2px;">Consideration</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter boldborder inline-edit "><span class="unitvaledit" contenteditable="true">3084</span></td>
+	   <td class="txtalgncenter">8 [7]</td>
+	   <td class="txtalgncenter ">
+ <div class="color_f79646 fontbold initialval">Orange
+   </div>
+
+</td>
+	   <td class="txtalgncenter noborderright">Ebuild</td>
+	   <td class="txtalgnright boldborder" style="padding-right:2px;">3,041</td>
+	   <td class="txtalgnright boldborder" style="padding-right:2px;" >3,598</td>
+	   <td class="txtalgnright boldborder" style="padding-right:2px;">4,498</td>
+	   <td class="txtalgnright boldborder" style="padding-right:2px;">3,99,07,500</td>
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	    <tr>
+	   <td height="3" class="nobotborder"></td>
+	   </tr>
+	   <tr>
+	   <td>
+	  <table class="pdfbordertable nobotborder">
+	   <tr>
+	   <td class="txtalgncenter" width="20">1</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;" width="340">Cost of Residential Unit</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" width="90">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" width="100">8,472</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" width="120">3,81,08,500</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Basic Cost</td>
+	   <td class="txtalgnright pvalue" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span  contenteditable="true" class=" xvalue">7,450</span></td>
+	   <td class="txtalgnright svalue" style="padding:3px 2px 3px 3px;">3,35,10,100</td>
+	   </tr>
+	     <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">For Specific Floor</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">350</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">15,74,300</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Amenities</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">150</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">6,74,700</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Ebuild  </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">100</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,49,800</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">upgrade Charges </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">0</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">0</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Utilities </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">200</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">8,99,600</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Car Park(s) </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   </tr>
+	    <tr class="carparkadding">
+	   <td class="txtalgncenter " width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 15px;"><span style="font-size:8pt">Regular Independent Car Park/s</span> </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" ><span class="inline-edit"  contenteditable="true">2</span></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">10,00,000</td>
+	   </tr>
+	  
+	   <tr>
+	   <td class="txtalgncenter nobotborder" width="20">2</td>
+	   <td class="nobotborder" style="text-align:left; padding:3px 0 3px 5px;">Maintenance Fund</td>
+	   <td class="txtalgnright nobotborder" style="padding:3px 2px 3px 3px;">3,598</td>
+	   <td class="txtalgnright nobotborder" style="padding:3px 2px 3px 3px;">500</td>
+	   <td class="txtalgnright nobotborder" style="padding:3px 2px 3px 3px;">17,99,000</td>
+	   </tr>
+	    
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable editabletable">
+		<tr>
+	   <td colspan="5" height="5" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 5px; 	 " width="440"><span style="font-weight:bold;">Payment Schedule</span></td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;" width="90"><span style="font-weight:bold;">Expected Date</span></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" width="120">3,99,07,500</td>
+	   </tr>
+	   <tr>
+	   <td height="5" colspan="4"></td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter slnoedit" width="20">1</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">Earnest Money Deposit</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;">02-May-2016</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">40,00,000</td>
+	   </tr>	
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">2</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px; ">1st Installment [Advance] - within 30 days of Securing Plan Sanction</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">79,70,000</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">3</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of Foundation Footings</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">67,80,000</span></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">4</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 1st Structural Slab</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">5</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 5th Structural Slab</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">6</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px; ">On the Casting of 10th Structural Slab </td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">7</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 15th Structural Slab</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter slnoedit" width="20">8</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 20th Structural Slab</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate"> 02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter slnoedit" width="20">9</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 25th Structural Slab</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px; "><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	   <tr class="milestoneadding">
+	   <td class="txtalgncenter slnoedit" width="20">10</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 30th Structural Slab</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">11</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Completion of Internal Plaster in the Unit</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;"><span class="hiddendate">02-May-2016</span></td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter slnoedit" width="20">12</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On Virtual Completion of the Unit</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;">31-Oct-2019</td>
+	   <td class="txtalgnright inline-edit" style="padding:3px 2px 3px 3px;"><span class="" contenteditable="true">23,90,000</span></td>
+	   </tr>
+	   </table>
+		</td>
+	   </tr>
+		</tbody>
+		
+		</table>
+		<table>
+		
+		
+	  <tfoot>
+	    <tr>
+	   <td height="154"></td>
+	   </tr> 
+	     
+	   <tr>
+	    <td class="separatedline"></td>
+	   </tr>
+	   <tr  class="notdisplay">
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	 <tr class="notdisplay">
+	   <td style="border:2px solid #000">
+		<table>
+		<tbody><tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tbody><tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</tbody></table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tbody><tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	    <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 1 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	
+	</tfoot>
+	   </table>
+	<div class="dotline no-print notdisplay"></div> 
+		</div>
+		<div class="tables notdisplay">
+		<div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+		<table class="pdf-format ">
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	   <tr><td class="pdftitle" style="font-size:16px; text-align:center; font-weight:bold; padding:2px 0;">The Magic Faraway Tree | Offer	 </td></tr>
+	   <tr>
+	   <td style="height:6px;"></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="350">&nbsp;</td>
+	   <td class="noborderright" style="padding:3px 2px 3px 3px; font-size:9pt;" width="120">Units | Specification</td>
+	   <td style="padding:3px 2px 3px 3px;" width="105" class="txtalgncenter chguntval boldborder">3084</td>
+	   <td style="padding:3px 2px 3px 3px;" width="130" class="txtalgncenter specific_color color_f79646 fontbold">Orange</td>
+	   </tr>
+	  
+	   </table>
+	   </td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td>General Terms & Conditions</td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top" width="30">1.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Earnest Money Deposit [EMD] must be paid in full to block the unit. There are multiple sales consultants &
+channel partners working on the sales of the project and if units are blocked for extended periods, we limit the
+options available for other customers. Hence the unit will be automatically released for sale to others in the market,
+if the signed Term Sheet AND full EMD is not received from you within 14 days from the offer date.</td>
+	   </tr>
+	   <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>2.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">It is clearly agreed by the Intending Purchaser/s herein that this EMD amount is only for the purpose of blocking the
+home for a period of one month and the same shall be refunded after forfeiting an amount calculated at 4% of the
+Termsheet Value and the blocking automatically cancelled if the 1st installment of "Advance" is not paid within
+thirty days of blocking.</td>
+	   </tr>
+	     <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>3.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">Definitive Agreements shall be signed up after the 1st installment of "Advance" is paid in full. Draft versions of the
+same are available on request.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>4.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">These homes have been especially designed and detailed by "Shibanee & Kamal Architects". Any design decisions, whether interior or exterior, shall be at the sole discretion of "Shibanee& Kamal Architects". No external
+Architects/Designers shall be entertained. Before purchasing a home from us, please ensure that you are completely comfortable with our design philosophy.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>5.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Carpet Area of a home shall be measured as the area where a carpet can be technically laid, before installation
+of woodwork and fenestration, and shall include the areas of bathrooms, balconies, utility spaces, internal stairs and
+gardens and 50% of the area of service platforms. At all locations, where a French window or door separates a
+room from a terrace garden, deck or balcony the carpet area shall include the door threshold area. In case of Terrace
+Gardens the internal area, excluding the peripheral beams, shall be included at 100%</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>6.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">In order to provide transparency and a standard measure to customers, Total Environment uses the Carpet Area of the apartment as a basis for calculating Saleable Area and has stayed away from the concept of Super Built-Up Area used by the Industry. However, to provide parity for price comparison, a standard divisor of 80% is applied on the Carpet Area to arrive at Saleable Area. Therefore, the Carpet Area is 80% of the Saleable Area.	</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>7.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Built-Up Area shall include the entire apartment area measured to the center of any walls that are common
+with an adjacent apartment or the common area lobby, service area, exit stairs and elevator shafts, and to the outer
+face of all external walls. The Built-Up Area shall include bathrooms, balconies, utility spaces, internal stairs and
+terrace gardens and 50% of the area of service platforms, and all internal walls. Gardens, decks & water bodies, if built on concrete slabs shall be taken at 100%.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>8.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">If you have selected standard customisation through eBuild, the customisation options shall be limited to those
+available through eBuild. If you have selected Personalised Customisation, options available through this shall be
+restricted at the sole discretion of our Architects. Further, such personal sessions with our Architects shall be
+limited to a maximum of 3 (Three) sessions running for a cumulative total of 9 (Nine) hours and these sessions are
+only possible at our office at 78, ITPL Road, Whitefield, Bangalore. The Personalised Customisation Option is
+available for a limited number of units only and, on first come first serve basis and therefore may not be available at
+a later point in time. Also, please note that In case, you have opted out from customisation, absolutely no single
+change shall be permitted from the standard plan and specifications, including any minor change requests.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>9.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The above unit can be transferred only after the 1st instalment of "Advance" has been paid in full AND the
+definitive Agreements signed. The unit can be transferred at a charge along with applicable taxes AND in such case,
+the potential Transferee would have to meet and be approved by the Developers. The applicable transfer charge
+shall be at 8% of Sale Consideration if transferred in the period up to the casting of the last slab of the tower in
+which the Unit is situated, 4% of Sale Consideration if transferred in the period between the casting of last slab of
+the tower in which the unit is situated till Virtual Completion of the Unit and 1% of the Sale Consideration if
+transferred in the period between Virtual Completion till registration of the Sale Deed in favour of the Purchasers.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>10.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Handover date specified in this Term-Sheet is tentative and is dependent on the date of sign-off on your customisation.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>11.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The above consideration amount is inclusive of undivided Interest in the land as well as the construction of the home and the allocated car parks.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>12.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">Land ownership shall be in the form of share of undivided interest in land only. Once your home is handed over, no further construction shall be possible at a later date.	</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	   <tr><td height="5"></td></tr>
+	   <tr>
+	    <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	 <tr class="notdisplay">
+	   <td style="border:2px solid #000">
+		<table>
+		<tbody><tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tbody><tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</tbody></table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tbody><tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	    <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 2 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	   </table>
+	<div class="dotline no-print"></div> 
+		</div>
+		<div class="tables notdisplay">
+		<div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+		<table class="pdf-format ">
+		
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	   <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	width="30">13.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Maintenance Fund is planned to cover security, diesel for running the generator, AMC's for the generators,
+elevators, pool, pumps and motors, landscaping and housekeeping of common areas, garbage collection, painting of
+common areas when required. It does not cover the cost of repairs to the buildings or individual units of any kind
+whatsoever - such repairs shall be carried out after payment in advance against an estimate for the same. A
+statement shall be sent every year showing interest (@ 9%) credited against the average balance in the fund &
+amount consumed out of it @ actual cost including management cost + 20% Maintenance Fee.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>14.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">All Cheques are to be drawn in the name of "Total Environment Building System Private Limited".</td>
+	   </tr>
+	     <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>15.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">Apartment numbering is in the form of a four digit number where the first digit represents the Block or Tower, the 2nd & 3rd digits represent the Level on which it is located and the 4th digit represents the apartment type on each floor. Therefore, apartment 1034 is in Block 1, on the 3rd level (Second floor), Type-4.</td>
+	   </tr>
+	     <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>16.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">In addition to the above amounts, Service Tax,VAT and GST as applicable at prevailing rates shall be payable along with every instalment. Stamp Duty and Registration Fees as well as incidental expenses for the same, shall be payable on actuals.</td>
+	   </tr>
+	     <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>17.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">This offer does not provide any exclusivity and Total Environment reserves the right to continue to offer this home to other interested parties.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	    <tr><td height="520"></td></tr>
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	 <tr class="notdisplay">
+	   <td style="border:2px solid #000">
+		<table>
+		<tbody><tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tbody><tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</tbody></table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tbody><tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="10"></td>
+	   </tr>
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 3 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	   </table>
+	<div class="dotline no-print"></div> 
+		</div>
+		<div class="tables notdisplay">
+		<div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+		<table class="pdf-format ">
+		
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	   <tr><td class="pdftitle"  style="font-size:16px; text-align:center; font-weight:bold; padding:2px 0;">The Magic Faraway Tree | Offer	 </td></tr>
+	   <tr>
+	   <td style="height:6px;"></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="350">&nbsp;</td>
+	   <td class="noborderright" style="padding:3px 2px 3px 3px; font-size:9pt;" width="120">Units | Specification</td>
+	   <td style="padding:3px 2px 3px 3px;" width="105" class="txtalgncenter chguntval boldborder">3084</td>
+	   <td style="padding:3px 2px 3px 3px;" width="130" class="txtalgncenter specific_color color_f79646 fontbold">Orange</td>
+	   </tr>
+	  
+	   </table>
+	   </td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td style="padding:3px 2px 0px 3px;" class="txtalgncenter specific_col_one color_f79646 fontbold"><span style="color:#fff !important; -webkit-print-color-adjust: exact; ">Orange</span> Specifications | The Magic Faraway Tree</td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="nobotborder notopborder noborderright">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;"class="fontbold nobotborder notopborder">Structure</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright notopborder" style="padding:3px 8px 3px 3px; vertical-align:middle;">Shell</td>
+	   <td class="notopborder" style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">RCC frame structure with masonry partitions. The height of each floor shall be 9'6'' or greater from slab to slab.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright  notopborder" style="padding:3px 8px 3px 3px; vertical-align:middle;">Masonry</td>
+	   <td class="nobotborder notopborder" style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">High quality exposed brick masonry using specially procured high-strength terracotta wire-cut bricks and /or stone masonry shall be provided for parts of the exteriors with deep-set waterproof pointing. For other parts and for the internal walls, terracotta blocks, table molded brick masonry or Aerocon blocks or Concrete block masonry with plaster shall be provided.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" class="nobotborder"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;" class="fontbold">Flooring & Dado</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Living & Dining</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Beige coloured imported marble laid with paper joints and finished with 8 coats polish.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Kitchen</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Beige coloured imported marble laid with paper joints and finished with 8 coats polish.
+Granite counter with glazed tiles above the counter upto a height of 2'.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Family Space</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Wooden Laminate flooring.</td>
+	   </tr>
+	  
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Utility</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Green Marble flooring. No dado or counter shall be provided.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Bedrooms + Box Room</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Kota stone laid with paper joints and finished with 8 coats polish.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Other Bathrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Brown Granite on the floor & counter and glazed tiles on the walls upto 7' in the shower
+area and 3' in other areas.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Wood Deck</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Brazilian Ipe or other natural hardwood, finished with oil.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Master Bathroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Imported marble on the floor and counter, Marazzi tiles on the walls upto 7' in shower area
+and 3' in other areas.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Maid's Room</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Kota stone laid with paper joints and finished with 8 coats polish.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Maid's Bathroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Green Marble on the floor and Glazed tiles on the walls to a height of 7'.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;"class="fontbold">Sanitary & Plumbing</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Water Closets</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Western style, porcelain EWC of Kohler or equivalent make shall be provided in all
+bathrooms while a Parryware make EWC shall be provided in the maids bathroom.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Wash Basins</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Porcelain wash basins of Kohler or equivalent make shall be provided in all bathrooms.
+Parryware wash basin in the Maid's Bathroom. All basins shall be provided with a 32mm CP
+waste coupling & CP bottle trap of standard make.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Cockroach Traps</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A detachable stainless steel cockroach trap with lid of Chilly or equivalent make shall be
+provided in all bathrooms.</td>
+	   </tr>
+	 
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Bathtubs</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">One Bathtub of Parryware / Woven Gold or equivaqlent make shall be provided in the
+Master bathroom.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Kitchen Sink</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Stainless steel sink with drainboard.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Faucets</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All faucets shall be CP, heavy body metal fittings of Grohe or equivalent make. Hot water
+connection shall be provided to the shower and wash basin in each bathroom and to the
+sink in the kitchen.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Overhead Showers</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Overhead showers of Jaquar or equivalent make shall be provided in all bathrooms.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Health Faucets</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Health faucets of Jaquar or equivalent make shall be provided in all bathrooms.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Plumbing</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All water supply lines & drainage lines shall be in PVC pipes. Sewage lines shall be in
+stoneware.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Washing Machine Point</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">One cold water inlet and drainage outlet for a washing machine shall be provided in the
+Utility.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	   
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+ <tr class="notdisplay">
+	   <td style="border:2px solid #000">
+		<table>
+		<tbody><tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tbody><tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</tbody></table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tbody><tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="5"></td>
+	   </tr>
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 4 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	  </table>
+	<div class="dotline no-print"></div> 
+		</div>
+		<div class="tables notdisplay">
+		<div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+		<table class="pdf-format ">
+	
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	  
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;"class="fontbold">Electrical</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Wiring</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All wiring shall be of Havells or equivalent make, concealed in PVC conduits.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Switches & Sockets</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All switches shall be of Crabtree or equivalent make. Apart from the basic light and fan
+controls, the following number of sockets shall be provided in various rooms:</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Living / Dining</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">4 nos - 5 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Kitchen</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">3 nos - 5 amp switch & socket, 4 nos - 15 amp switch and socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Utility</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">1 nos -5 amp switch & socket, 1 no -15 amp switch and socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Master Bedroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">4 nos - 5 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Bathrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">1 nos - 5 amp switch & socket, 1 no. - 15 amp switch and socket</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Family</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">2 nos - 5 amp switch & socket,1 no- 15 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Maid's Room</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">1 no. - 5 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Other Bedrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">2 nos - 5 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Telephone</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">1 Telephone Point each shall be provided in living and master bedroom. Provision for Fibre
+to the home (FTTH) connectivity shall be provided.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Television</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">One Television Point each shall be provided in either living or family and guest bedroom.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Light Fixtures</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No light fixtures shall be provided anywhere in the home.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Power & Back-up</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A power connection of 5 KVA shall be provided to each unit for H15 and 10 KVA for HD45.
+Back-up power shall be provided for the same capacity</td>
+	   </tr>
+	   
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;"class="fontbold">Doors & Windows</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Frames & Shutters</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Door and window frames and shutters shall be in Engineered Solid Wood. All door shutters
+shall be in solid core flush (block board or honeycomb board) shutters provided with a
+natural wood veneer. All bathroom windows, external utility fenestration, maid's room door
+and window shall have aluminium frame and shutters.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Mosquito Screens</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No Mosquito Screens shall be provided for any of the Windows or French Windows</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Finish</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">The internal door shutters and frames shall be provided with a melamine matt finish while
+the window shutters exposed to the elements shall be provided with oil staining finished
+with a brush or, alternatively, with PU (Polyurethane) finish</td>
+	   </tr>
+	  
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Window Grills</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No window grills shall be provided or permitted for the French Windows. Grills shall only be
+provided for those regular windows where there is a sheer drop. Grills shall not be provided
+for bathroom windows.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Friction Stays</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All swing windows shall be fitted with friction stays allowing the windows to stay open in
+any position</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Door stoppers</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Magnetic / concealed door stoppers shall be provided for the Main door and bedroom
+doors.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Hardware</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All hardware shall be in brush finished stainless steel. The main door shall be provided with
+a night latch of Godrej or equivalent make. All other doors will be provided with door bolts
+and a mortise lock or tubular / cylindrical lock.</td>
+	   </tr>
+	    
+	   </table>
+	   </td>
+	   </tr>
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;"class="fontbold">Paint</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Paint</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All internal paint in Acrylic Distemper. No external paint shall be provided over exposed
+brick or stone masonry. For other areas, cement based paint shall be used. Any steel
+railings etc. shall be provided with a zinc-chromate primer and synthetic enamel paint.</td>
+	   </tr>
+	 
+	  
+	   </table>
+	   </td>
+	   </tr>
+	   
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;" class="fontbold">Electro-domestic Equipment</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Hob</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A 4-burner cooking hob with electrical ignition and an SS backing plate shall be provided in
+the kitchen.</td>
+	   </tr>
+	 <tr>
+	   <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Chimney</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A 90cm ductable electric chimney with anodised aluminium filters shall be provided in the
+kitchen.</td>
+	   </tr>
+	  <tr>
+	   <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Dishwasher</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A dishwasher of Ariston or equivalent make shall be provided in the kitchen.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	  <tr>
+	  <td height="2"></td>
+	  </tr>
+	  
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	  <tr class="notdisplay">
+	   <td style="border:2px solid #000">
+		<table>
+		<tbody><tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tbody><tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</tbody></table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tbody><tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="6"></td>
+	   </tr>
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 5 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	  </table>
+	<div class="dotline no-print"></div> 
+		</div>
+		<div class="tables notdisplay">
+		<div class="watermark">
+  <p class="watermark-text">Draft</p>
+</div>
+	<div class="pagebreak"></div>
+		<table class="pdf-format ">
+		
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	  
+	   
+	  
+	   
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Geysers</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">25 litre geysers – 4 nos. of Racold or equivalent make shall be provided in the bathrooms
+and in the utility area. The Kitchen, Utility and Maids Bath shall share the geyser provided
+in the Utility.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Microwave</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No microwave is provided by default.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Oven</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No oven is provided by default.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Refrigerator</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No refrigerator is provided by default.</td>
+	   </tr>
+	    
+	   
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td style="background-color:#fdeada" class="noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;" class="fontbold">Cabinetry & Furniture</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Kitchen</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Floor & wall mounted cabinets complete with cutlery tray, vegetable baskets, breakfast
+counter etc. in laminate of Veneta Cucine or equivalent make shall be provided.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Master Bedroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Double bed with bedside tables, 4 module walk-in wardrobe.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Master Bathroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Mirror with backing ply and edge trim, louvred shutters below the counter.</td>
+	   </tr>
+	  
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Childrens' Bedroom/s</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">2 single beds with bedside table/s, 2.5 module wardrobes.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Other Bedrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Double bed with bedside tables, 2.5 module wardrobes.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Other Bathrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Mirror with backing ply and edge trim.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Basic Materials</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All woodwork except for modular units shall be in termite resistant good quality plywood
+or MDF panels and natural veneer or laminate. Modular units shall be in particle board and
+veneer or laminate.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Hardware</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All hardware shall be in brush finished stainless steel of Hettich or equivalent make with
+soft close system for the drawers in wardrobes and telescopic channels for the drawers in
+the study units.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Finishing</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Natural veneer exteriors shall be finished in melamine matt finish and the interiors in
+laminate.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Mattresses</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Mattresses shall NOT be provided for any of the beds.</td>
+	   </tr>
+	    
+	   </table>
+	   </td>
+	   </tr>
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td style="background-color:#fdeada" class="noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt; color:#000;" class="fontbold">Landscaping</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Soil</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Good quality red soil and sand mixture with manure shall serve as the base layer for
+landscaping.</td>
+	   </tr>
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Irrigation</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Sprinklers and a drip irrigation system shall be provided for landscaped areas.</td>
+	   </tr>
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Soft Landscaping</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Grass, shrubs and bamboo etc. shall be provided and all garden areas shall be completely
+landscaped. Expensive exotic plants may be provided at additional cost.</td>
+	   </tr>
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Water Body</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A water body shall also be provided in the garden.	</td>
+	   </tr>
+	 
+	  
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+	   <td height="5"></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	    <tr>
+		<td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Note: All specifications above are subject to change and decisions taken from time to time by the Developers shall be final
+and binding. In the brands mentioned above, the Developers may use equivalent brands at their discretion.</td>
+		</tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	<tr>
+	<td height="150"></td>
+	</tr>
+	  
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	   <tr class="notdisplay">
+	   <td style="border:2px solid #000">
+		<table>
+		<tbody><tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tbody><tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</tbody></table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tbody><tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	   </td>
+	   </tr>
+		
+ <tr>
+	   <td height="10"></td>
+	   </tr>
+	   <tr>
+	   <td class="separatedline"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 6 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	  </table>
+	 
+		</div>
+	</div>
+	  
+	 
+	   </div>
+</div>    
+	
+							</div>
+							 </div>
+							
+							
+							</div>
+							</div>
+<!-- Termsheet End -->							
+								
+							</div>
+							</div>
+							</div>
+							</div>
+							</div>
+							
+								
+			</section>
+			</div>	
+		</div>
+
+	</div>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

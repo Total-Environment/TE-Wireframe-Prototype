@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+</style>
+</head>
+<body style="background-color:#eae4dc">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <header id="headerdiv">
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li class="active">Job Template View</li>
+            </ol>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12-col-xs-12 pull-right">
+                    <div class="pull-right">
+                    <a href="job-create.html"><button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"><span style="color:#8ba927" class="glyphicon glyphicon-plus"></span> &nbsp;Create</button></a>
+                    <button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"><span style="color:#f8991d" class="glyphicon glyphicon-edit"></span> &nbsp;Edit &nbsp; </button>
+                    <button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"><span style="color:#72afdf" class="glyphicon glyphicon-play"></span> &nbsp;Activate</button>
+                    <button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"><span style="color:#f00" class="glyphicon glyphicon-remove"></span> &nbsp;Inactivate </button>
+                    <button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"><span style="color:#72afdf" class="fa fa-check"></span> &nbsp;Approve </button>
+                    <a href="map-jobs-to-departments.html"><button type="submit" class="btn btn-default btn-sm" style="border-color:#ccc; font-weight:bold"> &nbsp;MAP JOBS TO DEPARTMENTS </button></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="head-panel-grey"><h4>Job Template View</h4></div>
+            <div style="background-color:#fff; padding:5px; margin-top:-10px">
+               <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000;"><b>Status:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des">Draft</div>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="row view-page-div">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="color:#000"><b>Overhiring allowed?:</b></div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 view-page-des">Yes</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="row view-page-div">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="color:#000"><b>Background check required:</b></div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 view-page-des">No</div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b>Job Description Code:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des">Lorem ispum dolor</div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b>Job Description Title:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des">Lorem ispum dolor</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b>Band:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des">Lorem ispum dolor</div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b>Grade:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des">Lorem ispum dolor</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b>Designation:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des" >Lorem ispum dolor</div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b>Work Role:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des" >Lorem ispum dolor</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" style="color:#000"><b>Description of Job:</b></div>
+                        <div class="col-lg-10 col-md-10 col-sm-8 col-xs-8 view-page-des" >Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        <div class="panel-head">Experience Range</div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b>Total Years:</b></div>
+                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 view-page-des" >3 Years</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right view-page-des" >to</div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 view-page-des" style="color:#000">&nbsp;</div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des" >5.9 Years</div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b>Relevant Years:</b></div>
+                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 view-page-des" >3 Years</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right view-page-des" >to</div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 view-page-des" style="color:#000">&nbsp;</div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des view-page-des" >5.9 Years</div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" style="color:#000"><b>Relevant Experience Description:</b></div>
+                        <div class="col-lg-10 col-md-10 col-sm-8 col-xs-8 view-page-des" >Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net Lorem ispum dolor sit amet net </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+
+
+        <div class="panel-head">CTC</div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b> Min CTC:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des" >Lorem ispum dolor</div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b>Max CTC:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des" >Lorem ispum dolor</div>
+                    </div>
+
+                </div>
+            </div>          
+
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">        
+                   SELECTION STAGES
+                    <i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+                </h4>
+              </a>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" style="padding:15px;">  
+                
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="table-responsive">
+                                <table  class="table table table-striped">
+                                    <thead>
+                                        <tr style="background-color:#192930; color:#fff; border-bottom:none !important">
+                                            <th>Stage Sequance</th>
+                                            <th>Stage Name</th>
+                                            <th>Stage Description</th>
+                                            <th>Max Marks</th>
+                                            <th>	Weightage (%)</th>
+                                            <th>	Competencies Evaluated</th>
+                                        </tr>
+                                    </thead>
+                                <tbody>
+                                <tr style="border-bottom:none !important">
+                                    <td>1</td>
+                                    <td>Aptitude Test</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>
+                                  <div class="label label-default lable-tag pull-left" style="">HTML 5  <i class="fa fa-times-circle"></i></div>
+                                    <div class="label label-success lable-tag pull-left">Javascript  <i class="fa fa-times-circle"></i></div>
+                                    <div class="label label-warning lable-tag pull-left">Photoshop  <i class="fa fa-times-circle"></i></div>
+                                    <div class="label label-danger lable-tag pull-left">Bootstrap  <i class="fa fa-times-circle"></i></div>
+                                  <div class="clearfix"></div>
+
+                              </td>
+                                </tr>
+                            
+                                 <tr style="border-bottom:none !important">
+                                    <td>1</td>
+                                     <td>Technical</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>
+                                  <div class="label label-default lable-tag pull-left" style="">HTML 5  <i class="fa fa-times-circle"></i></div>
+                                    <div class="label label-success lable-tag pull-left">Javascript  <i class="fa fa-times-circle"></i></div>
+                                    <div class="label label-warning lable-tag pull-left">Photoshop  <i class="fa fa-times-circle"></i></div>
+                                    <div class="label label-danger lable-tag pull-left">Bootstrap  <i class="fa fa-times-circle"></i></div>
+                                  <div class="clearfix"></div>
+
+                              </td>
+                                </tr>
+
+                             <tr style="border-bottom:none !important">
+                              <td>1</td>
+                               <td>HR Interview</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>Lorem ispum dolor</td>
+                                    <td>
+                                  <div class="label label-default lable-tag pull-left" style="">HTML 5  <i class="fa fa-times-circle"></i></div>
+                                    <div class="label label-success lable-tag pull-left">Javascript  <i class="fa fa-times-circle"></i></div>
+                                    <div class="label label-warning lable-tag pull-left">Photoshop  <i class="fa fa-times-circle"></i></div>
+                                    <div class="label label-danger lable-tag pull-left">Bootstrap  <i class="fa fa-times-circle"></i></div>
+                                  <div class="clearfix"></div>
+
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                    <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">
+                 
+                    SCOPE OF WORK
+                    <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse hire-key-main">
+                <div class="row hre-key-line">
+                    <div class="col-xs-11">
+                        <div style="font-size:12pt !important; "> <b>Total Environment</b></div>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+                <div class="row hre-key-line">
+                    <div class="col-xs-11" style="padding-left:50px;">
+                        <b>Total Environment</b>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+                <div class="row hre-key-line">
+                    <div class="col-xs-11" style="padding-left:50px;">
+                        <b>Total Environment</b>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+                <div class="row hre-key-line">
+                    <div class="col-xs-11" style="padding-left:100px;">
+                        <b>Total Environment</b>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+
+                <div class="row hre-key-line">
+                    <div class="col-xs-11">
+                        <div style="font-size:12pt !important; "> <b>Total Environment</b></div>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+                <div class="row hre-key-line">
+                    <div class="col-xs-11" style="padding-left:50px;">
+                        <b>Total Environment</b>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+                <div class="row hre-key-line">
+                    <div class="col-xs-11" style="padding-left:50px;">
+                        <b>Total Environment</b>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+                <div class="row hre-key-line">
+                    <div class="col-xs-11" style="padding-left:100px;">
+                        <b>Total Environment</b>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+            </div>
+          </div>
+          
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                    <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">
+                 
+                    QUALIFICATIONS
+                    <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" style="padding:15px;">
+
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="table-responsive">
+                        <table  class="table table table-striped">
+                          <thead>
+                            <tr style="background-color:#192930; color:#fff; border-bottom:none !important">
+                              <th>Qualification Type</th>
+                              <th>Qualification</th>
+                              <th>Area of specialization </th>
+                              <th>Minimum % </th>    
+                              <th>Minimum CGPA</th>                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr style="border-bottom:none !important">
+                              <td>Post Graduation</td>
+                              <td>MBA</td>
+                              <td>Finanace</td>
+                              <td>35</td>
+                              <td>Lorem ispum dolor</td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+                            
+                    </div>
+                  </div>
+               
+            </div>
+          </div>
+
+           <div class="panel panel-default">
+            <div class="panel-heading">
+                <a style="text-decoration:none" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                    <h4 class="panel-title" style="background-color:#646572; padding:10px 10px; font-weight:bold; color:#fff; border-radius:3px;">
+                 
+                    KPIs
+                    <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseSeven" class="panel-collapse collapse hire-key-main">
+                <div class="row hre-key-line">
+                    <div class="col-xs-11">
+                        <div style="font-size:12pt !important; "> <b>Total Environment</b></div>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+                <div class="row hre-key-line">
+                    <div class="col-xs-11" style="padding-left:50px;">
+                        <b>Total Environment</b>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+                <div class="row hre-key-line">
+                    <div class="col-xs-11" style="padding-left:50px;">
+                        <b>Total Environment</b>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+                <div class="row hre-key-line">
+                    <div class="col-xs-11" style="padding-left:100px;">
+                        <b>Total Environment</b>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+
+                <div class="row hre-key-line">
+                    <div class="col-xs-11">
+                        <div style="font-size:12pt !important; "> <b>Total Environment</b></div>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+                <div class="row hre-key-line">
+                    <div class="col-xs-11" style="padding-left:50px;">
+                        <b>Total Environment</b>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+                <div class="row hre-key-line">
+                    <div class="col-xs-11" style="padding-left:50px;">
+                        <b>Total Environment</b>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+                <div class="row hre-key-line">
+                    <div class="col-xs-11" style="padding-left:100px;">
+                        <b>Total Environment</b>
+                    </div>
+                    <div class="col-xs-1 hire-key-add-icon"><i class="fa fa-plus-circle" ></i></div>
+                </div>
+            </div>
+          </div> 
+        </div>
+        <hr />
+        <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b> Created by:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des" >Lorem ispum dolor</div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b>Created Date:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des" >12-DEC-15</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b> Approved by:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des" >Lorem ispum dolor</div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row view-page-div">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="color:#000"><b> Approved Date:</b></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 view-page-des" >12-DEC-15</div>
+                    </div>
+
+                </div>
+            </div>
+       </div>     
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+        });
+    });
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+
+</body>
+</html>

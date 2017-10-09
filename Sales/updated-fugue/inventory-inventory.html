@@ -1,0 +1,3536 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/master-style.css">
+
+<link rel="stylesheet" type="text/css" href="css/tefont.css"/>
+
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<script src="js/portfolio/portfolio-script.js"></script>
+<link href="css/portfolio/inventory-style.css" rel="stylesheet" />
+<script src="js/portfolio/enscroll-0.6.2.min.js" rel="stylesheet"></script>
+<!-- print style -->
+<link href="css/portfolio/print.css" media="print" rel="stylesheet" />
+<link href="css/portfolio/print.css" media="screen" rel="stylesheet" />
+<!-- print style -->
+<script type="text/javascript" src="js/portfolio/inventory-script.js"></script>
+<!-- Anything Slider optional plugins -->
+ <script src="js/portfolio/jquery.easing.1.2.js"></script>
+ <!-- Anything Slider -->
+ <link href="css/portfolio/anythingslider.css" rel="stylesheet">
+ <script src="js/portfolio/jquery.anythingslider.min.js"></script>
+  
+
+</head>
+<body>
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper" style="background-color:#eae4dc">
+
+    <header>
+		<div class="gr-clr"></div>
+            <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+						    <li><a href="dashboard.html">Dashboard </a></li>
+  						    <li class="active"><a href="inventory.html">Portfolio <span class="sr-only">(current)</span> </a></li>
+							<li ><a href="lead-data-view.html">Lead </a></li>
+                             <li><a href="termsheet.html">Sales Tracker </a></li>
+							<li><a href="collections.html">Collections </a></li>
+							<li><a href="invoices.html">Invoices </a></li>
+							<li><a href="#">Tracking </a></li>
+							<li><a href="#">Business Partner </a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Change Order</a></li>
+                                    <li><a href="#">Cancellation</a></li>
+                                    <li><a href="#">Transfer</a></li>
+									<li><a href="#">Customisation</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Products</a></li>
+                                     <li><a href="#">Business Segment</a></li>
+                                      <li><a href="#">Specification</a></li>
+									  <li><a href="#">T&amp;C</a></li>
+									  <li><a href="#">Schedule</a></li>
+									  <li><a href="#">Rules</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">User Management</a></li>
+                                    <li><a href="#">Roles Management</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+	</header>
+
+	<!--header-->
+<!--Wrapper-->
+  
+<div class="wrapper" style="background-color:#fff;">
+
+<div class="row" style="margin:0;">
+<section>
+
+<!--  portfolio page start -->
+<div class="portfolio-page">
+        <div style="margin:10px -2px;">
+		<!-- container start -->
+			 <div class="container" style="width:100%; margin:0; padding:0;">
+                <div class="row">
+                    <div class="col-md-12">
+						<div class="container" style="margin:0; width:100%">
+						<!-- inventory project detail view start -->
+						<div class="selcproject">
+						<div class="row">
+						<div class="col-md-12" style="margin:0; padding:0; ">
+						
+								<div 
+								</div>
+								<div class="col-md-12" style="padding:0;">
+								<div class="panel inven-panel-title" style=""> Projects <span class="pull-right projdis" style="padding-right:10px"> Projects <span class="caret"></span></span>
+</div>
+<div class="projectlist">
+ <div class="col-md-12" style="width:98%; margin:0 1%;">
+                                 <div class="row pull-right">
+                                 <div id="proj1" class="inven-proj-list">
+                                 <img src="images/Windmills-of-Your-Mind.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj2" class="inven-proj-list">
+                                 <img src="images/In-That-Quiet-Earth-Bangalore.jpg" class="img-responsive">
+                                 
+                                 </div>
+                                 <div id="proj3" class="inven-proj-list">
+                                 <img src="images/A-Few-Honest-Words.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj4" class=" inven-proj-list">
+                                 <img src="images/After-the-Rain.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj5" class="inven-proj-list">
+                                 <img src="images/Learning-to-Fly.png" class="img-responsive">
+                                
+                                 </div>
+                                 <div id="proj6" class="inven-proj-list">
+                                 <img src="images/Lost-in-the-Greens.png" class="img-responsive">
+                                
+                                 </div>
+								  <div id="proj7" class="inven-proj-list">
+                                 <img src="images/Pursuit-of-a-Radical-Rhapsody.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj8" class="inven-proj-list">
+                                 <img src="images/Songs-from-the-Wood.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj9" class="inven-proj-list">
+                                 <img src="images/The-Magic-Faraway-Tree.png" class="img-responsive">
+                                 </div>
+                                 <div id="proj10" class="inven-proj-list">
+                                 <img src="images/The-Magic-Faraway-Tree-II.png" class="img-responsive">
+
+                                 </div>
+                                 <div id="proj11" class="inven-proj-list">
+                                 <img src="images/The-Meadow-Dance.png" class="img-responsive">
+
+                                 </div>
+                                 <div id="proj12" class="inven-proj-list">
+                                 <img src="images/Van-Goghs-Garden.png" class="img-responsive">
+
+                                 </div>
+                                 </div>
+                                 </div>
+                               
+
+</div>
+<div class="clearfix"></div>
+					           <div style="width:98%; margin:0 auto;">
+							   <div class="projlisttabs">
+	<!-- Tabs start -->
+    <ul class="nav nav-tabs" id="tabs">
+	<li ><a href="inventory-projectinfo.html">Project Info</a></li>
+        <li class="active"><a href="#Inventory" data-toggle="tab">Inventory</a></li>
+		<li><a href="inventory-pricebook.html" >Price Book</a></li>
+        <li><a href="inventory-templates.html">Templates</a></li>
+		<li><a href="inventory-templates.html">Progress</a></li>
+		<li><a href="inventory-taxdetails.html">Tax Details</a></li>
+		<li><a href="inventory-layouts.html">Layouts</a></li>
+		<li><a href="inventory-factsheet.html">Fact Sheet</a></li>
+		<li><a href="inventory-bankdetails.html">Bank Details</a></li>
+		<li  class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle moreinfo">More  <span class="caret"></span> </a>
+		 <ul class="dropdown-menu" style="margin-left:-50px;">
+                <li><a href="inventory-more-product.html">Product Details</a></li>
+                <li><a href="inventory-more-carpark.html">Car Park</a></li>
+                <li><a href="inventory-more-tower-details.html">Tower Details</a></li>
+				<li><a href="inventory-more-unit-details.html">Unit Details</a></li>
+                 <li><a href="inventory-more-salesplan.html">Sales Plan & Target</a></li>
+                <li><a href="inventory-more-salesgoaldetails.html">Sales Goal Details</a></li>
+				 <li><a href="inventory-more-premiumpricebook.html">Premimum</a></li>
+				  <li><a href="inventory-more-schedule.html">Schedule</a></li>
+            </ul>
+		</li>
+    </ul>
+    <!-- Tabs end -->
+
+    <!-- Tab Content start -->
+    <div class="tab-content">
+     
+        <!-- Inventory -->
+        <div class="tab-pane active in fade" id="Inventory">
+          <div class="col-md-12" style="padding:0; margin-top:10px;"> 
+		  <div class="title-panel">Learning to Fly</div>
+			<!-- Tower list start -->
+			<div class="col-md-4">
+				<div class="inventory-top" style="">
+					<ul id="slider1">
+						<li>
+							<div class="towerlist">
+								<div class="towerentry">
+									<div class="towerbox">
+										<img src="images/building.png" class="normal"><span class="actbulid"><img src="images/white-buliding.png"></span><span class="towerboxbottom">T1</span>
+									</div>
+								</div>
+								<div class="towerentry">
+									<div class="towerbox">
+										<img src="images/building.png" class="normal"><span class="actbulid"><img src="images/white-buliding.png"></span><span class="towerboxbottom">T2</span>
+									</div>
+								</div>
+								<div class="towerentry">
+									<div class="towerbox">
+										<img src="images/building.png" class="normal"><span class="actbulid"><img src="images/white-buliding.png"></span><span class="towerboxbottom">T3</span>
+									</div>
+								</div>
+								<div class="towerentry">
+									<div class="towerbox">
+										<img src="images/building.png" class="normal"><span class="actbulid"><img src="images/white-buliding.png"></span><span class="towerboxbottom">T4</span>
+									</div>
+								</div>
+								<div class="towerentry">
+									<div class="towerbox">
+										<img src="images/building.png" class="normal"><span class="actbulid"><img src="images/white-buliding.png"></span><span class="towerboxbottom">T5</span>
+									</div>
+								</div>
+							</div>	
+						</li>
+						<li>
+							<div class="towerlist">
+								<div class="towerentry">
+									<div class="towerbox">
+										<img src="images/building.png" class="normal"><span class="actbulid"><img src="images/white-buliding.png"></span><span class="towerboxbottom">T1</span>
+									</div>
+								</div>
+								<div class="towerentry">
+									<div class="towerbox">
+										<img src="images/building.png" class="normal"><span class="actbulid"><img src="images/white-buliding.png"></span><span class="towerboxbottom">T2</span>
+									</div>
+								</div>
+								<div class="towerentry">
+									<div class="towerbox">
+										<img src="images/building.png" class="normal"><span class="actbulid"><img src="images/white-buliding.png"></span><span class="towerboxbottom">T3</span>
+									</div>
+								</div>
+								<div class="towerentry">
+									<div class="towerbox">
+										<img src="images/building.png" class="normal"><span class="actbulid"><img src="images/white-buliding.png"></span><span class="towerboxbottom">T4</span>
+									</div>
+								</div>
+								<div class="towerentry">
+									<div class="towerbox">
+										<img src="images/building.png" class="normal"><span class="actbulid"><img src="images/white-buliding.png"></span><span class="towerboxbottom">T5</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>          
+				
+			</div>
+			<!-- Tower list end -->
+			<!-- Unit list start -->
+			<div class="col-md-4">		
+							
+				<div class="inventory-top" style="">
+					<ul id="slider2">
+						<li>
+							<div class="unitlist">
+								<div class="unitentry">
+									<div class="unitbox">
+										<img src="images/villa-icon.png" class="normal"><span class="actprod"><img src="images/white-villa.png"></span><span class="unitboxbottom">C20</span>
+									</div>
+								</div>
+								<div class="unitentry">
+									<div class="unitbox">
+										<img src="images/villa-icon.png" class="normal"><span class="actprod"><img src="images/white-villa.png"></span><span class="unitboxbottom">C35</span>
+									</div>
+								</div>
+								<div class="unitentry">
+									<div class="unitbox">
+										<img src="images/villa-icon.png" class="normal"><span class="actprod"><img src="images/white-villa.png"></span><span class="unitboxbottom">C20</span>
+									</div>
+								</div>
+								<div class="unitentry">
+									<div class="unitbox">
+										<img src="images/villa-icon.png" class="normal"><span class="actprod"><img src="images/white-villa.png"></span><span class="unitboxbottom">C35</span>
+									</div>
+								</div>
+								<div class="unitentry">
+									<div class="unitbox">
+										<img src="images/villa-icon.png" class="normal"><span class="actprod"><img src="images/white-villa.png"></span><span class="unitboxbottom">C35</span>
+									</div>
+								</div>
+							</div>	
+						</li>
+						<li>
+							<div class="unitlist">
+								<div class="unitentry active">
+									<div class="unitbox">
+										<img src="images/active-villa.png" class="normal"><span class="actprod"><img src="images/white-villa.png"></span><span class="unitboxbottom">C20</span>
+									</div>
+								</div>
+								<div class="unitentry">
+									<div class="unitbox">
+										<img src="images/villa-icon.png" class="normal"><span class="actprod"><img src="images/white-villa.png"></span><span class="unitboxbottom">C35</span>
+									</div>
+								</div>
+								<div class="unitentry">
+									<div class="unitbox">
+										<img src="images/villa-icon.png" class="normal"><span class="actprod"><img src="images/white-villa.png"></span><span class="unitboxbottom">C20</span>
+									</div>
+								</div>
+								<div class="unitentry">
+									<div class="unitbox">
+										<img src="images/villa-icon.png" class="normal"><span class="actprod"><img src="images/white-villa.png"></span><span class="unitboxbottom">C35</span>
+									</div>
+								</div>
+								<div class="unitentry">
+									<div class="unitbox">
+										<img src="images/villa-icon.png" class="normal"><span class="actprod"><img src="images/white-villa.png"></span><span class="unitboxbottom">C35</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>   
+				
+				<div class="clearfix"></div>
+			</div>
+			<!-- Unit list end -->	
+			<!-- Search Box Start -->	
+			<div class="col-md-4">
+				<div class="input-group" id="adv-search" style="margin-top:10px;">
+                <input type="text" class="form-control" placeholder="Search" />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <form class="form-horizontal" role="form">
+                                  <div class="form-group">
+                                    <label for="filter">Filter by</label>
+                                    <select class="form-control">
+                                        <option value="0" selected>All Snippets</option>
+                                        <option value="1">Featured</option>
+                                        <option value="2">Most popular</option>
+                                        <option value="3">Top rated</option>
+                                        <option value="4">Most commented</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Author</label>
+                                    <input class="form-control" type="text" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Contains the words</label>
+                                    <input class="form-control" type="text" />
+                                  </div>
+                               
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="btn " style="background-color:#da6d0e; color:#fff;"><span class="glyphicon glyphicon-search"  aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+          </div>
+		 <!-- Search Box end -->
+	
+	</div>
+		  <div class="clearfix"></div>
+	<div style="border-bottom:solid 1px #ccc;width: 100%;margin:0px auto;padding-bottom: 6px;"></div>
+	<div class="row">
+	<div class="col-md-12">
+		<div class="col-md-3" style="padding:0;">
+			<!-- Floor details start -->
+			<div id="scrollbox3" >
+				<div style="margin-top:10px;"></div>
+				<!-- floor list view start -->
+					<div class="floor-box">
+						<div class="floor-sec no-box no-border"><div class="floor-no">9</div></div>
+						<div id="scrollbox2">
+							<div class="floor-sec favail">
+							<span class="selection"></span>
+								<div class="floors ">	<img class="floorhomeicon" src="images/available-floor-icon.png"><span class="floorface">S</span>
+									<div class="floorname">B1-C</div>								</div>
+							</div>
+							<div class="floor-sec favail"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/available-floor-icon.png"><span class="floorface">S</span><div class="floorname">B1-C</div></div></div>
+							<div class="floor-sec favail"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/available-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+							<div class="floor-sec favail"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/available-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+							
+						</div>
+					</div>
+				<!-- floor list view End  -->
+				<!-- floor list view start -->
+<div class="floor-box">
+
+<div class="floor-sec no-box no-border"><div class="floor-no">8</div></div>
+<div id="scrollbox2">
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/sold-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/sold-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/booked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/booked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/ns-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+</div>
+</div>
+<!-- floor list view End  -->
+				<!-- floor list view start -->
+<div class="floor-box">
+
+<div class="floor-sec no-box no-border"><div class="floor-no">7</div></div>
+<div class="morefloorscr" style="background:transparent; width:100%">
+<ul id="morefloor">
+<li>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/booked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/booked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/booked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/booked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/ns-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+</li>
+<li>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/sold-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/sold-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/sold-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+</li>
+</ul></div>	
+</div>
+<!-- floor list view End  -->
+				<!-- floor list view start -->
+<div class="floor-box">
+
+<div class="floor-sec no-box no-border"><div class="floor-no">6</div></div>
+<div id="scrollbox2">
+<div class="floor-sec favail"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/available-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec favail"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/available-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec favail"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/available-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec favail"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/available-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/ns-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+</div>
+</div>
+<!-- floor list view End  -->
+				<!-- floor list view start -->
+<div class="floor-box">
+
+<div class="floor-sec no-box no-border"><div class="floor-no">5</div></div>
+<div id="scrollbox2">
+<div class="floor-sec favail"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/available-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/blocked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/sold-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/booked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/ns-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+</div>
+</div>
+<!-- floor list view End  -->
+			<!-- floor list view start -->
+<div class="floor-box">
+
+<div class="floor-sec no-box no-border"><div class="floor-no">4</div></div>
+<div id="scrollbox2">
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/sold-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/booked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/sold-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/booked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/ns-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+</div>
+</div>
+<!-- floor list view End  -->
+				<!-- floor list view start -->
+<div class="floor-box">
+
+<div class="floor-sec no-box no-border"><div class="floor-no">3</div></div>
+<div id="scrollbox2">
+<div class="floor-sec favail"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/available-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/blocked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/sold-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/booked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/ns-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+</div>
+</div>
+<!-- floor list view End  -->
+				<!-- floor list view start -->
+<div class="floor-box">
+
+<div class="floor-sec no-box no-border"><div class="floor-no">2</div></div>
+<div id="scrollbox2">
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/sold-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/booked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/sold-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/booked-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+<div class="floor-sec"><span class="selection"></span><div class="floors"><img class="floorhomeicon" src="images/ns-floor-icon.png"><span class="floorface">S</span><div class="floorname">B8-C</div></div></div>
+</div>
+</div>
+<!-- floor list view End  -->
+				
+</div>
+<!-- floor list icon status start  -->
+<div class="floorinfodet">
+<div class="floorinfo"><img src="images/avilable-box.png"> <span class="avilable">Avilable</span></div>
+<div class="floorinfo"><img src="images/blocked.png"> <span class="blocked">Blocked</span></div>
+<div class="floorinfo"><img src="images/booked.png"> <span class="booked">Booked</span></div>
+<div class="floorinfo"><img src="images/sold.png"> <span class="sold">Sold</span></div>
+<div class="floorinfo"><img src="images/not-sale.png"> <span class="notsale">Not for sale</span></div>
+</div>
+<!-- floor list icon status end  -->
+<!-- floor info select and clear -->
+	<div style="margin:3px 0px; float:left; padding-left:10px;">
+					<a class="right multiselect" ><i class="fa fa-share-alt" aria-hidden="true" style="color:#fe8e3c; font-size:20px;"></i></a>
+				</div>
+<div class="pull-right">
+<button type="clear" class="btn btn-sm btn-default pricelistoptions clearallsel">
+  <i class="fa fa-times" aria-hidden="true" style="color:#cb4925"></i> <strong>Clear</strong>
+</button>
+<span class="pricelistoptions"> </span>
+<button type="submit" class="btn btn-sm btn-default pricelistoptions multisel">
+   <strong>Send</strong> <i class="fa fa-chevron-right" aria-hidden="true" style="color:#8fad29"></i>
+</button>
+</div>
+<!-- floor info select and clear -->
+	<!-- Floor details end-->
+</div>
+<div class="col-md-9" style="padding:0 10px 0 30px;">
+<!-- Default grid view start-->
+<div class="inven_defult_grid">
+<table class="invent_table scroll" width="130%">
+<thead>
+
+<tr>
+<th><input type="text" placeholder="Unit Number" class="form-control txtalignleft searchTxt"></th>
+<th><input type="text" placeholder="Product Type" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Product Sub Type" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Tower" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Level" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Area of Pricing" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Location Premium Price" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Estimated Sale Value" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Door Direction" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Unit Ownership" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Blocked For" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Avilablility" class="form-control searchTxt"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr>
+<tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr>
+<tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr><tr>
+<td class="txtalignright">1012</td>
+<td>C20</td>
+<td>g</td>
+<td>T1</td>
+<td class="txtalignright">1</td>
+<td class="txtalignright">3029</td>
+<td class="txtalignright">3634800</td>
+<td class="txtalignright">25,637,700</td>
+<td>West Facing</td>
+<td>Reema</td>
+<td>Bharat Prasad</td>
+<td>Sold</td>
+</tr>
+</tbody>
+<tfoot>
+		<tr>
+		<td class="footer" colspan="12" > 
+		<div class="pull-right">Go to page: <input type="text" value="1" class="footertxt input_radius">
+		<span style="padding:0 10px;">Show Rows: 
+		<select class="footerselect input_radius">.
+		<option>10</option>
+		<option>20</option>
+		<option>50</option>
+		<option>100</option>
+		</select>
+		</span>
+		<span>1-10 of 100</span>
+		<span style="padding-left:10px;">
+		<button class="leftbutn">&nbsp;</button><button class="rightbutn">&nbsp;</button></span>
+		</div></td>
+		</tr>
+		</tfoot>
+</table>
+	</div>
+<!-- Default grid view End -->	
+	<!-- inventory unit information section start -->
+	<div class="invent-unit-info">
+	<div class="panel-group" id="accordion">
+<!-- Unit Details accordion start -->
+  <div class="panel panel-default">
+     <div class="panel-heading inventory-acc" data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+      <h4 class="panel-title accordion-toggle">
+         Unit Details
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+    
+       <div class="panel-body">
+       <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Project</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">Learning to Fly</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Tower</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">T1</span></div>
+   </div>
+   
+   <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Project Type</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">C20</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Avilable Status</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">Available</span></div>
+   </div>
+     
+   <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Project Sub Type</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Door Direction</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">LTF</span></div>
+   </div>
+      <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Garden Direction</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">North</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Level</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+   </div>
+   <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Area of Pricing</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Additional Land Area</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+   </div>
+     
+   <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Floor Rise Multiplie</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >UDI</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+   </div>
+     
+   <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Advantage Premium Price</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Exclusive Access Area</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+   </div>
+  
+   <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Sold To</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Sold By</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+   </div>
+  
+   <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Salable Area</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Carpet</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10"  ><span class="spanunderline">&nbsp;</span></div>
+   </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Buildup Area</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Area</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10"  ><span class="spanunderline">&nbsp;</span></div>
+   </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Unit Ownership</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10" ><span class="spanunderline">&nbsp;</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10" >Super Bulitup Area</div>
+      <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12 padding10"  ><span class="spanunderline">&nbsp;</span></div>
+   </div>
+		<div class="row" style="margin-top:10px;">
+		 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div class="unitdetailstitle" ><b>Remarks</b></div>
+		 <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum sodales lacus, at pharetra dolor vestibulum ut. Quisque sagittis risus nisi, vitae lobortis tortor sagittis eget. Nulla consectetur tristique ante, congue consectetur ligula lobortis nec. Aliquam mattis eget metus sit amet vehicula. Donec tincidunt erat sit </p>
+		 </div>
+		</div>
+		
+      </div>
+    
+    
+    </div>
+  </div>
+	
+ <!-- Unit Details accordion End -->
+
+  <!-- Price Offer accordion Start -->
+  <div class="panel panel-default">
+    <div class="panel-heading inventory-acc" data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+      <h4 class="panel-title accordion-toggle">
+       Price Offer
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+	
+	 
+      <div class="panel-body" style="background-color:#cacaca;">
+	   <div class="pull-right" style="margin: 0; padding-right:7px;">
+							<button class="print-link no-print" onclick="javascript:printDiv('printableprice')"> Print
+                <i class="fa fa-print" aria-hidden="true"></i>
+                </button><button class="print-link no-print" style="margin-left:10px;"> Email
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                </button><button class="print-link no-print" style="margin-left:10px;"> Crate a term sheet               <i class="fa fa-sticky-note" aria-hidden="true"></i>
+                </button></div>
+	  <div style="width:740px; margin:0 auto; padding-top:30px;">
+	 
+         
+	   <div id="printableprice" class="printable">
+            
+             <div class="pdftable" style="background-color:#fff;">
+       <table class="pdf-format">
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   <p style="font-size:8pt; margin-top:10px; margin-bottom:5px;"><span style="font-weight:bold; color:#000;">Total Environment Building Systems Private Ltd</span><br>
+"IMAGINE", 78, ITPL Main Road, EPIP Zone, Whitefiled, Bangalore 560 066<br>
+T:+91804245 30000 F: +91 80 2841 6624 E: discover@total-environment.com</p>
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	   <tr><td class="pdftitle bgcolor_808080" style=" padding:2px 0;">The Magic Faraway Tree | Offer	 </td></tr>
+	   <tr>
+	   <td style="height:6px;"></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="20">&nbsp;</td>
+	   <td width="534">&nbsp;</td>
+	   <td width="120">&nbsp;</td>
+	   </tr>
+	  
+	   </table>
+	   </td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td><table class="pdfbordertable" style="border-top:none;">
+	   <tr>
+	   <td width="60" class="txtalgncenter">Unit</td>
+	   <td width="90" class="txtalgncenter">Level [Floor]</td>
+	   <td width="85" class="txtalgncenter">Specification</td>
+	    <td width="95" class="txtalgncenter">Customisation</td>
+	   <td width="70" class="txtalgncenter">Carpet Area</td>
+	   <td width="80" class="txtalgncenter">Bulit-up Area</td>
+	    <td width="80" class="txtalgncenter">Saleable Area</td>
+	   <td width="90" class="txtalgnright" style="padding-right:2px;">Consideration</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter boldborder">3084</td>
+	   <td class="txtalgncenter">8 [7]</td>
+	   <td class="txtalgncenter">
+	   <div class="dropdown">
+  <button class="btn dropdown-toggle fontbold specchange" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <div class="color_f79646 fontbold initialval">Orange
+    <span class="caret"></span></div>
+  </button>
+  <ul class="dropdown-menu specchangemenu" aria-labelledby="dropdownMenu1">
+  <li class="color_76913a"><a data-value="Green">Green</a></li>
+    <li class="color_f79646"><a data-value="Orange">Orange</a></li>
+    <li class="color_224162"><a data-value="Blue">Blue</a></li>
+    <li class="color_60477a"><a data-value="Purple">Purple</a></li>
+   
+  </ul>
+</div></td>
+	   <td class="txtalgncenter">Ebuild</td>
+	   <td class="txtalgnright boldborder" style="padding-right:2px;">3,041</td>
+	   <td class="txtalgnright boldborder" style="padding-right:2px;" >3,598</td>
+	   <td class="txtalgnright boldborder" style="padding-right:2px;">4,498</td>
+	   <td class="txtalgnright boldborder" style="padding-right:2px;">3,99,07,500</td>
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td>
+	  <table class="pdfbordertable">
+	   <tr>
+	   <td class="txtalgncenter" width="20">1</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;" width="340">Cost of Residential Unit</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" width="90">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" width="100">8,472</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" width="120">3,81,08,500</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Basic Cost</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">7,450</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">3,35,10,100</td>
+	   </tr>
+	     <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">For Specific Floor</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">350</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">15,74,300</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Amenities</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">150</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">6,74,700</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Ebuild </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">100</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,49,800</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">upgrade Charges </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">0</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">0</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Utilities </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">4,498</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">200</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">8,99,600</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 10px;">Car Park(s) </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 15px;"><span style="font-size:8pt">Regular Independent Car Park/s</span> </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">2</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">10,00,000</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20">2</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">Maintenance Fund</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">3,598</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">500</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">17,99,000</td>
+	   </tr>
+	    
+	   </table>
+	   
+	   </td>
+	   </tr>
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+		<tr>
+	   <td colspan="5" height="5" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20"></td>
+	   <td style="text-align:left; padding:3px 0 3px 5px; 	 " width="440"><span style="font-weight:bold;">Payment Schedule</span></td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;" width="90"><span style="font-weight:bold;">Expected Date</span></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;" width="120">3,99,07,500</td>
+	   </tr>
+	   <tr>
+	   <td height="5" colspan="4"></td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20">1</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">Earnest Money Deposit</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;">02-May-2016</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">40,00,000</td>
+	   </tr>	
+	    <tr>
+	   <td class="txtalgncenter" width="20">2</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px; ">1st Installment [Advance] - within 30 days of Securing Plan Sanction</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">79,70,000</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20">3</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of Foundation Footings</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">67,80,000</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20">4</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 1st Structural Slab</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">23,90,000</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20">5</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 5th Structural Slab</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">23,90,000</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20">6</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px; ">On the Casting of 10th Structural Slab </td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">23,90,000</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20">7</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 15th Structural Slab</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">23,90,000</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20">8</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 20th Structural Slab</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">23,90,000</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20">9</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 25th Structural Slab</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px; "></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">23,90,000</td>
+	   </tr>
+	   <tr>
+	   <td class="txtalgncenter" width="20">10</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Casting of 30th Structural Slab</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">26,27,500</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20">11</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On the Completion of Internal Plaster in the Unit</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;"></td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">23,90,000</td>
+	   </tr>
+	    <tr>
+	   <td class="txtalgncenter" width="20">12</td>
+	   <td style="text-align:left; padding:3px 0 3px 5px;">On Virtual Completion of the Unit</td>
+	   <td class="txtalgncenter" style="padding:3px 2px 3px 3px;">31-Oct-2019</td>
+	   <td class="txtalgnright" style="padding:3px 2px 3px 3px;">18,00,000</td>
+	   </tr>
+	   </table>
+		</td>
+	   </tr>
+	   <tr>
+	   <td height="10"></td>
+	   </tr>
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td height="140"></td>
+	   </tr>
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	   <tr>
+	   <td style="border:2px solid #000">
+		<table>
+		<tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</table>
+		</td>
+		</tr>
+		</table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="10"></td>
+	   </tr>
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 1 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	   </table>
+	   <div class="dotline no-print"></div>
+	   <table>
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	   <tr><td class="bgcolor_808080" style="font-size:16px; text-align:center; font-weight:bold; padding:2px 0;">The Magic Faraway Tree | Offer	 </td></tr>
+	   <tr>
+	   <td style="height:6px;"></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="350">&nbsp;</td>
+	   <td style="padding:3px 2px 3px 3px; font-size:9pt;" width="120">Units | Specification</td>
+	   <td style="padding:3px 2px 3px 3px;" width="105" class="txtalgncenter boldborder">3084</td>
+	   <td style="padding:3px 2px 3px 3px;" width="130" class="txtalgncenter color_f79646 fontbold">Orange</td>
+	   </tr>
+	  
+	   </table>
+	   </td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td>General Terms & Conditions</td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top" width="30">1.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Earnest Money Deposit [EMD] must be paid in full to block the unit. There are multiple sales consultants &
+channel partners working on the sales of the project and if units are blocked for extended periods, we limit the
+options available for other customers. Hence the unit will be automatically released for sale to others in the market,
+if the signed Term Sheet AND full EMD is not received from you within 14 days from the offer date.</td>
+	   </tr>
+	   <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>2.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">It is clearly agreed by the Intending Purchaser/s herein that this EMD amount is only for the purpose of blocking the
+home for a period of one month and the same shall be refunded after forfeiting an amount calculated at 4% of the
+Termsheet Value and the blocking automatically cancelled if the 1st installment of "Advance" is not paid within
+thirty days of blocking.</td>
+	   </tr>
+	     <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>3.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">Definitive Agreements shall be signed up after the 1st installment of "Advance" is paid in full. Draft versions of the
+same are available on request.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>4.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">These homes have been especially designed and detailed by "Shibanee & Kamal Architects". Any design decisions,
+whether interior or exterior, shall be at the sole discretion of "Shibanee& Kamal Architects". No external
+Architects/Designers shall be entertained. Before purchasing a home from us, please ensure that you are
+completely comfortable with our design philosophy.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>5.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Carpet Area of a home shall be measured as the area where a carpet can be technically laid, before installation
+of woodwork and fenestration, and shall include the areas of bathrooms, balconies, utility spaces, internal stairs and
+gardens and 50% of the area of service platforms. At all locations, where a French window or door separates a
+room from a terrace garden, deck or balcony the carpet area shall include the door threshold area. In case of Terrace
+Gardens the internal area, excluding the peripheral beams, shall be included at 100%</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>6.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">In order to provide transparency and a standard measure to customers, Total Environment uses the Carpet Area of
+the apartment as a basis for calculating Saleable Area and has stayed away from the concept of Super Built-Up
+Area used by the Industry. However, to provide parity for price comparison, a standard divisor of 80% is applied on
+the Carpet Area to arrive at Saleable Area. Therefore, the Carpet Area is 80% of the Saleable Area.	</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>7.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Built-Up Area shall include the entire apartment area measured to the center of any walls that are common
+with an adjacent apartment or the common area lobby, service area, exit stairs and elevator shafts, and to the outer
+face of all external walls. The Built-Up Area shall include bathrooms, balconies, utility spaces, internal stairs and
+terrace gardens and 50% of the area of service platforms, and all internal walls. Gardens, decks & water bodies, if
+built on concrete slabs shall be taken at 100%.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>8.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">If you have selected standard customisation through eBuild, the customisation options shall be limited to those
+available through eBuild. If you have selected Personalised Customisation, options available through this shall be
+restricted at the sole discretion of our Architects. Further, such personal sessions with our Architects shall be
+limited to a maximum of 3 (Three) sessions running for a cumulative total of 9 (Nine) hours and these sessions are
+only possible at our office at 78, ITPL Road, Whitefield, Bangalore. The Personalised Customisation Option is
+available for a limited number of units only and, on first come first serve basis and therefore may not be available at
+a later point in time. Also, please note that In case, you have opted out from customisation, absolutely no single
+change shall be permitted from the standard plan and specifications, including any minor change requests.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>9.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The above unit can be transferred only after the 1st instalment of "Advance" has been paid in full AND the
+definitive Agreements signed. The unit can be transferred at a charge along with applicable taxes AND in such case,
+the potential Transferee would have to meet and be approved by the Developers. The applicable transfer charge
+shall be at 8% of Sale Consideration if transferred in the period up to the casting of the last slab of the tower in
+which the Unit is situated, 4% of Sale Consideration if transferred in the period between the casting of last slab of
+the tower in which the unit is situated till Virtual Completion of the Unit and 1% of the Sale Consideration if
+transferred in the period between Virtual Completion till registration of the Sale Deed in favour of the Purchasers.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>10.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Handover date specified in this Term-Sheet is tentative and is dependent on the date of sign-off on your
+customisation.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>11.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The above consideration amount is inclusive of undivided Interest in the land as well as the construction of the
+home and the allocated car parks.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>12.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">Land ownership shall be in the form of share of undivided interest in land only. Once your home is handed over, no
+further construction shall be possible at a later date.	</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	   <tr><td height="30"></td></tr>
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	   <tr>
+	   <td style="border:2px solid #000">
+		<table>
+		<tr>
+		<td width="345" style="border-right:2px solid #000; height:90px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</table>
+		</td>
+		<td width="345" style="height:90px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</table>
+		</td>
+		</tr>
+		</table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="10"></td>
+	   </tr>
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 2 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	   </table>
+	     <div class="dotline no-print"></div>
+	   <table>
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	   <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	width="30">13.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">The Maintenance Fund is planned to cover security, diesel for running the generator, AMC's for the generators,
+elevators, pool, pumps and motors, landscaping and housekeeping of common areas, garbage collection, painting of
+common areas when required. It does not cover the cost of repairs to the buildings or individual units of any kind
+whatsoever - such repairs shall be carried out after payment in advance against an estimate for the same. A
+statement shall be sent every year showing interest (@ 9%) credited against the average balance in the fund &
+amount consumed out of it @ actual cost including management cost + 20% Maintenance Fee.</td>
+	   </tr>
+	    <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>14.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">All Cheques are to be drawn in the name of "Total Environment Building System Private Limited".</td>
+	   </tr>
+	     <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>15.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">Apartment numbering is in the form of a four digit number where the first digit represents the Block or Tower, the 2nd & 3rd digits represent the Level on which it is located and the 4th digit represents the apartment type on each floor. Therefore, apartment 1034 is in Block 1, on the 3rd level (Second floor), Type-4.</td>
+	   </tr>
+	     <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>16.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">In addition to the above amounts, Service Tax,VAT and GST as applicable at prevailing rates shall be payable along with every instalment. Stamp Duty and Registration Fees as well as incidental expenses for the same, shall be payable on actuals.</td>
+	   </tr>
+	     <tr><td colspan="2" height="4"></td></tr>
+	   <tr>
+	   <td class="txtalgncenter" style="vertical-align:top"	>17.</td>
+	   <td style="text-align:justify; line-height:10pt; font-size:9pt; padding-top:3px;">This offer does not provide any exclusivity and Total Environment reserves the right to continue to offer this home to other interested parties.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	    <tr><td height="580"></td></tr>
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	   <tr>
+	   <td style="border:2px solid #000">
+		<table>
+		<tr>
+		<td width="345" style="border-right:2px solid #000; height:90px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</table>
+		</td>
+		<td width="345" style="height:90px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</table>
+		</td>
+		</tr>
+		</table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="10"></td>
+	   </tr>
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 3 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	   </table>
+	    <div class="dotline no-print"></div>
+	    <table>
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	   <tr><td class="bgcolor_808080"  style="font-size:16px; text-align:center; font-weight:bold; padding:2px 0;">The Magic Faraway Tree | Offer	 </td></tr>
+	   <tr>
+	   <td style="height:6px;"></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="350">&nbsp;</td>
+	   <td style="padding:3px 2px 3px 3px; font-size:9pt;" width="120">Units | Specification</td>
+	   <td style="padding:3px 2px 3px 3px;" width="105" class="txtalgncenter boldborder">3084</td>
+	   <td style="padding:3px 2px 3px 3px;" width="130" class="txtalgncenter color_f79646 fontbold">Orange</td>
+	   </tr>
+	  
+	   </table>
+	   </td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+	   <td style="padding:3px 2px 0px 3px;" class="txtalgncenter color_f79646 fontbold">Orange Specifications | The Magic Faraway Tree</td>
+	   </tr>
+	    <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt;"class="fontbold">Structure</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Shell</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">RCC frame structure with masonry partitions. The height of each floor shall be 9'6'' or
+greater from slab to slab.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Masonry</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">High quality exposed brick masonry using specially procured high-strength terracotta
+wire-cut bricks and /or stone masonry shall be provided for parts of the exteriors with
+deep-set waterproof pointing. For other parts and for the internal walls, terracotta blocks,
+table molded brick masonry or Aerocon blocks or Concrete block masonry with plaster shall
+be provided.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt;"class="fontbold">Flooring & Dado</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Living & Dining</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Beige coloured imported marble laid with paper joints and finished with 8 coats polish.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Kitchen</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Beige coloured imported marble laid with paper joints and finished with 8 coats polish.
+Granite counter with glazed tiles above the counter upto a height of 2'.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Family Space</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Wooden Laminate flooring.</td>
+	   </tr>
+	  
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Utility</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Green Marble flooring. No dado or counter shall be provided.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Bedrooms + Box Room</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Kota stone laid with paper joints and finished with 8 coats polish.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Other Bathrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Brown Granite on the floor & counter and glazed tiles on the walls upto 7' in the shower
+area and 3' in other areas.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Wood Deck</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Brazilian Ipe or other natural hardwood, finished with oil.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Master Bathroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Imported marble on the floor and counter, Marazzi tiles on the walls upto 7' in shower area
+and 3' in other areas.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Maid's Room</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Kota stone laid with paper joints and finished with 8 coats polish.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Maid's Bathroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Green Marble on the floor and Glazed tiles on the walls to a height of 7'.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt;"class="fontbold">Sanitary & Plumbing</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Water Closets</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Western style, porcelain EWC of Kohler or equivalent make shall be provided in all
+bathrooms while a Parryware make EWC shall be provided in the maids bathroom.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Wash Basins</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Porcelain wash basins of Kohler or equivalent make shall be provided in all bathrooms.
+Parryware wash basin in the Maid's Bathroom. All basins shall be provided with a 32mm CP
+waste coupling & CP bottle trap of standard make.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Cockroach Traps</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A detachable stainless steel cockroach trap with lid of Chilly or equivalent make shall be
+provided in all bathrooms.</td>
+	   </tr>
+	 
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Bathtubs</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">One Bathtub of Parryware / Woven Gold or equivaqlent make shall be provided in the
+Master bathroom.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Kitchen Sink</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Stainless steel sink with drainboard.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Faucets</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All faucets shall be CP, heavy body metal fittings of Grohe or equivalent make. Hot water
+connection shall be provided to the shower and wash basin in each bathroom and to the
+sink in the kitchen.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Overhead Showers</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Overhead showers of Jaquar or equivalent make shall be provided in all bathrooms.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Health Faucets</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Health faucets of Jaquar or equivalent make shall be provided in all bathrooms.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Plumbing</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All water supply lines & drainage lines shall be in PVC pipes. Sewage lines shall be in
+stoneware.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Washing Machine Point</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">One cold water inlet and drainage outlet for a washing machine shall be provided in the
+Utility.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+	   <td height="25"></td>
+	   </tr>
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	   <tr>
+	   <td style="border:2px solid #000">
+		<table>
+		<tr>
+		<td width="345" style="border-right:2px solid #000; height:90px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</table>
+		</td>
+		<td width="345" style="height:90px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</table>
+		</td>
+		</tr>
+		</table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="10"></td>
+	   </tr>
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 4 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	  </table>
+	      <div class="dotline no-print"></div>
+	 <table>
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	  
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt;"class="fontbold">Electrical</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Wiring</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All wiring shall be of Havells or equivalent make, concealed in PVC conduits.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Switches & Sockets</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All switches shall be of Crabtree or equivalent make. Apart from the basic light and fan
+controls, the following number of sockets shall be provided in various rooms:</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Living / Dining</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">4 nos - 5 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Kitchen</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">3 nos - 5 amp switch & socket, 4 nos - 15 amp switch and socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Utility</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">1 nos -5 amp switch & socket, 1 no -15 amp switch and socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Master Bedroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">4 nos - 5 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Bathrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">1 nos - 5 amp switch & socket, 1 no. - 15 amp switch and socket</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Family</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">2 nos - 5 amp switch & socket,1 no- 15 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Maid's Room</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">1 no. - 5 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Other Bedrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">2 nos - 5 amp switch & socket.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Telephone</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">1 Telephone Point each shall be provided in living and master bedroom. Provision for Fibre
+to the home (FTTH) connectivity shall be provided.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Television</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">One Television Point each shall be provided in either living or family and guest bedroom.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Light Fixtures</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No light fixtures shall be provided anywhere in the home.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Power & Back-up</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A power connection of 5 KVA shall be provided to each unit for H15 and 10 KVA for HD45.
+Back-up power shall be provided for the same capacity</td>
+	   </tr>
+	   
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt;"class="fontbold">Doors & Windows</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Frames & Shutters</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Door and window frames and shutters shall be in Engineered Solid Wood. All door shutters
+shall be in solid core flush (block board or honeycomb board) shutters provided with a
+natural wood veneer. All bathroom windows, external utility fenestration, maid's room door
+and window shall have aluminium frame and shutters.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Mosquito Screens</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No Mosquito Screens shall be provided for any of the Windows or French Windows</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Finish</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">The internal door shutters and frames shall be provided with a melamine matt finish while
+the window shutters exposed to the elements shall be provided with oil staining finished
+with a brush or, alternatively, with PU (Polyurethane) finish</td>
+	   </tr>
+	  
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Window Grills</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No window grills shall be provided or permitted for the French Windows. Grills shall only be
+provided for those regular windows where there is a sheer drop. Grills shall not be provided
+for bathroom windows.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Friction Stays</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All swing windows shall be fitted with friction stays allowing the windows to stay open in
+any position</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Door stoppers</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Magnetic / concealed door stoppers shall be provided for the Main door and bedroom
+doors.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Hardware</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All hardware shall be in brush finished stainless steel. The main door shall be provided with
+a night latch of Godrej or equivalent make. All other doors will be provided with door bolts
+and a mortise lock or tubular / cylindrical lock.</td>
+	   </tr>
+	    
+	   </table>
+	   </td>
+	   </tr>
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt;"class="fontbold">Paint</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Paint</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All internal paint in Acrylic Distemper. No external paint shall be provided over exposed
+brick or stone masonry. For other areas, cement based paint shall be used. Any steel
+railings etc. shall be provided with a zinc-chromate primer and synthetic enamel paint.</td>
+	   </tr>
+	 
+	  
+	   </table>
+	   </td>
+	   </tr>
+	   
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td class="bgcolor_fdeada noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt;"class="fontbold">Electro-domestic Equipment</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Hob</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A 4-burner cooking hob with electrical ignition and an SS backing plate shall be provided in
+the kitchen.</td>
+	   </tr>
+	 <tr>
+	   <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Chimney</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A 90cm ductable electric chimney with anodised aluminium filters shall be provided in the
+kitchen.</td>
+	   </tr>
+	  <tr>
+	   <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Dishwasher</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A dishwasher of Ariston or equivalent make shall be provided in the kitchen.</td>
+	   </tr>
+	   </table>
+	   </td>
+	   </tr>
+	  <tr>
+	  <td height="6"></td>
+	  </tr>
+	  
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	   <tr>
+	   <td style="border:2px solid #000">
+		<table>
+		<tr>
+		<td width="345" style="border-right:2px solid #000; height:80px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</table>
+		</td>
+		<td width="345" style="height:80px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</table>
+		</td>
+		</tr>
+		</table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="10"></td>
+	   </tr>
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 5 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	  </table>
+	   <div class="dotline no-print"></div>
+	    <table>
+	   <tr>
+	   <td>
+	   <table>
+	   <tr>
+	   <td >
+	   
+	   
+	   </td>
+	   <td style="text-align:right;"><img src="images/te-logo.jpg"></td>
+	   </tr>
+	   </table>
+	   
+	   </td>
+	   </tr>
+	  
+	   
+	  
+	   
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Geysers</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">25 litre geysers – 4 nos. of Racold or equivalent make shall be provided in the bathrooms
+and in the utility area. The Kitchen, Utility and Maids Bath shall share the geyser provided
+in the Utility.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Microwave</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No microwave is provided by default.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Oven</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No oven is provided by default.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Refrigerator</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">No refrigerator is provided by default.</td>
+	   </tr>
+	    
+	   
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td style="background-color:#fdeada" class="noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt;"class="fontbold">Cabinetry & Furniture</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Kitchen</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Floor & wall mounted cabinets complete with cutlery tray, vegetable baskets, breakfast
+counter etc. in laminate of Veneta Cucine or equivalent make shall be provided.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Master Bedroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Double bed with bedside tables, 4 module walk-in wardrobe.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Master Bathroom</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Mirror with backing ply and edge trim, louvred shutters below the counter.</td>
+	   </tr>
+	  
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Childrens' Bedroom/s</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">2 single beds with bedside table/s, 2.5 module wardrobes.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Other Bedrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Double bed with bedside tables, 2.5 module wardrobes.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Other Bathrooms</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Mirror with backing ply and edge trim.</td>
+	   </tr>
+	   <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Basic Materials</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All woodwork except for modular units shall be in termite resistant good quality plywood
+or MDF panels and natural veneer or laminate. Modular units shall be in particle board and
+veneer or laminate.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Hardware</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">All hardware shall be in brush finished stainless steel of Hettich or equivalent make with
+soft close system for the drawers in wardrobes and telescopic channels for the drawers in
+the study units.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Finishing</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Natural veneer exteriors shall be finished in melamine matt finish and the interiors in
+laminate.</td>
+	   </tr>
+	    <tr>
+	      <td class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Mattresses</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Mattresses shall NOT be provided for any of the beds.</td>
+	   </tr>
+	    
+	   </table>
+	   </td>
+	   </tr>
+	   
+	   <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable noneborder">
+	   <tr>
+	   <td style="background-color:#fdeada" class="noneborder"> <table>
+	   <tr>
+	   <td width="250" class="">&nbsp;</td>
+	   <td style="padding:1px 2px 1px 3px; font-size:8pt;"class="fontbold">Landscaping</td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <table class="pdfbordertable">
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Soil</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Good quality red soil and sand mixture with manure shall serve as the base layer for
+landscaping.</td>
+	   </tr>
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Irrigation</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Sprinklers and a drip irrigation system shall be provided for landscaped areas.</td>
+	   </tr>
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Soft Landscaping</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Grass, shrubs and bamboo etc. shall be provided and all garden areas shall be completely
+landscaped. Expensive exotic plants may be provided at additional cost.</td>
+	   </tr>
+	   <tr>
+	   <td width="250" class="fontbold txtalgnright" style="padding:3px 8px 3px 3px; vertical-align:middle;">Water Body</td>
+	   <td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">A water body shall also be provided in the garden.	</td>
+	   </tr>
+	 
+	  
+	   </table>
+	   </td>
+	   </tr>
+	   <tr>
+	   <td height="5"></td>
+	   </tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	   <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	    <tr>
+		<td style=" line-height:9pt; font-size:8pt; padding:1px; 5px;">Note: All specifications above are subject to change and decisions taken from time to time by the Developers shall be final
+and binding. In the brands mentioned above, the Developers may use equivalent brands at their discretion.</td>
+		</tr>
+	      <tr>
+		<td>
+		<table class="pdfbordertable">
+	   <tr>
+	    <td height="3" style="border-bottom:none;"></td>
+	  
+	   </tr>
+	  
+	   </table></td>
+	   </tr>
+	<tr>
+	<td height="220"></td>
+	</tr>
+	  
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td style="font-size:10pt">I agree to all the costs, payment schedules, terms and conditions as mentioned above.</td>
+	   </tr>
+	   <tr>
+	   <td style="border:2px solid #000">
+		<table>
+		<tr>
+		<td width="345" style="border-right:2px solid #000; height:90px; vertical-align:bottom; padding-bottom:10px;">
+		<table style="width:345px; ">
+		<tr><td style=" font-weight:bold; text-align:center; font-size:10pt;">Intending Purchaser/s</td></tr>
+		</table>
+		</td>
+		<td width="345" style="height:90px;  vertical-align:bottom; padding-bottom:10px;">
+			<table style="width:345px">
+			<tr><td style="text-align:left; float:left;">Srikanth akula</td><td style="float:right;text-align:right">Kamal Sagar</td></tr>
+		<tr><td colspan="2" style="vertical-align:bottom; font-weight:bold; text-align:center; font-size:10pt;">Total Environment</td></tr>
+		</table>
+		</td>
+		</tr>
+		</table>
+	   </td>
+	   </tr>
+ <tr>
+	   <td height="10"></td>
+	   </tr>
+	   <tr>
+	   <td style="border:3px solid #000"></td>
+	   </tr>
+	   <tr>
+	   <td height="3"></td>
+	   </tr>
+	   <tr>
+	   <td style="text-align:center;">Page 6 of 6 <span class="pull-right" style="font-size:9pt;text-align:right; padding-right:2px;">02-May-2016 18:08</span></td>
+	   </tr>
+	  </table>
+	 
+	   </div>
+      
+              
+            
+        </div>
+		</div>
+	  </div>
+    </div>
+  </div>
+  <!-- Price Offer accordion End -->
+  <!-- Waiting list accordion Start -->  
+ <div class="panel panel-default">
+    <div class="panel-heading inventory-acc" data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
+      <h4 class="panel-title accordion-toggle">
+         Waiting list
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+      <table class="invent-more-salesplan scroll" cellspacing="0">
+        <thead>
+		 
+            <tr>
+                 <th  class="txtalignleft"><input type="text" placeholder="Prospect Name" class="form-control searchTxt"></th>
+                <th class="txtalignleft"><input type="text" placeholder="Sales Consultant" class="form-control searchTxt"></th> 
+                <th class="txtalignright"><input type="text" placeholder="Requested On" class="form-control searchTxt"></th>
+				
+				
+			</tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr>
+			 <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr>
+			 <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr> <tr>
+                <td class="txtalignleft">Sanjay Ramasamy</td>
+                <td class="txtalignleft">Somnath Sanjeev	</td>
+                
+				<td class="txtalignright">10-Jun-2016</td>
+				
+            </tr>
+             
+        </tbody>
+				<tfoot>
+		<tr>
+		<td class="footer" colspan="3" > 
+		<div class="pull-right">Go to page: <input type="text" value="1" class="footertxt input_radius">
+		<span style="padding:0 10px;">Show Rows: 
+		<select class="footerselect input_radius">.
+		<option>10</option>
+		<option>20</option>
+		<option>50</option>
+		<option>100</option>
+		</select>
+		</span>
+		<span>1-10 of 100</span>
+		<span style="padding-left:10px;">
+		<button class="leftbutn">&nbsp;</button><button class="rightbutn">&nbsp;</button></span>
+		</div></td>
+		</tr>
+		</tfoot>
+    
+    </table>
+
+         
+      </div>
+    </div>
+  </div>
+  <!-- Waiting list accordion End -->  
+   <!-- Layout accordion Start -->  
+ <div class="panel panel-default">
+    <div class="panel-heading inventory-acc" data-toggle="collapse" data-parent="#accordion" data-target="#collapse4">
+      <h4 class="panel-title accordion-toggle">
+         Layouts
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body" style="background-color:#cacaca;">
+	   <div class="pull-right" style="margin: 0; padding-right:7px;">
+							<button class="print-link no-print" style="margin-left:10px;"> Email
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                </button></div>
+       <div style="width:740px; margin:0 auto; padding-top:32px;">
+	   
+	   <img src="images/layout-design.png">
+	   
+	   </div>
+         
+      </div>
+    </div>
+  </div>
+  <!-- Layout accordion End -->  
+ 
+  </div>
+   </div>
+	<!-- inventory unit information section end -->
+	<!-- Default grid view start-->
+<div class="inven_multi_selc">
+
+<div class="inven_multi_selc_panel">Price List | Learning to Fly</div>
+<div class="inven_multi_selc_table">
+<table class="inven_mul_sel_table scroll" width="100%">
+
+<thead>
+
+<tr>
+<th><input type="text" placeholder="Tower" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Level" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Unit" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Product Type" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Default Spec" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Door Direction" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Saleable Area" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Additional Land Area" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Residential Unit Cost" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Additional Land Cost" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Maintenance Fund" class="form-control searchTxt"></th>
+<th><input type="text" placeholder="Total" class="form-control searchTxt"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr>
+<tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr><tr>
+<td class="txtalignleft">T1</td>
+<td class="txtalignright">12</td>
+<td class="txtalignright">1121</td>
+<td class="txtalgncenter">C20</td>
+<td class="txtalgncenter">Orange</td>
+<td class="txtalgncenter">East Facing</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">0</td>
+<td class="txtalignright">92,37,500</td>
+</tr>
+</tbody>
+<tfoot>
+		<tr>
+		<td class="footer" colspan="12" > 
+		<div class="pull-right">Go to page: <input type="text" value="1" class="footertxt input_radius">
+		<span style="padding:0 10px;">Show Rows: 
+		<select class="footerselect input_radius">.
+		<option>10</option>
+		<option>20</option>
+		<option>50</option>
+		<option>100</option>
+		</select>
+		</span>
+		<span>1-10 of 100</span>
+		<span style="padding-left:10px;">
+		<button class="leftbutn">&nbsp;</button><button class="rightbutn">&nbsp;</button></span>
+		</div></td>
+		</tr>
+		</tfoot>
+</table>
+	</div>
+</div>
+	<!-- Default grid view End -->
+	</div>
+</div>
+<!-- inventory unit information section End -->
+</div>
+		</div>
+	<!-- Inventory -->
+		
+		</div>
+		<!-- Tab Content end -->
+	
+	
+</div>
+								</div>
+			
+								</div>
+								</div>
+						
+						</div>
+					
+					
+					
+					</div>
+                </div>
+							
+							<!-- inventory projec detail view end -->
+							<div class="clearfix"></div>
+							
+						</div>
+					</div>
+					</div>
+				</div>
+		<!-- container end -->		
+			</div>
+			</div> 
+<!-- portfolio page end -->
+</section>
+</div>
+</div>
+
+
+ 
+<div class="clearfix"></div>
+
+</div>
+
+</body>
+</html>
+
+

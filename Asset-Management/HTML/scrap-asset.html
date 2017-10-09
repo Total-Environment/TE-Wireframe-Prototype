@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<title>Fugue</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/tefont.css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/BeatPicker.min.css" rel="stylesheet" />
+<script src="js/BeatPicker.min.js"></script>
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+
+   
+<style>
+.panel-heading span {margin-top: -30px;margin-right:10px;font-size: 15px;color:#ff6a00;}.panel {margin-bottom: 0;}.panel-body {padding:0 0 0 15px;}.clickable {cursor: pointer;} .panel-heading {padding: 0;}
+    .navbar-form {
+        margin-top: 0px;
+    }
+    @media (min-width: 768px) {
+.modal-content {
+    box-shadow: none;
+}
+    }
+
+</style>
+</head>
+<body style="background-color:#eae4dc">
+<!--header-->
+<h1 class="hidden">Fugue</h1> 
+<div id="bgwrapper">
+    <header>
+        <div class="gr-clr"></div>
+        <nav class="navbar-demo navbar-default header-space">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/fugue.png" class="fuguelogo" alt="Fugue Logo" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masters<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="asset-class.html">Class</a></li>
+                                    <li><a href="asset-category.html">Category</a></li>
+                                    <li><a href="asset-sub-category.html">Sub category</a></li>
+                                    <li><a href="asset-variant.html">Variant</a></li>
+                                    <li><a href="mobile-eligibility.html">Mobile Eligibility</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Assets<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="asset-management.html">View Assets</a></li>
+                                    <li><a href="requisition.html">Requisition</a></li>
+                                </ul>
+                            </li> 
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mobile<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="mobile-management.html">Mobile Management</a></li>
+                                    <li><a href="mobilebill-processing.html">Mobile Bill Processing</a></li>
+                                </ul>
+                            </li>      
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="" ><img src="images/profile.png" class="img-circle" width="30px" border="0" style="border:solid 2px #646572; background-color:#585966" />&nbsp;&nbsp;Profile Name <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Profile</a></li>
+                                    <li><a href="#"><span class="fa fa-unlock-alt" aria-hidden="true"></span>&nbsp;&nbsp;Change Password</a></li>
+                                    <li>&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+<!--header-->
+<!--Wrapper-->
+    <div class="container-fluid">
+        <div class="main-body-space">
+            <ol class="breadcrumb">
+              <li><a href="asset-management-view.html">View Assets</a></li>
+              <li class="active">Scrap Asset</li>
+            </ol>        
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color:#646572">
+                                <h4 class="modal-title" style="color:#fff">Scrap Asset</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row bg-viewform ">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4" style="color:#000"><b>Asset ID:</b></div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8 view-page-des">TE001</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4" style="color:#000"><b>Manufacturer Serial No: </b></div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8 view-page-des">TEA00189</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4" style="color:#000"><b>TE Serial No:</b></div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8 view-page-des">TEA00189</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4" style="color:#000"><b>Purchase Price:</b></div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8 view-page-des">1,00,000</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4" style="color:#000"><b>Brand: </b></div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8 view-page-des">Dell</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4" style="color:#000"><b>PO Date:</b></div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8 view-page-des">11-Apr-16</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4" style="color:#000"><b>Warranty Expiry Date:</b></div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8 view-page-des">11-Apr-16</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4" style="color:#000"><b>Lease Asset:</b></div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8 view-page-des">No</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4" style="color:#000"><b>Asset Quantity:</b></div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8 view-page-des">1</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4" style="color:#000"><b>Allocated Quantity:</b></div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8 view-page-des">0</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4" style="color:#000"><b>Useful Life:</b></div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8 view-page-des">4 Years</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4" style="color:#000"><b>Salvage Value:</b></div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8 view-page-des">20,000</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row view-page-div">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="color:#000"><b>Asset Description::</b></div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 view-page-des">High end laptop for designers</div>
+                                        </div>
+                                    </div>
+
+                                   
+                                </div>
+                                <div class="row" style="margin-top:25px">
+                                    <div class="col-md-12">
+                                        <div class="row">                                                                 
+                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Date of Scrapping</label>
+                                             <input type='text' class="input" data-beatpicker="true" />
+                                          </div>
+                                    </div> 
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Reason for Scrapping</label>
+                                             <select class="form-control">
+                                                 <option>Scrapping Reson 1</option>
+                                                <option>Scrapping Reson 2</option>                                                
+                                            </select>
+                                         </div>
+                                    </div>   
+                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Remarks</label>
+                                             <textarea class="form-control" rows="1"></textarea>
+                                          </div>
+                                    </div>   
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                         <div class="form-group">
+                                            <label for="exampleInputEmail1">Scrap Revenue</label>
+                                             <input type="email" class="form-control" id="Email2" placeholder="">
+                                          </div>
+                                    </div> 
+
+                                
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                     <div class="row">
+                                        <a href="asset-management.html"><div class="col-md-6"><button type="button" class="btn btn-warning" style="width:100%" data-dismiss="modal">Cancel</button></div></a>
+                                        <a href="asset-management.html"><div class="col-md-6"><button type="button" class="btn btn-primary" style="width:100%" data-dismiss="modal">Proceed</button></div></a>
+                                </div>                           
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </div>
+        
+</div>
+    
+</div>   
+
+
+
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+</script>
+
+<script>
+    function toggleChevron(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find("i.indicator")
+            .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+	
+	
+</script>
+
+</body>
+</html>

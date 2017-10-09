@@ -1,0 +1,224 @@
+.wrapper{
+    width:97% !important;
+    margin: auto;
+}
+.paddingnone{padding:0 !important;}
+.soa_title{background:#808080; font-size:12pt; text-align:center; text-transform:uppercase; font-weight:bold; width:100%; color:#fff; margin-bottom:5px; padding:5px 0 5px 10px;}
+.title-panel{background:#3099d2; font-size:12pt; width:100%; color:#fff; margin-bottom:5px; padding:5px 0 5px 10px;}
+.txtalignright{text-align:right;}
+.txtaligncenter{text-align:center;}
+.txtalignleft{text-align:left;}
+.height5px{height:5px; background-color:#fff;}
+.colltable{border-collapse:collapse; width:100%; }
+.colltable td,.colltable th{ padding:2px 4px 2px 2px; border:1px solid #a6a6a6;}
+.annualcolltable{border-collapse:collapse; width:100%; }
+.annualcolltable td,.annualcolltable th{ padding:2px 4px 2px 2px; border:1px solid #a6a6a6;}
+.fortcolltable{border-collapse:collapse; width:100%;}
+.fortcolltable td,.fortcolltable th{ padding:2px 4px 2px 2px; border:1px solid #a6a6a6;}
+.bordercell{border:2px solid #1c1c1c !important; border-bottom:none !important;}
+tr.blackbg td{background-color:#000; font-size:20px; font-weight:bold; color:#fff; border-color:#fff;}
+.txtuppercase{text-transform:uppercase;}
+td.blackbg{background-color:#000; color:#fff; font-size:20px; font-weight:bold; color:#fff; border-color:#fff;}
+.projlisttabs .nav-tabs>li{
+	margin-bottom:-1px;
+	border-bottom: 1px solid #d0cecf;
+}
+.fontsize_20{font-size:20px;}
+.fontbold{font-weight:bold;}
+tr.contenttd td{font-size:14px;}
+.projlisttabs{
+	 border-top: 1px solid #d0cecf;
+}
+.negativeval{color:red;}
+.projlisttabs .nav-tabs li.active{
+
+	color:#9e9e9e;
+   border-bottom:3px solid #e4aa2c;
+   border-right: 1px solid #d0cecf;
+}
+.projlisttabs .nav-tabs>li>a{
+    padding: 10px 21px;
+    margin: 0;
+	color:#9e9e9e;
+    border-right: 1px solid #d0cecf;
+    background: #fff;}
+	.projlisttabs .nav-tabs li:first-child a{
+		border-left:1px solid #d0cecf;
+		
+	}
+	.projlisttabs .nav-tabs>li.active>a,.projlisttabs  .nav-tabs>li.active>a:hover,.projlisttabs  .nav-tabs>li.active>a:focus{
+		border:none !important;
+	}
+.projlisttabs .nav-tabs>li.active>a, .projlisttabs .nav-tabs>li.active>a:hover,.projlisttabs .nav-tabs>li.active>a:focus{
+background:none !important;
+
+}
+.projlisttabs .nav-tabs>li:first-child{
+	border-left:1px solid #d0cecf;
+}
+.projlisttabs .tab-content{
+	
+	width:99.9%;
+}
+.receiptmain{border-top:1px solid #ececec; float:left;  width:100%; padding:0; margin:0;}
+.tinywidth{width:1px;}
+.monboxcontainer{float:left; margin:5px 0;}
+.mon-box{text-align: center;
+    background: #fff4d4;
+    border-radius: 4px;
+    border: 1px solid #f5c634;
+    margin: 0 2px;
+    width: 52px;
+    height: 35px;
+   
+    float: left;
+    line-height: 14px;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 3px;
+	cursor:pointer;
+   }
+   .mon-box:hover{background:#7eb31a; border:1px solid #a8b296; color:#fff;}
+   .mon-box.active{background:#7eb31a !important; border:1px solid #a8b296 !important; color:#fff !important;}
+   .bgcolor_63b3de{
+	background-color:#63b3de; /* Learning to Fly*/
+}
+.bgcolor_c94c28{
+	background-color:#c94c28; /* A Few Honest Words*/
+}
+.bgcolor_a7a9ac{
+	background-color:#a7a9ac; /* After the Rain*/
+}
+.bgcolor_00b1ca{
+	background-color:#00b1ca; /* Windmills of your mind*/
+}
+.bgcolor_4e291b{
+	background-color:#4e291b; /* Songs from the wood*/
+}
+.bgcolor_f7941d{
+	background-color:#f7941d; /* Orange Blossom Special */
+}
+.bgcolor_827eb9{
+	background-color:#827eb9; /*  Raindrops keep falling on my head */
+}
+.bgcolor_9b2827{
+	background-color:#9b2827; /* Pursuit of a radical rhapsody */
+}
+.bgcolor_99ca3c{
+	background-color:#99ca3c; /*  the Magical Fareway tree */
+}
+.bgcolor_92946b{
+	background-color:#92946b; /* The Meadow Dance*/
+}
+.bgcolor_435401{
+	background-color:#435401; /* Van- Gogh's Garden */
+}
+
+.padding0 {
+    padding: 0;
+}
+.padding5 {
+    padding: 5px;
+}
+.padding3 {
+    padding: 3px;
+}
+.padding10 {
+    padding: 10px;
+}
+.padding15 {
+    padding: 15px;
+}
+.paddingtop10 {
+    padding-top: 10px;
+}
+.paddingtop15 {
+    padding-top: 15px;
+}
+.height90 {
+    height: 90px;
+}
+.height100 {
+    height: 100px;
+}
+.margin-tb10 {
+    margin: 10px 0;
+}
+.margin-tb5 {
+    margin: 5px 0;
+}
+.margin10 {
+    margin-top: 10px;
+}
+.margin15 {
+    margin-top: 15px;
+}
+.width20 {
+    width: 20px;
+}
+.grantparent{display:table-row !important;}
+.bgcolor_808080{background-color:#808080;}
+.color_fff{color:#fff !important;}
+.fontsize16{font-size:16px;}
+.fontsize15{font-size:15px;}
+.fontsize14{font-size:14px;}
+.fontsize13{font-size:13px;}
+.fontsize12{font-size:12px;}
+.fontsize18{font-size:18px;}
+.title_tg{font-size:18px; text-transform:uppercase; font-weight:bold;}
+.bgcolor_0080ff{background-color:#0080ff; color:#fff;}
+.bgcolor_008000{background-color:#008000; color:#fff;}
+.bgcolor_948a54{background-color:#948a54; color:#fff;}
+.bgcolor_804000{background-color:#804000; color:#fff;}
+.bgcolor_c0504d{background-color:#c0504d; color:#fff;}
+.bgcolor_4f6228{background-color:#4f6228; color:#fff;}
+.bgcolor_963634{background-color:#963634; color:#fff;}
+.bgcolor_4f81bd{background-color:#4f81bd; color:#fff;}
+.bgcolor_9bbb59{background-color:#9bbb59; color:#fff;}
+.bgcolor_808080{background-color:#808080; color:#fff;}
+.bgcolor_fff{background-color:#fff !important; color:#333 !important}
+.martb5lr10{margin:5px 10px;}
+.marbot30{margin-bottom:30px;}
+.martop10{margin-top:10px;}
+.paddingtop8{padding-top:8px;}
+.margintop6{margin-top:6px;}
+.padleft5{padding-left:5px !important;}
+.receipttitle{padding-left:10px; font-size:30px; font-weight:bold;}
+.receiptsubtitle{padding-left:10px; font-size:20px; font-weight:bold;}
+
+
+::-webkit-scrollbar {
+ width:4px;
+		background-color:#cccccc;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color:#3f3f3f;
+		border:1px solid #000000;
+		border-radius:4px;
+}
+::-webkit-scrollbar-thumb:hover {
+ background-color:#BF4649;
+		border:1px solid #333333;
+}
+::-webkit-scrollbar-thumb:active {
+ background-color:#A6393D;
+		border:1px solid #333333;
+}
+::-webkit-scrollbar-track {
+ border:1px #ccc solid;
+		border-radius:4px;
+		-webkit-box-shadow:0 0 6px #C8C8C8 inset;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
