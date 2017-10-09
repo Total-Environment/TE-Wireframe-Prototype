@@ -1,0 +1,127 @@
+<ion-view view-title="Leave Approvals" style="text-align:center">
+  <ion-content style="background-color:#ffffff;margin-top: -45px;">
+     
+
+    <ion-tabs class="tabs-striped tabs-top tabs-background-dark tabs-color-energized">
+        <ion-tab title="Functional">
+            <ion-nav-view name="Functional">
+                <ion-content padding="true">
+                    <div class="collapse-view collapse-temp-warm im-card-new">
+                        <div class="row padding0" ng-click="more = !more" ng-class="{ active: more }">
+                            <div class="col txt-left"><b>Deepak B H</b></div>
+                            <div class="col"><b>L</b></div>           
+                            <div class="col txt-right"><b>2 day(s)</b></span> </div>
+                        </div>
+
+                        <div ng-show="more" style="margin-top:2px; border-top:dotted 1px #ccc;">
+                            <div class="row">
+                                <div class="col padding0">
+                                    <div class="row padding0">
+                                        <div class="col txt-left padding0">From Date</div>
+                                        <div class="col txt-left padding0"><b>14-Apr-2017</b></div>
+                                    </div>                            
+                                </div>
+                                <div class="col padding0">
+                                    <div class="row padding0">
+                                        <div class="col txt-left padding0">To Date</div>
+                                        <div class="col txt-left padding0"><b>17-Apr-2017</b></div>
+                                    </div>                            
+                                </div>
+                            </div>
+                            <div class="row padding0">
+                                <div class="col-25 txt-left" style="padding: 5px">Reason</div>
+                                <div class="col txt-left"><b>went to home town</b></div>  
+                            </div>
+                            <div class="row padding0">
+                                <div class="col txt-left"><textarea rows="3" style="width: 100%" placeholder="Approver's Comment"></textarea></div>  
+                            </div>
+
+                            <div class="row">
+                            <div class="col">
+                                <a href="#/app/attendance-yes" style="text-decoration: none">
+                                    <div class="btn-sml" style="background-color: #8ab010">Approve</div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#/app/attendance-no" style="text-decoration: none">
+                                    <div class="btn-sml" style="background-color: #f00">Reject</div>
+                                </a>
+                            </div>
+                        </div>
+                        </div> 
+                    </div>
+                </ion-content>
+            </ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Administrative">
+            <ion-nav-view name="Administrative">
+                <ion-content padding="true">
+                    <div class="collapse-view collapse-temp-approve im-card-new">
+
+                        <div class="row padding0" ng-click="more1 = !more1" ng-class="{ active: more1 }">
+                            <div class="col txt-left"><b>Deepak B H</b></div>
+                            <div class="col"><b>L</b></div>           
+                            <div class="col txt-right"><b>2 day(s)</b></span> </div>
+                        </div>
+
+                    <div ng-show="more1" style="margin-top:2px; border-top:dotted 1px #ccc;">
+                            <div class="row">
+                                <div class="col padding0">
+                                    <div class="row padding0">
+                                        <div class="col txt-left padding0">From Date</div>
+                                        <div class="col txt-left padding0"><b>14-Apr-2017</b></div>
+                                    </div>                            
+                                </div>
+                                <div class="col padding0">
+                                    <div class="row padding0">
+                                        <div class="col txt-left padding0">To Date</div>
+                                        <div class="col txt-left padding0"><b>17-Apr-2017</b></div>
+                                    </div>                            
+                                </div>
+                            </div>
+                            <div class="row padding0">
+                                <div class="col-25 txt-left" style="padding: 5px">Reason</div>
+                                <div class="col txt-left"><b>went to home town</b></div>  
+                            </div>
+                            <div class="row padding0">
+                                <div class="col txt-left"><textarea rows="3" style="width: 100%" placeholder="Approver's Comment"></textarea></div>  
+                            </div>
+
+                            <div class="row">
+                            <div class="col">
+                                <a href="#/app/attendance-yes" style="text-decoration: none">
+                                    <div class="btn-sml" style="background-color: #8ab010">Approve</div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#/app/attendance-no" style="text-decoration: none">
+                                    <div class="btn-sml" style="background-color: #f00">Reject</div>
+                                </a>
+                            </div>
+                        </div>
+                        </div>     
+                    </div>
+
+                    <div class="collapse-view collapse-temp-cold im-card-new">
+                        <div class="row padding0" ng-click="more1 = !more1" ng-class="{ active: more1 }">
+                            <div class="col txt-left"><b>Deepak B H</b></div>
+                            <div class="col"><b>L</b></div>           
+                            <div class="col txt-right"><b>2 day(s)</b></span> </div>
+                        </div>                    
+                    </div>
+                    <div class="collapse-view collapse-temp-new im-card-new">
+                        <div class="row padding0" ng-click="more1 = !more1" ng-class="{ active: more1 }">
+                            <div class="col txt-left"><b>Deepak B H</b></div>
+                            <div class="col"><b>L</b></div>           
+                            <div class="col txt-right"><b>2 day(s)</b></span> </div>
+                        </div>                
+                    </div>
+                </ion-content>    
+            </ion-nav-view> 
+        </ion-tab>
+    </ion-tabs> 
+
+  
+  </ion-content>
+</ion-view> 

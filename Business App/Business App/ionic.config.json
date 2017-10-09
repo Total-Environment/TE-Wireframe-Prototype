@@ -1,0 +1,11 @@
+{
+  "name": "Business Partner",
+  "app_id": "",
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*"
+  ],
+  "integrations": {
+    "cordova": {}
+  }
+}

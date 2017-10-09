@@ -1,0 +1,211 @@
+<ion-view view-title="Offer" side="Center" class="animate-in-secondary bg" ng-controller="OfferApprovalList">
+<ion-content>
+<ion-refresher on-refresh="doRefresh()" ></ion-refresher>
+
+
+<div style="border-radius: 5px; margin-bottom: 5px;   border: solid 1px rgb(248, 152, 29);"></div>
+  <ion-list>
+    <div ng-controller="CollapsablePanel1">
+      <div ng-repeat="group in groups">
+        <div ng-controller="CollapsablePanel1">
+          <ion-item class="item-stable item-icon-right" style="color:#fff;background-color:#999;" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+              <i class="icon"  style="font-size:10pt;" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+              <span style="font-size:10pt;">Summary</span>
+          </ion-item>
+          <ion-item  ng-show="isGroupShown(group)" style="padding: 0px !important;margin: -10px auto;width: 97%;">
+            <div class="collapse-view im-card">
+              <div class="row" style="    padding: 3px 0;">
+                <div class="col">
+                    <div class="row" style="padding: 0px;">
+                      <div class="col collapse-text-small" style="padding: 0px 5px 2px 5px;">PO Number</div>           
+                      <div class="col table-cells collapse-text-head">4123 </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                   <div class="row" style="padding: 0px;">
+                      <div class="col collapse-text-small" style="padding: 0px 5px 2px 5px;">PO Date</div>           
+                      <div class="col table-cells collapse-text-head">10-Aug-15</div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="row" style="    padding: 3px 0;">
+                      <div class="col-25 collapse-text-small" style="padding: 0px 5px 2px 10px;">Vendor</div>           
+                      <div class="col collapse-text-head Saleste_ellipsis_text">4123</div>
+              </div>
+
+              <div class="row" style="padding: 5px 0px 0px 0px;">
+                      <div class="col-25 collapse-text-small" style="padding: 0px 5px 2px 10px;">Title</div>           
+                      <div class="col collapse-text-head Saleste_ellipsis_text">FLOORING/DADO/COUNTER FIXING & POLISHING</div>
+              </div>
+
+              <div class="row" style="    padding: 3px 0;">
+                <div class="col">
+                    <div class="row" style="padding: 0px;">
+                      <div class="col collapse-text-small" style="padding: 0px 5px 2px 5px;">Status</div>           
+                      <div class="col table-cells collapse-text-head">Pending</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                   <div class="row" style="padding: 0px;">
+                      <div class="col collapse-text-small" style="padding: 0px 5px 2px 5px;">Submitter</div>           
+                      <div class="col table-cells collapse-text-head">Chandrashekar S </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="row" style="padding: 3px 0;">
+                      <div class="col-25 collapse-text-small" style="padding: 0px 5px 2px 10px;">WBS Heads</div>           
+                      <div class="col collapse-text-head Saleste_ellipsis_text txt-right">0064-CN-T01</div>
+              </div>
+
+              <div class="row" style="padding: 3px 0;">
+                      <div class="col-25 collapse-text-small" style="padding: 0px 5px 2px 10px;">Fund Center:</div>           
+                      <div class="col collapse-text-head Saleste_ellipsis_text txt-right">0064-CN-T01-UNI</div>
+              </div>
+
+              <div class="row" style="padding: 3px 0;">
+                      <div class="col-25 collapse-text-small" style="padding: 0px 5px 2px 10px;">Net Amount:</div>           
+                      <div class="col collapse-text-head Saleste_ellipsis_text txt-right">2,13,423.97</div>
+              </div>
+
+               <div class="row" style="padding: 3px 0;">
+                      <div class="col-25 collapse-text-small" style="padding: 0px 5px 2px 10px;">Tax:</div>           
+                      <div class="col collapse-text-head Saleste_ellipsis_text txt-right">0</div>
+              </div>
+
+              <div class="row" style="padding: 3px 0;">
+                      <div class="col-25 collapse-text-small" style="padding: 0px 5px 2px 10px;">Other Charges:</div>           
+                      <div class="col collapse-text-head Saleste_ellipsis_text txt-right">3,201.36</div>
+              </div>
+
+              <div class="row" style="padding: 3px 0;">
+                      <div class="col-25 collapse-text-small" style="padding: 0px 5px 2px 10px;">Total:</div>           
+                      <div class="col collapse-text-head Saleste_ellipsis_text txt-right">
+                        <span style="background-color: #f8981d;padding: 5px;border-radius: 3px;color: #fff;">2,16,625 INR</span>
+                      </div>
+              </div>
+
+            </div>
+          </ion-item>
+        </div>
+      </div>
+
+      <div ng-repeat="group in groups">
+        <div ng-controller="CollapsablePanel1">
+          <ion-item class="item-stable item-icon-right" style="color:#fff;background-color:#999;" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+              <i class="icon"  style="font-size:10pt;" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+              <span style="font-size:10pt;">Items</span>
+          </ion-item>
+          <ion-item  ng-show="isGroupShown(group)" style="padding: 10px 0 !important;margin: -10px auto;width: 97%;">
+	              <table class="table table-bordered" id="Table3" style="width:100%;">
+                  <tbody>
+                    <tr style="background-color:#17202A; font-size:8pt; color:white;">
+                      <th style="width:130px;">#</th>
+                      <th style="width:55px;">Item</th>
+                        <th style="width:55px;">Qty</th>
+                      <th style="width:65px;">UOM</th>
+                      <th style="width:65px;">Rate</th>
+                      <th style="width:155px;">Amount</th>
+                    </tr>
+                    <tr class="">
+                      <td style="font-size:8pt;" >1</td>
+                      <td style="font-size:8pt;" colspan="4">Individual Unit Tile Flooring Lab Charge</td>
+                      <td style="font-size:8pt;">3,265.63</td>
+                    </tr>
+                </tbody>
+              </table>
+          </ion-item>
+        </div>
+      </div>
+
+      <div ng-repeat="group in groups">
+        <div ng-controller="CollapsablePanel1">
+          <ion-item class="item-stable item-icon-right" style="color:#fff;background-color:#999;" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+              <i class="icon"  style="font-size:10pt;" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+              <span style="font-size:10pt;">Payment Terms</span>
+          </ion-item>
+          <ion-item  ng-show="isGroupShown(group)" style="padding: 10px 0 !important;margin: -10px auto;width: 97%;">
+	              <div style="width:100%;overflow-y:scroll;">
+	              <table class="table table-bordered" id="Table3" style="width:570px;">
+                  <tbody>
+                    <tr style="background-color:#17202A; font-size:8pt; color:white;">
+                      <th style="width:130px;">#</th>
+                      <th style="width:55px;">Payment Term</th>
+                        <th style="width:55px;">%</th>
+                      <th style="width:65px;">Amount</th>
+                      <th style="width:65px;">Date</th>
+                      <th style="width:155px;">Remarks</th>
+                    </tr>
+                    <tr class="">
+                      <td style="font-size:8pt;" >1</td>
+                      <td style="font-size:8pt;">Payment on completion of full scope of work with credit period 30 days</td>
+                      <td style="font-size:8pt;">66.67	</td>
+                      <td style="font-size:8pt;">2,25,000	</td>
+                      <td style="font-size:8pt;">12-Mar-17	</td>
+                      <td style="font-size:8pt;">	</td>
+                    </tr>
+                </tbody>
+              </table>
+	              </div>
+          </ion-item>
+        </div>
+      </div>
+
+      <div ng-repeat="group in groups">
+        <div ng-controller="CollapsablePanel1">
+          <ion-item class="item-stable item-icon-right" style="color:#fff;background-color:#999;" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+              <i class="icon"  style="font-size:10pt;" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+              <span style="font-size:10pt;">Approval Summary</span>
+          </ion-item>
+          <ion-item  ng-show="isGroupShown(group)" style="padding: 10px 0 !important;margin: -10px auto;width: 97%;">
+	              <table class="table table-bordered" id="Table3" style="width:100%;">
+                  <tbody>
+                    <tr style="background-color:#17202A; font-size:8pt; color:white;">
+                      <th style="width:130px;">Approver</th>
+                      <th style="width:55px;">Status</th>
+                      <th style="width:65px;">Date</th>
+                      <th style="width:155px;">Comments</th>
+                    </tr>
+                    <tr class="">
+                      <td style="font-size:8pt;" >Narayan Kumar</td>
+                      <td style="font-size:8pt;">Yes</td>
+                      <td style="font-size:8pt;">12-Mar-17	</td>
+                      <td style="font-size:8pt;">	</td>
+                    </tr>
+                </tbody>
+              </table>
+          </ion-item>
+        </div>
+      </div>
+      <div ng-repeat="group in groups">
+        <div ng-controller="CollapsablePanel1">
+          <a href="#/app/po-tc" style="text-decoration: none !important">
+          <ion-item class="item-stable item-icon-right" style="color:#fff;background-color:#999;" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+              <span style="font-size:10pt;">Terms & Condition</span>
+          </ion-item>
+          </a>
+        </div>
+      </div>
+
+      <div class="row" style="padding: 3px 0;">
+          <div class="col collapse-text-small" style="padding: 0px 5px 2px 10px;">Submitter Comments:</div>           
+          <div class="col collapse-text-small Saleste_ellipsis_text"></div>
+      </div>
+      
+      <div class="row" style="padding: 3px 0;">        
+          <div class="col collapse-text-small Saleste_ellipsis_text" style="padding: 0px 5px 2px 10px;">PO for Mobile Application Development</div>
+      </div>
+     
+
+    </div>
+  </ion-list>
+  <div class="row" style="">
+      <div class="col"><div class="redbtn" >Reject</div></div>
+      <div class="col"><div class="today-followupbtn" > Approve</div></div>
+    </div>
+  </ion-content>
+</ion-view>
+ 

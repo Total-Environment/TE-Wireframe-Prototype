@@ -1,0 +1,110 @@
+<ion-view view-title="Leave Summary" style="text-align:center">
+  <ion-content style="background-color:#ffffff;margin-top: -45px;">
+     
+
+<ion-tabs class="tabs-striped tabs-top tabs-background-dark tabs-color-energized">
+    <ion-tab title="Summary">
+        <ion-nav-view name="Summary">
+            <ion-content padding="true">
+                <div class="leavediv">
+                    L
+                </div>
+                <table class="table table-bordered" id="Table3" style="width:100%; background-color: #fff;  margin-top:-5px;">               
+                    <tr style="background-color:#ffbe8f; font-size:8pt; color:#000;">
+                        <th>Open Balance</th>
+                        <th>Credited</th>
+                        <th >Availed</th>
+                        <th>Lapsed</th>
+                        <th>Available</th>
+                    </tr>
+                    <tr class="collapse-text-small9">
+                        <td>9.00</td> 
+                        <td>2.50</td> 
+                        <td>2.00</td> 
+                        <td>0.00</td> 
+                        <td>1.50</td>  
+                    </tr>                                                    
+                </table>
+
+                <div class="leavediv">
+                    LWP
+                </div>
+                <table class="table table-bordered" id="Table3" style="width:100%; background-color: #fff;  margin-top:-5px;">               
+                    <tr style="background-color:#ffbe8f; font-size:8pt; color:#000;">
+                        <th>Open Balance</th>
+                        <th>Credited</th>
+                        <th >Availed</th>
+                        <th>Lapsed</th>
+                        <th>Available</th>
+                    </tr>
+                    <tr class="collapse-text-small9">
+                        <td>9.00</td> 
+                        <td>2.50</td> 
+                        <td>2.00</td> 
+                        <td>0.00</td> 
+                        <td>1.50</td>  
+                    </tr>                                                    
+                </table>
+            </ion-content>
+        </ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="Details">
+        <ion-nav-view name="Details">
+            <ion-content padding="true">
+                <div class="collapse-view collapse-temp-approve im-card-new">
+
+                    <div class="row padding0" ng-click="more = !more" ng-class="{ active: more }">
+                        <div class="col">From 31-Mar-2017</div>
+                        <div class="col">To 31-Mar-2017</div>           
+                        <div class="col txt-right approve">Approved</span> </div>
+                    </div>
+
+                    <div ng-show="more" style="margin-top:2px; border-top:dotted 1px #ccc;">
+                        <div class="row">
+                            <div class="col padding0">
+                                <div class="row padding0">
+                                    <div class="col txt-left padding0">Leave</div>
+                                    <div class="col txt-left padding0"><b>1 day(s)</b></div>
+                                </div>                            
+                            </div>
+                            <div class="col padding0">
+                                <div class="row padding0">
+                                    <div class="col txt-left padding0">Applied On</div>
+                                    <div class="col txt-left padding0"><b>17-Apr-2017</b></div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="row padding0">
+                            <div class="col-25 txt-left" style="padding: 5px">Reason</div>
+                            <div class="col txt-left"><b>went to home town</b></div>  
+                        </div>
+                        <div class="row padding0">
+                            <div class="col-25 txt-left" style="padding: 5px">Approved By</div>
+                            <div class="col txt-left"><b>Anil Baradia</b></div>  
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="collapse-view collapse-temp-cold im-card-new">
+                    <div class="row padding0">
+                        <div class="col">From 31-Mar-2017</div>
+                        <div class="col">To 31-Mar-2017</div>           
+                        <div class="col txt-right withdrawn">Withdrawn</span> </div>
+                    </div>                      
+                </div>
+                <div class="collapse-view collapse-temp-new im-card-new">
+                    <div class="row padding0">
+                        <div class="col">From 31-Mar-2017</div>
+                        <div class="col">To 31-Mar-2017</div>           
+                        <div class="col txt-right cancelld">Cancelled</span> </div>
+                    </div>                      
+                </div>
+            </ion-content>    
+        </ion-nav-view> 
+    </ion-tab>
+</ion-tabs> 
+
+  
+  </ion-content>
+</ion-view> 

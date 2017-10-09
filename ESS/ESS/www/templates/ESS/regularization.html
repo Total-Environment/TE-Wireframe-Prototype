@@ -1,0 +1,83 @@
+<ion-view view-title="Regularization" style="text-align:center">
+  <ion-content style="background-color:#ffffff;margin-top: -45px;">
+     
+
+<ion-tabs class="tabs-striped tabs-top tabs-background-dark tabs-color-energized">
+    <ion-tab title="Leave">
+        <ion-nav-view name="Leave">
+            <ion-content padding="true">
+                <div class="collapse-view im-card-new">
+                    <div class="row ">
+                        <div class="col ">
+                            <select class="browser-default select">
+                                <option value="" disabled selected>Leave (1.00)</option>  
+                                 <option value="" disabled selected>Leave (1.00)</option>                        
+                            </select>   
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col txt-left">From: <b>15-Feb-2017</b></div>
+                        <div class="col txt-left">To: <b>15-Feb-2017</b></div>
+                    </div>  
+                    <div class="row" style="border-top:dotted 1px #ccc">
+                        <div class="col-20 txt-left" style="padding: 5px">Reason: </div>
+                        <div class="col txt-left"><textarea rows="2" style="width: 100%"></textarea></div>
+                    </div>  
+
+                    <div class="row" style="border-top:dotted 1px #ccc">
+                        <div class="col txt-left" style="padding: 5px">No of Days: <b>1</b></div>
+                    </div>                      
+                </div>
+
+                <div class="btn-alin">
+                    <div class="btn-full-btn">Next</div>
+                </div>
+            </ion-content>
+        </ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="Attendance">
+        <ion-nav-view name="Attendance">
+            <ion-content padding="true">
+                <div class="row">
+                    <div class="col">
+                        <div class="ess-cnttxt">Recorded In</div>
+                        <div class="InHour ess-h-mm-bx" >00</div>
+                        <div class="ess-hh-mm-bx">h</div>
+                        <div class="InMin ess-h-mm-bx" >00</div>
+                        <div class="ess-hh-mm-bx">m</div>
+                    </div>
+                    
+                    </div>
+                     <div class="row">
+                        <div class="col">
+                            <div class="ess-cnttxt" >Recorded Out</div>
+                            <div class="OutHour ess-h-mm-bx" >00</div>
+                            <div class="ess-hh-mm-bx">h</div>
+                            <div class="OutMin ess-h-mm-bx" >00</div>
+                            <div class="ess-hh-mm-bx">m</div>
+                        </div>
+                     </div>
+                     <div ></div>
+                    <div class="ess-info-txt">Is your recorded time shown above correct?</div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a href="#/app/attendance-yes" style="text-decoration: none">
+                                <div class="btn-sml" style="background-color: #8ab010">Yes</div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#/app/attendance-no" style="text-decoration: none">
+                                <div class="btn-sml">No</div>
+                            </a>
+                        </div>
+                    </div>
+            </ion-content>    
+        </ion-nav-view> 
+    </ion-tab>
+</ion-tabs> 
+
+  </ion-content>
+</ion-view> 

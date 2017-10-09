@@ -1,0 +1,243 @@
+<ion-view view-title=" Purchase Order Details" side="Center" class="animate-in-primary bg">
+<ion-content>
+<ion-refresher on-refresh="doRefresh()" ></ion-refresher>
+<div style="margin: 5px;"></div>
+          
+<ion-list>
+  <div ng-controller="CollapsablePanel1" >
+    <div ng-repeat="group in groups">
+      <ion-item class="item-stable item-icon-right" style="color:#fff" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}" >
+        <i class="icon" style="font-size:12pt;" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>Summary
+      </ion-item>
+
+      <ion-item  ng-show="isGroupShown(group)" style="margin: -5px !important;background-color:#fff !important;">          
+          <div class = "row mar0">
+            <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col">PO Number:</div>
+                <div class = "col"><b>16W-100059</b></div>
+              </div>  
+            </div>
+           <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col">PO Date:</div>
+                <div class = "col"><b>25-Mar-16</b></div>
+              </div>  
+            </div>
+          </div>  
+          <div class="linespace1"></div>  
+
+          <div class = "row mar0">
+            <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col">Vendor:</div>
+                <div class = "col"><b>1000</b></div>
+              </div>  
+            </div>
+           <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col">Status:</div>
+                <div class = "col"><b>Submit</b></div>
+              </div>  
+            </div>
+          </div>  
+          <div class="linespace1"></div>
+
+          <div class = "row mar0">
+           <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col Saleste_ellipsis_text">Submitter: <b>Channabasappa Nad and support team for Total Environment's SAP system in BLR</b></div>
+              </div>  
+            </div>
+          </div>  
+          <div class="linespace1"></div>    
+          
+          <div class = "row mar0">
+            <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col">WBS Heads:</div>
+                <div class = "col"><b>0043-D1-CTN</b></div>
+              </div>  
+            </div>
+           <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col">Fund Center:</div>
+                <div class = "col"><b>0043-CN-D1-STF</b></div>
+              </div>  
+            </div>
+          </div>  
+          <div class="linespace1"></div>    
+
+          <div class = "row mar0">
+            <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col">Net Amount:</div>
+              </div>  
+            </div>
+           <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col" style="text-align: right"><b>12,50,000</b></div>
+              </div>  
+            </div>
+          </div>  
+          <div class="linespace1"></div>  
+
+          <div class = "row mar0">
+            <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col">Tax:</div>
+              </div>  
+            </div>
+           <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col" style="text-align: right"><b>68,750</b></div>
+              </div>  
+            </div>
+          </div>  
+          <div class="linespace1"></div>  
+
+          <div class = "row mar0">
+            <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col">Other Charges:</div>
+              </div>  
+            </div>
+           <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col" style="text-align: right"><b>0</b></div>
+              </div>  
+            </div>
+          </div>  
+          <div class="linespace1"></div>  
+
+          <div class = "row mar0">
+            <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col">Total:</div>
+              </div>  
+            </div>
+           <div class = "col">
+              <div class = "row mar0" style="font-size: 9pt;">
+                <div class = "col amt" style="text-align: right; margin-top: 3px !important"><b>13,18,750 INR</b></div>
+              </div>  
+            </div>
+          </div>  
+          <div class="linespace1"></div>  
+      </ion-item>
+    </div>
+  </div>
+  </ion-list>
+
+
+  <ion-list>
+  <div ng-controller="CollapsablePanel1">
+    <div ng-repeat="group in groups">
+      <ion-item class="item-stable item-icon-right" style="color:#fff" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+        <i class="icon" style="font-size:12pt;" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>Upcoming Expire
+      </ion-item>
+
+       <ion-item  ng-show="isGroupShown(group)">
+        <div style="width:100%;overflow-y:scroll;">
+          <div>
+            <table class="table table-bordered" id="Table2" style="background-color: #fff" >
+              <tr style="background-color:#ffbe8f; font-size:8pt; color:#000;">
+                <th style="width:130px;">1</th>
+                <th style="width:130px;">Item</th>
+                <th style="width:55px;">QTY</th>
+                <th style="width:65px;">UOM</th>
+                <th style="width:65px;">Rate</th>
+                <th style="width:155px;">Amount</th>
+              </tr>
+              <tr style="font-size:8pt;">
+                <td>#</td>
+                <td colspan="4">testing for Work order-WoYM</td>
+                <td>12,50,000</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </ion-item>
+    </div>
+  </div>
+  </ion-list>
+
+  <ion-list>
+  <div ng-controller="CollapsablePanel1">
+    <div ng-repeat="group in groups">
+      <ion-item class="item-stable item-icon-right" style="color:#fff" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+        <i class="icon" style="font-size:12pt;" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>Payment Terms
+      </ion-item>
+
+       <ion-item  ng-show="isGroupShown(group)">
+        <div style="width:100%;overflow-y:scroll;">
+          <div>
+            <table class="table table-bordered" id="Table2" style="width:450px; background-color: #fff" >
+              <tr style="background-color:#ffbe8f; font-size:8pt; color:#000;">
+                <th>#</th>
+                <th>%</th>
+                <th>Amount</th>
+                <th >Date</th>
+                <th>Rate</th>
+                <th>Remarks</th>
+              </tr>
+              <tr style="font-size:8pt;">
+                <td>1</td>
+                <td>10</td>
+                <td>5,000</td>
+                <td>12-May-2016</td>
+                <td>3,52,000</td>
+                <td>Reamrks text</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </ion-item>
+    </div>
+  </div>
+  </ion-list>     
+
+  <ion-list>
+  <div ng-controller="CollapsablePanel1">
+    <div ng-repeat="group in groups">
+      <ion-item class="item-stable item-icon-right" style="color:#fff" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+        <i class="icon" style="font-size:12pt;" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>Approval Summary
+      </ion-item>
+
+       <ion-item  ng-show="isGroupShown(group)">
+        <div style="width:100%;overflow-y:scroll;">
+          <div>
+            <table class="table table-bordered" id="Table2" style="background-color: #fff" >
+              <tr style="background-color:#ffbe8f; font-size:8pt; color:#000;">
+                <th>Approver</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>Comments</th>
+              </tr>
+              <tr style="font-size:8pt;">
+                <td>Manju</td>
+                <td>Upcoming</td>
+                <td>12-May-2016</td>
+                <td>Comment text</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </ion-item>
+    </div>
+  </div>
+  </ion-list>
+
+  <a href="#/app/terms" style="text-decoration: none;">  
+  <div class="panel-head" style="margin-bottom: 100px;">Terms & Conditions</div>
+  </a>
+
+  
+  </ion-content>
+  <div style="position: fixed;bottom: 0 !important; background-color: #fff;z-index: 10000; width: 100%;padding: 15px">
+  <div class="row">
+        <div class="btn appeovebtn">Approve</div>
+        <div class="btn reject">Reject</div>
+    </div>
+  </div>
+</ion-view>
+ 

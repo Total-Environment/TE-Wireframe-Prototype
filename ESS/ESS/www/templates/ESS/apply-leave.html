@@ -1,0 +1,38 @@
+<ion-view view-title="Leave Form" style="text-align:center">
+  <ion-content style="background-color:#ffffff;">
+     
+    <div class="row">
+        <div class="col ">
+            <select class="browser-default select">
+                <option value="" disabled selected>Select Leave Type</option>  
+                    <option value="" disabled selected>Select Leave Type</option>                        
+            </select>   
+        </div>
+    </div>
+
+    <div class="row" style="border-top:solid 1px #ccc; border-bottom:solid 1px #ccc;padding: 0 5px">
+        <div class="col-60 txt-left">
+            <div  style="border-right:solid 1px #ccc; border-bottom:solid 1px #ccc;">
+                <input type="Date" ng-model="vm.ClaimBookSelected.ClaimDate" placeholder="" style="padding:0 5px; width:100%;height: 25px;" class="" required>
+            </div>
+            <div  style="border-right:solid 1px #ccc; ">
+                <input type="Date" ng-model="vm.ClaimBookSelected.ClaimDate" placeholder="" style="padding:0 5px; width:100%;height: 25px;" class="" required>
+            </div>
+        </div>
+        <div class="col txt-left"><input style="  width: 25px;height: 15px;" id="fromCheck" type="checkbox">Half Day</div>
+    </div>  
+    
+    <div class="row">
+        <div class="col-20 txt-left" style="padding:15px 5px">Reason: </div>
+        <div class="col txt-left"><textarea rows="2" style="width: 100%; border: none"></textarea></div>
+    </div>  
+
+    <div class="row" style="border-top:dotted 1px #ccc">
+        <div class="col txt-left" style="padding: 5px">No of Days: <b>1</b></div>
+    </div>    
+    <div class="btn-alin">
+        <div class="btn-full-btn">Submit</div>
+    </div>     
+
+  </ion-content>
+</ion-view> 
